@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using WeatherIO.Web;
+using WeatherIO.Common;
+using WeatherIO.Common.Data.Interfaces;
+using WeatherIO.Common.Data.Services;
 
 namespace WeatherIO.Web
 {
-    public class Program
+    public static class Program
     {
         public static async Task Main(string[] args)
         {
@@ -13,6 +15,8 @@ namespace WeatherIO.Web
             builder.RootComponents.Add<HeadOutlet>("head::after");
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+
+            builder.Services.AddSingleton<IWeatherForecastService, WeatherForecastService>();
 
             await builder.Build().RunAsync();
         }

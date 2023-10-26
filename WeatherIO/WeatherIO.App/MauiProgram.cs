@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components.WebView.Maui;
-using WeatherIO.App.Data;
+using WeatherIO.Common.Data.Interfaces;
+using WeatherIO.Common.Data.Services;
 
 namespace WeatherIO.App
 {
@@ -17,10 +18,10 @@ namespace WeatherIO.App
 
             builder.Services.AddMauiBlazorWebView();
 #if DEBUG
-		builder.Services.AddBlazorWebViewDeveloperTools();
+		    builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
 
-            builder.Services.AddSingleton<WeatherForecastService>();
+            builder.Services.AddSingleton<IWeatherForecastService, WeatherForecastService>();
 
             return builder.Build();
         }
