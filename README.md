@@ -1,11 +1,10 @@
-# About
+# WeatherIO
 
 WeatherIO is a weather app for Android, Windows and Web. It is built on .NET MAUI and Blazor.
 
-## Features
+## Documentation
 
-* View current weather conditions for your location
-* View hourly and daily weather forecast
+[Documentation](https://pcz-io.github.io/weather-io/) is available on GitHub Pages.
 
 ## Contents
 
