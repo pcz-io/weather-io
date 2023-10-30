@@ -1,0 +1,4 @@
+- name: Login and Logout
+  href: login-and-logout.md
+- name: Register
+  href: register.md
