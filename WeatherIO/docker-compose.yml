@@ -1,0 +1,41 @@
+version: '3.4'
+
+networks:
+  weatherio-net:
+
+services:
+  weatherio.server:
+    container_name: weatherio.server
+    image: ${DOCKER_REGISTRY-}weatherioserver
+    build:
+      context: .
+      dockerfile: WeatherIO.Server/Dockerfile
+
+    ports:
+     - 443:443
+     - 80:80
+      
+    depends_on:
+     - weatherio-db
+
+    environment:
+     - DB_HOST=weatherio-db
+     - DB_NAME=WeatherIO
+     - DB_SA_PASSWORD=DU5J8Eo0hSpsHVVYBG9SPGa2N9d11o0N95GvyRo3
+
+    networks:
+     - weatherio-net
+
+
+  weatherio-db:
+    container_name: weatherio-db
+    image: mcr.microsoft.com/mssql/server:latest
+    ports:
+     - 8002:1433
+
+    environment:
+     - ACCEPT_EULA=Y
+     - SA_PASSWORD=DU5J8Eo0hSpsHVVYBG9SPGa2N9d11o0N95GvyRo3
+
+    networks:
+     - weatherio-net
