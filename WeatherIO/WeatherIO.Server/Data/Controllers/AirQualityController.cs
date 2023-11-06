@@ -16,9 +16,9 @@ namespace WeatherIO.Server.Data.Controllers
 
         [HttpGet]
         [Route("air-quality")]
-        public async Task<IActionResult> AirQuality(double latitude, double longitude, string timezone = "Europe/Warsaw")
+        public async Task<IActionResult> AirQuality(double latitude, double longitude, string? timezone = "Europe/Warsaw")
         {
-            var airQuality = await _airQualityService.GetAirQualityAsync(latitude, longitude, timezone);
+            var airQuality = await _airQualityService.GetAirQualityAsync(latitude, longitude, timezone!);
 
             if (airQuality == null)
             {

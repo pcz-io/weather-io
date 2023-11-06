@@ -21,7 +21,7 @@ namespace WeatherIO.Server.Data.Controllers
 
         [HttpGet]
         [Route("get-forecast-by-city")]
-        public async Task<IActionResult> GetForecastByCity(string name, string timezone = "Europe/Warsaw")
+        public async Task<IActionResult> GetForecastByCity(string name, string? timezone = "Europe/Warsaw")
         {
             var geo = await _geocodingService.GetGeocodingModelByNameAsync(name);
             if (geo == null)
@@ -31,7 +31,7 @@ namespace WeatherIO.Server.Data.Controllers
                     Message = $"Nie znaleziono miasta o nazwie {name}"
                 });
             }
-            var forecast = await _forecastService.GetForecastAsync(geo[0].Latitude, geo[0].Longitude, timezone);
+            var forecast = await _forecastService.GetForecastAsync(geo[0].Latitude, geo[0].Longitude, timezone!);
             if (forecast == null)
             {
                 return NotFound(new Error
@@ -44,9 +44,9 @@ namespace WeatherIO.Server.Data.Controllers
 
         [HttpGet]
         [Route("get-forecast")]
-        public async Task<IActionResult> GetForecast(double latitude, double longitude, string timezone = "Europe/Warsaw")
+        public async Task<IActionResult> GetForecast(double latitude, double longitude, string? timezone = "Europe/Warsaw")
         {
-            var forecast = await _forecastService.GetForecastAsync(latitude, longitude, timezone);
+            var forecast = await _forecastService.GetForecastAsync(latitude, longitude, timezone!);
             if (forecast == null)
             {
                 return NotFound(new Error
