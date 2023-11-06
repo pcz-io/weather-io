@@ -10,32 +10,26 @@ services:
     build:
       context: .
       dockerfile: WeatherIO.Server/Dockerfile
-
+      args:
+        PASSWORD: ${CERT_PASSWD}
     ports:
-     - 443:443
-     - 80:80
-      
+     - 8001:443
+     - 8002:80
     depends_on:
      - weatherio-db
-
     environment:
      - DB_HOST=weatherio-db
      - DB_NAME=WeatherIO
-     - DB_SA_PASSWORD=DU5J8Eo0hSpsHVVYBG9SPGa2N9d11o0N95GvyRo3
-
+     - DB_SA_PASSWORD=${DB_PASSWD}
     networks:
      - weatherio-net
-
-
   weatherio-db:
     container_name: weatherio-db
-    image: mcr.microsoft.com/mssql/server:latest
+    image: mcr.microsoft.com/azure-sql-edge
     ports:
-     - 8002:1433
-
+     - 8003:1433
     environment:
      - ACCEPT_EULA=Y
-     - SA_PASSWORD=DU5J8Eo0hSpsHVVYBG9SPGa2N9d11o0N95GvyRo3
-
+     - SA_PASSWORD=${DB_PASSWD}
     networks:
      - weatherio-net
