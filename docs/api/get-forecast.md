@@ -10,6 +10,8 @@
 
 ## Success
 
+**URL** : `/api/get-forecast?latitude=19.5&longitude=50.1`
+
 **Code** : `200 OK`
 
 **Example** :

@@ -1,6 +1,6 @@
 # Air Quality
 
-**URL** : `/api/air-quality?latitude=50&longitude=20&timezone=Europe%2FWarsaw`
+**URL** : `/api/air-quality?latitude=[double]&longitude=[double]&timezone=Europe%2FWarsaw`
 
 **Mathod** : `GET`
 

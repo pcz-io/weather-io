@@ -10,6 +10,8 @@
 
 ## Success
 
+**URL** : `/api/get-forecast-by-city?city=Czestochowa`
+
 **Code** : `200 OK`
 
 **Example** :
