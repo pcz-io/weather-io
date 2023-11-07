@@ -89,8 +89,10 @@ namespace WeatherIO.Server.Data.Controllers
         [Route("delete-account")]
         public async Task<IActionResult> DeleteAccount()
         {
-            var user = await userManager.GetUserAsync(User);
-            await userManager.DeleteAsync(user!);
+            var user = await userManager.FindByNameAsync(User.Identity!.Name);
+            if (user == null)
+                return Unauthorized();
+            await userManager.DeleteAsync(user);
             return Ok();
         }
     }
