@@ -70,6 +70,8 @@ namespace WeatherIO.Server
                 context!.Database.Migrate();
             }
 
+            app.UseCors(options => options.SetIsOriginAllowed(o => true).AllowAnyHeader().AllowAnyMethod().AllowCredentials());
+
             app.UseRouting();
 
             app.UseHttpsRedirection();
