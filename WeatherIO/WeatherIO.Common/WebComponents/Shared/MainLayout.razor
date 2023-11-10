@@ -1,6 +1,6 @@
 ﻿@inherits LayoutComponentBase
 
-<PageTitle>WeatherIO.Web</PageTitle>
+@inject NavigationManager NavigationManager
 
 <MudThemeProvider />
 <MudDialogProvider />
@@ -9,16 +9,18 @@
 <MudLayout>
     <MudAppBar Elevation="1">
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
-        <MudText Typo="Typo.h5" Class="ml-3">Application</MudText>
+        <MudText Typo="Typo.h5" Class="ml-3">Weather.io</MudText>
         <MudSpacer />
-        <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" />
+        <MudMenu Icon="@Icons.Material.Filled.Settings" Color="Color.Tertiary">
+            <MudMenuItem OnClick="Login">Login</MudMenuItem>
+            <MudMenuItem OnClick="Register">Register</MudMenuItem>
+            <MudMenuItem OnClick="Settings">Settings</MudMenuItem>
+        </MudMenu>
     </MudAppBar>
     <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
-        @*NavMenu*@
         <NavMenu />
     </MudDrawer>
     <MudMainContent>
-        @*Body*@
         @Body
     </MudMainContent>
 </MudLayout>
@@ -29,5 +31,20 @@
     void DrawerToggle()
     {
         _drawerOpen = !_drawerOpen;
+    }
+
+    private void Login()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
+
+    private void Register()
+    {
+        NavigationManager.NavigateTo("/register");
+    }
+
+    private void Settings()
+    {
+        NavigationManager.NavigateTo("/settings");
     }
 }
