@@ -22,8 +22,10 @@ namespace WeatherIO.App
 		    builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
             builder.Services.AddMudServices();
+            builder.Services.AddHttpClient();
 
             builder.Services.AddSingleton<IDataProviderService, DataProviderServiceMaui>();
+            builder.Services.AddSingleton<IHttpClientProviderService, HttpClientProviderServiceMaui>();
 
             return builder.Build();
         }

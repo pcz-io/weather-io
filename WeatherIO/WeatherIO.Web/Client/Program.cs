@@ -20,11 +20,11 @@ namespace WeatherIO.Web
             //builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             builder.Services.AddMudServices();
-
             builder.Services.AddBlazoredLocalStorageAsSingleton();
+            builder.Services.AddHttpClient();
 
             builder.Services.AddSingleton<IDataProviderService, DataProviderServiceWeb>();
-
+            builder.Services.AddSingleton<IHttpClientProviderService, HttpClientProviderServiceWeb>();
 
             await builder.Build().RunAsync();
         }
