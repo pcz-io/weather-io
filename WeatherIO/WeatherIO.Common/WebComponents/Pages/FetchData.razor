@@ -2,7 +2,7 @@
 
 <PageTitle>Weather forecast</PageTitle>
 
-@using WeatherIO.Common.Data.Models;
+@* @using WeatherIO.Common.Data.Models;
 @using WeatherIO.Common.Data.Interfaces;
 @inject IWeatherForecastService ForecastService
 
@@ -46,4 +46,4 @@ else
     {
         forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
     }
-}
+} *@
