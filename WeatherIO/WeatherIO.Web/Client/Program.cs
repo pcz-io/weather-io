@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
 using WeatherIO.Common;
 using WeatherIO.Common.Data.Interfaces;
-using WeatherIO.Common.Data.Services;
+
+using WeatherIO.Web.Data.Services;
+using Blazored.LocalStorage;
 
 namespace WeatherIO.Web
 {
@@ -19,7 +21,10 @@ namespace WeatherIO.Web
 
             builder.Services.AddMudServices();
 
-            builder.Services.AddSingleton<IWeatherForecastService, WeatherForecastService>();
+            builder.Services.AddBlazoredLocalStorageAsSingleton();
+
+            builder.Services.AddSingleton<IDataProviderService, DataProviderServiceWeb>();
+
 
             await builder.Build().RunAsync();
         }

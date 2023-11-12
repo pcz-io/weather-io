@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components.WebView.Maui;
 using MudBlazor.Services;
+using WeatherIO.App.Data.Services;
 using WeatherIO.Common.Data.Interfaces;
-using WeatherIO.Common.Data.Services;
 
 namespace WeatherIO.App
 {
@@ -23,7 +23,7 @@ namespace WeatherIO.App
 #endif
             builder.Services.AddMudServices();
 
-            builder.Services.AddSingleton<IWeatherForecastService, WeatherForecastService>();
+            builder.Services.AddSingleton<IDataProviderService, DataProviderServiceMaui>();
 
             return builder.Build();
         }
