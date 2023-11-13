@@ -1,2 +1,16 @@
+- name: Air Quality
+  href: air-quality.md
+- name: Delete Account
+  href: delete-account.md
+- name: Geocode
+  href: geocode.md
+- name: Geocode by Id
+  href: geocode-by-id.md
+- name: Get Forecast
+  href: get-forecast.md
+- name: Get Forecast by City
+  href: get-forecast-by-city.md
 - name: Login
   href: login.md
+- name: Register
+  href: register.md
