@@ -1,19 +1,61 @@
 ﻿@inherits LayoutComponentBase
 
-<PageTitle>WeatherIO.Web</PageTitle>
+@inject IConfigurationProviderService ConfigurationProviderService
+@inject NavigationManager NavigationManager
 
-<div class="page">
-    <div class="sidebar">
+<MudThemeProvider @ref="@ConfigurationProviderService.MudThemeProvider" @bind-IsDarkMode="@_isDarkMode" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudAppBar Elevation="1">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        <MudText Typo="Typo.h5" Class="ml-3">Weather.io</MudText>
+        <MudSpacer />
+        <MudMenu Icon="@Icons.Material.Filled.Settings" Color="Color.Tertiary">
+            <MudMenuItem OnClick="Login">Login</MudMenuItem>
+            <MudMenuItem OnClick="Register">Register</MudMenuItem>
+            <MudMenuItem OnClick="Settings">Settings</MudMenuItem>
+        </MudMenu>
+    </MudAppBar>
+    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
         <NavMenu />
-    </div>
+    </MudDrawer>
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+</MudLayout>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
+@code {
+    bool _drawerOpen = true;
+    private bool _isDarkMode;
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+    private void Login()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
+
+    private void Register()
+    {
+        NavigationManager.NavigateTo("/register");
+    }
+
+    private void Settings()
+    {
+        NavigationManager.NavigateTo("/settings");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await ConfigurationProviderService.LoadConfigurationAsync();
+            StateHasChanged();
+        }
+    }
+}
