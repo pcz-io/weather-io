@@ -1,8 +1,9 @@
 ﻿@inherits LayoutComponentBase
 
+@inject IConfigurationProviderService ConfigurationProviderService
 @inject NavigationManager NavigationManager
 
-<MudThemeProvider />
+<MudThemeProvider @ref="@ConfigurationProviderService.MudThemeProvider" @bind-IsDarkMode="@_isDarkMode" />
 <MudDialogProvider />
 <MudSnackbarProvider />
 
@@ -27,6 +28,7 @@
 
 @code {
     bool _drawerOpen = true;
+    private bool _isDarkMode;
 
     void DrawerToggle()
     {
@@ -46,5 +48,14 @@
     private void Settings()
     {
         NavigationManager.NavigateTo("/settings");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await ConfigurationProviderService.LoadConfigurationAsync();
+            StateHasChanged();
+        }
     }
 }
