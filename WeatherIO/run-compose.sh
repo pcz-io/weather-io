@@ -6,6 +6,35 @@ function check_password {
         || return 1
 }
 
+function delete_images {
+    docker rm weatherio-server weatherio-web
+    docker image rm weatherioweb weatherioserver
+}
+
+function display_help {
+    echo "usage: ./run-compose.sh [--help] [--update]"
+    echo ""
+    echo "  --help     displays this message"
+    echo "  --update   removes images and compiles backend again"
+    exit
+}
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --help)
+      display_help
+      ;;
+    --update)
+      update=1
+      ;;
+    *)
+      echo "error: Unknown option '$1'"
+      display_help
+      ;;
+  esac
+  shift
+done
+
 if [ -f ".env" ]; then
     readarray -t lines < .env
     for line in "${lines[@]}"; do
@@ -32,5 +61,10 @@ done
 echo \
 "CERT_PASSWD=$cert_password
 DB_PASSWD=$db_password" > .env
+
+if [ "$update" = 1 ]; then
+    echo "Deleting images..."
+    delete_images
+fi
 
 docker compose -f docker-compose-relase.yml up
