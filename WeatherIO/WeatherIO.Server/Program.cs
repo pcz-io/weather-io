@@ -22,6 +22,8 @@ namespace WeatherIO.Server
             var dbname = Environment.GetEnvironmentVariable("DB_NAME");
             var dbpassword = Environment.GetEnvironmentVariable("DB_SA_PASSWORD");
             var connectionString = $"Data Source={dbhost};Initial Catalog={dbname};User ID=sa;Password={dbpassword}";
+            if (dbhost == null || dbname == null || dbpassword == null)
+                connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=WeatherDBDev;Integrated Security=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
             var builder = WebApplication.CreateBuilder(args);
 
@@ -64,9 +66,9 @@ namespace WeatherIO.Server
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
-            using (var srvc = app.Services.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            else
             {
+                using var srvc = app.Services.GetRequiredService<IServiceScopeFactory>().CreateScope();
                 var context = srvc.ServiceProvider.GetService<ApplicationDbContext>();
                 context!.Database.Migrate();
             }
