@@ -1,0 +1,57 @@
+﻿@page "/register"
+
+@using System.ComponentModel.DataAnnotations
+
+<div>
+    <div style="width: 100%; max-width: 500px; margin: auto;">
+        <EditForm Model="@model" OnValidSubmit="OnValidSubmit">
+            <DataAnnotationsValidator />
+            <MudCard>
+                <MudCardContent>
+                    <MudTextField Label="Email" Class="mt-3"
+                    @bind-Value="model.Email" For="@(() => model.Email)" />
+                    <MudTextField Label="Password" HelperText="Choose a strong password" Class="mt-3"
+                    @bind-Value="model.Password" For="@(() => model.Password)" InputType="InputType.Password" />
+                    <MudTextField Label="Password" HelperText="Repeat the password" Class="mt-3"
+                    @bind-Value="model.RepeatPassword" For="@(() => model.RepeatPassword)" InputType="InputType.Password" />
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto" OnClick="RegisterAsync">Register</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    RegisterAccountForm model = new RegisterAccountForm();
+    bool success;
+
+    //Change this class to RegisterModel from Common but modify it to check password strenght and repeat password
+    public class RegisterAccountForm
+    {
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
+
+        [Required]
+        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8}$",
+         ErrorMessage = "Password must meet requirements (at least 8 characters, 1 uppercase, 1 lowercase, 1 number).")]
+        public string Password { get; set; }
+
+        [Required]
+        [Compare(nameof(Password))]
+        public string RepeatPassword { get; set; }
+    }
+
+    private void RegisterAsync()
+    {
+        Console.WriteLine("Register");
+    }
+
+    private void OnValidSubmit(EditContext context)
+    {
+        success = true;
+        StateHasChanged();
+    }
+}
