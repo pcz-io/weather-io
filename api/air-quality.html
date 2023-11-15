@@ -2,11 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IWeatherForecastService
- </title>
+      <title>Air Quality </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IWeatherForecastService
- ">
+      <meta name="title" content="Air Quality ">
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -17,7 +15,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/pcz-io/weather-io/new/dev/apiSpec/new?filename=WeatherIO_Server_Data_Interfaces_IWeatherForecastService.md&amp;value=---%0Auid%3A%20WeatherIO.Server.Data.Interfaces.IWeatherForecastService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/pcz-io/weather-io/blob/dev/docs/api/air-quality.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -40,7 +38,7 @@
   </script>
 
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -81,81 +79,35 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="WeatherIO.Server.Data.Interfaces.IWeatherForecastService">
+        <article data-uid="">
+<h1 id="air-quality">Air Quality</h1>
 
-
-
-  <h1 id="WeatherIO_Server_Data_Interfaces_IWeatherForecastService" data-uid="WeatherIO.Server.Data.Interfaces.IWeatherForecastService" class="text-break">
-    Interface IWeatherForecastService
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Interfaces/IWeatherForecastService.cs/#L5"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="WeatherIO.html">WeatherIO</a>.<a class="xref" href="WeatherIO.Server.html">Server</a>.<a class="xref" href="WeatherIO.Server.Data.html">Data</a>.<a class="xref" href="WeatherIO.Server.Data.Interfaces.html">Interfaces</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>WeatherIO.Server.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"></div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IWeatherForecastService</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="WeatherIO_Server_Data_Interfaces_IWeatherForecastService_Get_" data-uid="WeatherIO.Server.Data.Interfaces.IWeatherForecastService.Get*"></a>
-
-  <h3 id="WeatherIO_Server_Data_Interfaces_IWeatherForecastService_Get" data-uid="WeatherIO.Server.Data.Interfaces.IWeatherForecastService.Get">
-  Get()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Interfaces/IWeatherForecastService.cs/#L7"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerable&lt;WeatherForecast&gt; Get()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="WeatherIO.Common.Data.Models.WeatherForecast.html">WeatherForecast</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+<p><strong>URL</strong> : <code>/api/air-quality?latitude=[double]&amp;longitude=[double]&amp;timezone=Europe%2FWarsaw</code></p>
+<p><strong>Mathod</strong> : <code>GET</code></p>
+<p><strong>Authorize</strong> : No</p>
+<p><strong>Input Data</strong> : No</p>
+<h2 id="success">Success</h2>
+<p><strong>URL</strong> : <code>/api/air-quality?latitude=50&amp;longitude=20</code></p>
+<p><strong>Code</strong> : <code>200 OK</code></p>
+<p><strong>Example</strong> :</p>
+<pre><code class="lang-json">{
+    &quot;airQualityIndex&quot;: 45,
+    &quot;airQualityString&quot;: &quot;średnia&quot;
+}
+</code></pre>
+<h2 id="error">Error</h2>
+<p><strong>URL</strong> : <code>/api/air-quality?latitude=350&amp;longitude=20</code></p>
+<p><strong>Condition</strong> : Incorrect latitude or longitude</p>
+<p><strong>Code</strong> : <code>404 Not found</code></p>
+<p><strong>Content</strong> : None</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Interfaces/IWeatherForecastService.cs/#L5" class="edit-link">Edit this page</a>
+          <a href="https://github.com/pcz-io/weather-io/blob/dev/docs/api/air-quality.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 

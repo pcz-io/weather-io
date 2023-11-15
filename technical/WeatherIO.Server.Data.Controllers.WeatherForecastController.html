@@ -87,7 +87,7 @@
 
   <h1 id="WeatherIO_Server_Data_Controllers_WeatherForecastController" data-uid="WeatherIO.Server.Data.Controllers.WeatherForecastController" class="text-break">
     Class WeatherForecastController
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/WeatherForecastController.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/WeatherForecastController.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -100,8 +100,8 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[ApiController]
-[Route(&quot;[controller]&quot;)]
-public class WeatherForecastController : ControllerBase</code></pre>
+[Route(&quot;api&quot;)]
+public class WeatherForecastController : Controller, IActionFilter, IAsyncActionFilter, IFilterMetadata, IDisposable</code></pre>
   </div>
 
 
@@ -112,15 +112,91 @@ public class WeatherForecastController : ControllerBase</code></pre>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controllerbase">ControllerBase</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller">Controller</a></div>
       <div><span class="xref">WeatherForecastController</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.iactionfilter">IActionFilter</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.iasyncactionfilter">IAsyncActionFilter</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.ifiltermetadata">IFilterMetadata</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.view#microsoft-aspnetcore-mvc-controller-view">Controller.View()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.view#microsoft-aspnetcore-mvc-controller-view(system-string)">Controller.View(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.view#microsoft-aspnetcore-mvc-controller-view(system-object)">Controller.View(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.view#microsoft-aspnetcore-mvc-controller-view(system-string-system-object)">Controller.View(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.partialview#microsoft-aspnetcore-mvc-controller-partialview">Controller.PartialView()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.partialview#microsoft-aspnetcore-mvc-controller-partialview(system-string)">Controller.PartialView(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.partialview#microsoft-aspnetcore-mvc-controller-partialview(system-object)">Controller.PartialView(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.partialview#microsoft-aspnetcore-mvc-controller-partialview(system-string-system-object)">Controller.PartialView(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.viewcomponent#microsoft-aspnetcore-mvc-controller-viewcomponent(system-string)">Controller.ViewComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.viewcomponent#microsoft-aspnetcore-mvc-controller-viewcomponent(system-type)">Controller.ViewComponent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.viewcomponent#microsoft-aspnetcore-mvc-controller-viewcomponent(system-string-system-object)">Controller.ViewComponent(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.viewcomponent#microsoft-aspnetcore-mvc-controller-viewcomponent(system-type-system-object)">Controller.ViewComponent(Type, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.json#microsoft-aspnetcore-mvc-controller-json(system-object)">Controller.Json(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.json#microsoft-aspnetcore-mvc-controller-json(system-object-system-object)">Controller.Json(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.onactionexecuting">Controller.OnActionExecuting(ActionExecutingContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.onactionexecuted">Controller.OnActionExecuted(ActionExecutedContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.onactionexecutionasync">Controller.OnActionExecutionAsync(ActionExecutingContext, ActionExecutionDelegate)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.dispose#microsoft-aspnetcore-mvc-controller-dispose">Controller.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.dispose#microsoft-aspnetcore-mvc-controller-dispose(system-boolean)">Controller.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.viewdata">Controller.ViewData</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.tempdata">Controller.TempData</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.viewbag">Controller.ViewBag</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controllerbase.statuscode#microsoft-aspnetcore-mvc-controllerbase-statuscode(system-int32)">ControllerBase.StatusCode(int)</a>
     </div>
@@ -668,23 +744,23 @@ public class WeatherForecastController : ControllerBase</code></pre>
 
   <a id="WeatherIO_Server_Data_Controllers_WeatherForecastController__ctor_" data-uid="WeatherIO.Server.Data.Controllers.WeatherForecastController.#ctor*"></a>
 
-  <h3 id="WeatherIO_Server_Data_Controllers_WeatherForecastController__ctor_Microsoft_Extensions_Logging_ILogger_WeatherIO_Server_Data_Controllers_WeatherForecastController__WeatherIO_Server_Data_Interfaces_IWeatherForecastService_" data-uid="WeatherIO.Server.Data.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{WeatherIO.Server.Data.Controllers.WeatherForecastController},WeatherIO.Server.Data.Interfaces.IWeatherForecastService)">
-  WeatherForecastController(ILogger&lt;WeatherForecastController&gt;, IWeatherForecastService)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/WeatherForecastController.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <h3 id="WeatherIO_Server_Data_Controllers_WeatherForecastController__ctor_WeatherIO_Server_Data_Services_ForecastService_WeatherIO_Server_Data_Services_GeocodingService_" data-uid="WeatherIO.Server.Data.Controllers.WeatherForecastController.#ctor(WeatherIO.Server.Data.Services.ForecastService,WeatherIO.Server.Data.Services.GeocodingService)">
+  WeatherForecastController(ForecastService, GeocodingService)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/WeatherForecastController.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WeatherForecastController(ILogger&lt;WeatherForecastController&gt; logger, IWeatherForecastService weatherForecastService)</code></pre>
+    <pre><code class="lang-csharp hljs">public WeatherForecastController(ForecastService forecastService, GeocodingService geocodingService)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="WeatherIO.Server.Data.Controllers.WeatherForecastController.html">WeatherForecastController</a>&gt;</dt>
+    <dt><code>forecastService</code> <a class="xref" href="WeatherIO.Server.Data.Services.ForecastService.html">ForecastService</a></dt>
     <dd></dd>
-    <dt><code>weatherForecastService</code> <a class="xref" href="WeatherIO.Server.Data.Interfaces.IWeatherForecastService.html">IWeatherForecastService</a></dt>
+    <dt><code>geocodingService</code> <a class="xref" href="WeatherIO.Server.Data.Services.GeocodingService.html">GeocodingService</a></dt>
     <dd></dd>
   </dl>
 
@@ -706,14 +782,14 @@ public class WeatherForecastController : ControllerBase</code></pre>
 
   <h3 id="WeatherIO_Server_Data_Controllers_WeatherForecastController__forecastService" data-uid="WeatherIO.Server.Data.Controllers.WeatherForecastController._forecastService">
   _forecastService
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/WeatherForecastController.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/WeatherForecastController.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">private readonly IWeatherForecastService _forecastService</code></pre>
+    <pre><code class="lang-csharp hljs">private readonly ForecastService _forecastService</code></pre>
   </div>
 
 
@@ -721,7 +797,7 @@ public class WeatherForecastController : ControllerBase</code></pre>
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="WeatherIO.Server.Data.Interfaces.IWeatherForecastService.html">IWeatherForecastService</a></dt>
+    <dt><a class="xref" href="WeatherIO.Server.Data.Services.ForecastService.html">ForecastService</a></dt>
     <dd></dd>
   </dl>
 
@@ -734,16 +810,16 @@ public class WeatherForecastController : ControllerBase</code></pre>
 
 
 
-  <h3 id="WeatherIO_Server_Data_Controllers_WeatherForecastController__logger" data-uid="WeatherIO.Server.Data.Controllers.WeatherForecastController._logger">
-  _logger
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/WeatherForecastController.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <h3 id="WeatherIO_Server_Data_Controllers_WeatherForecastController__geocodingService" data-uid="WeatherIO.Server.Data.Controllers.WeatherForecastController._geocodingService">
+  _geocodingService
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/WeatherForecastController.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">private readonly ILogger&lt;WeatherForecastController&gt; _logger</code></pre>
+    <pre><code class="lang-csharp hljs">private readonly GeocodingService _geocodingService</code></pre>
   </div>
 
 
@@ -751,7 +827,7 @@ public class WeatherForecastController : ControllerBase</code></pre>
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="WeatherIO.Server.Data.Controllers.WeatherForecastController.html">WeatherForecastController</a>&gt;</dt>
+    <dt><a class="xref" href="WeatherIO.Server.Data.Services.GeocodingService.html">GeocodingService</a></dt>
     <dd></dd>
   </dl>
 
@@ -767,25 +843,75 @@ public class WeatherForecastController : ControllerBase</code></pre>
 </h2>
 
 
-  <a id="WeatherIO_Server_Data_Controllers_WeatherForecastController_Get_" data-uid="WeatherIO.Server.Data.Controllers.WeatherForecastController.Get*"></a>
+  <a id="WeatherIO_Server_Data_Controllers_WeatherForecastController_GetForecast_" data-uid="WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecast*"></a>
 
-  <h3 id="WeatherIO_Server_Data_Controllers_WeatherForecastController_Get" data-uid="WeatherIO.Server.Data.Controllers.WeatherForecastController.Get">
-  Get()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/WeatherForecastController.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <h3 id="WeatherIO_Server_Data_Controllers_WeatherForecastController_GetForecast_System_Double_System_Double_System_String_" data-uid="WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecast(System.Double,System.Double,System.String)">
+  GetForecast(double, double, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/WeatherForecastController.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HttpGet(Name = &quot;GetWeatherForecast&quot;)]
-public IEnumerable&lt;WeatherForecast&gt; Get()</code></pre>
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;get-forecast&quot;)]
+public Task&lt;IActionResult&gt; GetForecast(double latitude, double longitude, string? timezone = &quot;Europe/Warsaw&quot;)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>latitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>longitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>timezone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="WeatherIO.Common.Data.Models.WeatherForecast.html">WeatherForecast</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WeatherIO_Server_Data_Controllers_WeatherForecastController_GetForecastByCity_" data-uid="WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecastByCity*"></a>
+
+  <h3 id="WeatherIO_Server_Data_Controllers_WeatherForecastController_GetForecastByCity_System_String_System_String_" data-uid="WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecastByCity(System.String,System.String)">
+  GetForecastByCity(string, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/WeatherForecastController.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Route(&quot;get-forecast-by-city&quot;)]
+public Task&lt;IActionResult&gt; GetForecastByCity(string name, string? timezone = &quot;Europe/Warsaw&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>timezone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -803,7 +929,7 @@ public IEnumerable&lt;WeatherForecast&gt; Get()</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/WeatherForecastController.cs/#L7" class="edit-link">Edit this page</a>
+          <a href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/WeatherForecastController.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Counter
+      <title>Class Login
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Counter
+      <meta name="title" content="Class Login
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -81,12 +81,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="WeatherIO.Common.WebComponents.Pages.Counter">
+        <article data-uid="WeatherIO.Common.WebComponents.Pages.Login">
 
 
 
-  <h1 id="WeatherIO_Common_WebComponents_Pages_Counter" data-uid="WeatherIO.Common.WebComponents.Pages.Counter" class="text-break">
-    Class Counter
+  <h1 id="WeatherIO_Common_WebComponents_Pages_Login" data-uid="WeatherIO.Common.WebComponents.Pages.Login" class="text-break">
+    Class Login
   
   </h1>
 
@@ -99,8 +99,8 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Route(&quot;/counter&quot;)]
-public class Counter : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender</code></pre>
+    <pre><code class="lang-csharp hljs">[Route(&quot;/login&quot;)]
+public class Login : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender</code></pre>
   </div>
 
 
@@ -111,7 +111,7 @@ public class Counter : ComponentBase, IComponent, IHandleEvent, IHandleAfterRend
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase">ComponentBase</a></div>
-      <div><span class="xref">Counter</span></div>
+      <div><span class="xref">Login</span></div>
     </dd>
   </dl>
 
@@ -203,8 +203,8 @@ public class Counter : ComponentBase, IComponent, IHandleEvent, IHandleAfterRend
 
 
 
-  <h3 id="WeatherIO_Common_WebComponents_Pages_Counter_currentCount" data-uid="WeatherIO.Common.WebComponents.Pages.Counter.currentCount">
-  currentCount
+  <h3 id="WeatherIO_Common_WebComponents_Pages_Login_model" data-uid="WeatherIO.Common.WebComponents.Pages.Login.model">
+  model
   
   </h3>
 
@@ -212,7 +212,7 @@ public class Counter : ComponentBase, IComponent, IHandleEvent, IHandleAfterRend
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">private int currentCount</code></pre>
+    <pre><code class="lang-csharp hljs">private LoginModel model</code></pre>
   </div>
 
 
@@ -220,7 +220,37 @@ public class Counter : ComponentBase, IComponent, IHandleEvent, IHandleAfterRend
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><a class="xref" href="WeatherIO.Common.Data.Models.LoginModel.html">LoginModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="WeatherIO_Common_WebComponents_Pages_Login_success" data-uid="WeatherIO.Common.WebComponents.Pages.Login.success">
+  success
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private bool success</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -236,9 +266,9 @@ public class Counter : ComponentBase, IComponent, IHandleEvent, IHandleAfterRend
 </h2>
 
 
-  <a id="WeatherIO_Common_WebComponents_Pages_Counter_BuildRenderTree_" data-uid="WeatherIO.Common.WebComponents.Pages.Counter.BuildRenderTree*"></a>
+  <a id="WeatherIO_Common_WebComponents_Pages_Login_BuildRenderTree_" data-uid="WeatherIO.Common.WebComponents.Pages.Login.BuildRenderTree*"></a>
 
-  <h3 id="WeatherIO_Common_WebComponents_Pages_Counter_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_" data-uid="WeatherIO.Common.WebComponents.Pages.Counter.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)">
+  <h3 id="WeatherIO_Common_WebComponents_Pages_Login_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_" data-uid="WeatherIO.Common.WebComponents.Pages.Login.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)">
   BuildRenderTree(RenderTreeBuilder)
   
   </h3>
@@ -268,10 +298,10 @@ public class Counter : ComponentBase, IComponent, IHandleEvent, IHandleAfterRend
 
 
 
-  <a id="WeatherIO_Common_WebComponents_Pages_Counter_IncrementCount_" data-uid="WeatherIO.Common.WebComponents.Pages.Counter.IncrementCount*"></a>
+  <a id="WeatherIO_Common_WebComponents_Pages_Login_LoginAsync_" data-uid="WeatherIO.Common.WebComponents.Pages.Login.LoginAsync*"></a>
 
-  <h3 id="WeatherIO_Common_WebComponents_Pages_Counter_IncrementCount" data-uid="WeatherIO.Common.WebComponents.Pages.Counter.IncrementCount">
-  IncrementCount()
+  <h3 id="WeatherIO_Common_WebComponents_Pages_Login_LoginAsync" data-uid="WeatherIO.Common.WebComponents.Pages.Login.LoginAsync">
+  LoginAsync()
   
   </h3>
 
@@ -279,9 +309,40 @@ public class Counter : ComponentBase, IComponent, IHandleEvent, IHandleAfterRend
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">private void IncrementCount()</code></pre>
+    <pre><code class="lang-csharp hljs">private void LoginAsync()</code></pre>
   </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WeatherIO_Common_WebComponents_Pages_Login_OnValidSubmit_" data-uid="WeatherIO.Common.WebComponents.Pages.Login.OnValidSubmit*"></a>
+
+  <h3 id="WeatherIO_Common_WebComponents_Pages_Login_OnValidSubmit_Microsoft_AspNetCore_Components_Forms_EditContext_" data-uid="WeatherIO.Common.WebComponents.Pages.Login.OnValidSubmit(Microsoft.AspNetCore.Components.Forms.EditContext)">
+  OnValidSubmit(EditContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void OnValidSubmit(EditContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.forms.editcontext">EditContext</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
