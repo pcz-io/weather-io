@@ -1,0 +1,39 @@
+﻿@page "/login"
+
+@using System.ComponentModel.DataAnnotations
+@using WeatherIO.Common.Data.Models;
+
+<div>
+    <div style="width: 100%; max-width: 500px; margin: auto;">
+        <EditForm Model="@model" OnValidSubmit="OnValidSubmit">
+            <DataAnnotationsValidator />
+            <MudCard>
+                <MudCardContent>
+                    <MudTextField Label="Email" Class="mt-3"
+                    @bind-Value="model.Email" For="@(() => model.Email)" />
+                    <MudTextField Label="Password" Class="mt-3"
+                    @bind-Value="model.Password" For="@(() => model.Password)" InputType="InputType.Password" />
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Secondary" Class="ml-auto" OnClick="LoginAsync">Login</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    LoginModel model = new LoginModel();
+    bool success;
+
+    private void LoginAsync()
+    {
+        Console.WriteLine("Register");
+    }
+
+    private void OnValidSubmit(EditContext context)
+    {
+        success = true;
+        StateHasChanged();
+    }
+}
