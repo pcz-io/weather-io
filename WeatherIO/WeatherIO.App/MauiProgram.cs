@@ -1,4 +1,5 @@
-﻿using MudBlazor.Services;
+﻿using Microsoft.Extensions.Logging;
+using MudBlazor.Services;
 using WeatherIO.App.Data.Services;
 using WeatherIO.Common.Data.Interfaces;
 using WeatherIO.Common.Data.Services;
@@ -25,8 +26,10 @@ namespace WeatherIO.App
                 });
 
             builder.Services.AddMauiBlazorWebView();
+
 #if DEBUG
-		    builder.Services.AddBlazorWebViewDeveloperTools();
+    		builder.Services.AddBlazorWebViewDeveloperTools();
+    		builder.Logging.AddDebug();
 #endif
             builder.Services.AddMudServices();
             builder.Services.AddHttpClient();

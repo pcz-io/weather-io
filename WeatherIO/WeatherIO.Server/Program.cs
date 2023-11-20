@@ -2,12 +2,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Authorization;
-using Microsoft.AspNetCore.Components.Web;
-using Microsoft.AspNetCore.Identity;
-// using Microsoft.AspNetCore.Identity.UI;
-using Microsoft.EntityFrameworkCore;
 using System.Text;
 using WeatherIO.Server.Data.Models;
 using WeatherIO.Server.Data.Services;
@@ -21,7 +15,7 @@ namespace WeatherIO.Server
             var dbhost = Environment.GetEnvironmentVariable("DB_HOST");
             var dbname = Environment.GetEnvironmentVariable("DB_NAME");
             var dbpassword = Environment.GetEnvironmentVariable("DB_SA_PASSWORD");
-            var connectionString = $"Data Source={dbhost};Initial Catalog={dbname};User ID=sa;Password={dbpassword}";
+            var connectionString = $"Data Source={dbhost};Initial Catalog={dbname};User ID=sa;Password={dbpassword};TrustServerCertificate=True";
             if (dbhost == null || dbname == null || dbpassword == null)
                 connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=WeatherDBDev;Integrated Security=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
@@ -47,7 +41,7 @@ namespace WeatherIO.Server
                     ValidateAudience = true,
                     ValidAudience = builder.Configuration["JWT:ValidAudience"],
                     ValidIssuer = builder.Configuration["JWT:ValidIssuer"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"])),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]!)),
                     RequireExpirationTime = false
                 };
             });
