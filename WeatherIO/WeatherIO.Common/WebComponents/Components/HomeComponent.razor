@@ -1,10 +1,28 @@
-﻿<PageTitle>Weather.io - Best weather forecast</PageTitle>
+﻿@inject IAuthenticationService _authService
+
+<PageTitle>Weather.io - Best weather forecast</PageTitle>
 
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
 			<h1 class="text-center">Weather.io</h1>
+			
+			<AuthorizeView>
+				<Authorized>
+					<h2 class="text-center">Welcome, @username</h2>
+				</Authorized>
+			</AuthorizeView>
+			
 			<h3 class="text-center">Best weather forecast</h3>
 		</div>
 	</div>
 </div>
+
+@code{
+	string username = string.Empty;
+
+	protected override async Task OnInitializedAsync()
+	{
+		username = await _authService.GetUsername() ?? "UNKNOWN";
+	}
+}

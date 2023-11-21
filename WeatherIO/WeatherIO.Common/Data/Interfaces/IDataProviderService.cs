@@ -19,5 +19,12 @@
         /// <param name="key">Key</param>
         /// <returns>Value</returns>
         public Task<string> GetData(string key);
+
+        /// <summary>
+        /// Remove data from data provider
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public Task DeleteData(string key);
     }
 }

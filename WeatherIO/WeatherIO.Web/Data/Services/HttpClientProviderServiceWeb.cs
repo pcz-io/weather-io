@@ -7,10 +7,13 @@ namespace WeatherIO.Web.Data.Services
     /// </summary>
     internal class HttpClientProviderServiceWeb : IHttpClientProviderService
     {
+        private HttpClient _httpClient;
+
         /// <summary>
-        /// The HttpClientFactory is used to create an HttpClient
+        /// Instance of HttpClient.
+        /// Necessary to use when sending data to authorized endpoints.
         /// </summary>
-        private readonly IHttpClientFactory _httpClientFactory;
+        public HttpClient HttpClient => _httpClient;
 
         /// <summary>
         /// Constructor
@@ -18,7 +21,7 @@ namespace WeatherIO.Web.Data.Services
         /// <param name="httpClientFactory">The HttpClientFactory is used to create an HttpClient</param>
         public HttpClientProviderServiceWeb(IHttpClientFactory httpClientFactory)
         {
-            _httpClientFactory = httpClientFactory;
+            _httpClient = httpClientFactory.CreateClient();
         }
 
         /// <summary>
@@ -28,8 +31,7 @@ namespace WeatherIO.Web.Data.Services
         /// <returns>An HttpResponseMessage from the given url</returns>
         public async Task<HttpResponseMessage> GetAsync(string url)
         {
-            var httpClient = _httpClientFactory.CreateClient();
-            return await httpClient.GetAsync(url);
+            return await HttpClient.GetAsync(url);
         }
     }
 }

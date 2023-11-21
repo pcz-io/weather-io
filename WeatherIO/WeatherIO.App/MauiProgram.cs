@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.Extensions.Logging;
 using MudBlazor.Services;
 using WeatherIO.App.Data.Services;
 using WeatherIO.Common.Data.Interfaces;
@@ -28,15 +29,18 @@ namespace WeatherIO.App
             builder.Services.AddMauiBlazorWebView();
 
 #if DEBUG
-    		builder.Services.AddBlazorWebViewDeveloperTools();
-    		builder.Logging.AddDebug();
+            builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Logging.AddDebug();
 #endif
             builder.Services.AddMudServices();
             builder.Services.AddHttpClient();
+            builder.Services.AddAuthorizationCore();
 
             builder.Services.AddSingleton<IDataProviderService, DataProviderServiceMaui>();
             builder.Services.AddSingleton<IHttpClientProviderService, HttpClientProviderServiceMaui>();
             builder.Services.AddSingleton<IConfigurationProviderService, ConfigurationProviderService>();
+            builder.Services.AddSingleton<IAuthenticationService, AuthenticationService>();
+            builder.Services.AddSingleton<AuthenticationStateProvider, WeatherAuthenticationStateProvider>();
 
             return builder.Build();
         }
