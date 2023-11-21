@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:navrel" content="../toc.json">
+      <meta name="docfx:tocrel" content="toc.json">
       
       
       
@@ -100,7 +100,7 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[XamlFilePath(&quot;MainPage.xaml&quot;)]
-public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition, IVisualTreeElement, IEffectControlProvider, IStyleSelectable, IAnimatable, IResourcesProvider, IStyleElement, IFlowDirectionController, IPropertyPropagationController, IVisualController, IWindowController, IStylable, ITitledElement, IToolbarElement, ILayout, IPageController, IVisualElementController, IElementController, IElementConfiguration&lt;Page&gt;, ISafeAreaView, IControlTemplated, IContentView, IPadding, IHotReloadableView, IView, IElement, ITransform, IReplaceableView</code></pre>
+public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition, IVisualTreeElement, IEffectControlProvider, IToolTipElement, IContextFlyoutElement, IStyleSelectable, IAnimatable, IResourcesProvider, IStyleElement, IFlowDirectionController, IPropertyPropagationController, IVisualController, IWindowController, IControlsVisualElement, IControlsElement, IStylable, ILayout, IPageController, IVisualElementController, IElementController, IElementConfiguration&lt;Page&gt;, ISafeAreaView, ISafeAreaView2, ITitledElement, IToolbarElement, IControlTemplated, IContentView, IPadding, ICrossPlatformLayout, IHotReloadableView, IView, IElement, ITransform, IReplaceableView</code></pre>
   </div>
 
 
@@ -128,6 +128,8 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ielementdefinition">IElementDefinition</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.ivisualtreeelement">IVisualTreeElement</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ieffectcontrolprovider">IEffectControlProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.itooltipelement">IToolTipElement</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.icontextflyoutelement">IContextFlyoutElement</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.stylesheets.istyleselectable">IStyleSelectable</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ianimatable">IAnimatable</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.iresourcesprovider">IResourcesProvider</a></div>
@@ -136,18 +138,22 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ipropertypropagationcontroller">IPropertyPropagationController</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ivisualcontroller">IVisualController</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.iwindowcontroller">IWindowController</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.icontrolsvisualelement">IControlsVisualElement</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.icontrolselement">IControlsElement</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.stylesheets.istylable">IStylable</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.ititledelement">ITitledElement</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.itoolbarelement">IToolbarElement</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ilayout">ILayout</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ipagecontroller">IPageController</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ivisualelementcontroller">IVisualElementController</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ielementcontroller">IElementController</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ielementconfiguration-1">IElementConfiguration</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page">Page</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.isafeareaview">ISafeAreaView</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.isafeareaview2">ISafeAreaView2</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.ititledelement">ITitledElement</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.itoolbarelement">IToolbarElement</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.icontroltemplated">IControlTemplated</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.icontentview">IContentView</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.ipadding">IPadding</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.icrossplatformlayout">ICrossPlatformLayout</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.hotreload.ihotreloadableview">IHotReloadableView</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">IView</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.ielement">IElement</a></div>
@@ -164,6 +170,9 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.contentpage.contentproperty">ContentPage.ContentProperty</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.contentpage.hidesoftinputontappedproperty">ContentPage.HideSoftInputOnTappedProperty</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.contentpage.onbindingcontextchanged">ContentPage.OnBindingContextChanged()</a>
     </div>
     <div>
@@ -176,10 +185,10 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.contentpage.arrangeoverride">ContentPage.ArrangeOverride(Rect)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.icontentview">ContentPage.IContentView.CrossPlatformMeasure(double, double)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.icrossplatformlayout">ContentPage.ICrossPlatformLayout.CrossPlatformMeasure(double, double)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.icontentview">ContentPage.IContentView.CrossPlatformArrange(Rect)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.icrossplatformlayout">ContentPage.ICrossPlatformLayout.CrossPlatformArrange(Rect)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.contentpage.invalidatemeasureoverride">ContentPage.InvalidateMeasureOverride()</a>
@@ -191,7 +200,16 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.hotreload.ihotreloadableview">ContentPage.IHotReloadableView.Reload()</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.icontentview">ContentPage.IContentView.CrossPlatformArrange(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.icontentview">ContentPage.IContentView.CrossPlatformMeasure(double, double)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.contentpage.content">ContentPage.Content</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.contentpage.hidesoftinputontapped">ContentPage.HideSoftInputOnTapped</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.icontentview">ContentPage.IContentView.Content</a>
@@ -266,18 +284,6 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.iconimagesourceproperty">Page.IconImageSourceProperty</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.onnavigatedto">Page.OnNavigatedTo(NavigatedToEventArgs)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.onnavigatingfrom">Page.OnNavigatingFrom(NavigatingFromEventArgs)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.onnavigatedfrom">Page.OnNavigatedFrom(NavigatedFromEventArgs)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.getparentwindow">Page.GetParentWindow()</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.displayactionsheet#microsoft-maui-controls-page-displayactionsheet(system-string-system-string-system-string-system-string())">Page.DisplayActionSheet(string, string, string, params string[])</a>
     </div>
     <div>
@@ -335,10 +341,16 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.on">Page.On&lt;T&gt;()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">Page.IView.Background</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.onnavigatedto">Page.OnNavigatedTo(NavigatedToEventArgs)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.itoolbarelement">Page.IToolbarElement.Toolbar</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.onnavigatingfrom">Page.OnNavigatingFrom(NavigatingFromEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.onnavigatedfrom">Page.OnNavigatedFrom(NavigatedFromEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.getparentwindow">Page.GetParentWindow()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.hasappeared">Page.HasAppeared</a>
@@ -365,22 +377,16 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.menubaritems">Page.MenuBarItems</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.childrennotdrawnbythiselement">Page.ChildrenNotDrawnByThisElement</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.logicalchildreninternal">Page.LogicalChildrenInternal</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.isafeareaview">Page.ISafeAreaView.IgnoreSafeArea</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.navigatedto">Page.NavigatedTo</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.isafeareaview2">Page.ISafeAreaView2.SafeAreaInsets</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.navigatingfrom">Page.NavigatingFrom</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">Page.IView.Background</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.navigatedfrom">Page.NavigatedFrom</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.itoolbarelement">Page.IToolbarElement.Toolbar</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.layoutchanged">Page.LayoutChanged</a>
@@ -392,10 +398,13 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.disappearing">Page.Disappearing</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.controlsvisualelementmapper">VisualElement.ControlsVisualElementMapper</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.navigatedto">Page.NavigatedTo</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.shadowproperty">VisualElement.ShadowProperty</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.navigatingfrom">Page.NavigatingFrom</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page.navigatedfrom">Page.NavigatedFrom</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.navigationproperty">VisualElement.NavigationProperty</a>
@@ -503,31 +512,13 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.windowproperty">VisualElement.WindowProperty</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.mapbackgroundcolor">VisualElement.MapBackgroundColor(IViewHandler, IView)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.shadowproperty">VisualElement.ShadowProperty</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.mapbackgroundimagesource">VisualElement.MapBackgroundImageSource(IViewHandler, IView)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.zindexproperty">VisualElement.ZIndexProperty</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.onhandlerchangedcore">VisualElement.OnHandlerChangedCore()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.arrange">VisualElement.Arrange(Rect)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Arrange(Rect)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.layout">VisualElement.Layout(Rect)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.InvalidateMeasure()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.InvalidateArrange()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Measure(double, double)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.controlsvisualelementmapper">VisualElement.ControlsVisualElementMapper</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.batchbegin">VisualElement.BatchBegin()</a>
@@ -578,79 +569,52 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.onparentresourceschanged">VisualElement.OnParentResourcesChanged(IEnumerable&lt;KeyValuePair&lt;string, object&gt;&gt;)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.setpointerover">VisualElement.SetPointerOver(bool, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.changevisualstate">VisualElement.ChangeVisualState()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ipropertypropagationcontroller">VisualElement.IPropertyPropagationController.PropagatePropertyChanged(string)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.refreshisenabledproperty">VisualElement.RefreshIsEnabledProperty()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.refreshinputtransparentproperty">VisualElement.RefreshInputTransparentProperty()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.onhandlerchangedcore">VisualElement.OnHandlerChangedCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.arrange">VisualElement.Arrange(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Arrange(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.layout">VisualElement.Layout(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.InvalidateMeasure()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.InvalidateArrange()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Measure(double, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.updatesemantics">VisualElement.UpdateSemantics()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.mapbackgroundcolor">VisualElement.MapBackgroundColor(IViewHandler, IView)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.mapbackgroundimagesource">VisualElement.MapBackgroundImageSource(IViewHandler, IView)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.stylesheets.istylable">VisualElement.IStylable.GetProperty(string, bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.frame">VisualElement.Frame</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.handler">VisualElement.Handler</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Clip</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Shadow</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.shadow">VisualElement.Shadow</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.zindex">VisualElement.ZIndex</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.desiredsize">VisualElement.DesiredSize</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.IsFocused</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.FlowDirection</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.HorizontalLayoutAlignment</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.VerticalLayoutAlignment</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Visibility</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Semantics</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Width</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Height</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.MinimumWidth</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.MinimumHeight</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.MaximumWidth</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.MaximumHeight</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Margin</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.ielement">VisualElement.IElement.Handler</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.isloaded">VisualElement.IsLoaded</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.visual">VisualElement.Visual</a>
@@ -702,6 +666,12 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.isenabled">VisualElement.IsEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.isenabledcore">VisualElement.IsEnabledCore</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.inputtransparentcore">VisualElement.InputTransparentCore</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.isfocused">VisualElement.IsFocused</a>
@@ -776,10 +746,70 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.iflowdirectioncontroller">VisualElement.IFlowDirectionController.ApplyEffectiveFlowDirectionToChildContainer</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.loaded">VisualElement.Loaded</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.frame">VisualElement.Frame</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.unloaded">VisualElement.Unloaded</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.handler">VisualElement.Handler</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Clip</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Shadow</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.shadow">VisualElement.Shadow</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.zindex">VisualElement.ZIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.desiredsize">VisualElement.DesiredSize</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.IsFocused</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.FlowDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.HorizontalLayoutAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.VerticalLayoutAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Visibility</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Semantics</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Height</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.MinimumWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.MinimumHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.MaximumWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.MaximumHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iview">VisualElement.IView.Margin</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.ielement">VisualElement.IElement.Handler</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.isloaded">VisualElement.IsLoaded</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.childrenreordered">VisualElement.ChildrenReordered</a>
@@ -795,6 +825,18 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.unfocused">VisualElement.Unfocused</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.loaded">VisualElement.Loaded</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.visualelement.unloaded">VisualElement.Unloaded</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.icontrolsvisualelement">VisualElement.IControlsVisualElement.WindowChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.icontrolsvisualelement">VisualElement.IControlsVisualElement.PlatformContainerViewChanged</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.navigableelement.navigation">NavigableElement.Navigation</a>
@@ -819,6 +861,24 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.controlselementmapper">Element.ControlsElementMapper</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.mapautomationpropertiesisinaccessibletree">Element.MapAutomationPropertiesIsInAccessibleTree(IElementHandler, Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.mapautomationpropertiesexcludedwithchildren">Element.MapAutomationPropertiesExcludedWithChildren(IElementHandler, Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.insertlogicalchild">Element.InsertLogicalChild(int, Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.addlogicalchild">Element.AddLogicalChild(Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.removelogicalchild">Element.RemoveLogicalChild(Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.clearlogicalchildren">Element.ClearLogicalChildren()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ielementdefinition">Element.IElementDefinition.AddResourcesChangedListener(Action&lt;object, ResourcesChangedEventArgs&gt;)</a>
@@ -860,7 +920,7 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.onresourceschanged">Element.OnResourcesChanged(object, ResourcesChangedEventArgs)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.onsetdynamicresource">Element.OnSetDynamicResource(BindableProperty, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.onsetdynamicresource">Element.OnSetDynamicResource(BindableProperty, string, SetterSpecificity)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.onparentchanging">Element.OnParentChanging(ParentChangingEventArgs)</a>
@@ -873,12 +933,6 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.onparentchangingcore">Element.OnParentChangingCore(Element, Element)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.mapautomationpropertiesisinaccessibletree">Element.MapAutomationPropertiesIsInAccessibleTree(IElementHandler, Element)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.mapautomationpropertiesexcludedwithchildren">Element.MapAutomationPropertiesExcludedWithChildren(IElementHandler, Element)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.onhandlerchanging">Element.OnHandlerChanging(HandlerChangingEventArgs)</a>
@@ -908,10 +962,22 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.styleid">Element.StyleId</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.logicalchildreninternalbackingstore">Element.LogicalChildrenInternalBackingStore</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ielementcontroller">Element.IElementController.LogicalChildren</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.parent">Element.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.ielement">Element.IElement.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.itooltipelement">Element.IToolTipElement.ToolTip</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.icontextflyoutelement">Element.IContextFlyoutElement.ContextFlyout</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.stylesheets.istyleselectable">Element.IStyleSelectable.Children</a>
@@ -924,9 +990,6 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.stylesheets.istyleselectable">Element.IStyleSelectable.Parent</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.ielement">Element.IElement.Parent</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.childadded">Element.ChildAdded</a>
@@ -1058,6 +1121,40 @@ public class MainPage : ContentPage, INotifyPropertyChanged, IElementDefinition,
 
 
 
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="WeatherIO_App_MainPage_blazorWebView" data-uid="WeatherIO.App.MainPage.blazorWebView">
+  blazorWebView
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private BlazorWebView blazorWebView</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.webview.maui.blazorwebview">BlazorWebView</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

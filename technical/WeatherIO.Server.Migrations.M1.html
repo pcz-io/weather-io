@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:navrel" content="../toc.json">
+      <meta name="docfx:tocrel" content="toc.json">
       
       
       
@@ -198,7 +198,7 @@ public class M1 : Migration</code></pre>
 
 
   <h4 class="section" id="WeatherIO_Server_Migrations_M1_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>See <a href="https://aka.ms/efcore-docs-migrations">Database migrations</a> for more information.</p>
+  <div class="markdown level1 remarks"><p>See <a href="https://aka.ms/efcore-docs-migrations">Database migrations</a> for more information and examples.</p>
 </div>
 
 
@@ -211,18 +211,7 @@ public class M1 : Migration</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Migrations/20231105181952_M1.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>
-                    Builds the operations that will migrate the database 'down'.
-                </p>
-<p>
-                    That is, builds the operations that will take the database from the state left in by
-                    this migration so that it returns to the state that it was in before this migration was applied.
-                </p>
-<p>
-                    This method must be overridden in each class that inherits from <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.migrations.migration">Migration</a> if
-                    both 'up' and 'down' migrations are to be supported. If it is not overridden, then calling it
-                    will throw and it will not be possible to migrate in the 'down' direction.
-                </p>
+  <div class="markdown level1 summary"><p>Builds the operations that will migrate the database 'down'.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -245,7 +234,18 @@ public class M1 : Migration</code></pre>
 
 
   <h4 class="section" id="WeatherIO_Server_Migrations_M1_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>See <a href="https://aka.ms/efcore-docs-migrations">Database migrations</a> for more information.</p>
+  <div class="markdown level1 remarks"><p>
+                    That is, builds the operations that will take the database from the state left in by
+                    this migration so that it returns to the state that it was in before this migration was applied.
+                </p>
+<p>
+                    This method must be overridden in each class that inherits from <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.migrations.migration">Migration</a> if
+                    both 'up' and 'down' migrations are to be supported. If it is not overridden, then calling it
+                    will throw and it will not be possible to migrate in the 'down' direction.
+                </p>
+<p>
+                    See <a href="https://aka.ms/efcore-docs-migrations">Database migrations</a> for more information and examples.
+                </p>
 </div>
 
 
@@ -258,16 +258,7 @@ public class M1 : Migration</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Migrations/20231105181952_M1.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>
-                    Builds the operations that will migrate the database 'up'.
-                </p>
-<p>
-                    That is, builds the operations that will take the database from the state left in by the
-                    previous migration so that it is up-to-date with regard to this migration.
-                </p>
-<p>
-                    This method must be overridden in each class that inherits from <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.migrations.migration">Migration</a>.
-                </p>
+  <div class="markdown level1 summary"><p>Builds the operations that will migrate the database 'up'.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -290,7 +281,16 @@ public class M1 : Migration</code></pre>
 
 
   <h4 class="section" id="WeatherIO_Server_Migrations_M1_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>See <a href="https://aka.ms/efcore-docs-migrations">Database migrations</a> for more information.</p>
+  <div class="markdown level1 remarks"><p>
+                    That is, builds the operations that will take the database from the state left in by the
+                    previous migration so that it is up-to-date with regard to this migration.
+                </p>
+<p>
+                    This method must be overridden in each class that inherits from <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.migrations.migration">Migration</a>.
+                </p>
+<p>
+                    See <a href="https://aka.ms/efcore-docs-migrations">Database migrations</a> for more information and examples.
+                </p>
 </div>
 
 

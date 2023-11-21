@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:navrel" content="../toc.json">
+      <meta name="docfx:tocrel" content="toc.json">
       
       
       
@@ -100,7 +100,7 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[XamlFilePath(&quot;App.xaml&quot;)]
-public class App : Application, INotifyPropertyChanged, IElementDefinition, IElementController, IStyleSelectable, IEffectControlProvider, IResourcesProvider, IApplicationController, IElementConfiguration&lt;Application&gt;, IVisualTreeElement, IApplication, IElement</code></pre>
+public class App : Application, INotifyPropertyChanged, IElementDefinition, IElementController, IEffectControlProvider, IToolTipElement, IContextFlyoutElement, IControlsElement, IStyleSelectable, IResourcesProvider, IApplicationController, IElementConfiguration&lt;Application&gt;, IVisualTreeElement, IApplication, IElement</code></pre>
   </div>
 
 
@@ -123,8 +123,11 @@ public class App : Application, INotifyPropertyChanged, IElementDefinition, IEle
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ielementdefinition">IElementDefinition</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ielementcontroller">IElementController</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.stylesheets.istyleselectable">IStyleSelectable</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ieffectcontrolprovider">IEffectControlProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.itooltipelement">IToolTipElement</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.icontextflyoutelement">IContextFlyoutElement</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.icontrolselement">IControlsElement</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.stylesheets.istyleselectable">IStyleSelectable</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.iresourcesprovider">IResourcesProvider</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.iapplicationcontroller">IApplicationController</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ielementconfiguration-1">IElementConfiguration</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.application">Application</a>&gt;</div>
@@ -142,10 +145,10 @@ public class App : Application, INotifyPropertyChanged, IElementDefinition, IEle
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.application.controlsapplicationmapper">Application.ControlsApplicationMapper</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.application.quit">Application.Quit()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.application.mapwindowsoftinputmodeadjust">Application.MapWindowSoftInputModeAdjust(ApplicationHandler, Application)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.application.savepropertiesasync">Application.SavePropertiesAsync()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.application.quit">Application.Quit()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.application.on">Application.On&lt;T&gt;()</a>
@@ -173,9 +176,6 @@ public class App : Application, INotifyPropertyChanged, IElementDefinition, IEle
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.ivisualtreeelement">Application.IVisualTreeElement.GetVisualChildren()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.application.mapwindowsoftinputmodeadjust">Application.MapWindowSoftInputModeAdjust(ApplicationHandler, Application)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.iapplication">Application.IApplication.CreateWindow(IActivationState)</a>
@@ -206,12 +206,6 @@ public class App : Application, INotifyPropertyChanged, IElementDefinition, IEle
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.application.mainpage">Application.MainPage</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.application.properties">Application.Properties</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.application.logicalchildreninternal">Application.LogicalChildrenInternal</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.iresourcesprovider">Application.IResourcesProvider.IsResourcesCreated</a>
@@ -268,6 +262,24 @@ public class App : Application, INotifyPropertyChanged, IElementDefinition, IEle
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.controlselementmapper">Element.ControlsElementMapper</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.mapautomationpropertiesisinaccessibletree">Element.MapAutomationPropertiesIsInAccessibleTree(IElementHandler, Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.mapautomationpropertiesexcludedwithchildren">Element.MapAutomationPropertiesExcludedWithChildren(IElementHandler, Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.insertlogicalchild">Element.InsertLogicalChild(int, Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.addlogicalchild">Element.AddLogicalChild(Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.removelogicalchild">Element.RemoveLogicalChild(Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.clearlogicalchildren">Element.ClearLogicalChildren()</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ielementdefinition">Element.IElementDefinition.AddResourcesChangedListener(Action&lt;object, ResourcesChangedEventArgs&gt;)</a>
     </div>
     <div>
@@ -313,7 +325,7 @@ public class App : Application, INotifyPropertyChanged, IElementDefinition, IEle
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.onresourceschanged">Element.OnResourcesChanged(object, ResourcesChangedEventArgs)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.onsetdynamicresource">Element.OnSetDynamicResource(BindableProperty, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.onsetdynamicresource">Element.OnSetDynamicResource(BindableProperty, string, SetterSpecificity)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.setchildinheritedbindingcontext">Element.SetChildInheritedBindingContext(Element, object)</a>
@@ -329,12 +341,6 @@ public class App : Application, INotifyPropertyChanged, IElementDefinition, IEle
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.onparentchangingcore">Element.OnParentChangingCore(Element, Element)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.mapautomationpropertiesisinaccessibletree">Element.MapAutomationPropertiesIsInAccessibleTree(IElementHandler, Element)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.mapautomationpropertiesexcludedwithchildren">Element.MapAutomationPropertiesExcludedWithChildren(IElementHandler, Element)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.onhandlerchanging">Element.OnHandlerChanging(HandlerChangingEventArgs)</a>
@@ -367,13 +373,25 @@ public class App : Application, INotifyPropertyChanged, IElementDefinition, IEle
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.styleid">Element.StyleId</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.childrennotdrawnbythiselement">Element.ChildrenNotDrawnByThisElement</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.logicalchildreninternalbackingstore">Element.LogicalChildrenInternalBackingStore</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.ielementcontroller">Element.IElementController.LogicalChildren</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.parent">Element.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.ielement">Element.IElement.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.handler">Element.Handler</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.itooltipelement">Element.IToolTipElement.ToolTip</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.icontextflyoutelement">Element.IContextFlyoutElement.ContextFlyout</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.stylesheets.istyleselectable">Element.IStyleSelectable.Children</a>
@@ -389,12 +407,6 @@ public class App : Application, INotifyPropertyChanged, IElementDefinition, IEle
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.stylesheets.istyleselectable">Element.IStyleSelectable.Parent</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.ielement">Element.IElement.Parent</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.handler">Element.Handler</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.element.childadded">Element.ChildAdded</a>

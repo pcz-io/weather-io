@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:navrel" content="../toc.json">
+      <meta name="docfx:tocrel" content="toc.json">
       
       
       
@@ -160,6 +160,9 @@
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))">ComponentBase.InvokeAsync(Func&lt;Task&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.dispatchexceptionasync">ComponentBase.DispatchExceptionAsync(Exception)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent">ComponentBase.IComponent.Attach(RenderHandle)</a>
@@ -330,6 +333,38 @@ private NavigationManager NavigationManager { get; set; }</code></pre>
 
 
 
+  <a id="WeatherIO_Common_WebComponents_Shared_MainLayout__authService_" data-uid="WeatherIO.Common.WebComponents.Shared.MainLayout._authService*"></a>
+
+  <h3 id="WeatherIO_Common_WebComponents_Shared_MainLayout__authService" data-uid="WeatherIO.Common.WebComponents.Shared.MainLayout._authService">
+  _authService
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Inject]
+private IAuthenticationService _authService { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="WeatherIO.Common.Data.Interfaces.IAuthenticationService.html">IAuthenticationService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -418,6 +453,32 @@ private NavigationManager NavigationManager { get; set; }</code></pre>
 
 
 
+  <a id="WeatherIO_Common_WebComponents_Shared_MainLayout_Logout_" data-uid="WeatherIO.Common.WebComponents.Shared.MainLayout.Logout*"></a>
+
+  <h3 id="WeatherIO_Common_WebComponents_Shared_MainLayout_Logout" data-uid="WeatherIO.Common.WebComponents.Shared.MainLayout.Logout">
+  Logout()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void Logout()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="WeatherIO_Common_WebComponents_Shared_MainLayout_OnAfterRenderAsync_" data-uid="WeatherIO.Common.WebComponents.Shared.MainLayout.OnAfterRenderAsync*"></a>
 
   <h3 id="WeatherIO_Common_WebComponents_Shared_MainLayout_OnAfterRenderAsync_System_Boolean_" data-uid="WeatherIO.Common.WebComponents.Shared.MainLayout.OnAfterRenderAsync(System.Boolean)">
@@ -425,9 +486,13 @@ private NavigationManager NavigationManager { get; set; }</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Method invoked after each time the component has been rendered. Note that the component does
-not automatically re-render after the completion of any returned <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>, because
-that would cause an infinite render loop.</p>
+  <div class="markdown level1 summary"><p>Method invoked after each time the component has been rendered interactively and the UI has finished
+updating (for example, after elements have been added to the browser DOM). Any <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.elementreference">ElementReference</a>
+fields will be populated by the time this runs.</p>
+<p>This method is not invoked during prerendering or server-side rendering, because those processes
+are not attached to any live browser DOM and are already complete before the DOM is updated.</p>
+<p>Note that the component does not automatically re-render after the completion of any returned <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>,
+because that would cause an infinite render loop.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

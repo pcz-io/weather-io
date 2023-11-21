@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:navrel" content="../toc.json">
+      <meta name="docfx:tocrel" content="toc.json">
       
       
       
@@ -100,7 +100,7 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Activity(Theme = &quot;@style/Maui.SplashTheme&quot;, MainLauncher = true, ConfigurationChanges = ConfigChanges.Orientation|ConfigChanges.ScreenLayout|ConfigChanges.UiMode|ConfigChanges.ScreenSize|ConfigChanges.SmallestScreenSize|ConfigChanges.Density)]
-public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCallbacks2, IComponentCallbacks, KeyEvent.ICallback, LayoutInflater.IFactory2, LayoutInflater.IFactory, View.IOnCreateContextMenuListener, Window.ICallback, KeyEventDispatcher.IComponent, IOnBackPressedDispatcherOwner, IContextAware, IActivityResultCaller, IActivityResultRegistryOwner, IMenuHost, IHasDefaultViewModelProviderFactory, IViewModelStoreOwner, ISavedStateRegistryOwner, ILifecycleOwner, ActivityCompat.IOnRequestPermissionsResultCallback, ActivityCompat.IRequestPermissionsRequestCodeValidator, ActionBarDrawerToggle.IDelegateProvider, IAppCompatCallback, TaskStackBuilder.ISupportParentable, IJavaObject, IJavaPeerable, IDisposable</code></pre>
+public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCallbacks2, IComponentCallbacks, KeyEvent.ICallback, LayoutInflater.IFactory2, LayoutInflater.IFactory, View.IOnCreateContextMenuListener, Window.ICallback, KeyEventDispatcher.IComponent, IFullyDrawnReporterOwner, IOnBackPressedDispatcherOwner, IContextAware, IActivityResultCaller, IActivityResultRegistryOwner, IOnMultiWindowModeChangedProvider, IOnNewIntentProvider, IOnPictureInPictureModeChangedProvider, IOnConfigurationChangedProvider, IOnTrimMemoryProvider, IMenuHost, IHasDefaultViewModelProviderFactory, IViewModelStoreOwner, ISavedStateRegistryOwner, ILifecycleOwner, ActivityCompat.IOnRequestPermissionsResultCallback, ActivityCompat.IRequestPermissionsRequestCodeValidator, ActionBarDrawerToggle.IDelegateProvider, IAppCompatCallback, TaskStackBuilder.ISupportParentable, IJavaObject, IJavaPeerable, IDisposable</code></pre>
   </div>
 
 
@@ -136,10 +136,16 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/android.views.view">View</a>.<a class="xref" href="https://learn.microsoft.com/dotnet/api/android.views.view.ioncreatecontextmenulistener">IOnCreateContextMenuListener</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/android.views.window">Window</a>.<a class="xref" href="https://learn.microsoft.com/dotnet/api/android.views.window.icallback">ICallback</a></div>
       <div><span class="xref">KeyEventDispatcher</span>.<span class="xref">IComponent</span></div>
+      <div><span class="xref">IFullyDrawnReporterOwner</span></div>
       <div><span class="xref">IOnBackPressedDispatcherOwner</span></div>
       <div><span class="xref">IContextAware</span></div>
       <div><span class="xref">IActivityResultCaller</span></div>
       <div><span class="xref">IActivityResultRegistryOwner</span></div>
+      <div><span class="xref">IOnMultiWindowModeChangedProvider</span></div>
+      <div><span class="xref">IOnNewIntentProvider</span></div>
+      <div><span class="xref">IOnPictureInPictureModeChangedProvider</span></div>
+      <div><span class="xref">IOnConfigurationChangedProvider</span></div>
+      <div><span class="xref">IOnTrimMemoryProvider</span></div>
       <div><span class="xref">IMenuHost</span></div>
       <div><span class="xref">IHasDefaultViewModelProviderFactory</span></div>
       <div><span class="xref">IViewModelStoreOwner</span></div>
@@ -162,6 +168,9 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
     <dd>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiappcompatactivity.oncreate">MauiAppCompatActivity.OnCreate(Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiappcompatactivity.dispatchtouchevent">MauiAppCompatActivity.DispatchTouchEvent(MotionEvent)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiappcompatactivity.onactivityresult">MauiAppCompatActivity.OnActivityResult(int, Result, Intent)</a>
@@ -191,13 +200,13 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiappcompatactivity.onrestoreinstancestate">MauiAppCompatActivity.OnRestoreInstanceState(Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiappcompatactivity.ondestroy">MauiAppCompatActivity.OnDestroy()</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiappcompatactivity.allowfragmentrestore">MauiAppCompatActivity.AllowFragmentRestore</a>
     </div>
     <div>
       <span class="xref">AppCompatActivity.OnCreateSupportNavigateUpTaskStack(TaskStackBuilder)</span>
+    </div>
+    <div>
+      <span class="xref">AppCompatActivity.OnLocalesChanged(LocaleListCompat)</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">AppCompatActivity.OnMenuItemSelected(int, IMenuItem)</a>
@@ -266,9 +275,6 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <span class="xref">FragmentActivity.OnAttachFragment(Fragment)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.views.view">FragmentActivity.OnPrepareOptionsPanel(View, IMenu)</a>
-    </div>
-    <div>
       <span class="xref">FragmentActivity.OnResumeFragments()</span>
     </div>
     <div>
@@ -320,7 +326,22 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <span class="xref">ComponentActivity.AddMenuProvider(IMenuProvider, ILifecycleOwner, Lifecycle.State)</span>
     </div>
     <div>
+      <span class="xref">ComponentActivity.AddOnConfigurationChangedListener(IConsumer)</span>
+    </div>
+    <div>
       <span class="xref">ComponentActivity.AddOnContextAvailableListener(IOnContextAvailableListener)</span>
+    </div>
+    <div>
+      <span class="xref">ComponentActivity.AddOnMultiWindowModeChangedListener(IConsumer)</span>
+    </div>
+    <div>
+      <span class="xref">ComponentActivity.AddOnNewIntentListener(IConsumer)</span>
+    </div>
+    <div>
+      <span class="xref">ComponentActivity.AddOnPictureInPictureModeChangedListener(IConsumer)</span>
+    </div>
+    <div>
+      <span class="xref">ComponentActivity.AddOnTrimMemoryListener(IConsumer)</span>
     </div>
     <div>
       <span class="xref">ComponentActivity.InvalidateMenu()</span>
@@ -344,13 +365,34 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <span class="xref">ComponentActivity.RemoveMenuProvider(IMenuProvider)</span>
     </div>
     <div>
+      <span class="xref">ComponentActivity.RemoveOnConfigurationChangedListener(IConsumer)</span>
+    </div>
+    <div>
       <span class="xref">ComponentActivity.RemoveOnContextAvailableListener(IOnContextAvailableListener)</span>
+    </div>
+    <div>
+      <span class="xref">ComponentActivity.RemoveOnMultiWindowModeChangedListener(IConsumer)</span>
+    </div>
+    <div>
+      <span class="xref">ComponentActivity.RemoveOnNewIntentListener(IConsumer)</span>
+    </div>
+    <div>
+      <span class="xref">ComponentActivity.RemoveOnPictureInPictureModeChangedListener(IConsumer)</span>
+    </div>
+    <div>
+      <span class="xref">ComponentActivity.RemoveOnTrimMemoryListener(IConsumer)</span>
     </div>
     <div>
       <span class="xref">ComponentActivity.ActivityResultRegistry</span>
     </div>
     <div>
+      <span class="xref">ComponentActivity.DefaultViewModelCreationExtras</span>
+    </div>
+    <div>
       <span class="xref">ComponentActivity.DefaultViewModelProviderFactory</span>
+    </div>
+    <div>
+      <span class="xref">ComponentActivity.FullyDrawnReporter</span>
     </div>
     <div>
       <span class="xref">ComponentActivity.LastCustomNonConfigurationInstance</span>
@@ -374,19 +416,28 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <span class="xref">ComponentActivity.PutExtraData(ComponentActivity.ExtraData)</span>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">ComponentActivity.ShouldDumpInternalState(string[])</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.views.keyevent">ComponentActivity.SuperDispatchKeyEvent(KeyEvent)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.findviewbyid#android-app-activity-findviewbyid-1(system-int32)">Activity.FindViewById&lt;T&gt;(int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.fullscreenmoderequestenter">Activity.FullscreenModeRequestEnter</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactivityforresult#android-app-activity-startactivityforresult(system-type-system-int32)">Activity.StartActivityForResult(Type, int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.fullscreenmoderequestexit">Activity.FullscreenModeRequestExit</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.runonuithread#android-app-activity-runonuithread(system-action)">Activity.RunOnUiThread(Action)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.overridetransitionclose">Activity.OverrideTransitionClose</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.overridetransitionopen">Activity.OverrideTransitionOpen</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.addcontentview">Activity.AddContentView(View, ViewGroup.LayoutParams)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.clearoverrideactivitytransition">Activity.ClearOverrideActivityTransition(OverrideTransition)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.closecontextmenu">Activity.CloseContextMenu()</a>
@@ -414,9 +465,6 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.dispatchpopulateaccessibilityevent">Activity.DispatchPopulateAccessibilityEvent(AccessibilityEvent)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.dispatchtouchevent">Activity.DispatchTouchEvent(MotionEvent)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.dispatchtrackballevent">Activity.DispatchTrackballEvent(MotionEvent)</a>
@@ -515,10 +563,10 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.oncreatedescription">Activity.OnCreateDescription()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.oncreatedialog#android-app-activity-oncreatedialog(system-int32)">Activity.OnCreateDialog(int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.oncreatedialog#android-app-activity-oncreatedialog(system-int32-android-os-bundle)">Activity.OnCreateDialog(int, Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.oncreatedialog#android-app-activity-oncreatedialog(system-int32-android-os-bundle)">Activity.OnCreateDialog(int, Bundle)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.oncreatedialog#android-app-activity-oncreatedialog(system-int32)">Activity.OnCreateDialog(int)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.oncreatenavigateuptaskstack">Activity.OnCreateNavigateUpTaskStack(TaskStackBuilder)</a>
@@ -540,6 +588,9 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.oncreateview#android-app-activity-oncreateview(system-string-android-content-context-android-util-iattributeset)">Activity.OnCreateView(string, Context, IAttributeSet)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.ondestroy">Activity.OnDestroy()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.ondetachedfromwindow">Activity.OnDetachedFromWindow()</a>
@@ -581,10 +632,10 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onmenuopened">Activity.OnMenuOpened(int, IMenu)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onmultiwindowmodechanged#android-app-activity-onmultiwindowmodechanged(system-boolean)">Activity.OnMultiWindowModeChanged(bool)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onmultiwindowmodechanged#android-app-activity-onmultiwindowmodechanged(system-boolean-android-content-res-configuration)">Activity.OnMultiWindowModeChanged(bool, Configuration)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onmultiwindowmodechanged#android-app-activity-onmultiwindowmodechanged(system-boolean-android-content-res-configuration)">Activity.OnMultiWindowModeChanged(bool, Configuration)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onmultiwindowmodechanged#android-app-activity-onmultiwindowmodechanged(system-boolean)">Activity.OnMultiWindowModeChanged(bool)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onnavigateup">Activity.OnNavigateUp()</a>
@@ -608,10 +659,10 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onperformdirectaction">Activity.OnPerformDirectAction(string, Bundle, CancellationSignal, IConsumer)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onpictureinpicturemodechanged#android-app-activity-onpictureinpicturemodechanged(system-boolean)">Activity.OnPictureInPictureModeChanged(bool)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onpictureinpicturemodechanged#android-app-activity-onpictureinpicturemodechanged(system-boolean-android-content-res-configuration)">Activity.OnPictureInPictureModeChanged(bool, Configuration)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onpictureinpicturemodechanged#android-app-activity-onpictureinpicturemodechanged(system-boolean-android-content-res-configuration)">Activity.OnPictureInPictureModeChanged(bool, Configuration)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onpictureinpicturemodechanged#android-app-activity-onpictureinpicturemodechanged(system-boolean)">Activity.OnPictureInPictureModeChanged(bool)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onpictureinpicturerequested">Activity.OnPictureInPictureRequested()</a>
@@ -623,10 +674,10 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onpostcreate#android-app-activity-onpostcreate(android-os-bundle-android-os-persistablebundle)">Activity.OnPostCreate(Bundle, PersistableBundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onpreparedialog#android-app-activity-onpreparedialog(system-int32-android-app-dialog)">Activity.OnPrepareDialog(int, Dialog)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onpreparedialog#android-app-activity-onpreparedialog(system-int32-android-app-dialog-android-os-bundle)">Activity.OnPrepareDialog(int, Dialog, Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onpreparedialog#android-app-activity-onpreparedialog(system-int32-android-app-dialog-android-os-bundle)">Activity.OnPrepareDialog(int, Dialog, Bundle)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onpreparedialog#android-app-activity-onpreparedialog(system-int32-android-app-dialog)">Activity.OnPrepareDialog(int, Dialog)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onpreparenavigateuptaskstack">Activity.OnPrepareNavigateUpTaskStack(TaskStackBuilder)</a>
@@ -656,10 +707,10 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onresume">Activity.OnResume()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onsaveinstancestate#android-app-activity-onsaveinstancestate(android-os-bundle)">Activity.OnSaveInstanceState(Bundle)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onsaveinstancestate#android-app-activity-onsaveinstancestate(android-os-bundle-android-os-persistablebundle)">Activity.OnSaveInstanceState(Bundle, PersistableBundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onsaveinstancestate#android-app-activity-onsaveinstancestate(android-os-bundle-android-os-persistablebundle)">Activity.OnSaveInstanceState(Bundle, PersistableBundle)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onsaveinstancestate#android-app-activity-onsaveinstancestate(android-os-bundle)">Activity.OnSaveInstanceState(Bundle)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onsearchrequested#android-app-activity-onsearchrequested">Activity.OnSearchRequested()</a>
@@ -710,10 +761,10 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onwindowfocuschanged">Activity.OnWindowFocusChanged(bool)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onwindowstartingactionmode#android-app-activity-onwindowstartingactionmode(android-views-actionmode-icallback)">Activity.OnWindowStartingActionMode(ActionMode.ICallback)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onwindowstartingactionmode#android-app-activity-onwindowstartingactionmode(android-views-actionmode-icallback-android-views-actionmodetype)">Activity.OnWindowStartingActionMode(ActionMode.ICallback, ActionModeType)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onwindowstartingactionmode#android-app-activity-onwindowstartingactionmode(android-views-actionmode-icallback-android-views-actionmodetype)">Activity.OnWindowStartingActionMode(ActionMode.ICallback, ActionModeType)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onwindowstartingactionmode#android-app-activity-onwindowstartingactionmode(android-views-actionmode-icallback)">Activity.OnWindowStartingActionMode(ActionMode.ICallback)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.opencontextmenu">Activity.OpenContextMenu(View)</a>
@@ -722,7 +773,16 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.openoptionsmenu">Activity.OpenOptionsMenu()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.overridependingtransition">Activity.OverridePendingTransition(int, int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.overrideactivitytransition#android-app-activity-overrideactivitytransition(android-app-overridetransition-system-int32-system-int32-system-int32)">Activity.OverrideActivityTransition(OverrideTransition, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.overrideactivitytransition#android-app-activity-overrideactivitytransition(android-app-overridetransition-system-int32-system-int32)">Activity.OverrideActivityTransition(OverrideTransition, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.overridependingtransition#android-app-activity-overridependingtransition(system-int32-system-int32-system-int32)">Activity.OverridePendingTransition(int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.overridependingtransition#android-app-activity-overridependingtransition(system-int32-system-int32)">Activity.OverridePendingTransition(int, int)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.postponeentertransition">Activity.PostponeEnterTransition()</a>
@@ -737,6 +797,9 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.registerforcontextmenu">Activity.RegisterForContextMenu(View)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.registerscreencapturecallback">Activity.RegisterScreenCaptureCallback(IExecutor, Activity.IScreenCaptureCallback)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.releaseinstance">Activity.ReleaseInstance()</a>
     </div>
     <div>
@@ -747,6 +810,9 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.requestdraganddroppermissions">Activity.RequestDragAndDropPermissions(DragEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.requestfullscreenmode">Activity.RequestFullscreenMode(FullscreenModeRequest, IOutcomeReceiver)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.requestpermissions">Activity.RequestPermissions(string[], int)</a>
@@ -761,7 +827,7 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.requestwindowfeature">Activity.RequestWindowFeature(WindowFeatures)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.requireviewbyid">Activity.RequireViewById(int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.requireviewbyid#android-app-activity-requireviewbyid(system-int32)">Activity.RequireViewById(int)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.runonuithread#android-app-activity-runonuithread(java-lang-irunnable)">Activity.RunOnUiThread(IRunnable)</a>
@@ -770,10 +836,10 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.setactionbar">Activity.SetActionBar(Toolbar)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.setcontentview#android-app-activity-setcontentview(android-views-view)">Activity.SetContentView(View)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.setcontentview#android-app-activity-setcontentview(android-views-view-android-views-viewgroup-layoutparams)">Activity.SetContentView(View, ViewGroup.LayoutParams)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.setcontentview#android-app-activity-setcontentview(android-views-view-android-views-viewgroup-layoutparams)">Activity.SetContentView(View, ViewGroup.LayoutParams)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.setcontentview#android-app-activity-setcontentview(android-views-view)">Activity.SetContentView(View)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.setcontentview#android-app-activity-setcontentview(system-int32)">Activity.SetContentView(int)</a>
@@ -827,13 +893,19 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.setprogressbarvisibility">Activity.SetProgressBarVisibility(bool)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.setresult#android-app-activity-setresult(android-app-result)">Activity.SetResult(Result)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.setrecentsscreenshotenabled">Activity.SetRecentsScreenshotEnabled(bool)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.setresult#android-app-activity-setresult(android-app-result-android-content-intent)">Activity.SetResult(Result, Intent)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.setresult#android-app-activity-setresult(android-app-result)">Activity.SetResult(Result)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.setsecondaryprogress">Activity.SetSecondaryProgress(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.setshoulddockbigoverlays">Activity.SetShouldDockBigOverlays(bool)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.setshowwhenlocked">Activity.SetShowWhenLocked(bool)</a>
@@ -857,6 +929,9 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.setvrmodeenabled">Activity.SetVrModeEnabled(bool, ComponentName)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.shoulddockbigoverlays">Activity.ShouldDockBigOverlays()</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.shouldshowrequestpermissionrationale">Activity.ShouldShowRequestPermissionRationale(string)</a>
     </div>
     <div>
@@ -866,55 +941,55 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.showassist">Activity.ShowAssist(Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.showdialog#android-app-activity-showdialog(system-int32)">Activity.ShowDialog(int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.showdialog#android-app-activity-showdialog(system-int32-android-os-bundle)">Activity.ShowDialog(int, Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.showdialog#android-app-activity-showdialog(system-int32-android-os-bundle)">Activity.ShowDialog(int, Bundle)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.showdialog#android-app-activity-showdialog(system-int32)">Activity.ShowDialog(int)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.showlocktaskescapemessage">Activity.ShowLockTaskEscapeMessage()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactionmode#android-app-activity-startactionmode(android-views-actionmode-icallback)">Activity.StartActionMode(ActionMode.ICallback)</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactionmode#android-app-activity-startactionmode(android-views-actionmode-icallback-android-views-actionmodetype)">Activity.StartActionMode(ActionMode.ICallback, ActionModeType)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactivityforresult#android-app-activity-startactivityforresult(android-content-intent-system-int32)">Activity.StartActivityForResult(Intent, int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactionmode#android-app-activity-startactionmode(android-views-actionmode-icallback)">Activity.StartActionMode(ActionMode.ICallback)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactivityforresult#android-app-activity-startactivityforresult(android-content-intent-system-int32-android-os-bundle)">Activity.StartActivityForResult(Intent, int, Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactivityfromchild#android-app-activity-startactivityfromchild(android-app-activity-android-content-intent-system-int32)">Activity.StartActivityFromChild(Activity, Intent, int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactivityforresult#android-app-activity-startactivityforresult(android-content-intent-system-int32)">Activity.StartActivityForResult(Intent, int)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactivityfromchild#android-app-activity-startactivityfromchild(android-app-activity-android-content-intent-system-int32-android-os-bundle)">Activity.StartActivityFromChild(Activity, Intent, int, Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactivityfromfragment#android-app-activity-startactivityfromfragment(android-app-fragment-android-content-intent-system-int32)">Activity.StartActivityFromFragment(Fragment, Intent, int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactivityfromchild#android-app-activity-startactivityfromchild(android-app-activity-android-content-intent-system-int32)">Activity.StartActivityFromChild(Activity, Intent, int)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactivityfromfragment#android-app-activity-startactivityfromfragment(android-app-fragment-android-content-intent-system-int32-android-os-bundle)">Activity.StartActivityFromFragment(Fragment, Intent, int, Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactivityifneeded#android-app-activity-startactivityifneeded(android-content-intent-system-int32)">Activity.StartActivityIfNeeded(Intent, int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactivityfromfragment#android-app-activity-startactivityfromfragment(android-app-fragment-android-content-intent-system-int32)">Activity.StartActivityFromFragment(Fragment, Intent, int)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactivityifneeded#android-app-activity-startactivityifneeded(android-content-intent-system-int32-android-os-bundle)">Activity.StartActivityIfNeeded(Intent, int, Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startintentsenderforresult#android-app-activity-startintentsenderforresult(android-content-intentsender-system-int32-android-content-intent-android-content-activityflags-android-content-activityflags-system-int32)">Activity.StartIntentSenderForResult(IntentSender, int, Intent, ActivityFlags, ActivityFlags, int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactivityifneeded#android-app-activity-startactivityifneeded(android-content-intent-system-int32)">Activity.StartActivityIfNeeded(Intent, int)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startintentsenderforresult#android-app-activity-startintentsenderforresult(android-content-intentsender-system-int32-android-content-intent-android-content-activityflags-android-content-activityflags-system-int32-android-os-bundle)">Activity.StartIntentSenderForResult(IntentSender, int, Intent, ActivityFlags, ActivityFlags, int, Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startintentsenderfromchild#android-app-activity-startintentsenderfromchild(android-app-activity-android-content-intentsender-system-int32-android-content-intent-android-content-activityflags-android-content-activityflags-system-int32)">Activity.StartIntentSenderFromChild(Activity, IntentSender, int, Intent, ActivityFlags, ActivityFlags, int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startintentsenderforresult#android-app-activity-startintentsenderforresult(android-content-intentsender-system-int32-android-content-intent-android-content-activityflags-android-content-activityflags-system-int32)">Activity.StartIntentSenderForResult(IntentSender, int, Intent, ActivityFlags, ActivityFlags, int)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startintentsenderfromchild#android-app-activity-startintentsenderfromchild(android-app-activity-android-content-intentsender-system-int32-android-content-intent-android-content-activityflags-android-content-activityflags-system-int32-android-os-bundle)">Activity.StartIntentSenderFromChild(Activity, IntentSender, int, Intent, ActivityFlags, ActivityFlags, int, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startintentsenderfromchild#android-app-activity-startintentsenderfromchild(android-app-activity-android-content-intentsender-system-int32-android-content-intent-android-content-activityflags-android-content-activityflags-system-int32)">Activity.StartIntentSenderFromChild(Activity, IntentSender, int, Intent, ActivityFlags, ActivityFlags, int)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startlocalvoiceinteraction">Activity.StartLocalVoiceInteraction(Bundle)</a>
@@ -926,10 +1001,10 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startmanagingcursor">Activity.StartManagingCursor(ICursor)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startnextmatchingactivity#android-app-activity-startnextmatchingactivity(android-content-intent)">Activity.StartNextMatchingActivity(Intent)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startnextmatchingactivity#android-app-activity-startnextmatchingactivity(android-content-intent-android-os-bundle)">Activity.StartNextMatchingActivity(Intent, Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startnextmatchingactivity#android-app-activity-startnextmatchingactivity(android-content-intent-android-os-bundle)">Activity.StartNextMatchingActivity(Intent, Bundle)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startnextmatchingactivity#android-app-activity-startnextmatchingactivity(android-content-intent)">Activity.StartNextMatchingActivity(Intent)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startpostponedentertransition">Activity.StartPostponedEnterTransition()</a>
@@ -957,6 +1032,21 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.unregisterforcontextmenu">Activity.UnregisterForContextMenu(View)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.unregisterscreencapturecallback">Activity.UnregisterScreenCaptureCallback(Activity.IScreenCaptureCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.findviewbyid#android-app-activity-findviewbyid-1(system-int32)">Activity.FindViewById&lt;T&gt;(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.requireviewbyid#android-app-activity-requireviewbyid-1(system-int32)">Activity.RequireViewById&lt;T&gt;(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.startactivityforresult#android-app-activity-startactivityforresult(system-type-system-int32)">Activity.StartActivityForResult(Type, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.runonuithread#android-app-activity-runonuithread(system-action)">Activity.RunOnUiThread(Action)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.focusedstateset">Activity.FocusedStateSet</a>
@@ -1043,6 +1133,12 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.lastnonconfigurationinstance">Activity.LastNonConfigurationInstance</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.launchedfrompackage">Activity.LaunchedFromPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.launchedfromuid">Activity.LaunchedFromUid</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.layoutinflater">Activity.LayoutInflater</a>
     </div>
     <div>
@@ -1059,6 +1155,9 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.menuinflater">Activity.MenuInflater</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.onbackinvokeddispatcher">Activity.OnBackInvokedDispatcher</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.app.activity.parent">Activity.Parent</a>
@@ -1244,25 +1343,25 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.openfileoutput">ContextWrapper.OpenFileOutput(string, FileCreationMode)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.openorcreatedatabase#android-content-contextwrapper-openorcreatedatabase(system-string-android-content-filecreationmode-android-database-sqlite-sqlitedatabase-icursorfactory)">ContextWrapper.OpenOrCreateDatabase(string, FileCreationMode, SQLiteDatabase.ICursorFactory)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.openorcreatedatabase#android-content-contextwrapper-openorcreatedatabase(system-string-android-content-filecreationmode-android-database-sqlite-sqlitedatabase-icursorfactory-android-database-idatabaseerrorhandler)">ContextWrapper.OpenOrCreateDatabase(string, FileCreationMode, SQLiteDatabase.ICursorFactory, IDatabaseErrorHandler)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.openorcreatedatabase#android-content-contextwrapper-openorcreatedatabase(system-string-android-content-filecreationmode-android-database-sqlite-sqlitedatabase-icursorfactory-android-database-idatabaseerrorhandler)">ContextWrapper.OpenOrCreateDatabase(string, FileCreationMode, SQLiteDatabase.ICursorFactory, IDatabaseErrorHandler)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.openorcreatedatabase#android-content-contextwrapper-openorcreatedatabase(system-string-android-content-filecreationmode-android-database-sqlite-sqlitedatabase-icursorfactory)">ContextWrapper.OpenOrCreateDatabase(string, FileCreationMode, SQLiteDatabase.ICursorFactory)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.peekwallpaper">ContextWrapper.PeekWallpaper()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.registerreceiver#android-content-contextwrapper-registerreceiver(android-content-broadcastreceiver-android-content-intentfilter)">ContextWrapper.RegisterReceiver(BroadcastReceiver, IntentFilter)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.registerreceiver#android-content-contextwrapper-registerreceiver(android-content-broadcastreceiver-android-content-intentfilter-android-content-activityflags)">ContextWrapper.RegisterReceiver(BroadcastReceiver, IntentFilter, ActivityFlags)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.registerreceiver#android-content-contextwrapper-registerreceiver(android-content-broadcastreceiver-android-content-intentfilter-android-content-activityflags)">ContextWrapper.RegisterReceiver(BroadcastReceiver, IntentFilter, ActivityFlags)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.registerreceiver#android-content-contextwrapper-registerreceiver(android-content-broadcastreceiver-android-content-intentfilter-system-string-android-os-handler-android-content-activityflags)">ContextWrapper.RegisterReceiver(BroadcastReceiver, IntentFilter, string, Handler, ActivityFlags)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.registerreceiver#android-content-contextwrapper-registerreceiver(android-content-broadcastreceiver-android-content-intentfilter-system-string-android-os-handler)">ContextWrapper.RegisterReceiver(BroadcastReceiver, IntentFilter, string, Handler)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.registerreceiver#android-content-contextwrapper-registerreceiver(android-content-broadcastreceiver-android-content-intentfilter-system-string-android-os-handler-android-content-activityflags)">ContextWrapper.RegisterReceiver(BroadcastReceiver, IntentFilter, string, Handler, ActivityFlags)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.registerreceiver#android-content-contextwrapper-registerreceiver(android-content-broadcastreceiver-android-content-intentfilter)">ContextWrapper.RegisterReceiver(BroadcastReceiver, IntentFilter)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.removestickybroadcast">ContextWrapper.RemoveStickyBroadcast(Intent)</a>
@@ -1277,25 +1376,25 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.revokeuripermission#android-content-contextwrapper-revokeuripermission(system-string-android-net-uri-android-content-activityflags)">ContextWrapper.RevokeUriPermission(string, Uri, ActivityFlags)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.sendbroadcast#android-content-contextwrapper-sendbroadcast(android-content-intent)">ContextWrapper.SendBroadcast(Intent)</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.sendbroadcast#android-content-contextwrapper-sendbroadcast(android-content-intent-system-string)">ContextWrapper.SendBroadcast(Intent, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.sendbroadcastasuser#android-content-contextwrapper-sendbroadcastasuser(android-content-intent-android-os-userhandle)">ContextWrapper.SendBroadcastAsUser(Intent, UserHandle)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.sendbroadcast#android-content-contextwrapper-sendbroadcast(android-content-intent)">ContextWrapper.SendBroadcast(Intent)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.sendbroadcastasuser#android-content-contextwrapper-sendbroadcastasuser(android-content-intent-android-os-userhandle-system-string)">ContextWrapper.SendBroadcastAsUser(Intent, UserHandle, string)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.sendbroadcastasuser#android-content-contextwrapper-sendbroadcastasuser(android-content-intent-android-os-userhandle)">ContextWrapper.SendBroadcastAsUser(Intent, UserHandle)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.sendorderedbroadcast#android-content-contextwrapper-sendorderedbroadcast(android-content-intent-system-int32-system-string-system-string-android-content-broadcastreceiver-android-os-handler-system-string-android-os-bundle-android-os-bundle)">ContextWrapper.SendOrderedBroadcast(Intent, int, string, string, BroadcastReceiver, Handler, string, Bundle, Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.sendorderedbroadcast#android-content-contextwrapper-sendorderedbroadcast(android-content-intent-system-string)">ContextWrapper.SendOrderedBroadcast(Intent, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.sendorderedbroadcast#android-content-contextwrapper-sendorderedbroadcast(android-content-intent-system-string-android-content-broadcastreceiver-android-os-handler-android-app-result-system-string-android-os-bundle)">ContextWrapper.SendOrderedBroadcast(Intent, string, BroadcastReceiver, Handler, Result, string, Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.sendorderedbroadcast#android-content-contextwrapper-sendorderedbroadcast(android-content-intent-system-string-android-content-broadcastreceiver-android-os-handler-android-app-result-system-string-android-os-bundle)">ContextWrapper.SendOrderedBroadcast(Intent, string, BroadcastReceiver, Handler, Result, string, Bundle)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.sendorderedbroadcast#android-content-contextwrapper-sendorderedbroadcast(android-content-intent-system-string)">ContextWrapper.SendOrderedBroadcast(Intent, string)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.sendorderedbroadcastasuser">ContextWrapper.SendOrderedBroadcastAsUser(Intent, UserHandle, string, BroadcastReceiver, Handler, Result, string, Bundle)</a>
@@ -1322,16 +1421,16 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.setwallpaper#android-content-contextwrapper-setwallpaper(system-io-stream)">ContextWrapper.SetWallpaper(Stream)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.startactivities#android-content-contextwrapper-startactivities(android-content-intent())">ContextWrapper.StartActivities(Intent[])</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.startactivities#android-content-contextwrapper-startactivities(android-content-intent()-android-os-bundle)">ContextWrapper.StartActivities(Intent[], Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.startactivity#android-content-contextwrapper-startactivity(android-content-intent)">ContextWrapper.StartActivity(Intent)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.startactivities#android-content-contextwrapper-startactivities(android-content-intent())">ContextWrapper.StartActivities(Intent[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.startactivity#android-content-contextwrapper-startactivity(android-content-intent-android-os-bundle)">ContextWrapper.StartActivity(Intent, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.startactivity#android-content-contextwrapper-startactivity(android-content-intent)">ContextWrapper.StartActivity(Intent)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.startforegroundservice">ContextWrapper.StartForegroundService(Intent)</a>
@@ -1340,10 +1439,10 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.startinstrumentation">ContextWrapper.StartInstrumentation(ComponentName, string, Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.startintentsender#android-content-contextwrapper-startintentsender(android-content-intentsender-android-content-intent-android-content-activityflags-android-content-activityflags-system-int32)">ContextWrapper.StartIntentSender(IntentSender, Intent, ActivityFlags, ActivityFlags, int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.startintentsender#android-content-contextwrapper-startintentsender(android-content-intentsender-android-content-intent-android-content-activityflags-android-content-activityflags-system-int32-android-os-bundle)">ContextWrapper.StartIntentSender(IntentSender, Intent, ActivityFlags, ActivityFlags, int, Bundle)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.startintentsender#android-content-contextwrapper-startintentsender(android-content-intentsender-android-content-intent-android-content-activityflags-android-content-activityflags-system-int32-android-os-bundle)">ContextWrapper.StartIntentSender(IntentSender, Intent, ActivityFlags, ActivityFlags, int, Bundle)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.startintentsender#android-content-contextwrapper-startintentsender(android-content-intentsender-android-content-intent-android-content-activityflags-android-content-activityflags-system-int32)">ContextWrapper.StartIntentSender(IntentSender, Intent, ActivityFlags, ActivityFlags, int)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.startservice">ContextWrapper.StartService(Intent)</a>
@@ -1430,9 +1529,6 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.contextwrapper.wallpaperdesiredminimumwidth">ContextWrapper.WallpaperDesiredMinimumWidth</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.receivervisibletoinstantapps">Context.ReceiverVisibleToInstantApps</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.accessibilityservice">Context.AccessibilityService</a>
     </div>
     <div>
@@ -1460,7 +1556,16 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.batteryservice">Context.BatteryService</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.bindallowactivitystarts">Context.BindAllowActivityStarts</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.bindexternalservicelong">Context.BindExternalServiceLong</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.bindnotperceptible">Context.BindNotPerceptible</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.bindsharedisolatedprocess">Context.BindSharedIsolatedProcess</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.biometricservice">Context.BiometricService</a>
@@ -1499,7 +1604,19 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.consumerirservice">Context.ConsumerIrService</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.credentialservice">Context.CredentialService</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.crossprofileappsservice">Context.CrossProfileAppsService</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.deviceiddefault">Context.DeviceIdDefault</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.deviceidinvalid">Context.DeviceIdInvalid</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.devicelockservice">Context.DeviceLockService</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.devicepolicyservice">Context.DevicePolicyService</a>
@@ -1532,7 +1649,13 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.gameservice">Context.GameService</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.grammaticalinflectionservice">Context.GrammaticalInflectionService</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.hardwarepropertiesservice">Context.HardwarePropertiesService</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.healthconnectservice">Context.HealthconnectService</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.inputmethodservice">Context.InputMethodService</a>
@@ -1554,6 +1677,9 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.layoutinflaterservice">Context.LayoutInflaterService</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.localeservice">Context.LocaleService</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.locationservice">Context.LocationService</a>
@@ -1589,6 +1715,9 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.nsdservice">Context.NsdService</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.overlayservice">Context.OverlayService</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.peopleservice">Context.PeopleService</a>
     </div>
     <div>
@@ -1599,6 +1728,12 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.printservice">Context.PrintService</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.receiverexported">Context.ReceiverExported</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.receivernotexported">Context.ReceiverNotExported</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.restrictionsservice">Context.RestrictionsService</a>
@@ -1614,6 +1749,9 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.shortcutservice">Context.ShortcutService</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.statusbarservice">Context.StatusBarService</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.storageservice">Context.StorageService</a>
@@ -1646,6 +1784,9 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.tvinputservice">Context.TvInputService</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.tvinteractiveappservice">Context.TvInteractiveAppService</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.uimodeservice">Context.UiModeService</a>
     </div>
     <div>
@@ -1662,6 +1803,9 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.vibratorservice">Context.VibratorService</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.virtualdeviceservice">Context.VirtualDeviceService</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.vpnmanagementservice">Context.VpnManagementService</a>
@@ -1685,13 +1829,22 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.windowservice">Context.WindowService</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.startactivity#android-content-context-startactivity(system-type)">Context.StartActivity(Type)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.receivervisibletoinstantapps">Context.ReceiverVisibleToInstantApps</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.bindservice#android-content-context-bindservice(android-content-intent-android-content-context-bindserviceflags-java-util-concurrent-iexecutor-android-content-iserviceconnection)">Context.BindService(Intent, Context.BindServiceFlags, IExecutor, IServiceConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.bindservice#android-content-context-bindservice(android-content-intent-android-content-iserviceconnection-android-content-context-bindserviceflags)">Context.BindService(Intent, IServiceConnection, Context.BindServiceFlags)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.bindservice#android-content-context-bindservice(android-content-intent-android-content-bind-java-util-concurrent-iexecutor-android-content-iserviceconnection)">Context.BindService(Intent, Bind, IExecutor, IServiceConnection)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.bindserviceasuser">Context.BindServiceAsUser(Intent, IServiceConnection, int, UserHandle)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.bindserviceasuser#android-content-context-bindserviceasuser(android-content-intent-android-content-iserviceconnection-android-content-context-bindserviceflags-android-os-userhandle)">Context.BindServiceAsUser(Intent, IServiceConnection, Context.BindServiceFlags, UserHandle)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.bindserviceasuser#android-content-context-bindserviceasuser(android-content-intent-android-content-iserviceconnection-system-int32-android-os-userhandle)">Context.BindServiceAsUser(Intent, IServiceConnection, int, UserHandle)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.checkcallingorselfuripermissions">Context.CheckCallingOrSelfUriPermissions(IList&lt;Uri&gt;, int)</a>
@@ -1709,6 +1862,9 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.createcontext">Context.CreateContext(ContextParams)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.createdevicecontext">Context.CreateDeviceContext(int)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.createwindowcontext#android-content-context-createwindowcontext(android-views-display-system-int32-android-os-bundle)">Context.CreateWindowContext(Display, int, Bundle)</a>
     </div>
     <div>
@@ -1724,10 +1880,10 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.getdrawable">Context.GetDrawable(int)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.getstring#android-content-context-getstring(system-int32)">Context.GetString(int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.getstring#android-content-context-getstring(system-int32-java-lang-object())">Context.GetString(int, params Object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.getstring#android-content-context-getstring(system-int32-java-lang-object())">Context.GetString(int, params Object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.getstring#android-content-context-getstring(system-int32)">Context.GetString(int)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.getsystemservice#android-content-context-getsystemservice(java-lang-class)">Context.GetSystemService(Class)</a>
@@ -1739,10 +1895,10 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.gettext">Context.GetText(int)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.obtainstyledattributes#android-content-context-obtainstyledattributes(android-util-iattributeset-system-int32())">Context.ObtainStyledAttributes(IAttributeSet, int[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.obtainstyledattributes#android-content-context-obtainstyledattributes(android-util-iattributeset-system-int32()-system-int32-system-int32)">Context.ObtainStyledAttributes(IAttributeSet, int[], int, int)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.obtainstyledattributes#android-content-context-obtainstyledattributes(android-util-iattributeset-system-int32()-system-int32-system-int32)">Context.ObtainStyledAttributes(IAttributeSet, int[], int, int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.obtainstyledattributes#android-content-context-obtainstyledattributes(android-util-iattributeset-system-int32())">Context.ObtainStyledAttributes(IAttributeSet, int[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.obtainstyledattributes#android-content-context-obtainstyledattributes(system-int32-system-int32())">Context.ObtainStyledAttributes(int, int[])</a>
@@ -1754,7 +1910,25 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.registercomponentcallbacks">Context.RegisterComponentCallbacks(IComponentCallbacks)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.registerdeviceidchangelistener">Context.RegisterDeviceIdChangeListener(IExecutor, IIntConsumer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.revokeselfpermissiononkill">Context.RevokeSelfPermissionOnKill(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.revokeselfpermissionsonkill">Context.RevokeSelfPermissionsOnKill(ICollection&lt;string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.sendbroadcast#android-content-context-sendbroadcast(android-content-intent-system-string-android-os-bundle)">Context.SendBroadcast(Intent, string, Bundle)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.sendbroadcastwithmultiplepermissions">Context.SendBroadcastWithMultiplePermissions(Intent, string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.sendorderedbroadcast#android-content-context-sendorderedbroadcast(android-content-intent-system-string-android-os-bundle-android-content-broadcastreceiver-android-os-handler-android-app-result-system-string-android-os-bundle)">Context.SendOrderedBroadcast(Intent, string, Bundle, BroadcastReceiver, Handler, Result, string, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.sendorderedbroadcast#android-content-context-sendorderedbroadcast(android-content-intent-system-string-android-os-bundle)">Context.SendOrderedBroadcast(Intent, string, Bundle)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.sendorderedbroadcast#android-content-context-sendorderedbroadcast(android-content-intent-system-string-system-string-android-content-broadcastreceiver-android-os-handler-android-app-result-system-string-android-os-bundle)">Context.SendOrderedBroadcast(Intent, string, string, BroadcastReceiver, Handler, Result, string, Bundle)</a>
@@ -1766,13 +1940,28 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.unregistercomponentcallbacks">Context.UnregisterComponentCallbacks(IComponentCallbacks)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.unregisterdeviceidchangelistener">Context.UnregisterDeviceIdChangeListener(IIntConsumer)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.updateservicegroup">Context.UpdateServiceGroup(IServiceConnection, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.startactivity#android-content-context-startactivity(system-type)">Context.StartActivity(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.registerreceiver#android-content-context-registerreceiver(android-content-broadcastreceiver-android-content-intentfilter-android-content-receiverflags)">Context.RegisterReceiver(BroadcastReceiver, IntentFilter, ReceiverFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.registerreceiver#android-content-context-registerreceiver(android-content-broadcastreceiver-android-content-intentfilter-system-string-android-os-handler-android-content-receiverflags)">Context.RegisterReceiver(BroadcastReceiver, IntentFilter, string, Handler, ReceiverFlags)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.attributionsource">Context.AttributionSource</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.attributiontag">Context.AttributionTag</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.deviceid">Context.DeviceId</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.display">Context.Display</a>
@@ -1791,6 +1980,36 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/android.content.context.params">Context.Params</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.clone">Object.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.equals">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.javafinalize">Object.JavaFinalize()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.notify">Object.Notify()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.notifyall">Object.NotifyAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.wait#java-lang-object-wait">Object.Wait()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.wait#java-lang-object-wait(system-int64-system-int32)">Object.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.wait#java-lang-object-wait(system-int64)">Object.Wait(long)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.interop.ijavaobjectex">Object.IJavaObjectEx.ToLocalJniHandle()</a>
@@ -1820,43 +2039,16 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.dispose#java-lang-object-dispose(system-boolean)">Object.Dispose(bool)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.getobject#java-lang-object-getobject-1(system-intptr-system-intptr-android-runtime-jnihandleownership)">Object.GetObject&lt;T&gt;(IntPtr, IntPtr, JniHandleOwnership)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.getobject#java-lang-object-getobject-1(system-intptr-system-intptr-android-runtime-jnihandleownership)">Object.GetObject&lt;T&gt;(nint, nint, JniHandleOwnership)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.getobject#java-lang-object-getobject-1(system-intptr-android-runtime-jnihandleownership)">Object.GetObject&lt;T&gt;(IntPtr, JniHandleOwnership)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.getobject#java-lang-object-getobject-1(system-intptr-android-runtime-jnihandleownership)">Object.GetObject&lt;T&gt;(nint, JniHandleOwnership)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.fromarray">Object.FromArray&lt;T&gt;(T[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.clone">Object.Clone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.equals">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.javafinalize">Object.JavaFinalize()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.notify">Object.Notify()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.notifyall">Object.NotifyAll()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.tostring">Object.ToString()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.wait#java-lang-object-wait">Object.Wait()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.wait#java-lang-object-wait(system-int64)">Object.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.wait#java-lang-object-wait(system-int64-system-int32)">Object.Wait(long, int)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.class">Object.Class</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.interop.ijavaobjectex">Object.IJavaObjectEx.KeyHandle</a>
@@ -1869,9 +2061,6 @@ public class MainActivity : MauiAppCompatActivity, IJavaObjectEx, IComponentCall
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.interop.ijavapeerable">Object.IJavaPeerable.JniManagedPeerState</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/java.lang.object.class">Object.Class</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>

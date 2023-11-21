@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:navrel" content="../toc.json">
+      <meta name="docfx:tocrel" content="toc.json">
       
       
       
@@ -187,6 +187,38 @@
 </h2>
 
 
+  <a id="WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_DeleteJwtToken_" data-uid="WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.DeleteJwtToken*"></a>
+
+  <h3 id="WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_DeleteJwtToken" data-uid="WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.DeleteJwtToken">
+  DeleteJwtToken()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IConfigurationProviderService.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method deletes Jwt Bearer token</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteJwtToken()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_GetCurrentThemeAsync_" data-uid="WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetCurrentThemeAsync*"></a>
 
   <h3 id="WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_GetCurrentThemeAsync" data-uid="WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetCurrentThemeAsync">
@@ -208,6 +240,38 @@
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd><p>The boolean value of the current theme</p>
 </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_GetJwtToken_" data-uid="WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetJwtToken*"></a>
+
+  <h3 id="WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_GetJwtToken" data-uid="WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetJwtToken">
+  GetJwtToken()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IConfigurationProviderService.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method gets Jwt Bearer token</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string&gt; GetJwtToken()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
   </dl>
 
 
@@ -307,6 +371,43 @@
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
     <dd><p>Task</p>
 </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_SetJwtToken_" data-uid="WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.SetJwtToken*"></a>
+
+  <h3 id="WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_SetJwtToken_System_String_" data-uid="WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.SetJwtToken(System.String)">
+  SetJwtToken(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IConfigurationProviderService.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method sets Jwt Bearer token</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SetJwtToken(string jwtToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jwtToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
   </dl>
 
 

@@ -16,11 +16,11 @@
       "type": "Toc",
       "source_relative_path": "about/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "about/toc.html"
-        },
         ".json": {
           "relative_path": "about/toc.json"
+        },
+        ".html": {
+          "relative_path": "about/toc.html"
         }
       },
       "version": ""
@@ -119,11 +119,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
         ".json": {
           "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
         }
       },
       "version": ""
@@ -230,186 +230,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Animation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Animation.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Animator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Animator.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Attribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Attribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Boolean.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Boolean.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Color.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Color.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Dimension.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Dimension.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Drawable.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Drawable.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Id.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Id.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Integer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Integer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Interpolator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Interpolator.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Layout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Layout.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Menu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Menu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Mipmap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Mipmap.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Plurals.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Plurals.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.String.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.String.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Style.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Style.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Styleable.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Styleable.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "technical/WeatherIO.App.Resource.Xml.yml",
-      "output": {
-        ".html": {
-          "relative_path": "technical/WeatherIO.App.Resource.Xml.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "technical/WeatherIO.App.Resource.yml",
       "output": {
         ".html": {
@@ -444,6 +264,16 @@
       "output": {
         ".html": {
           "relative_path": "technical/WeatherIO.Common.App.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.Data.Interfaces.IAuthenticationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.Data.Interfaces.IAuthenticationService.html"
         }
       },
       "version": ""
@@ -560,6 +390,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.Data.Models.APIResponses.UserInfoResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.Data.Models.APIResponses.UserInfoResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "technical/WeatherIO.Common.Data.Models.APIResponses.yml",
       "output": {
         ".html": {
@@ -610,10 +450,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.Data.Services.AuthenticationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.Data.Services.AuthenticationService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "technical/WeatherIO.Common.Data.Services.ConfigurationProviderService.yml",
       "output": {
         ".html": {
           "relative_path": "technical/WeatherIO.Common.Data.Services.ConfigurationProviderService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.Data.Services.WeatherAuthenticationStateProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.Data.Services.WeatherAuthenticationStateProvider.html"
         }
       },
       "version": ""
@@ -1172,11 +1032,11 @@
       "type": "Toc",
       "source_relative_path": "technical/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "technical/toc.html"
-        },
         ".json": {
           "relative_path": "technical/toc.json"
+        },
+        ".html": {
+          "relative_path": "technical/toc.html"
         }
       },
       "version": ""
@@ -1185,11 +1045,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
         ".json": {
           "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
         }
       },
       "version": ""
@@ -1228,11 +1088,11 @@
       "type": "Toc",
       "source_relative_path": "user-guide/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "user-guide/toc.html"
-        },
         ".json": {
           "relative_path": "user-guide/toc.json"
+        },
+        ".html": {
+          "relative_path": "user-guide/toc.html"
         }
       },
       "version": ""

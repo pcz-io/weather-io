@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:navrel" content="../toc.json">
+      <meta name="docfx:tocrel" content="toc.json">
       
       
       
@@ -195,7 +195,7 @@ public string Email { get; set; }</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Required]
-[RegularExpression(&quot;^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8}$&quot;, ErrorMessage = &quot;Password must meet requirements (at least 8 characters, 1 uppercase, 1 lowercase, 1 number).&quot;)]
+[RegularExpression(&quot;^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$&quot;, ErrorMessage = &quot;Password must meet requirements (at least 8 characters, 1 uppercase, 1 lowercase, 1 number).&quot;)]
 public string Password { get; set; }</code></pre>
   </div>
 

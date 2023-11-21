@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:navrel" content="../toc.json">
+      <meta name="docfx:tocrel" content="toc.json">
       
       
       
@@ -159,6 +159,9 @@ public class Login : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))">ComponentBase.InvokeAsync(Func&lt;Task&gt;)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.dispatchexceptionasync">ComponentBase.DispatchExceptionAsync(Exception)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent">ComponentBase.IComponent.Attach(RenderHandle)</a>
     </div>
     <div>
@@ -200,6 +203,36 @@ public class Login : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender
 
   <h2 class="section" id="fields">Fields
 </h2>
+
+
+
+  <h3 id="WeatherIO_Common_WebComponents_Pages_Login_errorMessage" data-uid="WeatherIO.Common.WebComponents.Pages.Login.errorMessage">
+  errorMessage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private string errorMessage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 
@@ -262,6 +295,74 @@ public class Login : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender
 
 
 
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="WeatherIO_Common_WebComponents_Pages_Login__authService_" data-uid="WeatherIO.Common.WebComponents.Pages.Login._authService*"></a>
+
+  <h3 id="WeatherIO_Common_WebComponents_Pages_Login__authService" data-uid="WeatherIO.Common.WebComponents.Pages.Login._authService">
+  _authService
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Inject]
+private IAuthenticationService _authService { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="WeatherIO.Common.Data.Interfaces.IAuthenticationService.html">IAuthenticationService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="WeatherIO_Common_WebComponents_Pages_Login__navManager_" data-uid="WeatherIO.Common.WebComponents.Pages.Login._navManager*"></a>
+
+  <h3 id="WeatherIO_Common_WebComponents_Pages_Login__navManager" data-uid="WeatherIO.Common.WebComponents.Pages.Login._navManager">
+  _navManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Inject]
+private NavigationManager _navManager { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.navigationmanager">NavigationManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -309,10 +410,15 @@ public class Login : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">private void LoginAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">private Task LoginAsync()</code></pre>
   </div>
 
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -335,7 +441,7 @@ public class Login : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">private void OnValidSubmit(EditContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">private Task OnValidSubmit(EditContext context)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -344,6 +450,11 @@ public class Login : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender
     <dd></dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

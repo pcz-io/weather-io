@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:navrel" content="../toc.json">
+      <meta name="docfx:tocrel" content="toc.json">
       
       
       
@@ -443,6 +443,9 @@ public class AuthenticateController : ControllerBase</code></pre>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controllerbase.validationproblem#microsoft-aspnetcore-mvc-controllerbase-validationproblem(system-string-system-string-system-nullable((system-int32))-system-string-system-string-microsoft-aspnetcore-mvc-modelbinding-modelstatedictionary)">ControllerBase.ValidationProblem(string, string, int?, string, string, ModelStateDictionary)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controllerbase.created#microsoft-aspnetcore-mvc-controllerbase-created">ControllerBase.Created()</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controllerbase.created#microsoft-aspnetcore-mvc-controllerbase-created(system-string-system-object)">ControllerBase.Created(string, object)</a>
     </div>
     <div>
@@ -635,6 +638,9 @@ public class AuthenticateController : ControllerBase</code></pre>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controllerbase.user">ControllerBase.User</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controllerbase.empty">ControllerBase.Empty</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
@@ -820,6 +826,40 @@ public Task&lt;IActionResult&gt; DeleteAccount()</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WeatherIO_Server_Data_Controllers_AuthenticateController_GetUserInfo_" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController.GetUserInfo*"></a>
+
+  <h3 id="WeatherIO_Server_Data_Controllers_AuthenticateController_GetUserInfo" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController.GetUserInfo">
+  GetUserInfo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[Authorize]
+[Route(&quot;get-user-info&quot;)]
+public IActionResult GetUserInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a></dt>
     <dd></dd>
   </dl>
 

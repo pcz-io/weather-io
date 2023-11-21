@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:navrel" content="../toc.json">
+      <meta name="docfx:tocrel" content="toc.json">
       
       
       
@@ -161,7 +161,7 @@
 
   <h3 id="WeatherIO_Web_Data_Services_HttpClientProviderServiceWeb__ctor_System_Net_Http_IHttpClientFactory_" data-uid="WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.#ctor(System.Net.Http.IHttpClientFactory)">
   HttpClientProviderServiceWeb(IHttpClientFactory)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Web/Data/Services/HttpClientProviderServiceWeb.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Web/Data/Services/HttpClientProviderServiceWeb.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Constructor</p>
@@ -195,17 +195,16 @@
 
 
 
-  <h3 id="WeatherIO_Web_Data_Services_HttpClientProviderServiceWeb__httpClientFactory" data-uid="WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb._httpClientFactory">
-  _httpClientFactory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Web/Data/Services/HttpClientProviderServiceWeb.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <h3 id="WeatherIO_Web_Data_Services_HttpClientProviderServiceWeb__httpClient" data-uid="WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb._httpClient">
+  _httpClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Web/Data/Services/HttpClientProviderServiceWeb.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The HttpClientFactory is used to create an HttpClient</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">private readonly IHttpClientFactory _httpClientFactory</code></pre>
+    <pre><code class="lang-csharp hljs">private HttpClient _httpClient</code></pre>
   </div>
 
 
@@ -213,10 +212,47 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.ihttpclientfactory">IHttpClientFactory</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
     <dd></dd>
   </dl>
 
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="WeatherIO_Web_Data_Services_HttpClientProviderServiceWeb_HttpClient_" data-uid="WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.HttpClient*"></a>
+
+  <h3 id="WeatherIO_Web_Data_Services_HttpClientProviderServiceWeb_HttpClient" data-uid="WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.HttpClient">
+  HttpClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Web/Data/Services/HttpClientProviderServiceWeb.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instance of HttpClient.
+Necessary to use when sending data to authorized endpoints.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpClient HttpClient { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -233,7 +269,7 @@
 
   <h3 id="WeatherIO_Web_Data_Services_HttpClientProviderServiceWeb_GetAsync_System_String_" data-uid="WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.GetAsync(System.String)">
   GetAsync(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Web/Data/Services/HttpClientProviderServiceWeb.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Web/Data/Services/HttpClientProviderServiceWeb.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This method is used to get an HttpResponseMessage from a given url</p>
