@@ -7,12 +7,16 @@ namespace WeatherIO.App.Data.Services
     /// </summary>
     internal class HttpClientProviderServiceMaui : IHttpClientProviderService
     {
-        /// <summary>
-        /// This method is used to get an HttpResponseMessage from a given url
-        /// </summary>
-        /// <param name="url">The url to get the HttpResponseMessage from</param>
-        /// <returns>An HttpResponseMessage from the given url</returns>
-        public Task<HttpResponseMessage> GetAsync(string url)
+        private HttpClient _httpClient;
+
+
+		/// <summary>
+		/// Instance of HttpClient.
+		/// Necessary to use when sending data to authorized endpoints.
+		/// </summary>
+		public HttpClient HttpClient => _httpClient;
+
+        public HttpClientProviderServiceMaui()
         {
             var handler = new HttpClientHandler
             {
@@ -23,8 +27,17 @@ namespace WeatherIO.App.Data.Services
                 }
             };
 
-            var httpClinet = new HttpClient(handler);
-            return httpClinet.GetAsync(url);
+            _httpClient = new HttpClient(handler);
+        }
+
+        /// <summary>
+        /// This method is used to get an HttpResponseMessage from a given url
+        /// </summary>
+        /// <param name="url">The url to get the HttpResponseMessage from</param>
+        /// <returns>An HttpResponseMessage from the given url</returns>
+        public Task<HttpResponseMessage> GetAsync(string url)
+        {
+            return HttpClient.GetAsync(url);
         }
     }
 }

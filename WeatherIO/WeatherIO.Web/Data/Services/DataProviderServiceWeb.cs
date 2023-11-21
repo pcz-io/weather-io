@@ -23,6 +23,16 @@ namespace WeatherIO.Web.Data.Services
         }
 
         /// <summary>
+        /// Remove data from data provider
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public async Task DeleteData(string key)
+        {
+            await _localStorageService.RemoveItemAsync(key);
+        }
+
+        /// <summary>
         /// Get data from local storage
         /// </summary>
         /// <param name="key">Key</param>

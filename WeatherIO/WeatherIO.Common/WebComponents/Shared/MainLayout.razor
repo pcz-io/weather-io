@@ -3,6 +3,8 @@
 @inject IConfigurationProviderService ConfigurationProviderService
 @inject NavigationManager NavigationManager
 
+@inject IAuthenticationService _authService
+
 <MudThemeProvider @ref="@ConfigurationProviderService.MudThemeProvider" @bind-IsDarkMode="@_isDarkMode" />
 <MudDialogProvider />
 <MudSnackbarProvider />
@@ -13,8 +15,15 @@
         <MudText Typo="Typo.h5" Class="ml-3">Weather.io</MudText>
         <MudSpacer />
         <MudMenu Icon="@Icons.Material.Filled.Settings" Color="Color.Tertiary">
-            <MudMenuItem OnClick="Login">Login</MudMenuItem>
-            <MudMenuItem OnClick="Register">Register</MudMenuItem>
+            <AuthorizeView>
+                <NotAuthorized>
+                    <MudMenuItem OnClick="Login">Login</MudMenuItem>
+                    <MudMenuItem OnClick="Register">Register</MudMenuItem>
+                </NotAuthorized>
+                <Authorized>
+                    <MudMenuItem OnClick="Logout">Logout</MudMenuItem>
+                </Authorized>
+            </AuthorizeView>
             <MudMenuItem OnClick="Settings">Settings</MudMenuItem>
         </MudMenu>
     </MudAppBar>
@@ -33,6 +42,11 @@
     void DrawerToggle()
     {
         _drawerOpen = !_drawerOpen;
+    }
+
+    private void Logout()
+    {
+        _authService.Logout();
     }
 
     private void Login()

@@ -13,5 +13,9 @@
         /// The theme to use.
         /// </summary>
         public string Theme { get; set; } = string.Empty;
+        /// <summary>
+        /// The session token for authentication.
+        /// </summary>
+        public string? JwtToken { get; set; } = null;
     }
 }

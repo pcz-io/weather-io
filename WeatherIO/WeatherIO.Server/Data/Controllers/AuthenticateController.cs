@@ -95,5 +95,16 @@ namespace WeatherIO.Server.Data.Controllers
             await userManager.DeleteAsync(user);
             return Ok();
         }
+
+        [HttpGet]
+        [Authorize]
+        [Route("get-user-info")]
+        public IActionResult GetUserInfo()
+        {
+            return Ok(new UserInfoResponse
+            {
+                UserName = User.Identity!.Name ?? "UNKNOWN"
+            });
+        }
     }
 }

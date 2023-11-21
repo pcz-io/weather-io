@@ -8,6 +8,17 @@ namespace WeatherIO.App.Data.Services
     internal class DataProviderServiceMaui : IDataProviderService
     {
         /// <summary>
+        /// Remove data from local storage
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public Task DeleteData(string key)
+        {
+            Preferences.Default.Remove(key);
+            return Task.CompletedTask;
+        }
+
+        /// <summary>
         /// Get data from local storage
         /// </summary>
         /// <param name="key">Key</param>

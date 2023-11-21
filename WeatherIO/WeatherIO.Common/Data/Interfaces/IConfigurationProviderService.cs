@@ -54,5 +54,24 @@ namespace WeatherIO.Common.Data.Interfaces
         /// <param name="theme">The theme</param>
         /// <returns>Task</returns>
         public Task SetTheme(string theme);
+
+        /// <summary>
+        /// This method sets Jwt Bearer token
+        /// </summary>
+        /// <param name="jwtToken"></param>
+        /// <returns></returns>
+        Task SetJwtToken(string jwtToken);
+
+		/// <summary>
+		/// This method gets Jwt Bearer token
+		/// </summary>
+		/// <returns></returns>
+		Task<string> GetJwtToken();
+
+		/// <summary>
+		/// This method deletes Jwt Bearer token
+		/// </summary>
+		/// <returns></returns>
+		Task DeleteJwtToken();
     }
 }

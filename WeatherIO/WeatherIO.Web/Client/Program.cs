@@ -1,4 +1,5 @@
 using Blazored.LocalStorage;
+using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
@@ -30,10 +31,13 @@ namespace WeatherIO.Web
             builder.Services.AddMudServices();
             builder.Services.AddBlazoredLocalStorageAsSingleton();
             builder.Services.AddHttpClient();
+            builder.Services.AddAuthorizationCore();
 
             builder.Services.AddSingleton<IDataProviderService, DataProviderServiceWeb>();
             builder.Services.AddSingleton<IHttpClientProviderService, HttpClientProviderServiceWeb>();
             builder.Services.AddSingleton<IConfigurationProviderService, ConfigurationProviderService>();
+            builder.Services.AddSingleton<IAuthenticationService, AuthenticationService>();
+            builder.Services.AddSingleton<AuthenticationStateProvider, WeatherAuthenticationStateProvider>();
 
             await builder.Build().RunAsync();
         }

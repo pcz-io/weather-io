@@ -39,7 +39,40 @@ namespace WeatherIO.Common.Data.Services
         {
             Configuration.ServerAddress = await _dataProviderService.GetData("serveraddress") ?? string.Empty;
             Configuration.Theme = await _dataProviderService.GetData("theme") ?? string.Empty;
+            Configuration.JwtToken = await _dataProviderService.GetData("jwttoken") ?? string.Empty;
             await SetTheme(Configuration.Theme);
+        }
+        
+        /// <summary>
+        /// This method sets Jwt Bearer token
+        /// </summary>
+        /// <param name="jwtToken"></param>
+        /// <returns></returns>
+        public async Task SetJwtToken(string jwtToken)
+        {
+            await _dataProviderService.SetData("jwttoken", jwtToken);
+            Configuration.JwtToken = jwtToken;
+        }
+
+        /// <summary>
+        /// This method deletes Jwt Bearer token
+        /// </summary>
+        /// <returns></returns>
+        public async Task DeleteJwtToken()
+        {
+            await _dataProviderService.DeleteData("jwttoken");
+            Configuration.JwtToken = null;
+        }
+
+        /// <summary>
+        /// This method gets Jwt Bearer token
+        /// </summary>
+        /// <returns></returns>
+        public async Task<string> GetJwtToken()
+        {
+            if(string.IsNullOrEmpty(Configuration.JwtToken))
+                Configuration.JwtToken = await _dataProviderService.GetData("jwttoken") ?? string.Empty;
+            return Configuration.JwtToken;
         }
 
         /// <summary>
