@@ -96,6 +96,21 @@ namespace WeatherIO.Server.Data.Controllers
             return Ok();
         }
 
+        [HttpPost]
+        [Authorize]
+        [Route("change-password")]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordModel model)
+        {
+            var user = await userManager.FindByNameAsync(User.Identity!.Name!);
+            if (user == null)
+                return Unauthorized();
+            var result = await userManager.ChangePasswordAsync(user, model.OldPassword, model.NewPassword);
+            if (result.Succeeded)
+                return Ok();
+            else
+                return BadRequest(result.Errors);
+        }
+
         [HttpGet]
         [Authorize]
         [Route("get-user-info")]
