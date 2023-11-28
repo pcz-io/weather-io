@@ -35,20 +35,34 @@ namespace WeatherIO.Server.Data.Controllers
         [Route("add-update-favourite-location")]
         public async Task<IActionResult> AddOrUpdateFavouriteLocation([FromBody] FavouriteLocationModel model)
         {
-            var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.UserName == User.Identity!.Name);
+            var user = await _dbContext.Users.Include(u => u.FavouriteLocations).FirstOrDefaultAsync(u => u.UserName == User.Identity!.Name);
             if (user == null)
             {
                 return BadRequest();
             }
 
-            _dbContext.FavouriteLocations.Update(new()
+            if (model.Id == 0)
             {
-                Id = model.Id,
-                Latitude = model.Latitude,
-                Longitude = model.Longitude,
-                Name = model.Name,
-                User = user
-            });
+                await _dbContext.FavouriteLocations.AddAsync(new()
+                {
+                    Latitude = model.Latitude,
+                    Longitude = model.Longitude,
+                    Name = model.Name,
+                    User = user
+                });
+            }
+            else
+            {
+                var favLocation = user.FavouriteLocations.FirstOrDefault(f => f.Id == model.Id);
+                if (favLocation == null)
+                {
+                    return BadRequest();
+                }
+                favLocation.Latitude = model.Latitude;
+                favLocation.Longitude = model.Longitude;
+                favLocation.Name = model.Name;
+            }
+
             await _dbContext.SaveChangesAsync();
             return Ok();
         }
