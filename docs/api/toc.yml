@@ -14,3 +14,11 @@
   href: login.md
 - name: Register
   href: register.md
+- name: Change Password
+  href: change-password.md
+- name: Get Favourite Locations
+  href: get-favourite-locations.md
+- name: Add or Update Favourite Location
+  href: add-update-favourite-location.md
+- name: Delete Favourite Location
+  href: delete-favourite-location.md
