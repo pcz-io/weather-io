@@ -7,6 +7,7 @@ function check_password {
 }
 
 function delete_images {
+    docker stop weatherio-server weatherio-web weatherio-db
     docker rm weatherio-server weatherio-web
     docker image rm weatherioweb weatherioserver
 }
@@ -16,6 +17,7 @@ function display_help {
     echo ""
     echo "  --help     displays this message"
     echo "  --update   removes images and compiles backend again"
+    echo "  --detach   runs docker compose in detached mode"
     exit
 }
 
@@ -26,6 +28,9 @@ while [[ $# -gt 0 ]]; do
       ;;
     --update)
       update=1
+      ;;
+    --detach)
+      detach=1
       ;;
     *)
       echo "error: Unknown option '$1'"
@@ -67,4 +72,11 @@ if [ "$update" = 1 ]; then
     delete_images
 fi
 
-docker compose -f docker-compose-relase.yml up
+additional_args=""
+
+if [ "$detach" = 1 ]; then
+    echo "Running in detached mode..."
+    additional_args="$additional_args --detach"
+fi
+
+docker compose -f docker-compose-relase.yml up $additional_args
