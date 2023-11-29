@@ -72,6 +72,9 @@
     ],
     "postProcessors": [],
     "keepFileLink": false,
-    "disableGitFeatures": false
+    "disableGitFeatures": false,
+    "globalMetadata": {
+      "pdf": true
+    }
   }
 }
