@@ -27,6 +27,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "api/add-update-favourite-location.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/add-update-favourite-location.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "api/air-quality.md",
       "output": {
         ".html": {
@@ -37,10 +47,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "api/change-password.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/change-password.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "api/delete-account.md",
       "output": {
         ".html": {
           "relative_path": "api/delete-account.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/delete-favourite-location.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/delete-favourite-location.html"
         }
       },
       "version": ""
@@ -61,6 +91,16 @@
       "output": {
         ".html": {
           "relative_path": "api/geocode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/get-favourite-locations.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/get-favourite-locations.html"
         }
       },
       "version": ""
@@ -410,10 +450,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.Data.Models.ChangePasswordModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.Data.Models.ChangePasswordModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "technical/WeatherIO.Common.Data.Models.Configuration.yml",
       "output": {
         ".html": {
           "relative_path": "technical/WeatherIO.Common.Data.Models.Configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.Data.Models.FavouriteLocationModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.Data.Models.FavouriteLocationModel.html"
         }
       },
       "version": ""
@@ -680,6 +740,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Server.Data.Controllers.UserDataController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Server.Data.Controllers.UserDataController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "technical/WeatherIO.Server.Data.Controllers.WeatherForecastController.yml",
       "output": {
         ".html": {
@@ -704,6 +774,16 @@
       "output": {
         ".html": {
           "relative_path": "technical/WeatherIO.Server.Data.Models.ApplicationUser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Server.Data.Models.FavouriteLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Server.Data.Models.FavouriteLocation.html"
         }
       },
       "version": ""
@@ -864,6 +944,16 @@
       "output": {
         ".html": {
           "relative_path": "technical/WeatherIO.Server.Migrations.M1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Server.Migrations.M2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Server.Migrations.M2.html"
         }
       },
       "version": ""

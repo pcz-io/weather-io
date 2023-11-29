@@ -411,10 +411,11 @@
 
   <h3 id="WeatherIO_Server_ApplicationDbContext__ctor_Microsoft_EntityFrameworkCore_DbContextOptions_WeatherIO_Server_ApplicationDbContext__" data-uid="WeatherIO.Server.ApplicationDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{WeatherIO.Server.ApplicationDbContext})">
   ApplicationDbContext(DbContextOptions&lt;ApplicationDbContext&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/ApplicationDbContext.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/ApplicationDbContext.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Database context constructor</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -438,6 +439,42 @@
 
 
 
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="WeatherIO_Server_ApplicationDbContext_FavouriteLocations_" data-uid="WeatherIO.Server.ApplicationDbContext.FavouriteLocations*"></a>
+
+  <h3 id="WeatherIO_Server_ApplicationDbContext_FavouriteLocations" data-uid="WeatherIO.Server.ApplicationDbContext.FavouriteLocations">
+  FavouriteLocations
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/ApplicationDbContext.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents database FavouriteLocations table</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;FavouriteLocation&gt; FavouriteLocations { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1">DbSet</a>&lt;<a class="xref" href="WeatherIO.Server.Data.Models.FavouriteLocation.html">FavouriteLocation</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -446,10 +483,10 @@
 
   <h3 id="WeatherIO_Server_ApplicationDbContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_" data-uid="WeatherIO.Server.ApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
   OnModelCreating(ModelBuilder)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/ApplicationDbContext.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/ApplicationDbContext.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Configures the schema needed for the identity framework.</p>
+  <div class="markdown level1 summary"><p>This method is used by entity framework to generate migration</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -460,8 +497,7 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>builder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.modelbuilder">ModelBuilder</a></dt>
-    <dd><p>The builder being used to construct the model for this context.</p>
-</dd>
+    <dd></dd>
   </dl>
 
 

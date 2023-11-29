@@ -1005,6 +1005,38 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Common.Data.Models.APIResponses.UserInfoResponse.UserName
   nameWithType: UserInfoResponse.UserName
+- uid: WeatherIO.Common.Data.Models.ChangePasswordModel
+  name: ChangePasswordModel
+  href: technical/WeatherIO.Common.Data.Models.ChangePasswordModel.html
+  commentId: T:WeatherIO.Common.Data.Models.ChangePasswordModel
+  fullName: WeatherIO.Common.Data.Models.ChangePasswordModel
+  nameWithType: ChangePasswordModel
+- uid: WeatherIO.Common.Data.Models.ChangePasswordModel.NewPassword
+  name: NewPassword
+  href: technical/WeatherIO.Common.Data.Models.ChangePasswordModel.html#WeatherIO_Common_Data_Models_ChangePasswordModel_NewPassword
+  commentId: P:WeatherIO.Common.Data.Models.ChangePasswordModel.NewPassword
+  fullName: WeatherIO.Common.Data.Models.ChangePasswordModel.NewPassword
+  nameWithType: ChangePasswordModel.NewPassword
+- uid: WeatherIO.Common.Data.Models.ChangePasswordModel.NewPassword*
+  name: NewPassword
+  href: technical/WeatherIO.Common.Data.Models.ChangePasswordModel.html#WeatherIO_Common_Data_Models_ChangePasswordModel_NewPassword_
+  commentId: Overload:WeatherIO.Common.Data.Models.ChangePasswordModel.NewPassword
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Models.ChangePasswordModel.NewPassword
+  nameWithType: ChangePasswordModel.NewPassword
+- uid: WeatherIO.Common.Data.Models.ChangePasswordModel.OldPassword
+  name: OldPassword
+  href: technical/WeatherIO.Common.Data.Models.ChangePasswordModel.html#WeatherIO_Common_Data_Models_ChangePasswordModel_OldPassword
+  commentId: P:WeatherIO.Common.Data.Models.ChangePasswordModel.OldPassword
+  fullName: WeatherIO.Common.Data.Models.ChangePasswordModel.OldPassword
+  nameWithType: ChangePasswordModel.OldPassword
+- uid: WeatherIO.Common.Data.Models.ChangePasswordModel.OldPassword*
+  name: OldPassword
+  href: technical/WeatherIO.Common.Data.Models.ChangePasswordModel.html#WeatherIO_Common_Data_Models_ChangePasswordModel_OldPassword_
+  commentId: Overload:WeatherIO.Common.Data.Models.ChangePasswordModel.OldPassword
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Models.ChangePasswordModel.OldPassword
+  nameWithType: ChangePasswordModel.OldPassword
 - uid: WeatherIO.Common.Data.Models.Configuration
   name: Configuration
   href: technical/WeatherIO.Common.Data.Models.Configuration.html
@@ -1050,6 +1082,64 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Common.Data.Models.Configuration.Theme
   nameWithType: Configuration.Theme
+- uid: WeatherIO.Common.Data.Models.FavouriteLocationModel
+  name: FavouriteLocationModel
+  href: technical/WeatherIO.Common.Data.Models.FavouriteLocationModel.html
+  commentId: T:WeatherIO.Common.Data.Models.FavouriteLocationModel
+  fullName: WeatherIO.Common.Data.Models.FavouriteLocationModel
+  nameWithType: FavouriteLocationModel
+- uid: WeatherIO.Common.Data.Models.FavouriteLocationModel.Id
+  name: Id
+  href: technical/WeatherIO.Common.Data.Models.FavouriteLocationModel.html#WeatherIO_Common_Data_Models_FavouriteLocationModel_Id
+  commentId: P:WeatherIO.Common.Data.Models.FavouriteLocationModel.Id
+  fullName: WeatherIO.Common.Data.Models.FavouriteLocationModel.Id
+  nameWithType: FavouriteLocationModel.Id
+- uid: WeatherIO.Common.Data.Models.FavouriteLocationModel.Id*
+  name: Id
+  href: technical/WeatherIO.Common.Data.Models.FavouriteLocationModel.html#WeatherIO_Common_Data_Models_FavouriteLocationModel_Id_
+  commentId: Overload:WeatherIO.Common.Data.Models.FavouriteLocationModel.Id
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Models.FavouriteLocationModel.Id
+  nameWithType: FavouriteLocationModel.Id
+- uid: WeatherIO.Common.Data.Models.FavouriteLocationModel.Latitude
+  name: Latitude
+  href: technical/WeatherIO.Common.Data.Models.FavouriteLocationModel.html#WeatherIO_Common_Data_Models_FavouriteLocationModel_Latitude
+  commentId: P:WeatherIO.Common.Data.Models.FavouriteLocationModel.Latitude
+  fullName: WeatherIO.Common.Data.Models.FavouriteLocationModel.Latitude
+  nameWithType: FavouriteLocationModel.Latitude
+- uid: WeatherIO.Common.Data.Models.FavouriteLocationModel.Latitude*
+  name: Latitude
+  href: technical/WeatherIO.Common.Data.Models.FavouriteLocationModel.html#WeatherIO_Common_Data_Models_FavouriteLocationModel_Latitude_
+  commentId: Overload:WeatherIO.Common.Data.Models.FavouriteLocationModel.Latitude
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Models.FavouriteLocationModel.Latitude
+  nameWithType: FavouriteLocationModel.Latitude
+- uid: WeatherIO.Common.Data.Models.FavouriteLocationModel.Longitude
+  name: Longitude
+  href: technical/WeatherIO.Common.Data.Models.FavouriteLocationModel.html#WeatherIO_Common_Data_Models_FavouriteLocationModel_Longitude
+  commentId: P:WeatherIO.Common.Data.Models.FavouriteLocationModel.Longitude
+  fullName: WeatherIO.Common.Data.Models.FavouriteLocationModel.Longitude
+  nameWithType: FavouriteLocationModel.Longitude
+- uid: WeatherIO.Common.Data.Models.FavouriteLocationModel.Longitude*
+  name: Longitude
+  href: technical/WeatherIO.Common.Data.Models.FavouriteLocationModel.html#WeatherIO_Common_Data_Models_FavouriteLocationModel_Longitude_
+  commentId: Overload:WeatherIO.Common.Data.Models.FavouriteLocationModel.Longitude
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Models.FavouriteLocationModel.Longitude
+  nameWithType: FavouriteLocationModel.Longitude
+- uid: WeatherIO.Common.Data.Models.FavouriteLocationModel.Name
+  name: Name
+  href: technical/WeatherIO.Common.Data.Models.FavouriteLocationModel.html#WeatherIO_Common_Data_Models_FavouriteLocationModel_Name
+  commentId: P:WeatherIO.Common.Data.Models.FavouriteLocationModel.Name
+  fullName: WeatherIO.Common.Data.Models.FavouriteLocationModel.Name
+  nameWithType: FavouriteLocationModel.Name
+- uid: WeatherIO.Common.Data.Models.FavouriteLocationModel.Name*
+  name: Name
+  href: technical/WeatherIO.Common.Data.Models.FavouriteLocationModel.html#WeatherIO_Common_Data_Models_FavouriteLocationModel_Name_
+  commentId: Overload:WeatherIO.Common.Data.Models.FavouriteLocationModel.Name
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Models.FavouriteLocationModel.Name
+  nameWithType: FavouriteLocationModel.Name
 - uid: WeatherIO.Common.Data.Models.LoginModel
   name: LoginModel
   href: technical/WeatherIO.Common.Data.Models.LoginModel.html
@@ -2154,6 +2244,19 @@ references:
   fullName.vb: WeatherIO.Server.ApplicationDbContext.New
   nameWithType: ApplicationDbContext.ApplicationDbContext
   nameWithType.vb: ApplicationDbContext.New
+- uid: WeatherIO.Server.ApplicationDbContext.FavouriteLocations
+  name: FavouriteLocations
+  href: technical/WeatherIO.Server.ApplicationDbContext.html#WeatherIO_Server_ApplicationDbContext_FavouriteLocations
+  commentId: P:WeatherIO.Server.ApplicationDbContext.FavouriteLocations
+  fullName: WeatherIO.Server.ApplicationDbContext.FavouriteLocations
+  nameWithType: ApplicationDbContext.FavouriteLocations
+- uid: WeatherIO.Server.ApplicationDbContext.FavouriteLocations*
+  name: FavouriteLocations
+  href: technical/WeatherIO.Server.ApplicationDbContext.html#WeatherIO_Server_ApplicationDbContext_FavouriteLocations_
+  commentId: Overload:WeatherIO.Server.ApplicationDbContext.FavouriteLocations
+  isSpec: "True"
+  fullName: WeatherIO.Server.ApplicationDbContext.FavouriteLocations
+  nameWithType: ApplicationDbContext.FavouriteLocations
 - uid: WeatherIO.Server.ApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
   name: OnModelCreating(ModelBuilder)
   href: technical/WeatherIO.Server.ApplicationDbContext.html#WeatherIO_Server_ApplicationDbContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_
@@ -2245,6 +2348,19 @@ references:
   fullName.vb: WeatherIO.Server.Data.Controllers.AuthenticateController.New
   nameWithType: AuthenticateController.AuthenticateController
   nameWithType.vb: AuthenticateController.New
+- uid: WeatherIO.Server.Data.Controllers.AuthenticateController.ChangePassword(WeatherIO.Common.Data.Models.ChangePasswordModel)
+  name: ChangePassword(ChangePasswordModel)
+  href: technical/WeatherIO.Server.Data.Controllers.AuthenticateController.html#WeatherIO_Server_Data_Controllers_AuthenticateController_ChangePassword_WeatherIO_Common_Data_Models_ChangePasswordModel_
+  commentId: M:WeatherIO.Server.Data.Controllers.AuthenticateController.ChangePassword(WeatherIO.Common.Data.Models.ChangePasswordModel)
+  fullName: WeatherIO.Server.Data.Controllers.AuthenticateController.ChangePassword(WeatherIO.Common.Data.Models.ChangePasswordModel)
+  nameWithType: AuthenticateController.ChangePassword(ChangePasswordModel)
+- uid: WeatherIO.Server.Data.Controllers.AuthenticateController.ChangePassword*
+  name: ChangePassword
+  href: technical/WeatherIO.Server.Data.Controllers.AuthenticateController.html#WeatherIO_Server_Data_Controllers_AuthenticateController_ChangePassword_
+  commentId: Overload:WeatherIO.Server.Data.Controllers.AuthenticateController.ChangePassword
+  isSpec: "True"
+  fullName: WeatherIO.Server.Data.Controllers.AuthenticateController.ChangePassword
+  nameWithType: AuthenticateController.ChangePassword
 - uid: WeatherIO.Server.Data.Controllers.AuthenticateController.DeleteAccount
   name: DeleteAccount()
   href: technical/WeatherIO.Server.Data.Controllers.AuthenticateController.html#WeatherIO_Server_Data_Controllers_AuthenticateController_DeleteAccount
@@ -2378,6 +2494,76 @@ references:
   commentId: F:WeatherIO.Server.Data.Controllers.GeocodeController._geocodingService
   fullName: WeatherIO.Server.Data.Controllers.GeocodeController._geocodingService
   nameWithType: GeocodeController._geocodingService
+- uid: WeatherIO.Server.Data.Controllers.UserDataController
+  name: UserDataController
+  href: technical/WeatherIO.Server.Data.Controllers.UserDataController.html
+  commentId: T:WeatherIO.Server.Data.Controllers.UserDataController
+  fullName: WeatherIO.Server.Data.Controllers.UserDataController
+  nameWithType: UserDataController
+- uid: WeatherIO.Server.Data.Controllers.UserDataController.#ctor(WeatherIO.Server.ApplicationDbContext)
+  name: UserDataController(ApplicationDbContext)
+  href: technical/WeatherIO.Server.Data.Controllers.UserDataController.html#WeatherIO_Server_Data_Controllers_UserDataController__ctor_WeatherIO_Server_ApplicationDbContext_
+  commentId: M:WeatherIO.Server.Data.Controllers.UserDataController.#ctor(WeatherIO.Server.ApplicationDbContext)
+  name.vb: New(ApplicationDbContext)
+  fullName: WeatherIO.Server.Data.Controllers.UserDataController.UserDataController(WeatherIO.Server.ApplicationDbContext)
+  fullName.vb: WeatherIO.Server.Data.Controllers.UserDataController.New(WeatherIO.Server.ApplicationDbContext)
+  nameWithType: UserDataController.UserDataController(ApplicationDbContext)
+  nameWithType.vb: UserDataController.New(ApplicationDbContext)
+- uid: WeatherIO.Server.Data.Controllers.UserDataController.#ctor*
+  name: UserDataController
+  href: technical/WeatherIO.Server.Data.Controllers.UserDataController.html#WeatherIO_Server_Data_Controllers_UserDataController__ctor_
+  commentId: Overload:WeatherIO.Server.Data.Controllers.UserDataController.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: WeatherIO.Server.Data.Controllers.UserDataController.UserDataController
+  fullName.vb: WeatherIO.Server.Data.Controllers.UserDataController.New
+  nameWithType: UserDataController.UserDataController
+  nameWithType.vb: UserDataController.New
+- uid: WeatherIO.Server.Data.Controllers.UserDataController.AddOrUpdateFavouriteLocation(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  name: AddOrUpdateFavouriteLocation(FavouriteLocationModel)
+  href: technical/WeatherIO.Server.Data.Controllers.UserDataController.html#WeatherIO_Server_Data_Controllers_UserDataController_AddOrUpdateFavouriteLocation_WeatherIO_Common_Data_Models_FavouriteLocationModel_
+  commentId: M:WeatherIO.Server.Data.Controllers.UserDataController.AddOrUpdateFavouriteLocation(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  fullName: WeatherIO.Server.Data.Controllers.UserDataController.AddOrUpdateFavouriteLocation(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  nameWithType: UserDataController.AddOrUpdateFavouriteLocation(FavouriteLocationModel)
+- uid: WeatherIO.Server.Data.Controllers.UserDataController.AddOrUpdateFavouriteLocation*
+  name: AddOrUpdateFavouriteLocation
+  href: technical/WeatherIO.Server.Data.Controllers.UserDataController.html#WeatherIO_Server_Data_Controllers_UserDataController_AddOrUpdateFavouriteLocation_
+  commentId: Overload:WeatherIO.Server.Data.Controllers.UserDataController.AddOrUpdateFavouriteLocation
+  isSpec: "True"
+  fullName: WeatherIO.Server.Data.Controllers.UserDataController.AddOrUpdateFavouriteLocation
+  nameWithType: UserDataController.AddOrUpdateFavouriteLocation
+- uid: WeatherIO.Server.Data.Controllers.UserDataController.DeleteFavouriteLocation(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  name: DeleteFavouriteLocation(FavouriteLocationModel)
+  href: technical/WeatherIO.Server.Data.Controllers.UserDataController.html#WeatherIO_Server_Data_Controllers_UserDataController_DeleteFavouriteLocation_WeatherIO_Common_Data_Models_FavouriteLocationModel_
+  commentId: M:WeatherIO.Server.Data.Controllers.UserDataController.DeleteFavouriteLocation(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  fullName: WeatherIO.Server.Data.Controllers.UserDataController.DeleteFavouriteLocation(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  nameWithType: UserDataController.DeleteFavouriteLocation(FavouriteLocationModel)
+- uid: WeatherIO.Server.Data.Controllers.UserDataController.DeleteFavouriteLocation*
+  name: DeleteFavouriteLocation
+  href: technical/WeatherIO.Server.Data.Controllers.UserDataController.html#WeatherIO_Server_Data_Controllers_UserDataController_DeleteFavouriteLocation_
+  commentId: Overload:WeatherIO.Server.Data.Controllers.UserDataController.DeleteFavouriteLocation
+  isSpec: "True"
+  fullName: WeatherIO.Server.Data.Controllers.UserDataController.DeleteFavouriteLocation
+  nameWithType: UserDataController.DeleteFavouriteLocation
+- uid: WeatherIO.Server.Data.Controllers.UserDataController.GetFavouriteLocations
+  name: GetFavouriteLocations()
+  href: technical/WeatherIO.Server.Data.Controllers.UserDataController.html#WeatherIO_Server_Data_Controllers_UserDataController_GetFavouriteLocations
+  commentId: M:WeatherIO.Server.Data.Controllers.UserDataController.GetFavouriteLocations
+  fullName: WeatherIO.Server.Data.Controllers.UserDataController.GetFavouriteLocations()
+  nameWithType: UserDataController.GetFavouriteLocations()
+- uid: WeatherIO.Server.Data.Controllers.UserDataController.GetFavouriteLocations*
+  name: GetFavouriteLocations
+  href: technical/WeatherIO.Server.Data.Controllers.UserDataController.html#WeatherIO_Server_Data_Controllers_UserDataController_GetFavouriteLocations_
+  commentId: Overload:WeatherIO.Server.Data.Controllers.UserDataController.GetFavouriteLocations
+  isSpec: "True"
+  fullName: WeatherIO.Server.Data.Controllers.UserDataController.GetFavouriteLocations
+  nameWithType: UserDataController.GetFavouriteLocations
+- uid: WeatherIO.Server.Data.Controllers.UserDataController._dbContext
+  name: _dbContext
+  href: technical/WeatherIO.Server.Data.Controllers.UserDataController.html#WeatherIO_Server_Data_Controllers_UserDataController__dbContext
+  commentId: F:WeatherIO.Server.Data.Controllers.UserDataController._dbContext
+  fullName: WeatherIO.Server.Data.Controllers.UserDataController._dbContext
+  nameWithType: UserDataController._dbContext
 - uid: WeatherIO.Server.Data.Controllers.WeatherForecastController
   name: WeatherForecastController
   href: technical/WeatherIO.Server.Data.Controllers.WeatherForecastController.html
@@ -2459,6 +2645,90 @@ references:
   commentId: T:WeatherIO.Server.Data.Models.ApplicationUser
   fullName: WeatherIO.Server.Data.Models.ApplicationUser
   nameWithType: ApplicationUser
+- uid: WeatherIO.Server.Data.Models.ApplicationUser.FavouriteLocations
+  name: FavouriteLocations
+  href: technical/WeatherIO.Server.Data.Models.ApplicationUser.html#WeatherIO_Server_Data_Models_ApplicationUser_FavouriteLocations
+  commentId: P:WeatherIO.Server.Data.Models.ApplicationUser.FavouriteLocations
+  fullName: WeatherIO.Server.Data.Models.ApplicationUser.FavouriteLocations
+  nameWithType: ApplicationUser.FavouriteLocations
+- uid: WeatherIO.Server.Data.Models.ApplicationUser.FavouriteLocations*
+  name: FavouriteLocations
+  href: technical/WeatherIO.Server.Data.Models.ApplicationUser.html#WeatherIO_Server_Data_Models_ApplicationUser_FavouriteLocations_
+  commentId: Overload:WeatherIO.Server.Data.Models.ApplicationUser.FavouriteLocations
+  isSpec: "True"
+  fullName: WeatherIO.Server.Data.Models.ApplicationUser.FavouriteLocations
+  nameWithType: ApplicationUser.FavouriteLocations
+- uid: WeatherIO.Server.Data.Models.FavouriteLocation
+  name: FavouriteLocation
+  href: technical/WeatherIO.Server.Data.Models.FavouriteLocation.html
+  commentId: T:WeatherIO.Server.Data.Models.FavouriteLocation
+  fullName: WeatherIO.Server.Data.Models.FavouriteLocation
+  nameWithType: FavouriteLocation
+- uid: WeatherIO.Server.Data.Models.FavouriteLocation.Id
+  name: Id
+  href: technical/WeatherIO.Server.Data.Models.FavouriteLocation.html#WeatherIO_Server_Data_Models_FavouriteLocation_Id
+  commentId: P:WeatherIO.Server.Data.Models.FavouriteLocation.Id
+  fullName: WeatherIO.Server.Data.Models.FavouriteLocation.Id
+  nameWithType: FavouriteLocation.Id
+- uid: WeatherIO.Server.Data.Models.FavouriteLocation.Id*
+  name: Id
+  href: technical/WeatherIO.Server.Data.Models.FavouriteLocation.html#WeatherIO_Server_Data_Models_FavouriteLocation_Id_
+  commentId: Overload:WeatherIO.Server.Data.Models.FavouriteLocation.Id
+  isSpec: "True"
+  fullName: WeatherIO.Server.Data.Models.FavouriteLocation.Id
+  nameWithType: FavouriteLocation.Id
+- uid: WeatherIO.Server.Data.Models.FavouriteLocation.Latitude
+  name: Latitude
+  href: technical/WeatherIO.Server.Data.Models.FavouriteLocation.html#WeatherIO_Server_Data_Models_FavouriteLocation_Latitude
+  commentId: P:WeatherIO.Server.Data.Models.FavouriteLocation.Latitude
+  fullName: WeatherIO.Server.Data.Models.FavouriteLocation.Latitude
+  nameWithType: FavouriteLocation.Latitude
+- uid: WeatherIO.Server.Data.Models.FavouriteLocation.Latitude*
+  name: Latitude
+  href: technical/WeatherIO.Server.Data.Models.FavouriteLocation.html#WeatherIO_Server_Data_Models_FavouriteLocation_Latitude_
+  commentId: Overload:WeatherIO.Server.Data.Models.FavouriteLocation.Latitude
+  isSpec: "True"
+  fullName: WeatherIO.Server.Data.Models.FavouriteLocation.Latitude
+  nameWithType: FavouriteLocation.Latitude
+- uid: WeatherIO.Server.Data.Models.FavouriteLocation.Longitude
+  name: Longitude
+  href: technical/WeatherIO.Server.Data.Models.FavouriteLocation.html#WeatherIO_Server_Data_Models_FavouriteLocation_Longitude
+  commentId: P:WeatherIO.Server.Data.Models.FavouriteLocation.Longitude
+  fullName: WeatherIO.Server.Data.Models.FavouriteLocation.Longitude
+  nameWithType: FavouriteLocation.Longitude
+- uid: WeatherIO.Server.Data.Models.FavouriteLocation.Longitude*
+  name: Longitude
+  href: technical/WeatherIO.Server.Data.Models.FavouriteLocation.html#WeatherIO_Server_Data_Models_FavouriteLocation_Longitude_
+  commentId: Overload:WeatherIO.Server.Data.Models.FavouriteLocation.Longitude
+  isSpec: "True"
+  fullName: WeatherIO.Server.Data.Models.FavouriteLocation.Longitude
+  nameWithType: FavouriteLocation.Longitude
+- uid: WeatherIO.Server.Data.Models.FavouriteLocation.Name
+  name: Name
+  href: technical/WeatherIO.Server.Data.Models.FavouriteLocation.html#WeatherIO_Server_Data_Models_FavouriteLocation_Name
+  commentId: P:WeatherIO.Server.Data.Models.FavouriteLocation.Name
+  fullName: WeatherIO.Server.Data.Models.FavouriteLocation.Name
+  nameWithType: FavouriteLocation.Name
+- uid: WeatherIO.Server.Data.Models.FavouriteLocation.Name*
+  name: Name
+  href: technical/WeatherIO.Server.Data.Models.FavouriteLocation.html#WeatherIO_Server_Data_Models_FavouriteLocation_Name_
+  commentId: Overload:WeatherIO.Server.Data.Models.FavouriteLocation.Name
+  isSpec: "True"
+  fullName: WeatherIO.Server.Data.Models.FavouriteLocation.Name
+  nameWithType: FavouriteLocation.Name
+- uid: WeatherIO.Server.Data.Models.FavouriteLocation.User
+  name: User
+  href: technical/WeatherIO.Server.Data.Models.FavouriteLocation.html#WeatherIO_Server_Data_Models_FavouriteLocation_User
+  commentId: P:WeatherIO.Server.Data.Models.FavouriteLocation.User
+  fullName: WeatherIO.Server.Data.Models.FavouriteLocation.User
+  nameWithType: FavouriteLocation.User
+- uid: WeatherIO.Server.Data.Models.FavouriteLocation.User*
+  name: User
+  href: technical/WeatherIO.Server.Data.Models.FavouriteLocation.html#WeatherIO_Server_Data_Models_FavouriteLocation_User_
+  commentId: Overload:WeatherIO.Server.Data.Models.FavouriteLocation.User
+  isSpec: "True"
+  fullName: WeatherIO.Server.Data.Models.FavouriteLocation.User
+  nameWithType: FavouriteLocation.User
 - uid: WeatherIO.Server.Data.Models.OpenMeteo
   name: WeatherIO.Server.Data.Models.OpenMeteo
   href: technical/WeatherIO.Server.Data.Models.OpenMeteo.html
@@ -3681,6 +3951,51 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Server.Migrations.M1.Up
   nameWithType: M1.Up
+- uid: WeatherIO.Server.Migrations.M2
+  name: M2
+  href: technical/WeatherIO.Server.Migrations.M2.html
+  commentId: T:WeatherIO.Server.Migrations.M2
+  fullName: WeatherIO.Server.Migrations.M2
+  nameWithType: M2
+- uid: WeatherIO.Server.Migrations.M2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  name: BuildTargetModel(ModelBuilder)
+  href: technical/WeatherIO.Server.Migrations.M2.html#WeatherIO_Server_Migrations_M2_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
+  commentId: M:WeatherIO.Server.Migrations.M2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName: WeatherIO.Server.Migrations.M2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: M2.BuildTargetModel(ModelBuilder)
+- uid: WeatherIO.Server.Migrations.M2.BuildTargetModel*
+  name: BuildTargetModel
+  href: technical/WeatherIO.Server.Migrations.M2.html#WeatherIO_Server_Migrations_M2_BuildTargetModel_
+  commentId: Overload:WeatherIO.Server.Migrations.M2.BuildTargetModel
+  isSpec: "True"
+  fullName: WeatherIO.Server.Migrations.M2.BuildTargetModel
+  nameWithType: M2.BuildTargetModel
+- uid: WeatherIO.Server.Migrations.M2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Down(MigrationBuilder)
+  href: technical/WeatherIO.Server.Migrations.M2.html#WeatherIO_Server_Migrations_M2_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:WeatherIO.Server.Migrations.M2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: WeatherIO.Server.Migrations.M2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: M2.Down(MigrationBuilder)
+- uid: WeatherIO.Server.Migrations.M2.Down*
+  name: Down
+  href: technical/WeatherIO.Server.Migrations.M2.html#WeatherIO_Server_Migrations_M2_Down_
+  commentId: Overload:WeatherIO.Server.Migrations.M2.Down
+  isSpec: "True"
+  fullName: WeatherIO.Server.Migrations.M2.Down
+  nameWithType: M2.Down
+- uid: WeatherIO.Server.Migrations.M2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Up(MigrationBuilder)
+  href: technical/WeatherIO.Server.Migrations.M2.html#WeatherIO_Server_Migrations_M2_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:WeatherIO.Server.Migrations.M2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: WeatherIO.Server.Migrations.M2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: M2.Up(MigrationBuilder)
+- uid: WeatherIO.Server.Migrations.M2.Up*
+  name: Up
+  href: technical/WeatherIO.Server.Migrations.M2.html#WeatherIO_Server_Migrations_M2_Up_
+  commentId: Overload:WeatherIO.Server.Migrations.M2.Up
+  isSpec: "True"
+  fullName: WeatherIO.Server.Migrations.M2.Up
+  nameWithType: M2.Up
 - uid: WeatherIO.Server.Program
   name: Program
   href: technical/WeatherIO.Server.Program.html

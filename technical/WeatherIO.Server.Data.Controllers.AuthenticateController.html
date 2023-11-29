@@ -805,6 +805,48 @@ public class AuthenticateController : ControllerBase</code></pre>
 </h2>
 
 
+  <a id="WeatherIO_Server_Data_Controllers_AuthenticateController_ChangePassword_" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController.ChangePassword*"></a>
+
+  <h3 id="WeatherIO_Server_Data_Controllers_AuthenticateController_ChangePassword_WeatherIO_Common_Data_Models_ChangePasswordModel_" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController.ChangePassword(WeatherIO.Common.Data.Models.ChangePasswordModel)">
+  ChangePassword(ChangePasswordModel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This function handles <code>change-password</code> endpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[Authorize]
+[Route(&quot;change-password&quot;)]
+public Task&lt;IActionResult&gt; ChangePassword(ChangePasswordModel model)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>model</code> <a class="xref" href="WeatherIO.Common.Data.Models.ChangePasswordModel.html">ChangePasswordModel</a></dt>
+    <dd><p>Input data for the endpoint</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a>&gt;</dt>
+    <dd><p>Status 200 Ok or 400 Bad Request when input data is invalid.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="WeatherIO_Server_Data_Controllers_AuthenticateController_DeleteAccount_" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController.DeleteAccount*"></a>
 
   <h3 id="WeatherIO_Server_Data_Controllers_AuthenticateController_DeleteAccount" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController.DeleteAccount">
@@ -843,7 +885,7 @@ public Task&lt;IActionResult&gt; DeleteAccount()</code></pre>
 
   <h3 id="WeatherIO_Server_Data_Controllers_AuthenticateController_GetUserInfo" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController.GetUserInfo">
   GetUserInfo()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
