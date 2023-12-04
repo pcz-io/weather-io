@@ -1,5 +1,11 @@
 ﻿<MudPaper Elevation="0">
     <MudNavMenu Rounded="true" Margin="Margin.Dense" Color="Color.Primary" Class="pa-2">
         <MudNavLink Href="/home" Icon="@Icons.Material.Filled.Dashboard">Home</MudNavLink>
+        <MudNavLink Href="/weather" Icon="@Icons.Material.Filled.Cloud">Weather</MudNavLink>
+        <AuthorizeView>
+            <Authorized>
+                <MudNavLink Href="/liked" Icon="@Icons.Material.Filled.ThumbUp">Liked</MudNavLink>
+			</Authorized>
+        </AuthorizeView>
     </MudNavMenu>
 </MudPaper>

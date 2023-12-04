@@ -1,0 +1,239 @@
+﻿@page "/weather"
+@using WeatherIO.Common.Data.Models.APIResponses
+
+@inject IWeatherForecastProviderService WeatherForecastProviderService
+
+<PageTitle>Weather</PageTitle>
+
+<div style="width: 100%; margin: auto">
+
+    <MudCard>
+        <div style="width: 100%;">
+            <EditForm Model="@model" OnValidSubmit="OnValidSubmit" >
+                <MudCardContent>
+                    <div style="display: flex; align-items: center">
+                        <MudTextField @bind-Value="model.City" Label="Miasto" Variant="Variant.Filled"></MudTextField>
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" DisableElevation="true" ButtonType="ButtonType.Submit">Wyszukaj</MudButton>
+                    </div>
+                </MudCardContent>
+            </EditForm>
+        </div>
+        <div style="width: 100%">
+            @if (showAlert)
+            {
+                <MudAlert Severity="Severity.Error" ContentAlignment="HorizontalAlignment.Center" ShowCloseIcon="true" CloseIconClicked="(() => ShowAlert(false))">Podano złą nazwę miasta</MudAlert>
+            }
+        </div>
+        @if (forecastResponse != null)
+        {
+            <MudCardContent>
+                <div class="chart-container">
+                    <div class="chart">
+                        <MudChart ChartType="ChartType.Line" ChartSeries="@temperatureSeries" XAxisLabels="@xAxisLabels" ChartOptions="@temperatureOptions" Width="100%"></MudChart>
+                    </div>
+                    <div class="chart">
+                        <MudChart ChartType="ChartType.Line" ChartSeries="@preassureSeries" XAxisLabels="@xAxisLabels" ChartOptions="@preassureOptions" Width="100%"></MudChart>
+                    </div>
+                    <div class="chart">
+                        <MudChart ChartType="ChartType.Line" ChartSeries="@humiditySeries" XAxisLabels="@xAxisLabels" ChartOptions="@humidityOptions" Width="100%"></MudChart>
+                    </div>
+                    <div class="chart">
+                        <MudChart ChartType="ChartType.Line" ChartSeries="@windSpeedSeries" XAxisLabels="@xAxisLabels" ChartOptions="@windSpeedOptions" Width="100%"></MudChart>
+                    </div>
+                </div>
+                <div>
+                    <MudCard>
+						<MudCardContent>
+							<div style="display: flex; align-items: center">
+                                <MudText Typo="Typo.h5" Class="ml-3">
+                                    <MudButton Variant="Variant.Filled" FullWidth Color="Color.Tertiary" Class="ml-auto" OnClick="() => ShowData(0)">@(DateTime.Now.AddDays(0).DayOfWeek.ToString())</MudButton>
+                                 </MudText>
+								<MudIcon Icon="@Icons.Material.Filled.WbSunny" Size="Size.Large"></MudIcon>
+                                <MudText Typo="Typo.h5" Class="ml-3">Temperatura @(GetMaxTemperatureForDay(0)) / @(GetMinTemperatureForDay(0))</MudText>
+                                <MudText Typo="Typo.h5" Class="ml-3">Cisnienie @(GetMaxPreassureForDay(0)) hPa</MudText>
+                                <MudText Typo="Typo.h5" Class="ml-3">Wiatr @(GetMaxWindSpeedForDay(0)) km/h</MudText>
+                                <MudSpacer />
+							</div>
+						</MudCardContent>
+                        <MudCardContent>
+                            <div style="display: flex; align-items: center">
+                                <MudText Typo="Typo.h5" Class="ml-3">
+                                    <MudButton Variant="Variant.Filled" Color="Color.Tertiary" Class="ml-auto" OnClick="() => ShowData(1)">@(DateTime.Now.AddDays(1).DayOfWeek.ToString())</MudButton>
+                                </MudText>
+                                <MudIcon Icon="@Icons.Material.Filled.WbSunny" Size="Size.Large"></MudIcon>
+                                <MudText Typo="Typo.h5" Class="ml-3">Temperatura @(GetMaxTemperatureForDay(1)) / @(GetMinTemperatureForDay(1))</MudText>
+                                <MudText Typo="Typo.h5" Class="ml-3">Cisnienie @(GetMaxPreassureForDay(1)) hPa</MudText>
+                                <MudText Typo="Typo.h5" Class="ml-3">Wiatr @(GetMaxWindSpeedForDay(1)) km/h</MudText>
+                                <MudSpacer />
+                            </div>
+                        </MudCardContent>
+                        <MudCardContent>
+							<div style="display: flex; align-items: center">
+                                <MudText Typo="Typo.h5" Class="ml-3">
+                                    <MudButton Variant="Variant.Filled" Color="Color.Tertiary" Class="ml-auto" OnClick="() => ShowData(2)">@(DateTime.Now.AddDays(2).DayOfWeek.ToString())</MudButton>
+                                </MudText>
+								<MudIcon Icon="@Icons.Material.Filled.WbSunny" Size="Size.Large"></MudIcon>
+                                <MudText Typo="Typo.h5" Class="ml-3">Temperatura @(GetMaxTemperatureForDay(2)) / @(GetMinTemperatureForDay(2))</MudText>
+                                <MudText Typo="Typo.h5" Class="ml-3">Cisnienie @(GetMaxPreassureForDay(2)) hPa</MudText>
+                                <MudText Typo="Typo.h5" Class="ml-3">Wiatr @(GetMaxWindSpeedForDay(2)) km/h</MudText>
+                                <MudSpacer />
+							</div>
+						</MudCardContent>
+                        <MudCardContent>
+							<div style="display: flex; align-items: center">
+                                <MudText Typo="Typo.h5" Class="ml-3">
+                                    <MudButton Variant="Variant.Filled" Color="Color.Tertiary" Class="ml-auto" OnClick="() => ShowData(3)">@(DateTime.Now.AddDays(3).DayOfWeek.ToString())</MudButton>
+                                </MudText>
+								<MudIcon Icon="@Icons.Material.Filled.WbSunny" Size="Size.Large"></MudIcon>
+                                <MudText Typo="Typo.h5" Class="ml-3">Temperatura @(GetMaxTemperatureForDay(3)) / @(GetMinTemperatureForDay(3))</MudText>
+                                <MudText Typo="Typo.h5" Class="ml-3">Cisnienie @(GetMaxPreassureForDay(3)) hPa</MudText>
+                                <MudText Typo="Typo.h5" Class="ml-3">Wiatr @(GetMaxWindSpeedForDay(3)) km/h</MudText>
+                                <MudSpacer />
+							</div>
+						</MudCardContent>
+                        <MudCardContent>
+							<div style="display: flex; align-items: center">
+                                <MudText Typo="Typo.h5" Class="ml-3">
+                                    <MudButton Variant="Variant.Filled" Color="Color.Tertiary" Class="ml-auto" OnClick="() => ShowData(4)">@(DateTime.Now.AddDays(4).DayOfWeek.ToString())</MudButton>
+                                </MudText>
+								<MudIcon Icon="@Icons.Material.Filled.WbSunny" Size="Size.Large"></MudIcon>
+                                <MudText Typo="Typo.h5" Class="ml-3">Temperatura @(GetMaxTemperatureForDay(4)) / @(GetMinTemperatureForDay(4))</MudText>
+                                <MudText Typo="Typo.h5" Class="ml-3">Cisnienie @(GetMaxPreassureForDay(4)) hPa</MudText>
+                                <MudText Typo="Typo.h5" Class="ml-3">Wiatr @(GetMaxWindSpeedForDay(4)) km/h</MudText>
+                                <MudSpacer />
+							</div>
+						</MudCardContent>
+                        <MudCardContent>
+							<div style="display: flex; align-items: center">
+                                <MudText Typo="Typo.h5" Class="ml-3">
+                                    <MudButton Variant="Variant.Filled" Color="Color.Tertiary" Class="ml-auto" OnClick="() => ShowData(5)">@(DateTime.Now.AddDays(5).DayOfWeek.ToString())</MudButton>
+                                </MudText>
+								<MudIcon Icon="@Icons.Material.Filled.WbSunny" Size="Size.Large"></MudIcon>
+                                <MudText Typo="Typo.h5" Class="ml-3">Temperatura @(GetMaxTemperatureForDay(5)) / @(GetMinTemperatureForDay(5))</MudText>
+                                <MudText Typo="Typo.h5" Class="ml-3">Cisnienie @(GetMaxPreassureForDay(5)) hPa</MudText>
+                                <MudText Typo="Typo.h5" Class="ml-3">Wiatr @(GetMaxWindSpeedForDay(5)) km/h</MudText>
+                                <MudSpacer />
+							</div>
+						</MudCardContent>
+                        <MudCardContent>
+                            <div style="display: flex; align-items: center">
+                                <MudText Typo="Typo.h5" Class="ml-3">
+                                    <MudButton Variant="Variant.Filled" Color="Color.Tertiary" Class="ml-auto" OnClick="() => ShowData(6)">@(DateTime.Now.AddDays(6).DayOfWeek.ToString())</MudButton>
+                                </MudText>
+                                <MudIcon Icon="@Icons.Material.Filled.WbSunny" Size="Size.Large"></MudIcon>
+                                <MudText Typo="Typo.h5" Class="ml-3">Temperatura @(GetMaxTemperatureForDay(6)) / @(GetMinTemperatureForDay(6))</MudText>
+                                <MudText Typo="Typo.h5" Class="ml-3">Cisnienie @(GetMaxPreassureForDay(6)) hPa</MudText>
+                                <MudText Typo="Typo.h5" Class="ml-3">Wiatr @(GetMaxWindSpeedForDay(6)) km/h</MudText>
+                                <MudSpacer />
+                            </div>
+                        </MudCardContent>
+                    </MudCard>
+                </div>
+            </MudCardContent>
+        }
+    </MudCard>
+</div>
+
+@code {
+    class Search
+    {
+        public string City { get; set; } = string.Empty;
+    }
+
+    private bool showAlert = false;
+
+    private Search model = new Search();
+    private ForecastResponse? forecastResponse;
+
+    private int Index = -1; //default value cannot be 0 -> first selectedindex is 0.
+
+    private List<ChartSeries>? temperatureSeries = new();
+    private ChartOptions? temperatureOptions = new();
+    private string[]? xAxisLabels;
+
+    private List<ChartSeries>? preassureSeries = new();
+    private ChartOptions? preassureOptions = new();
+
+    private List<ChartSeries>? humiditySeries = new();
+    private ChartOptions? humidityOptions = new();
+
+    private List<ChartSeries>? windSpeedSeries = new();
+    private ChartOptions? windSpeedOptions = new();
+
+    private async void GetData()
+    {
+        forecastResponse = await WeatherForecastProviderService.GetForecastByCityAsync(model.City);
+
+        if (forecastResponse == null)
+        {
+            ShowAlert(true);
+            return;
+		}
+
+        ShowData(0);
+        temperatureOptions!.InterpolationOption = InterpolationOption.NaturalSpline;
+        temperatureOptions!.YAxisTicks = 1;
+        preassureOptions!.InterpolationOption = InterpolationOption.NaturalSpline;
+        preassureOptions!.YAxisTicks = 10;
+        humidityOptions!.InterpolationOption = InterpolationOption.NaturalSpline;
+        humidityOptions!.YAxisTicks = 10;
+        windSpeedOptions!.InterpolationOption = InterpolationOption.NaturalSpline;
+        windSpeedOptions!.YAxisTicks = 5;
+        StateHasChanged();
+    }
+
+    private void ShowData(int day)
+    {
+        xAxisLabels = forecastResponse!.Forecast.Select(x => x.Time.ToString("HH")).ToList().Take(24).ToArray();
+        temperatureSeries = new List<ChartSeries>()
+        {
+            new ChartSeries() { Name = "Temperatura", Data = forecastResponse!.Forecast.Select(x => x.Temperature).ToList().Skip(day * 24).Take(24).ToArray() },
+            new ChartSeries() { Name = "Temperatura odczuwalna", Data = forecastResponse!.Forecast.Select(x => x.ApparentTemperature).ToList().Skip(day * 24).Take(24).ToArray() }
+        };
+        preassureSeries = new List<ChartSeries>()
+		{
+			new ChartSeries() { Name = "Ciśnienie", Data = forecastResponse!.Forecast.Select(x => x.Pressure).ToList().Skip(day * 24).Take(24).ToArray() }
+		};
+        humiditySeries = new List<ChartSeries>()
+        {
+            new ChartSeries() { Name = "Wilgotność", Data = forecastResponse!.Forecast.Select(x => x.Humidity).ToList().Skip(day * 24).Take(24).ToArray() }
+        };
+        windSpeedSeries = new List<ChartSeries>()
+		{
+			new ChartSeries() { Name = "Prędkość wiatru", Data = forecastResponse!.Forecast.Select(x => x.WindSpeed).ToList().Skip(day * 24).Take(24).ToArray() },
+			new ChartSeries() { Name = "Porywy wiatru", Data = forecastResponse!.Forecast.Select(x => x.WindGusts).ToList().Skip(day * 24).Take(24).ToArray() }
+		};
+        StateHasChanged();
+    }
+
+    private double GetMaxTemperatureForDay(int day)
+    {
+        return forecastResponse!.Forecast.Select(x => x.Temperature).ToList().Skip(day * 24).Take(24).Max();
+    }
+
+    private double GetMinTemperatureForDay(int day)
+    {
+        return forecastResponse!.Forecast.Select(x => x.Temperature).ToList().Skip(day * 24).Take(24).Min();
+    }
+
+    private double GetMaxPreassureForDay(int day)
+    {
+        return forecastResponse!.Forecast.Select(x => x.Pressure).ToList().Skip(day * 24).Take(24).Max();
+    }
+
+    private double GetMaxWindSpeedForDay(int day)
+    {
+        return forecastResponse!.Forecast.Select(x => x.WindSpeed).ToList().Skip(day * 24).Take(24).Max();
+    }
+
+    private void OnValidSubmit()
+    {
+        GetData();
+    }
+
+    private void ShowAlert(bool value)
+    {
+        showAlert = value;
+        StateHasChanged();
+    }
+}

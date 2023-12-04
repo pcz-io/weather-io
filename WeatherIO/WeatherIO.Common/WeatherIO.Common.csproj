@@ -6,6 +6,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="WebComponents\Pages\Weather.razor.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="WebComponents\Pages\Weather.razor.css" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <SupportedPlatform Include="browser" />

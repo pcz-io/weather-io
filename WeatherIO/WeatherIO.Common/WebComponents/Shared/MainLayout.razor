@@ -14,18 +14,19 @@
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
         <MudText Typo="Typo.h5" Class="ml-3">Weather.io</MudText>
         <MudSpacer />
-        <MudMenu Icon="@Icons.Material.Filled.Settings" Color="Color.Tertiary">
+        <MudMenu Icon="@Icons.Material.Filled.AccountCircle" Color="Color.Tertiary">
             <AuthorizeView>
-                <NotAuthorized>
-                    <MudMenuItem OnClick="Login">Login</MudMenuItem>
-                    <MudMenuItem OnClick="Register">Register</MudMenuItem>
-                </NotAuthorized>
-                <Authorized>
-                    <MudMenuItem OnClick="Logout">Logout</MudMenuItem>
-                </Authorized>
-            </AuthorizeView>
-            <MudMenuItem OnClick="Settings">Settings</MudMenuItem>
+				<NotAuthorized>
+					<MudMenuItem OnClick="Login">Login</MudMenuItem>
+					<MudMenuItem OnClick="Register">Register</MudMenuItem>
+				</NotAuthorized>
+				<Authorized>
+                    <MudMenuItem OnClick="Profile">Profile</MudMenuItem>
+					<MudMenuItem OnClick="Logout">Logout</MudMenuItem>
+				</Authorized>
+			</AuthorizeView>
         </MudMenu>
+        <MudIconButton Icon="@Icons.Material.Filled.Settings" Color="Color.Tertiary" OnClick="Settings" aria-label="settings"></MudIconButton>
     </MudAppBar>
     <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
         <NavMenu />
@@ -44,9 +45,15 @@
         _drawerOpen = !_drawerOpen;
     }
 
+    private void Profile()
+	{
+		NavigationManager.NavigateTo("/profile");
+	}
+
     private void Logout()
     {
         _authService.Logout();
+        NavigationManager.NavigateTo("/login");
     }
 
     private void Login()
