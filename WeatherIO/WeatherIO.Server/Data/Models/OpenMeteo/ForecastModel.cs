@@ -58,7 +58,7 @@ namespace WeatherIO.Server.Data.Models.OpenMeteo
             public double temperature_2m { get; set; }
 
             // Wilgotność w procentach
-            public double relativehumidity_2m { get; set; }
+            public double relative_humidity_2m { get; set; }
 
             // Temperatura odczuwalna
             public double apparent_temperature { get; set; }
@@ -85,13 +85,13 @@ namespace WeatherIO.Server.Data.Models.OpenMeteo
             public double surface_pressure { get; set; }
 
             // Prędkość wiatru w km/h
-            public double windspeed_10m { get; set; }
+            public double wind_speed_10m { get; set; }
 
             // Kierunek wiatru w stopniach
-            public double winddirection_10m { get; set; }
+            public double wind_direction_10m { get; set; }
 
             // Porywy wiatru w km/h
-            public double windgusts_10m { get; set; }
+            public double wind_gusts_10m { get; set; }
         }
 
         public class ForecastData
@@ -103,7 +103,7 @@ namespace WeatherIO.Server.Data.Models.OpenMeteo
             public IList<double> temperature_2m { get; set; }
 
             // 
-            public IList<double> relativehumidity_2m { get; set; }
+            public IList<double> relative_humidity_2m { get; set; }
 
             // Temperatura odczuwalna
             public IList<double> apparent_temperature { get; set; }
@@ -130,13 +130,13 @@ namespace WeatherIO.Server.Data.Models.OpenMeteo
             public IList<double> surface_pressure { get; set; }
 
             // Prędkość wiatru w km/h
-            public IList<double> windspeed_10m { get; set; }
+            public IList<double> wind_speed_10m { get; set; }
 
             // Kierunek wiatru w stopniach
-            public IList<double> winddirection_10m { get; set; }
+            public IList<double> wind_direction_10m { get; set; }
 
             // Porywy wiatru w km/h
-            public IList<double> windgusts_10m { get; set; }
+            public IList<double> wind_gusts_10m { get; set; }
         }
 
         // Szerokość geograficzna
@@ -160,11 +160,11 @@ namespace WeatherIO.Server.Data.Models.OpenMeteo
                     Temperature = this.current.temperature_2m,
                     ApparentTemperature = this.current.apparent_temperature,
                     Precipitation = this.current.precipitation,
-                    Humidity = this.current.relativehumidity_2m,
+                    Humidity = this.current.relative_humidity_2m,
                     Pressure = this.current.surface_pressure,
-                    WindSpeed = this.current.windspeed_10m,
-                    WindDirection = this.current.winddirection_10m,
-                    WindGusts = this.current.windgusts_10m
+                    WindSpeed = this.current.wind_speed_10m,
+                    WindDirection = this.current.wind_direction_10m,
+                    WindGusts = this.current.wind_gusts_10m
                 },
                 Forecast = GetForecastTimePoints()
             };
@@ -183,11 +183,11 @@ namespace WeatherIO.Server.Data.Models.OpenMeteo
                     Temperature = this.hourly.temperature_2m[i],
                     ApparentTemperature = this.hourly.apparent_temperature[i],
                     Precipitation = this.hourly.precipitation[i],
-                    Humidity = this.hourly.relativehumidity_2m[i],
+                    Humidity = this.hourly.relative_humidity_2m[i],
                     Pressure = this.hourly.surface_pressure[i],
-                    WindSpeed = this.hourly.windspeed_10m[i],
-                    WindDirection = this.hourly.winddirection_10m[i],
-                    WindGusts = this.hourly.windgusts_10m[i]
+                    WindSpeed = this.hourly.wind_speed_10m[i],
+                    WindDirection = this.hourly.wind_direction_10m[i],
+                    WindGusts = this.hourly.wind_gusts_10m[i]
                 });
             }
             return result;

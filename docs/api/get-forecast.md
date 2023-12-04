@@ -1,6 +1,10 @@
 # Get Forecast
 
-**URL** : `/api/get-forecast?latitude=[double]&longitude=[double]&timezone=[timezone string?]`
+Gets forecast for given location.
+Default value for timezone is "Europe/Warsaw"
+Default value for model is "dwdicon"
+
+**URL** : `/api/get-forecast?latitude=[double]&longitude=[double]&timezone=[timezone string?]&model=[dwdicon|ecmwf ?]`
 
 **Mathod** : `GET`
 
@@ -10,7 +14,7 @@
 
 ## Success
 
-**URL** : `/api/get-forecast?latitude=19.5&longitude=50.1`
+**URL** : `/api/get-forecast?latitude=19.5&longitude=50.1&model=dwdicon`
 
 **Code** : `200 OK`
 

@@ -19,9 +19,26 @@ namespace WeatherIO.Server.Data.Controllers
             _geocodingService = geocodingService;
         }
 
+        /// <summary>
+        /// Maps string to ForecastService.Model
+        ///   "dwdicon" -> ForecastService.Model.DWDIcon
+        ///   "ecmwf"   -> ForecastService.Model.ECMWF
+        /// </summary>
+        /// <param name="model">Input string</param>
+        /// <returns>ForecastService.Model</returns>
+        private ForecastService.Model StringToForecastModel(string? model)
+        {
+            return model switch
+            {
+                "dwdicon" => ForecastService.Model.DWDIcon,
+                "ecmwf" => ForecastService.Model.ECMWF,
+                _ => ForecastService.Model.DWDIcon
+            };
+        }
+
         [HttpGet]
         [Route("get-forecast-by-city")]
-        public async Task<IActionResult> GetForecastByCity(string name, string? timezone = "Europe/Warsaw")
+        public async Task<IActionResult> GetForecastByCity(string name, string? timezone = "Europe/Warsaw", string? model = "dwdicon")
         {
             var geo = await _geocodingService.GetGeocodingModelByNameAsync(name);
             if (geo == null)
@@ -31,7 +48,8 @@ namespace WeatherIO.Server.Data.Controllers
                     Message = $"Nie znaleziono miasta o nazwie {name}"
                 });
             }
-            var forecast = await _forecastService.GetForecastAsync(geo[0].Latitude, geo[0].Longitude, timezone!);
+
+            var forecast = await _forecastService.GetForecastAsync(geo[0].Latitude, geo[0].Longitude, timezone!, StringToForecastModel(model));
             if (forecast == null)
             {
                 return NotFound(new Error
@@ -44,9 +62,9 @@ namespace WeatherIO.Server.Data.Controllers
 
         [HttpGet]
         [Route("get-forecast")]
-        public async Task<IActionResult> GetForecast(double latitude, double longitude, string? timezone = "Europe/Warsaw")
+        public async Task<IActionResult> GetForecast(double latitude, double longitude, string? timezone = "Europe/Warsaw", string? model = "dwdicon")
         {
-            var forecast = await _forecastService.GetForecastAsync(latitude, longitude, timezone!);
+            var forecast = await _forecastService.GetForecastAsync(latitude, longitude, timezone!, StringToForecastModel(model));
             if (forecast == null)
             {
                 return NotFound(new Error

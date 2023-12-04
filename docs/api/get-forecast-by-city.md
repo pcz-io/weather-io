@@ -1,6 +1,10 @@
 # Get Forecast by City
 
-**URL** : `/api/get-forecast-by-city?city=[string]&timezone=[timezone string?]`
+Gets forecast for given city name.
+Default value for timezone is "Europe/Warsaw"
+Default value for model is "dwdicon"
+
+**URL** : `/api/get-forecast-by-city?name=[string]&timezone=[timezone string?]&model=[dwdicon|ecmwf ?]`
 
 **Mathod** : `GET`
 
@@ -10,7 +14,7 @@
 
 ## Success
 
-**URL** : `/api/get-forecast-by-city?city=Czestochowa`
+**URL** : `/api/get-forecast-by-city?name=Czestochowa&model=dwdicon`
 
 **Code** : `200 OK`
 
