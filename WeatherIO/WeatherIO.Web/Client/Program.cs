@@ -26,8 +26,6 @@ namespace WeatherIO.Web
             builder.RootComponents.Add<App>("#app");
             builder.RootComponents.Add<HeadOutlet>("head::after");
 
-            //builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-
             builder.Services.AddMudServices();
             builder.Services.AddBlazoredLocalStorageAsSingleton();
             builder.Services.AddHttpClient();
@@ -38,6 +36,10 @@ namespace WeatherIO.Web
             builder.Services.AddSingleton<IConfigurationProviderService, ConfigurationProviderService>();
             builder.Services.AddSingleton<IAuthenticationService, AuthenticationService>();
             builder.Services.AddSingleton<AuthenticationStateProvider, WeatherAuthenticationStateProvider>();
+
+            builder.Services.AddSingleton<IGeocodeProviderService, GeocodeProviderService>();
+            builder.Services.AddSingleton<IAirQualityProviderService, AirQualityProviderService>();
+            builder.Services.AddSingleton<IWeatherForecastProviderService, WeatherForecastProviderService>();
 
             await builder.Build().RunAsync();
         }

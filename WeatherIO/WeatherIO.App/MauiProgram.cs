@@ -42,7 +42,11 @@ namespace WeatherIO.App
             builder.Services.AddSingleton<IAuthenticationService, AuthenticationService>();
             builder.Services.AddSingleton<AuthenticationStateProvider, WeatherAuthenticationStateProvider>();
 
-            return builder.Build();
+			builder.Services.AddSingleton<IGeocodeProviderService, GeocodeProviderService>();
+			builder.Services.AddSingleton<IAirQualityProviderService, AirQualityProviderService>();
+			builder.Services.AddSingleton<IWeatherForecastProviderService, WeatherForecastProviderService>();
+
+			return builder.Build();
         }
     }
 }
