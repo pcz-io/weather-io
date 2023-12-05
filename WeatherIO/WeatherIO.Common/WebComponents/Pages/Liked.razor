@@ -1,12 +1,51 @@
 ﻿@page "/liked"
+@using WeatherIO.Common.Data.Models
 @attribute [Authorize]
+
+@inject NavigationManager _navigationManager
+@inject IFovouriteProviderService _favouriteProviderService
 
 <PageTitle>Liked</PageTitle>
 
 <div style="width: 100%; margin: auto">
-    <h1>Ulubione</h1>
+    <MudDataGrid Items="@favouriteLocations" Filterable="false" SortMode="@SortMode.None" Groupable="false">
+        <Columns>
+            <PropertyColumn Property="x => x.Name" Title="Nazwa" />
+            <PropertyColumn Property="x => x.Latitude" Title="Szerokość Geograficzna" />
+            <PropertyColumn Property="x => x.Longitude" Title="Długość Geograficzna" />
+            <TemplateColumn CellClass="d-flex justify-end">
+                <CellTemplate>
+                    <MudStack Row>
+                        <MudButton Variant="Variant.Filled" Color="Color.Tertiary" Class="ml-auto" OnClick="@(e => Show(context.Item.Id))">Pokaż</MudButton>
+                        <MudButton Variant="Variant.Filled" Color="Color.Secondary" Class="ml-auto" OnClick="@(e => Delete(context.Item))">Usuń</MudButton>
+                    </MudStack>
+                </CellTemplate>
+            </TemplateColumn>
+        </Columns>
+    </MudDataGrid>
 </div>
 
 @code {
+    private IEnumerable<FavouriteLocationModel>? favouriteLocations;
 
+    private void Show(int id)
+    {
+        var name = favouriteLocations?.FirstOrDefault(x => x.Id == id)?.Name;
+        _navigationManager.NavigateTo($"/weather/{name}");
+    }
+
+    private async Task Delete(FavouriteLocationModel model)
+    {
+        await _favouriteProviderService.DeleteFavouriteAsync(model);
+        StateHasChanged();
+    }
+
+    protected async override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            favouriteLocations = await _favouriteProviderService.GetFavouritesAsync();
+            StateHasChanged();
+        }
+    }
 }

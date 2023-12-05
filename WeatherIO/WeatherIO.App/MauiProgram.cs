@@ -41,8 +41,9 @@ namespace WeatherIO.App
             builder.Services.AddSingleton<IConfigurationProviderService, ConfigurationProviderService>();
             builder.Services.AddSingleton<IAuthenticationService, AuthenticationService>();
             builder.Services.AddSingleton<AuthenticationStateProvider, WeatherAuthenticationStateProvider>();
+            builder.Services.AddSingleton<IFovouriteProviderService, FovouriteProviderService>();
 
-			builder.Services.AddSingleton<IGeocodeProviderService, GeocodeProviderService>();
+            builder.Services.AddSingleton<IGeocodeProviderService, GeocodeProviderService>();
 			builder.Services.AddSingleton<IAirQualityProviderService, AirQualityProviderService>();
 			builder.Services.AddSingleton<IWeatherForecastProviderService, WeatherForecastProviderService>();
 
