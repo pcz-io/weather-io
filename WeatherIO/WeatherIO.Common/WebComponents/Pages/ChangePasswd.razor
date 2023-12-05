@@ -1,0 +1,76 @@
+﻿@page "/changepasswd"
+
+@using System.ComponentModel.DataAnnotations
+@inject IAuthenticationService _authService
+@inject NavigationManager _navManager
+
+<div>
+    <div style="width: 100%; max-width: 500px; margin: auto;">
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <MudAlert Severity="Severity.Error" Variant="Variant.Filled">@errorMessage</MudAlert>
+        }
+        <EditForm Model="@model" OnValidSubmit="OnValidSubmit">
+            <DataAnnotationsValidator />
+            <MudCard>
+                <MudCardContent>
+                    <MudTextField Label="Old Passowrd" Class="mt-3"
+                    @bind-Value="model.OldPassword" For="@(() => model.OldPassword)" />
+                    <MudTextField Label="Password" HelperText="Choose a strong password" Class="mt-3"
+                    @bind-Value="model.NewPassword" For="@(() => model.NewPassword)" InputType="InputType.Password" />
+                    <MudTextField Label="Password" HelperText="Repeat the password" Class="mt-3"
+                    @bind-Value="model.RepeatPassword" For="@(() => model.RepeatPassword)" InputType="InputType.Password" />
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Change password</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    ChangePasswordForm model = new ChangePasswordForm();
+    bool success;
+    string errorMessage = string.Empty;
+
+    public class ChangePasswordForm
+    {
+        //Can't be empty
+        [Required]
+        [RegularExpression(@"^.+$", ErrorMessage = "Old password can't be empty.")]
+        public string OldPassword { get; set; }
+
+        [Required]
+        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$",
+         ErrorMessage = "Password must meet requirements (at least 8 characters, 1 uppercase, 1 lowercase, 1 number).")]
+        public string NewPassword { get; set; }
+
+        [Required]
+        [Compare(nameof(NewPassword))]
+        public string RepeatPassword { get; set; }
+    }
+
+    private async Task ChangePasswordAsync()
+    {
+        if(await _authService.ChangePassword(new()
+            {
+                OldPassword = model.OldPassword,
+                NewPassword = model.NewPassword
+            }))
+        {
+            _navManager.NavigateTo("/home");
+        }
+        else
+        {
+            errorMessage = "Nie udało się zmienić hasła";
+        }
+    }
+
+    private async Task OnValidSubmit(EditContext context)
+    {
+        await ChangePasswordAsync();
+        success = true;
+        StateHasChanged();
+    }
+}

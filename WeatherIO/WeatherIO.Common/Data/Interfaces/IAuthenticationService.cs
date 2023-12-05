@@ -34,5 +34,18 @@ namespace WeatherIO.Common.Data.Interfaces
         /// </summary>
         /// <returns></returns>
 		Task<string?> GetUsername();
-	}
+
+        /// <summary>
+        /// Deletes user account.
+        /// </summary>
+        /// <returns> True if succeeded otherwise false</returns>
+        public Task<bool> DeleteAccount();
+
+        /// <summary>
+        /// Change user password.
+        /// </summary>
+        /// <param name="model"> Model containing old and new password.</param>
+        /// <returns> True if succeeded otherwise false</returns>
+        public Task<bool> ChangePassword(ChangePasswordModel model);
+    }
 }

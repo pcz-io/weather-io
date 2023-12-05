@@ -39,5 +39,16 @@ namespace WeatherIO.App.Data.Services
         {
             return HttpClient.GetAsync(url);
         }
+
+        /// <summary>
+        /// This method is used to post data to a given url
+        /// </summary>
+        /// <param name="url"> The url to post data to</param>
+        /// <param name="content"> The data to post to the url</param>
+        /// <returns> An HttpResponseMessage from the given url</returns>
+        public Task<HttpResponseMessage> PostAsync(string url, HttpContent content)
+        {
+            return HttpClient.PostAsync(url, content);
+        }
     }
 }
