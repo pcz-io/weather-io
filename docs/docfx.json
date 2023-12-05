@@ -54,6 +54,12 @@
           "toc.yml",
           "*.md"
         ]
+      },
+      {
+        "files": [
+          "deployment/*.md",
+          "deployment/*.yml"
+        ]
       }
     ],
     "resource": [
