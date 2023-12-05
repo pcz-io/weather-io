@@ -6,14 +6,37 @@ using WeatherIO.Common.Data.Models.APIResponses;
 
 namespace WeatherIO.Common.Data.Services
 {
+    /// <summary>
+    /// This service handles authentication with the server
+    /// </summary>
     public class AuthenticationService : IAuthenticationService
     {
+        /// <summary>
+        /// Dependency injected IConfigurationProviderService
+        /// </summary>
         private readonly IConfigurationProviderService _configurationProvider;
+
+        /// <summary>
+        /// Dependency injected AuthenticationStateProvider
+        /// </summary>
         private readonly AuthenticationStateProvider _authStateProvider;
+
+        /// <summary>
+        /// Dependency injected IHttpClientProviderService
+        /// </summary>
         private readonly IHttpClientProviderService _clientProviderService;
 
+        /// <summary>
+        /// Cached username
+        /// </summary>
         private string? username;
 
+        /// <summary>
+        /// Constructor with dependency injected services
+        /// </summary>
+        /// <param name="configurationProvider"></param>
+        /// <param name="authStateProvider"></param>
+        /// <param name="clientProviderService"></param>
         public AuthenticationService(IConfigurationProviderService configurationProvider, AuthenticationStateProvider authStateProvider, IHttpClientProviderService clientProviderService)
         {
             _configurationProvider = configurationProvider;
@@ -103,13 +126,13 @@ namespace WeatherIO.Common.Data.Services
         /// <returns> True if succeeded otherwise false</returns>
         public async Task<bool> DeleteAccount()
         {
-			var url = $"{_configurationProvider.Configuration.ServerAddress}/api/delete-account";
-			var result = await _clientProviderService.HttpClient.PostAsync(url, null);
+            var url = $"{_configurationProvider.Configuration.ServerAddress}/api/delete-account";
+            var result = await _clientProviderService.HttpClient.PostAsync(url, null);
             if (result.IsSuccessStatusCode)
             {
                 await Logout();
             }
-			return result.IsSuccessStatusCode;
+            return result.IsSuccessStatusCode;
         }
 
         /// <summary>

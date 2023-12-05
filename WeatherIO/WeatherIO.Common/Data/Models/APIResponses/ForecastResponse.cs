@@ -1,7 +1,13 @@
 ﻿namespace WeatherIO.Common.Data.Models.APIResponses
 {
+    /// <summary>
+    /// Represents response data from `get-forecast` and `get-forecast-by-city` endpoints
+    /// </summary>
     public class ForecastResponse
     {
+        /// <summary>
+        /// Represents one data sample in ForecastResponse
+        /// </summary>
         public class ForecastTimePoint
         {
             public DateTime Time { get; set; }
@@ -17,7 +23,14 @@
             public double? WindGusts { get; set; }
         }
 
+        /// <summary>
+        /// Represents current weather data
+        /// </summary>
         public ForecastTimePoint Current { get; set; }
+
+        /// <summary>
+        /// Represents forecast data
+        /// </summary>
         public IList<ForecastTimePoint> Forecast { get; set; }
     }
 }

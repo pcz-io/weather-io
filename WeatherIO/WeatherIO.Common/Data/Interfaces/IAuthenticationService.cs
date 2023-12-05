@@ -7,6 +7,9 @@ using WeatherIO.Common.Data.Models;
 
 namespace WeatherIO.Common.Data.Interfaces
 {
+    /// <summary>
+    /// This is an interface for service that handles authentication with the server
+    /// </summary>
     public interface IAuthenticationService
     {
         /// <summary>
@@ -33,7 +36,7 @@ namespace WeatherIO.Common.Data.Interfaces
         /// Gets logged user username.
         /// </summary>
         /// <returns></returns>
-		Task<string?> GetUsername();
+        Task<string?> GetUsername();
 
         /// <summary>
         /// Deletes user account.

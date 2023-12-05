@@ -6,11 +6,27 @@ using WeatherIO.Common.Data.Interfaces;
 
 namespace WeatherIO.Common.Data.Services
 {
+    /// <summary>
+    /// This class is a extension of AuthenticationStateProvider which is used to
+    /// integrate server API authentication method with the client.
+    /// </summary>
     public class WeatherAuthenticationStateProvider : AuthenticationStateProvider
     {
+        /// <summary>
+        /// Dependency injected IConfigurationProviderService service
+        /// </summary>
         private readonly IConfigurationProviderService _configurationProvider;
+
+        /// <summary>
+        /// Dependency injected IHttpClientProviderService service
+        /// </summary>
         private readonly IHttpClientProviderService _httpClientProvider;
 
+        /// <summary>
+        /// Constructor with dependency injected services
+        /// </summary>
+        /// <param name="configurationProvider"></param>
+        /// <param name="httpClientProvider"></param>
         public WeatherAuthenticationStateProvider(IConfigurationProviderService configurationProvider, IHttpClientProviderService httpClientProvider)
         {
             _configurationProvider = configurationProvider;
