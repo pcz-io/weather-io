@@ -187,43 +187,43 @@
         xAxisLabels = forecastResponse!.Forecast.Select(x => x.Time.ToString("HH")).ToList().Take(24).ToArray();
         temperatureSeries = new List<ChartSeries>()
         {
-            new ChartSeries() { Name = "Temperatura", Data = forecastResponse!.Forecast.Select(x => x.Temperature).ToList().Skip(day * 24).Take(24).ToArray() },
-            new ChartSeries() { Name = "Temperatura odczuwalna", Data = forecastResponse!.Forecast.Select(x => x.ApparentTemperature).ToList().Skip(day * 24).Take(24).ToArray() }
+            new ChartSeries() { Name = "Temperatura", Data = forecastResponse!.Forecast.Select(x => x.Temperature ?? 0.0).ToList().Skip(day * 24).Take(24).ToArray() },
+            new ChartSeries() { Name = "Temperatura odczuwalna", Data = forecastResponse!.Forecast.Select(x => x.ApparentTemperature ?? 0.0).ToList().Skip(day * 24).Take(24).ToArray() }
         };
         preassureSeries = new List<ChartSeries>()
 		{
-			new ChartSeries() { Name = "Ciśnienie", Data = forecastResponse!.Forecast.Select(x => x.Pressure).ToList().Skip(day * 24).Take(24).ToArray() }
+			new ChartSeries() { Name = "Ciśnienie", Data = forecastResponse!.Forecast.Select(x => x.Pressure ?? 0.0).ToList().Skip(day * 24).Take(24).ToArray() }
 		};
         humiditySeries = new List<ChartSeries>()
         {
-            new ChartSeries() { Name = "Wilgotność", Data = forecastResponse!.Forecast.Select(x => x.Humidity).ToList().Skip(day * 24).Take(24).ToArray() }
+            new ChartSeries() { Name = "Wilgotność", Data = forecastResponse!.Forecast.Select(x => x.Humidity ?? 0.0).ToList().Skip(day * 24).Take(24).ToArray() }
         };
         windSpeedSeries = new List<ChartSeries>()
 		{
-			new ChartSeries() { Name = "Prędkość wiatru", Data = forecastResponse!.Forecast.Select(x => x.WindSpeed).ToList().Skip(day * 24).Take(24).ToArray() },
-			new ChartSeries() { Name = "Porywy wiatru", Data = forecastResponse!.Forecast.Select(x => x.WindGusts).ToList().Skip(day * 24).Take(24).ToArray() }
+            new ChartSeries() { Name = "Prędkość wiatru", Data = forecastResponse!.Forecast.Select(x => x.WindSpeed ?? 0.0).ToList().Skip(day * 24).Take(24).ToArray() },
+            new ChartSeries() { Name = "Porywy wiatru", Data = forecastResponse!.Forecast.Select(x => x.WindGusts ?? 0.0).ToList().Skip(day * 24).Take(24).ToArray() }
 		};
         StateHasChanged();
     }
 
     private double GetMaxTemperatureForDay(int day)
     {
-        return forecastResponse!.Forecast.Select(x => x.Temperature).ToList().Skip(day * 24).Take(24).Max();
+        return forecastResponse!.Forecast.Select(x => x.Temperature ?? 0.0).ToList().Skip(day * 24).Take(24).Max();
     }
 
     private double GetMinTemperatureForDay(int day)
     {
-        return forecastResponse!.Forecast.Select(x => x.Temperature).ToList().Skip(day * 24).Take(24).Min();
+        return forecastResponse!.Forecast.Select(x => x.Temperature ?? 0.0).ToList().Skip(day * 24).Take(24).Min();
     }
 
     private double GetMaxPreassureForDay(int day)
     {
-        return forecastResponse!.Forecast.Select(x => x.Pressure).ToList().Skip(day * 24).Take(24).Max();
+        return forecastResponse!.Forecast.Select(x => x.Pressure ?? 0.0).ToList().Skip(day * 24).Take(24).Max();
     }
 
     private double GetMaxWindSpeedForDay(int day)
     {
-        return forecastResponse!.Forecast.Select(x => x.WindSpeed).ToList().Skip(day * 24).Take(24).Max();
+        return forecastResponse!.Forecast.Select(x => x.WindSpeed ?? 0.0).ToList().Skip(day * 24).Take(24).Max();
     }
 
     private void OnValidSubmit()

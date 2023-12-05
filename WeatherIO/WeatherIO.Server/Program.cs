@@ -8,8 +8,15 @@ using WeatherIO.Server.Data.Services;
 
 namespace WeatherIO.Server
 {
+    /// <summary>
+    /// This is a class that contains program entry point
+    /// </summary>
     public static class Program
     {
+        /// <summary>
+        /// Entry point of the server program
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
             var dbhost = Environment.GetEnvironmentVariable("DB_HOST");

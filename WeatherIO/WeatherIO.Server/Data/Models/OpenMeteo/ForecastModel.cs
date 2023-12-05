@@ -3,8 +3,14 @@ using static WeatherIO.Common.Data.Models.APIResponses.ForecastResponse;
 
 namespace WeatherIO.Server.Data.Models.OpenMeteo
 {
+    /// <summary>
+    /// This class represents OpenMeteo Forecast API response
+    /// </summary>
     public class ForecastModel
     {
+        /// <summary>
+        /// This enum contains WMO codes
+        /// </summary>
         public enum WeatherCode
         {
             ClearSky = 0,
@@ -49,114 +55,187 @@ namespace WeatherIO.Server.Data.Models.OpenMeteo
             ThunderStormWithHeavyHail = 99
         }
 
+        /// <summary>
+        /// This class represents JSON object for current weather data
+        /// </summary>
         public class CurrentData
         {
-            // Aktualny czas
+            /// <summary>
+            /// Time of the response
+            /// </summary>
             public DateTime time { get; set; }
 
-            // Temperatura na wysokości 2m
-            public double temperature_2m { get; set; }
+            /// <summary>
+            /// Temperature 2 meters above surface
+            /// </summary>
+            public double? temperature_2m { get; set; }
 
-            // Wilgotność w procentach
-            public double relative_humidity_2m { get; set; }
+            /// <summary>
+            /// Relative humidity 2 meters above surface
+            /// </summary>
+            public double? relative_humidity_2m { get; set; }
 
-            // Temperatura odczuwalna
-            public double apparent_temperature { get; set; }
+            /// <summary>
+            /// Apparent temperature
+            /// </summary>
+            public double? apparent_temperature { get; set; }
 
-            // Opady w mm
-            public double precipitation { get; set; }
+            /// <summary>
+            /// Precipitation in mm
+            /// </summary>
+            public double? precipitation { get; set; }
 
-            // Deszcz w mm
-            public double rain { get; set; }
+            /// <summary>
+            /// Rain in mm
+            /// </summary>
+            public double? rain { get; set; }
 
-            // Mżawka w mm
-            public double showers { get; set; }
+            /// <summary>
+            /// Showers in mm
+            /// </summary>
+            public double? showers { get; set; }
 
-            // Opady śniegu w mm
-            public double snowfall { get; set; }
+            /// <summary>
+            /// Snowfall in mm
+            /// </summary>
+            public double? snowfall { get; set; }
 
-            // Kod WMO
-            public WeatherCode weathercode { get; set; }
+            /// <summary>
+            /// WMO code for this time
+            /// </summary>
+            public WeatherCode? weathercode { get; set; }
 
-            // Zachmurzenie w procentach
-            public double cloudcover { get; set; }
+            /// <summary>
+            /// Cloud cover in percents
+            /// </summary>
+            public double? cloudcover { get; set; }
 
-            // Ciśnienie na powierzchni w hPa
-            public double surface_pressure { get; set; }
+            /// <summary>
+            /// Surface pressure in hPa
+            /// </summary>
+            public double? surface_pressure { get; set; }
 
-            // Prędkość wiatru w km/h
-            public double wind_speed_10m { get; set; }
+            /// <summary>
+            /// Wind speed 10 meters above surface in km/h
+            /// </summary>
+            public double? wind_speed_10m { get; set; }
 
-            // Kierunek wiatru w stopniach
-            public double wind_direction_10m { get; set; }
+            /// <summary>
+            /// Wind direction in degrees
+            /// </summary>
+            public double? wind_direction_10m { get; set; }
 
-            // Porywy wiatru w km/h
-            public double wind_gusts_10m { get; set; }
+            /// <summary>
+            /// Wind gusts 10 meters above surface in km/h
+            /// </summary>
+            public double? wind_gusts_10m { get; set; }
         }
 
         public class ForecastData
         {
-            // Aktualny czas
+            /// <summary>
+            /// Time of the response
+            /// </summary>
             public IList<DateTime> time { get; set; }
 
-            // Temperatura na wysokości 2m
-            public IList<double> temperature_2m { get; set; }
+            /// <summary>
+            /// Temperature 2 meters above surface
+            /// </summary>
+            public IList<double>? temperature_2m { get; set; }
 
-            // 
-            public IList<double> relative_humidity_2m { get; set; }
+            /// <summary>
+            /// Relative humidity 2 meters above surface
+            /// </summary>
+            public IList<double>? relative_humidity_2m { get; set; }
 
-            // Temperatura odczuwalna
-            public IList<double> apparent_temperature { get; set; }
+            /// <summary>
+            /// Apparent temperature
+            /// </summary>
+            public IList<double>? apparent_temperature { get; set; }
 
-            // Opady w mm
-            public IList<double> precipitation { get; set; }
+            /// <summary>
+            /// Precipitation in mm
+            /// </summary>
+            public IList<double>? precipitation { get; set; }
 
-            // Deszcz w mm
-            public IList<double> rain { get; set; }
+            /// <summary>
+            /// Rain in mm
+            /// </summary>
+            public IList<double>? rain { get; set; }
 
-            // Mżawka w mm
-            public IList<double> showers { get; set; }
+            /// <summary>
+            /// Showers in mm
+            /// </summary>
+            public IList<double>? showers { get; set; }
 
-            // Opady śniegu w mm
-            public IList<double> snowfall { get; set; }
+            /// <summary>
+            /// Snowfall in mm
+            /// </summary>
+            public IList<double>? snowfall { get; set; }
 
-            // Kod WMO
-            public IList<WeatherCode> weathercode { get; set; }
+            /// <summary>
+            /// WMO code for this time
+            /// </summary>
+            public IList<WeatherCode>? weathercode { get; set; }
 
-            // Zasłona chmurna XD w procentach
-            public IList<double> cloudcover { get; set; }
+            /// <summary>
+            /// Cloud cover in percents
+            /// </summary>
+            public IList<double>? cloudcover { get; set; }
 
-            // Ciśnienie na powierzchni w hPa
-            public IList<double> surface_pressure { get; set; }
+            /// <summary>
+            /// Surface pressure in hPa
+            /// </summary>
+            public IList<double>? surface_pressure { get; set; }
 
-            // Prędkość wiatru w km/h
-            public IList<double> wind_speed_10m { get; set; }
+            /// <summary>
+            /// Wind speed 10 meters above surface in km/h
+            /// </summary>
+            public IList<double>? wind_speed_10m { get; set; }
 
-            // Kierunek wiatru w stopniach
-            public IList<double> wind_direction_10m { get; set; }
+            /// <summary>
+            /// Wind direction in degrees
+            /// </summary>
+            public IList<double>? wind_direction_10m { get; set; }
 
-            // Porywy wiatru w km/h
-            public IList<double> wind_gusts_10m { get; set; }
+            /// <summary>
+            /// Wind gusts 10 meters above surface in km/h
+            /// </summary>
+            public IList<double>? wind_gusts_10m { get; set; }
         }
 
-        // Szerokość geograficzna
+        /// <summary>
+        /// Latitude of the forecast location
+        /// </summary>
         public double latitude { get; set; }
 
-        // Długość geograficzna
+        /// <summary>
+        /// Longitude of the forecast location
+        /// </summary>
         public double longitude { get; set; }
 
+        /// <summary>
+        /// Object with current weather data
+        /// </summary>
         public CurrentData current { get; set; }
 
+        /// <summary>
+        /// Object with forecast data
+        /// </summary>
         public ForecastData hourly { get; set; }
 
+        /// <summary>
+        /// This method converts object into ForecastResponse
+        /// </summary>
+        /// <returns>ForecastResponse</returns>
         public ForecastResponse ToResponse()
         {
             return new() {
                 Current = new()
                 {
                     Time = this.current.time,
-                    WMOCode = (int)this.current.weathercode,
-                    WMOString = MapWMOCodeToString(this.current.weathercode),
+                    WMOCode = this.current.weathercode == null ? null : (int)this.current.weathercode,
+                    WMOString = this.current.weathercode == null ? null : MapWMOCodeToString(this.current.weathercode.Value),
                     Temperature = this.current.temperature_2m,
                     ApparentTemperature = this.current.apparent_temperature,
                     Precipitation = this.current.precipitation,
@@ -170,29 +249,41 @@ namespace WeatherIO.Server.Data.Models.OpenMeteo
             };
         }
 
+        /// <summary>
+        /// Private helper method that creates list of the ForecastTimePoint from hourly data
+        /// </summary>
+        /// <returns>List of ForecastTimePoint</returns>
         private List<ForecastTimePoint> GetForecastTimePoints()
         {
+            T? ForwardNullElement<T>(IList<T>? value, int index) where T : struct
+                => value == null ? null : value[index];
+
             var result = new List<ForecastTimePoint>();
             for (int i = 0; i < this.hourly.time.Count; ++i)
             {
                 result.Add(new ForecastTimePoint
                 {
                     Time = this.hourly.time[i],
-                    WMOCode = (int)this.hourly.weathercode[i],
-                    WMOString = MapWMOCodeToString(this.hourly.weathercode[i]),
-                    Temperature = this.hourly.temperature_2m[i],
-                    ApparentTemperature = this.hourly.apparent_temperature[i],
-                    Precipitation = this.hourly.precipitation[i],
-                    Humidity = this.hourly.relative_humidity_2m[i],
-                    Pressure = this.hourly.surface_pressure[i],
-                    WindSpeed = this.hourly.wind_speed_10m[i],
-                    WindDirection = this.hourly.wind_direction_10m[i],
-                    WindGusts = this.hourly.wind_gusts_10m[i]
+                    WMOCode = this.hourly.weathercode != null ? (int)this.hourly.weathercode[i] : null,
+                    WMOString = this.hourly.weathercode != null ? MapWMOCodeToString(this.hourly.weathercode[i]) : null,
+                    Temperature = ForwardNullElement(this.hourly.temperature_2m, i),
+                    ApparentTemperature = ForwardNullElement(this.hourly.apparent_temperature, i),
+                    Precipitation = ForwardNullElement(this.hourly.precipitation, i),
+                    Humidity = ForwardNullElement(this.hourly.relative_humidity_2m, i),
+                    Pressure = ForwardNullElement(this.hourly.surface_pressure, i),
+                    WindSpeed = ForwardNullElement(this.hourly.wind_speed_10m, i),
+                    WindDirection = ForwardNullElement(this.hourly.wind_direction_10m, i),
+                    WindGusts = ForwardNullElement(this.hourly.wind_gusts_10m, i)
                 });
             }
             return result;
         }
 
+        /// <summary>
+        /// Converts enum WeatherCode to string in polish
+        /// </summary>
+        /// <param name="wmoCode">WMO code</param>
+        /// <returns>WMO code text message</returns>
         private static string MapWMOCodeToString(WeatherCode wmoCode)
         {
             return wmoCode switch
