@@ -1,7 +1,9 @@
-﻿@page "/weather"
+﻿@page "/weather/{value}"
 @using WeatherIO.Common.Data.Models.APIResponses
 
 @inject IWeatherForecastProviderService WeatherForecastProviderService
+@inject IGeocodeProviderService _geocodeProviderService
+@inject IFovouriteProviderService _favouriteProviderService
 
 <PageTitle>Weather</PageTitle>
 
@@ -14,6 +16,11 @@
                     <div style="display: flex; align-items: center">
                         <MudTextField @bind-Value="model.City" Label="Miasto" Variant="Variant.Filled"></MudTextField>
                         <MudButton Variant="Variant.Filled" Color="Color.Primary" DisableElevation="true" ButtonType="ButtonType.Submit">Wyszukaj</MudButton>
+                        <AuthorizeView Context="auth_context">
+                            <Authorized>
+                                <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="Color.Secondary" OnClick="AddToFavourites"></MudIconButton>
+							</Authorized>
+                        </AuthorizeView>
                     </div>
                 </MudCardContent>
             </EditForm>
@@ -135,6 +142,10 @@
 </div>
 
 @code {
+
+    [Parameter]
+    public string Value { get; set; }= string.Empty;
+
     class Search
     {
         public string City { get; set; } = string.Empty;
@@ -168,7 +179,7 @@
         {
             ShowAlert(true);
             return;
-		}
+        }
 
         ShowData(0);
         temperatureOptions!.InterpolationOption = InterpolationOption.NaturalSpline;
@@ -235,5 +246,35 @@
     {
         showAlert = value;
         StateHasChanged();
+    }
+
+    private async void AddToFavourites()
+    {
+        if (model.City == string.Empty || forecastResponse == null)
+        {
+            return;
+        }
+        GeocodeResponse? geolocation = await _geocodeProviderService.GetGeocodeAsync(model.City);
+        await _favouriteProviderService.SetOrUpdateFavouriteAsync(new ()
+		{
+			Name = model.City,
+			Latitude = geolocation!.Latitude,
+			Longitude = geolocation!.Longitude
+		});
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            if (Value != string.Empty)
+            {
+                if (Value != "0")
+                {
+                    model.City = Value;
+                    GetData();
+                }
+            }
+        }
     }
 }
