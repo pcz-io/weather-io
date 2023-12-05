@@ -6,14 +6,30 @@ using WeatherIO.Server.Data.Services;
 
 namespace WeatherIO.Server.Data.Controllers
 {
-    [ApiController]
+	/// <summary>
+	/// This class is responsible for handling forecase endpoints such as
+	/// `get-forecast-by-city` and `get-forecast`
+	/// </summary>
+	[ApiController]
     [Route("api")]
     public class WeatherForecastController : Controller
-    {
-        private readonly ForecastService _forecastService;
-        private readonly GeocodingService _geocodingService;
+	{
+		/// <summary>
+		/// Dependency injected ForecastService service
+		/// </summary>
+		private readonly ForecastService _forecastService;
 
-        public WeatherForecastController(ForecastService forecastService, GeocodingService geocodingService)
+		/// <summary>
+		/// Dependency injected GeocodingService service
+		/// </summary>
+		private readonly GeocodingService _geocodingService;
+
+		/// <summary>
+		/// Constructor with dependency injected ForecastService, GeocodingService services
+		/// </summary>
+		/// <param name="forecastService"></param>
+		/// <param name="geocodingService"></param>
+		public WeatherForecastController(ForecastService forecastService, GeocodingService geocodingService)
         {
             _forecastService = forecastService;
             _geocodingService = geocodingService;
@@ -36,7 +52,18 @@ namespace WeatherIO.Server.Data.Controllers
             };
         }
 
-        [HttpGet]
+		/// <summary>
+		/// This method handles get-forecast-by-city.
+		/// </summary>
+		/// <param name="name">Name of the city</param>
+		/// <param name="timezone">Optional timezone parameter. The default value is "Europe/Warsaw"</param>
+		/// <param name="model">
+        /// Weather forecast model to use.
+        /// Value could be "dwdicon" or "ecmwf".
+        /// This is a optional parameter and the default value is "dwdicon"
+        /// </param>
+		/// <returns></returns>
+		[HttpGet]
         [Route("get-forecast-by-city")]
         public async Task<IActionResult> GetForecastByCity(string name, string? timezone = "Europe/Warsaw", string? model = "dwdicon")
         {
@@ -60,7 +87,22 @@ namespace WeatherIO.Server.Data.Controllers
             return Json(forecast.ToResponse());
         }
 
-        [HttpGet]
+		/// <summary>
+		/// This method handles get-forecast.
+		/// </summary>
+		/// <param name="latitude">Latidtude of the location</param>
+		/// <param name="longitude">Longitude of the location</param>
+		/// <param name="timezone">Optional timezone parameter. The default value is "Europe/Warsaw"</param>
+		/// <param name="model">
+		/// Weather forecast model to use.
+		/// Value could be "dwdicon" or "ecmwf".
+		/// This is a optional parameter and the default value is "dwdicon"
+		/// </param>
+		/// <returns>
+        /// Status 200 Ok with ForecastResponse as body.
+        /// Otherwise 404 NotFound with Error.
+        /// </returns>
+		[HttpGet]
         [Route("get-forecast")]
         public async Task<IActionResult> GetForecast(double latitude, double longitude, string? timezone = "Europe/Warsaw", string? model = "dwdicon")
         {

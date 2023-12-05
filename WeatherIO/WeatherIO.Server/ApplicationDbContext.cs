@@ -7,10 +7,10 @@ namespace WeatherIO.Server
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-		/// <summary>
-		/// Represents database FavouriteLocations table
-		/// </summary>
-		public DbSet<FavouriteLocation> FavouriteLocations { get; set; }
+        /// <summary>
+        /// Represents database FavouriteLocations table
+        /// </summary>
+        public DbSet<FavouriteLocation> FavouriteLocations { get; set; }
 
         /// <summary>
         /// Database context constructor
