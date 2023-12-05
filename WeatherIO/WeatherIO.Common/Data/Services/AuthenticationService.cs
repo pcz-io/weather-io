@@ -96,5 +96,32 @@ namespace WeatherIO.Common.Data.Services
                 return null;
             }
         }
+
+        /// <summary>
+        /// Deletes user account.
+        /// </summary>
+        /// <returns> True if succeeded otherwise false</returns>
+        public async Task<bool> DeleteAccount()
+        {
+			var url = $"{_configurationProvider.Configuration.ServerAddress}/api/delete-account";
+			var result = await _clientProviderService.HttpClient.PostAsync(url, null);
+            if (result.IsSuccessStatusCode)
+            {
+                await Logout();
+            }
+			return result.IsSuccessStatusCode;
+        }
+
+        /// <summary>
+        /// Change user password.
+        /// </summary>
+        /// <param name="model"> Model containing old and new password.</param>
+        /// <returns> True if succeeded otherwise false</returns>
+        public async Task<bool> ChangePassword(ChangePasswordModel model)
+        {
+            var url = $"{_configurationProvider.Configuration.ServerAddress}/api/change-password";
+            var result = await _clientProviderService.HttpClient.PostAsJsonAsync(url, model);
+            return result.IsSuccessStatusCode;
+        }
     }
 }

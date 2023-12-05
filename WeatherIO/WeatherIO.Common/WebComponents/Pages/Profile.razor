@@ -1,8 +1,9 @@
 ﻿@page "/profile"
 @attribute [Authorize]
 
-@inject NavigationManager NavigationManager
+@inject NavigationManager _navigationManager
 @inject IAuthenticationService _authService
+@inject IHttpClientProviderService _httpClientProviderService
 
 <PageTitle>Profile</PageTitle>
 
@@ -23,12 +24,13 @@
 
 	private void ChangePasswd()
 	{
-		NavigationManager.NavigateTo("/changepasswd");
+		_navigationManager.NavigateTo("/changepasswd");
 	}
 
 	private void DeleteAccount()
 	{
-		Console.WriteLine("Delete account");
+		_authService.DeleteAccount();
+		_navigationManager.NavigateTo("/home");
 	}
 
 	protected override async Task OnAfterRenderAsync(bool firstRender)
