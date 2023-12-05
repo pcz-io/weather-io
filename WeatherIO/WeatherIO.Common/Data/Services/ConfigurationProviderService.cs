@@ -37,9 +37,10 @@ namespace WeatherIO.Common.Data.Services
         /// <returns>A task that represents the asynchronous operation</returns>
         public async Task LoadConfigurationAsync()
         {
-            Configuration.ServerAddress = await _dataProviderService.GetData("serveraddress") ?? string.Empty;
+            Configuration.ServerAddress = await _dataProviderService.GetData("serveraddress") ?? "https://localhost:443";
             Configuration.Theme = await _dataProviderService.GetData("theme") ?? string.Empty;
             Configuration.JwtToken = await _dataProviderService.GetData("jwttoken") ?? string.Empty;
+            Configuration.ForecastModel = await _dataProviderService.GetData("forecastmodel") ?? "dwdicon";
             await SetTheme(Configuration.Theme);
         }
         
@@ -144,6 +145,26 @@ namespace WeatherIO.Common.Data.Services
         private async Task SaveTheme(string theme)
         {
             await _dataProviderService.SetData("theme", theme);
+        }
+
+        /// <summary>
+        /// This method sets the forecast model
+        /// </summary>
+        /// <returns> The forecast model</returns>
+        public Task<string> GetForecastModelAsync()
+        {
+            return Task.FromResult(Configuration.ForecastModel == string.Empty ? "dwdicon" : Configuration.ForecastModel);
+        }
+
+        /// <summary>
+        /// This method gets the forecast model
+        /// </summary>
+        /// <param name="forecastModel"> The forecast model</param>
+        /// <returns> A task that represents the asynchronous operation</returns>
+        public async Task SetForecastModel(string forecastModel)
+        {
+            await _dataProviderService.SetData("forecastmodel", forecastModel);
+            Configuration.ForecastModel = forecastModel;
         }
     }
 }

@@ -8,17 +8,38 @@ using WeatherIO.Common.Data.Models.APIResponses;
 
 namespace WeatherIO.Common.Data.Services
 {
+    /// <summary>
+    /// This is a service that provides air quality data from external API.
+    /// </summary>
     public class AirQualityProviderService : IAirQualityProviderService
     {
+        /// <summary>
+        /// Configuration provider service.
+        /// </summary>
         private readonly IConfigurationProviderService _configurationProviderService;
+        /// <summary>
+        /// Http client provider service.
+        /// </summary>
         private readonly IHttpClientProviderService _httpClientProviderService;
 
+        /// <summary>
+        /// Constructor of the service.
+        /// </summary>
+        /// <param name="configurationProviderService"></param>
+        /// <param name="httpClientProviderService"></param>
         public AirQualityProviderService(IConfigurationProviderService configurationProviderService, IHttpClientProviderService httpClientProviderService)
         {
             _configurationProviderService = configurationProviderService;
             _httpClientProviderService = httpClientProviderService;
         }
 
+        /// <summary>
+        /// This method gets air quality data from external API.
+        /// </summary>
+        /// <param name="latitude"> Latitude of the location. </param>
+        /// <param name="longitude"> Longitude of the location. </param>
+        /// <param name="timezone"> Timezone of the location. </param>
+        /// <returns></returns>
         public async Task<AirQualityResponse?> GetAirQualityAsync(double latitude, double longitude, string timezone = "Europe/Warsaw")
         {
             AirQualityResponse airQualityResponse;

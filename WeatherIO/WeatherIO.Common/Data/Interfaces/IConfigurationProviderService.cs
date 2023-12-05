@@ -73,5 +73,18 @@ namespace WeatherIO.Common.Data.Interfaces
 		/// </summary>
 		/// <returns></returns>
 		Task DeleteJwtToken();
+
+        /// <summary>
+        /// This method sets the forecast model
+        /// </summary>
+        /// <returns> The forecast model</returns>
+        public Task<string> GetForecastModelAsync();
+
+        /// <summary>
+        /// This method gets the forecast model
+        /// </summary>
+        /// <param name="forecastModel"> The forecast model</param>
+        /// <returns> A task that represents the asynchronous operation</returns>
+        public Task SetForecastModel(string forecastModel);
     }
 }
