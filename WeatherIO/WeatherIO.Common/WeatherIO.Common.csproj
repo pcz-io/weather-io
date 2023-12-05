@@ -7,10 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="WebComponents\Pages\AirQuality.razor.css" />
     <None Remove="WebComponents\Pages\Weather.razor.css" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="WebComponents\Pages\AirQuality.razor.css" />
     <Content Include="WebComponents\Pages\Weather.razor.css" />
   </ItemGroup>
 
