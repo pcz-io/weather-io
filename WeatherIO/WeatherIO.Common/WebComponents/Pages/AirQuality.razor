@@ -1,0 +1,132 @@
+﻿@page "/airquality"
+@using WeatherIO.Common.Data.Models
+@using WeatherIO.Common.Data.Models.APIResponses
+
+@inject NavigationManager _navigationManager
+@inject IFovouriteProviderService _favouriteProviderService
+@inject IAirQualityProviderService _airQualityProviderService
+@inject IConfigurationProviderService _configurationProviderService
+@inject IGeocodeProviderService _geocodeProviderService
+
+<PageTitle>Air Quality</PageTitle>
+
+<div style="width: 100%; margin: auto">
+    <div class="air-container">
+        <div class="air-element">
+            <EditForm Model="@model" OnValidSubmit="OnValidSubmit">
+                <MudCardContent>
+                    <div style="display: flex; align-items: center">
+                        <MudTextField @bind-Value="model.City" Label="Miasto" Variant="Variant.Filled"></MudTextField>
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" DisableElevation="true" ButtonType="ButtonType.Submit">Wyszukaj</MudButton>
+                    </div>
+                </MudCardContent>
+            </EditForm>
+            @if(airQualityModel != null)
+            {
+            <MudCard>
+                <MudCardHeader>
+                    <CardHeaderContent>
+                        <MudText>Miasto: @(airQualityModel!.Name) </MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+                <MudCardContent>
+                    <MudText>Jakość: @(airQualityModel!.AirQualityString) </MudText>
+                    <MudText>Index: @(airQualityModel!.AirQualityIndex) </MudText>
+                </MudCardContent>
+            </MudCard>
+            }
+        </div>
+        <AuthorizeView Context="auth_context">
+            <Authorized>
+                <div class="air-element">
+                    <MudDataGrid Items="@airQualityModels" Filterable="false" SortMode="@SortMode.None" Groupable="false">
+                        <Columns>
+                            <PropertyColumn Property="x => x.Name" Title="Nazwa" />
+                            <PropertyColumn Property="x => x.Latitude" Title="Szerokość Geograficzna" />
+                            <PropertyColumn Property="x => x.Longitude" Title="Długość Geograficzna" />
+                            <PropertyColumn Property="x => x.AirQualityString" Title="Jakość powietrza" />
+                            <PropertyColumn Property="x => x.AirQualityIndex" Title="Index jakości powietrza" />
+                        </Columns>
+                    </MudDataGrid>
+                </div>
+            </Authorized>
+        </AuthorizeView>
+    </div>
+    
+</div>
+
+@code {
+    class Search
+    {
+        public string City { get; set; } = string.Empty;
+    }
+
+    class AirQualityModel
+    {
+        public string Name { get; set; } = string.Empty;
+        public double Longitude { get; set; }
+        public double Latitude { get; set; }
+        public int AirQualityIndex { get; set; }
+        public string AirQualityString { get; set; } = string.Empty;
+    }
+
+    private Search model = new Search();
+    private AirQualityModel airQualityModel = null;
+    private IEnumerable<FavouriteLocationModel>? favouriteLocations;
+    private IEnumerable<AirQualityModel>? airQualityModels;
+
+    private AirQualityResponse? airQualityResponse;
+
+    private void Show(int id)
+    {
+        var name = favouriteLocations?.FirstOrDefault(x => x.Id == id)?.Name;
+        _navigationManager.NavigateTo($"/weather/{name}");
+    }
+
+    private async Task Delete(FavouriteLocationModel model)
+    {
+        await _favouriteProviderService.DeleteFavouriteAsync(model);
+        StateHasChanged();
+    }
+
+    private async void OnValidSubmit()
+    {
+        var geolocation = await _geocodeProviderService.GetGeocodeAsync(model.City);
+        var airQuality = await _airQualityProviderService.GetAirQualityAsync(geolocation!.Latitude, geolocation!.Longitude);
+        airQualityModel = new AirQualityModel()
+            {
+                Name = model.City,
+                Latitude = geolocation!.Latitude,
+                Longitude = geolocation!.Longitude,
+                AirQualityString = airQuality!.AirQualityString,
+                AirQualityIndex = airQuality!.AirQualityIndex
+            };
+            StateHasChanged();
+    }
+
+    protected async override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            if (await _configurationProviderService.GetJwtToken() != string.Empty)
+            {
+                favouriteLocations = await _favouriteProviderService.GetFavouritesAsync();
+                var airQualityM = new List<AirQualityModel>();
+                foreach (var item in favouriteLocations!)
+                {
+                    var airQuality = await _airQualityProviderService.GetAirQualityAsync(item.Latitude, item.Longitude);
+                    airQualityM.Add(new AirQualityModel()
+                        {
+                            Name = item.Name,
+                            Latitude = item.Latitude,
+                            Longitude = item.Longitude,
+                            AirQualityString = airQuality!.AirQualityString,
+                            AirQualityIndex = airQuality!.AirQualityIndex
+                        });
+                }
+                airQualityModels = airQualityM;
+                StateHasChanged();
+            }
+        }
+    }
+}

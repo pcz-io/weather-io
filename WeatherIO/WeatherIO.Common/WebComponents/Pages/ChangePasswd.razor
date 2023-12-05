@@ -14,15 +14,15 @@
             <DataAnnotationsValidator />
             <MudCard>
                 <MudCardContent>
-                    <MudTextField Label="Old Passowrd" Class="mt-3"
+                    <MudTextField Label="Stare Hasło" Class="mt-3"
                     @bind-Value="model.OldPassword" For="@(() => model.OldPassword)" />
-                    <MudTextField Label="Password" HelperText="Choose a strong password" Class="mt-3"
+                    <MudTextField Label="Nowe Hasło" Class="mt-3"
                     @bind-Value="model.NewPassword" For="@(() => model.NewPassword)" InputType="InputType.Password" />
-                    <MudTextField Label="Password" HelperText="Repeat the password" Class="mt-3"
+                    <MudTextField Label="Powtórz Nowe Hasło" HelperText="Wybierz mocne hasło" Class="mt-3"
                     @bind-Value="model.RepeatPassword" For="@(() => model.RepeatPassword)" InputType="InputType.Password" />
                 </MudCardContent>
                 <MudCardActions>
-                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Change password</MudButton>
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Zmień Hasło</MudButton>
                 </MudCardActions>
             </MudCard>
         </EditForm>
@@ -38,16 +38,16 @@
     {
         //Can't be empty
         [Required]
-        [RegularExpression(@"^.+$", ErrorMessage = "Old password can't be empty.")]
+        [RegularExpression(@"^.+$", ErrorMessage = "Stare hasło nie może być puste")]
         public string OldPassword { get; set; }
 
         [Required]
         [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$",
-         ErrorMessage = "Password must meet requirements (at least 8 characters, 1 uppercase, 1 lowercase, 1 number).")]
+         ErrorMessage = "Hasło musi zawierać conajmniej 8 znaków, 1 wielką literę, 1 małą literę, 1 liczbę oraz jeden znak specjalny.")]
         public string NewPassword { get; set; }
 
         [Required]
-        [Compare(nameof(NewPassword))]
+        [Compare(nameof(NewPassword), ErrorMessage = "Hasła muszą być takie same")]
         public string RepeatPassword { get; set; }
     }
 

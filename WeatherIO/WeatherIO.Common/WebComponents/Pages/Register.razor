@@ -14,15 +14,15 @@
             <DataAnnotationsValidator />
             <MudCard>
                 <MudCardContent>
-                    <MudTextField Label="Email" Class="mt-3"
+                    <MudTextField Label="Adres Email" Class="mt-3"
                     @bind-Value="model.Email" For="@(() => model.Email)" />
-                    <MudTextField Label="Password" HelperText="Choose a strong password" Class="mt-3"
+                    <MudTextField Label="Hasło" HelperText="Wybierz mocne hasło" Class="mt-3"
                     @bind-Value="model.Password" For="@(() => model.Password)" InputType="InputType.Password" />
-                    <MudTextField Label="Password" HelperText="Repeat the password" Class="mt-3"
+                    <MudTextField Label="Powtórz Hasło" Class="mt-3"
                     @bind-Value="model.RepeatPassword" For="@(() => model.RepeatPassword)" InputType="InputType.Password" />
                 </MudCardContent>
                 <MudCardActions>
-                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Register</MudButton>
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Zarejestruj</MudButton>
                 </MudCardActions>
             </MudCard>
         </EditForm>
@@ -43,11 +43,11 @@
 
         [Required]
         [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$",
-         ErrorMessage = "Password must meet requirements (at least 8 characters, 1 uppercase, 1 lowercase, 1 number).")]
+         ErrorMessage = "Hasło musi zawierać conajmniej 8 znaków, 1 wielką literę, 1 małą literę, 1 liczbę oraz jeden znak specjalny.")]
         public string Password { get; set; }
 
         [Required]
-        [Compare(nameof(Password))]
+        [Compare(nameof(Password), ErrorMessage = "Hasła muszą być takie same")]
         public string RepeatPassword { get; set; }
     }
 
