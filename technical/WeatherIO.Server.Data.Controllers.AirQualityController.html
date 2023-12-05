@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.json">
-      <meta name="docfx:tocrel" content="toc.json">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
       
       
       
@@ -87,7 +87,7 @@
 
   <h1 id="WeatherIO_Server_Data_Controllers_AirQualityController" data-uid="WeatherIO.Server.Data.Controllers.AirQualityController" class="text-break">
     Class AirQualityController
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AirQualityController.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AirQualityController.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -95,7 +95,8 @@
   <dl><dt>Assembly</dt><dd>WeatherIO.Server.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This class is responsible for handling air quality endpoint</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -751,10 +752,11 @@ public class AirQualityController : Controller, IActionFilter, IAsyncActionFilte
 
   <h3 id="WeatherIO_Server_Data_Controllers_AirQualityController__ctor_WeatherIO_Server_Data_Services_AirQualityService_" data-uid="WeatherIO.Server.Data.Controllers.AirQualityController.#ctor(WeatherIO.Server.Data.Services.AirQualityService)">
   AirQualityController(AirQualityService)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AirQualityController.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AirQualityController.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructor with dependency injected service</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -785,10 +787,11 @@ public class AirQualityController : Controller, IActionFilter, IAsyncActionFilte
 
   <h3 id="WeatherIO_Server_Data_Controllers_AirQualityController__airQualityService" data-uid="WeatherIO.Server.Data.Controllers.AirQualityController._airQualityService">
   _airQualityService
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AirQualityController.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AirQualityController.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Dependency injected instance of a AirQualityService</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -820,10 +823,11 @@ public class AirQualityController : Controller, IActionFilter, IAsyncActionFilte
 
   <h3 id="WeatherIO_Server_Data_Controllers_AirQualityController_AirQuality_System_Double_System_Double_System_String_" data-uid="WeatherIO.Server.Data.Controllers.AirQualityController.AirQuality(System.Double,System.Double,System.String)">
   AirQuality(double, double, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AirQualityController.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AirQualityController.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Function that handles air-quality API endpoint</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -835,17 +839,22 @@ public Task&lt;IActionResult&gt; AirQuality(double latitude, double longitude, s
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>latitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>Latitude of the location</p>
+</dd>
     <dt><code>longitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>Longitude of the location</p>
+</dd>
     <dt><code>timezone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Timezone, the default is &quot;Europe/Warsaw&quot;</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Response 200 Ok with AirQualityResponse as response body if no errors occurred.
+Otherwise response with status 404 NotFound</p>
+</dd>
   </dl>
 
 
@@ -862,7 +871,7 @@ public Task&lt;IActionResult&gt; AirQuality(double latitude, double longitude, s
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AirQualityController.cs/#L7" class="edit-link">Edit this page</a>
+          <a href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AirQualityController.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

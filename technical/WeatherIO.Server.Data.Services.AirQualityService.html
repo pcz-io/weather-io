@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.json">
-      <meta name="docfx:tocrel" content="toc.json">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
       
       
       
@@ -87,7 +87,7 @@
 
   <h1 id="WeatherIO_Server_Data_Services_AirQualityService" data-uid="WeatherIO.Server.Data.Services.AirQualityService" class="text-break">
     Class AirQualityService
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/AirQualityService.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/AirQualityService.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -95,7 +95,8 @@
   <dl><dt>Assembly</dt><dd>WeatherIO.Server.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This service is responsible for communication with OpenMeteo Air Quality API</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -154,10 +155,11 @@
 
   <h3 id="WeatherIO_Server_Data_Services_AirQualityService__ctor_System_Net_Http_IHttpClientFactory_" data-uid="WeatherIO.Server.Data.Services.AirQualityService.#ctor(System.Net.Http.IHttpClientFactory)">
   AirQualityService(IHttpClientFactory)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/AirQualityService.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/AirQualityService.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructor with injected IHttpClientFactory</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -188,10 +190,11 @@
 
   <h3 id="WeatherIO_Server_Data_Services_AirQualityService__httpClientFactory" data-uid="WeatherIO.Server.Data.Services.AirQualityService._httpClientFactory">
   _httpClientFactory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/AirQualityService.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/AirQualityService.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Dependency injected http client factory used to make http requests</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -223,10 +226,11 @@
 
   <h3 id="WeatherIO_Server_Data_Services_AirQualityService_GetAirQualityAsync_System_Double_System_Double_System_String_" data-uid="WeatherIO.Server.Data.Services.AirQualityService.GetAirQualityAsync(System.Double,System.Double,System.String)">
   GetAirQualityAsync(double, double, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/AirQualityService.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/AirQualityService.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Asynchronous method that gets air quality for given location with timezone</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -236,17 +240,21 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>latitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>Latitude of the location</p>
+</dd>
     <dt><code>longitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>Longitude of the location</p>
+</dd>
     <dt><code>timezone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Timezone</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="WeatherIO.Server.Data.Models.OpenMeteo.AirQualityModel.html">AirQualityModel</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>AirQualityModel if no errors otherwise null.</p>
+</dd>
   </dl>
 
 
@@ -263,7 +271,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/AirQualityService.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/AirQualityService.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 

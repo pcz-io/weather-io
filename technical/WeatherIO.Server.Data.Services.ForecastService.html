@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.json">
-      <meta name="docfx:tocrel" content="toc.json">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
       
       
       
@@ -87,7 +87,7 @@
 
   <h1 id="WeatherIO_Server_Data_Services_ForecastService" data-uid="WeatherIO.Server.Data.Services.ForecastService" class="text-break">
     Class ForecastService
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/ForecastService.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/ForecastService.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -95,7 +95,8 @@
   <dl><dt>Assembly</dt><dd>WeatherIO.Server.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This service is responsible for communication with OpenMeteo Forecast API</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -154,10 +155,11 @@
 
   <h3 id="WeatherIO_Server_Data_Services_ForecastService__ctor_System_Net_Http_IHttpClientFactory_" data-uid="WeatherIO.Server.Data.Services.ForecastService.#ctor(System.Net.Http.IHttpClientFactory)">
   ForecastService(IHttpClientFactory)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/ForecastService.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/ForecastService.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructor with injected IHttpClientFactory</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -188,10 +190,11 @@
 
   <h3 id="WeatherIO_Server_Data_Services_ForecastService__httpClientFactory" data-uid="WeatherIO.Server.Data.Services.ForecastService._httpClientFactory">
   _httpClientFactory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/ForecastService.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/ForecastService.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Dependency injected http client factory used to make http requests</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -221,26 +224,33 @@
 
   <a id="WeatherIO_Server_Data_Services_ForecastService_GetForecastAsync_" data-uid="WeatherIO.Server.Data.Services.ForecastService.GetForecastAsync*"></a>
 
-  <h3 id="WeatherIO_Server_Data_Services_ForecastService_GetForecastAsync_System_Double_System_Double_System_String_" data-uid="WeatherIO.Server.Data.Services.ForecastService.GetForecastAsync(System.Double,System.Double,System.String)">
-  GetForecastAsync(double, double, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/ForecastService.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <h3 id="WeatherIO_Server_Data_Services_ForecastService_GetForecastAsync_System_Double_System_Double_System_String_WeatherIO_Server_Data_Services_ForecastService_Model_" data-uid="WeatherIO.Server.Data.Services.ForecastService.GetForecastAsync(System.Double,System.Double,System.String,WeatherIO.Server.Data.Services.ForecastService.Model)">
+  GetForecastAsync(double, double, string, Model)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/ForecastService.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets forecast for given location and forecast model</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ForecastModel?&gt; GetForecastAsync(double latitude, double longitude, string timezone)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ForecastModel?&gt; GetForecastAsync(double latitude, double longitude, string timezone, ForecastService.Model model = Model.DWDIcon)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>latitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>Latitude of the location</p>
+</dd>
     <dt><code>longitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>Longitude of the location</p>
+</dd>
     <dt><code>timezone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Timezone</p>
+</dd>
+    <dt><code>model</code> <a class="xref" href="WeatherIO.Server.Data.Services.ForecastService.html">ForecastService</a>.<a class="xref" href="WeatherIO.Server.Data.Services.ForecastService.Model.html">Model</a></dt>
+    <dd><p>Forecast model to use</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -263,7 +273,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/ForecastService.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Services/ForecastService.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 

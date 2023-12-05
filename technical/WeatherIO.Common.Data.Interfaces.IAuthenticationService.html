@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.json">
-      <meta name="docfx:tocrel" content="toc.json">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
       
       
       
@@ -87,7 +87,7 @@
 
   <h1 id="WeatherIO_Common_Data_Interfaces_IAuthenticationService" data-uid="WeatherIO.Common.Data.Interfaces.IAuthenticationService" class="text-break">
     Interface IAuthenticationService
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IAuthenticationService.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IAuthenticationService.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -95,7 +95,8 @@
   <dl><dt>Assembly</dt><dd>WeatherIO.Common.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This is an interface for service that handles authentication with the server</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -118,11 +119,83 @@
 </h2>
 
 
+  <a id="WeatherIO_Common_Data_Interfaces_IAuthenticationService_ChangePassword_" data-uid="WeatherIO.Common.Data.Interfaces.IAuthenticationService.ChangePassword*"></a>
+
+  <h3 id="WeatherIO_Common_Data_Interfaces_IAuthenticationService_ChangePassword_WeatherIO_Common_Data_Models_ChangePasswordModel_" data-uid="WeatherIO.Common.Data.Interfaces.IAuthenticationService.ChangePassword(WeatherIO.Common.Data.Models.ChangePasswordModel)">
+  ChangePassword(ChangePasswordModel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IAuthenticationService.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Change user password.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; ChangePassword(ChangePasswordModel model)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>model</code> <a class="xref" href="WeatherIO.Common.Data.Models.ChangePasswordModel.html">ChangePasswordModel</a></dt>
+    <dd><p>Model containing old and new password.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>True if succeeded otherwise false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WeatherIO_Common_Data_Interfaces_IAuthenticationService_DeleteAccount_" data-uid="WeatherIO.Common.Data.Interfaces.IAuthenticationService.DeleteAccount*"></a>
+
+  <h3 id="WeatherIO_Common_Data_Interfaces_IAuthenticationService_DeleteAccount" data-uid="WeatherIO.Common.Data.Interfaces.IAuthenticationService.DeleteAccount">
+  DeleteAccount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IAuthenticationService.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes user account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; DeleteAccount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>True if succeeded otherwise false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="WeatherIO_Common_Data_Interfaces_IAuthenticationService_GetUsername_" data-uid="WeatherIO.Common.Data.Interfaces.IAuthenticationService.GetUsername*"></a>
 
   <h3 id="WeatherIO_Common_Data_Interfaces_IAuthenticationService_GetUsername" data-uid="WeatherIO.Common.Data.Interfaces.IAuthenticationService.GetUsername">
   GetUsername()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IAuthenticationService.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IAuthenticationService.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets logged user username.</p>
@@ -154,7 +227,7 @@
 
   <h3 id="WeatherIO_Common_Data_Interfaces_IAuthenticationService_Login_WeatherIO_Common_Data_Models_LoginModel_" data-uid="WeatherIO.Common.Data.Interfaces.IAuthenticationService.Login(WeatherIO.Common.Data.Models.LoginModel)">
   Login(LoginModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IAuthenticationService.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IAuthenticationService.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Logins to the server.</p>
@@ -192,7 +265,7 @@
 
   <h3 id="WeatherIO_Common_Data_Interfaces_IAuthenticationService_Logout" data-uid="WeatherIO.Common.Data.Interfaces.IAuthenticationService.Logout">
   Logout()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IAuthenticationService.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IAuthenticationService.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Logs out user, i.e. deletes Jwt token from storage.</p>
@@ -224,7 +297,7 @@
 
   <h3 id="WeatherIO_Common_Data_Interfaces_IAuthenticationService_Register_WeatherIO_Common_Data_Models_RegisterModel_" data-uid="WeatherIO.Common.Data.Interfaces.IAuthenticationService.Register(WeatherIO.Common.Data.Models.RegisterModel)">
   Register(RegisterModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IAuthenticationService.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IAuthenticationService.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Registers user</p>
@@ -261,7 +334,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IAuthenticationService.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IAuthenticationService.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 

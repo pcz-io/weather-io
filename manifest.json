@@ -16,11 +16,11 @@
       "type": "Toc",
       "source_relative_path": "about/toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "about/toc.json"
-        },
         ".html": {
           "relative_path": "about/toc.html"
+        },
+        ".json": {
+          "relative_path": "about/toc.json"
         }
       },
       "version": ""
@@ -159,11 +159,21 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "api/toc.json"
-        },
         ".html": {
           "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "deployment/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "deployment/index.html"
         }
       },
       "version": ""
@@ -310,6 +320,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.Data.Interfaces.IAirQualityProviderService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.Data.Interfaces.IAirQualityProviderService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "technical/WeatherIO.Common.Data.Interfaces.IAuthenticationService.yml",
       "output": {
         ".html": {
@@ -340,10 +360,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.Data.Interfaces.IGeocodeProviderService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.Data.Interfaces.IGeocodeProviderService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "technical/WeatherIO.Common.Data.Interfaces.IHttpClientProviderService.yml",
       "output": {
         ".html": {
           "relative_path": "technical/WeatherIO.Common.Data.Interfaces.IHttpClientProviderService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.html"
         }
       },
       "version": ""
@@ -510,6 +560,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.Data.Services.AirQualityProviderService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.Data.Services.AirQualityProviderService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "technical/WeatherIO.Common.Data.Services.AuthenticationService.yml",
       "output": {
         ".html": {
@@ -530,10 +590,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.Data.Services.FovouriteProviderService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.Data.Services.FovouriteProviderService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.Data.Services.GeocodeProviderService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.Data.Services.GeocodeProviderService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "technical/WeatherIO.Common.Data.Services.WeatherAuthenticationStateProvider.yml",
       "output": {
         ".html": {
           "relative_path": "technical/WeatherIO.Common.Data.Services.WeatherAuthenticationStateProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.Data.Services.WeatherForecastProviderService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.Data.Services.WeatherForecastProviderService.html"
         }
       },
       "version": ""
@@ -560,6 +650,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.WebComponents.Components.NotAuthorizedComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.WebComponents.Components.NotAuthorizedComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "technical/WeatherIO.Common.WebComponents.Components.NotFoundComponent.yml",
       "output": {
         ".html": {
@@ -574,6 +674,26 @@
       "output": {
         ".html": {
           "relative_path": "technical/WeatherIO.Common.WebComponents.Components.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html"
         }
       },
       "version": ""
@@ -600,10 +720,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.WebComponents.Pages.Liked.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.WebComponents.Pages.Liked.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "technical/WeatherIO.Common.WebComponents.Pages.Login.yml",
       "output": {
         ".html": {
           "relative_path": "technical/WeatherIO.Common.WebComponents.Pages.Login.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.WebComponents.Pages.Profile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.WebComponents.Pages.Profile.html"
         }
       },
       "version": ""
@@ -634,6 +774,26 @@
       "output": {
         ".html": {
           "relative_path": "technical/WeatherIO.Common.WebComponents.Pages.Settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.WebComponents.Pages.Weather.Search.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.WebComponents.Pages.Weather.Search.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.WebComponents.Pages.Weather.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.WebComponents.Pages.Weather.html"
         }
       },
       "version": ""
@@ -900,6 +1060,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Server.Data.Services.ForecastService.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Server.Data.Services.ForecastService.Model.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "technical/WeatherIO.Server.Data.Services.ForecastService.yml",
       "output": {
         ".html": {
@@ -1050,6 +1220,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Login.TypeInference.yml",
       "output": {
         ".html": {
@@ -1109,6 +1319,26 @@
       "version": ""
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "technical/index.md",
       "output": {
@@ -1122,11 +1352,11 @@
       "type": "Toc",
       "source_relative_path": "technical/toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "technical/toc.json"
-        },
         ".html": {
           "relative_path": "technical/toc.html"
+        },
+        ".json": {
+          "relative_path": "technical/toc.json"
         }
       },
       "version": ""
@@ -1135,11 +1365,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "toc.json"
-        },
         ".html": {
           "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""
@@ -1178,11 +1408,11 @@
       "type": "Toc",
       "source_relative_path": "user-guide/toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "user-guide/toc.json"
-        },
         ".html": {
           "relative_path": "user-guide/toc.html"
+        },
+        ".json": {
+          "relative_path": "user-guide/toc.json"
         }
       },
       "version": ""

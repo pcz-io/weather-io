@@ -328,12 +328,60 @@ references:
   commentId: N:WeatherIO.Common.Data.Interfaces
   fullName: WeatherIO.Common.Data.Interfaces
   nameWithType: WeatherIO.Common.Data.Interfaces
+- uid: WeatherIO.Common.Data.Interfaces.IAirQualityProviderService
+  name: IAirQualityProviderService
+  href: technical/WeatherIO.Common.Data.Interfaces.IAirQualityProviderService.html
+  commentId: T:WeatherIO.Common.Data.Interfaces.IAirQualityProviderService
+  fullName: WeatherIO.Common.Data.Interfaces.IAirQualityProviderService
+  nameWithType: IAirQualityProviderService
+- uid: WeatherIO.Common.Data.Interfaces.IAirQualityProviderService.GetAirQualityAsync(System.Double,System.Double,System.String)
+  name: GetAirQualityAsync(double, double, string)
+  href: technical/WeatherIO.Common.Data.Interfaces.IAirQualityProviderService.html#WeatherIO_Common_Data_Interfaces_IAirQualityProviderService_GetAirQualityAsync_System_Double_System_Double_System_String_
+  commentId: M:WeatherIO.Common.Data.Interfaces.IAirQualityProviderService.GetAirQualityAsync(System.Double,System.Double,System.String)
+  name.vb: GetAirQualityAsync(Double, Double, String)
+  fullName: WeatherIO.Common.Data.Interfaces.IAirQualityProviderService.GetAirQualityAsync(double, double, string)
+  fullName.vb: WeatherIO.Common.Data.Interfaces.IAirQualityProviderService.GetAirQualityAsync(Double, Double, String)
+  nameWithType: IAirQualityProviderService.GetAirQualityAsync(double, double, string)
+  nameWithType.vb: IAirQualityProviderService.GetAirQualityAsync(Double, Double, String)
+- uid: WeatherIO.Common.Data.Interfaces.IAirQualityProviderService.GetAirQualityAsync*
+  name: GetAirQualityAsync
+  href: technical/WeatherIO.Common.Data.Interfaces.IAirQualityProviderService.html#WeatherIO_Common_Data_Interfaces_IAirQualityProviderService_GetAirQualityAsync_
+  commentId: Overload:WeatherIO.Common.Data.Interfaces.IAirQualityProviderService.GetAirQualityAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Interfaces.IAirQualityProviderService.GetAirQualityAsync
+  nameWithType: IAirQualityProviderService.GetAirQualityAsync
 - uid: WeatherIO.Common.Data.Interfaces.IAuthenticationService
   name: IAuthenticationService
   href: technical/WeatherIO.Common.Data.Interfaces.IAuthenticationService.html
   commentId: T:WeatherIO.Common.Data.Interfaces.IAuthenticationService
   fullName: WeatherIO.Common.Data.Interfaces.IAuthenticationService
   nameWithType: IAuthenticationService
+- uid: WeatherIO.Common.Data.Interfaces.IAuthenticationService.ChangePassword(WeatherIO.Common.Data.Models.ChangePasswordModel)
+  name: ChangePassword(ChangePasswordModel)
+  href: technical/WeatherIO.Common.Data.Interfaces.IAuthenticationService.html#WeatherIO_Common_Data_Interfaces_IAuthenticationService_ChangePassword_WeatherIO_Common_Data_Models_ChangePasswordModel_
+  commentId: M:WeatherIO.Common.Data.Interfaces.IAuthenticationService.ChangePassword(WeatherIO.Common.Data.Models.ChangePasswordModel)
+  fullName: WeatherIO.Common.Data.Interfaces.IAuthenticationService.ChangePassword(WeatherIO.Common.Data.Models.ChangePasswordModel)
+  nameWithType: IAuthenticationService.ChangePassword(ChangePasswordModel)
+- uid: WeatherIO.Common.Data.Interfaces.IAuthenticationService.ChangePassword*
+  name: ChangePassword
+  href: technical/WeatherIO.Common.Data.Interfaces.IAuthenticationService.html#WeatherIO_Common_Data_Interfaces_IAuthenticationService_ChangePassword_
+  commentId: Overload:WeatherIO.Common.Data.Interfaces.IAuthenticationService.ChangePassword
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Interfaces.IAuthenticationService.ChangePassword
+  nameWithType: IAuthenticationService.ChangePassword
+- uid: WeatherIO.Common.Data.Interfaces.IAuthenticationService.DeleteAccount
+  name: DeleteAccount()
+  href: technical/WeatherIO.Common.Data.Interfaces.IAuthenticationService.html#WeatherIO_Common_Data_Interfaces_IAuthenticationService_DeleteAccount
+  commentId: M:WeatherIO.Common.Data.Interfaces.IAuthenticationService.DeleteAccount
+  fullName: WeatherIO.Common.Data.Interfaces.IAuthenticationService.DeleteAccount()
+  nameWithType: IAuthenticationService.DeleteAccount()
+- uid: WeatherIO.Common.Data.Interfaces.IAuthenticationService.DeleteAccount*
+  name: DeleteAccount
+  href: technical/WeatherIO.Common.Data.Interfaces.IAuthenticationService.html#WeatherIO_Common_Data_Interfaces_IAuthenticationService_DeleteAccount_
+  commentId: Overload:WeatherIO.Common.Data.Interfaces.IAuthenticationService.DeleteAccount
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Interfaces.IAuthenticationService.DeleteAccount
+  nameWithType: IAuthenticationService.DeleteAccount
 - uid: WeatherIO.Common.Data.Interfaces.IAuthenticationService.GetUsername
   name: GetUsername()
   href: technical/WeatherIO.Common.Data.Interfaces.IAuthenticationService.html#WeatherIO_Common_Data_Interfaces_IAuthenticationService_GetUsername
@@ -431,6 +479,19 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetCurrentThemeAsync
   nameWithType: IConfigurationProviderService.GetCurrentThemeAsync
+- uid: WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetForecastModelAsync
+  name: GetForecastModelAsync()
+  href: technical/WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.html#WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_GetForecastModelAsync
+  commentId: M:WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetForecastModelAsync
+  fullName: WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetForecastModelAsync()
+  nameWithType: IConfigurationProviderService.GetForecastModelAsync()
+- uid: WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetForecastModelAsync*
+  name: GetForecastModelAsync
+  href: technical/WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.html#WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_GetForecastModelAsync_
+  commentId: Overload:WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetForecastModelAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetForecastModelAsync
+  nameWithType: IConfigurationProviderService.GetForecastModelAsync
 - uid: WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetJwtToken
   name: GetJwtToken()
   href: technical/WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.html#WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_GetJwtToken
@@ -496,6 +557,22 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.MudThemeProvider
   nameWithType: IConfigurationProviderService.MudThemeProvider
+- uid: WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.SetForecastModel(System.String)
+  name: SetForecastModel(string)
+  href: technical/WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.html#WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_SetForecastModel_System_String_
+  commentId: M:WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.SetForecastModel(System.String)
+  name.vb: SetForecastModel(String)
+  fullName: WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.SetForecastModel(string)
+  fullName.vb: WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.SetForecastModel(String)
+  nameWithType: IConfigurationProviderService.SetForecastModel(string)
+  nameWithType.vb: IConfigurationProviderService.SetForecastModel(String)
+- uid: WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.SetForecastModel*
+  name: SetForecastModel
+  href: technical/WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.html#WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_SetForecastModel_
+  commentId: Overload:WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.SetForecastModel
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.SetForecastModel
+  nameWithType: IConfigurationProviderService.SetForecastModel
 - uid: WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.SetJwtToken(System.String)
   name: SetJwtToken(string)
   href: technical/WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.html#WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_SetJwtToken_System_String_
@@ -598,6 +675,73 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Common.Data.Interfaces.IDataProviderService.SetData
   nameWithType: IDataProviderService.SetData
+- uid: WeatherIO.Common.Data.Interfaces.IFovouriteProviderService
+  name: IFovouriteProviderService
+  href: technical/WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.html
+  commentId: T:WeatherIO.Common.Data.Interfaces.IFovouriteProviderService
+  fullName: WeatherIO.Common.Data.Interfaces.IFovouriteProviderService
+  nameWithType: IFovouriteProviderService
+- uid: WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.DeleteFavouriteAsync(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  name: DeleteFavouriteAsync(FavouriteLocationModel)
+  href: technical/WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.html#WeatherIO_Common_Data_Interfaces_IFovouriteProviderService_DeleteFavouriteAsync_WeatherIO_Common_Data_Models_FavouriteLocationModel_
+  commentId: M:WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.DeleteFavouriteAsync(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  fullName: WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.DeleteFavouriteAsync(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  nameWithType: IFovouriteProviderService.DeleteFavouriteAsync(FavouriteLocationModel)
+- uid: WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.DeleteFavouriteAsync*
+  name: DeleteFavouriteAsync
+  href: technical/WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.html#WeatherIO_Common_Data_Interfaces_IFovouriteProviderService_DeleteFavouriteAsync_
+  commentId: Overload:WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.DeleteFavouriteAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.DeleteFavouriteAsync
+  nameWithType: IFovouriteProviderService.DeleteFavouriteAsync
+- uid: WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.GetFavouritesAsync
+  name: GetFavouritesAsync()
+  href: technical/WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.html#WeatherIO_Common_Data_Interfaces_IFovouriteProviderService_GetFavouritesAsync
+  commentId: M:WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.GetFavouritesAsync
+  fullName: WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.GetFavouritesAsync()
+  nameWithType: IFovouriteProviderService.GetFavouritesAsync()
+- uid: WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.GetFavouritesAsync*
+  name: GetFavouritesAsync
+  href: technical/WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.html#WeatherIO_Common_Data_Interfaces_IFovouriteProviderService_GetFavouritesAsync_
+  commentId: Overload:WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.GetFavouritesAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.GetFavouritesAsync
+  nameWithType: IFovouriteProviderService.GetFavouritesAsync
+- uid: WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.SetOrUpdateFavouriteAsync(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  name: SetOrUpdateFavouriteAsync(FavouriteLocationModel)
+  href: technical/WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.html#WeatherIO_Common_Data_Interfaces_IFovouriteProviderService_SetOrUpdateFavouriteAsync_WeatherIO_Common_Data_Models_FavouriteLocationModel_
+  commentId: M:WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.SetOrUpdateFavouriteAsync(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  fullName: WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.SetOrUpdateFavouriteAsync(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  nameWithType: IFovouriteProviderService.SetOrUpdateFavouriteAsync(FavouriteLocationModel)
+- uid: WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.SetOrUpdateFavouriteAsync*
+  name: SetOrUpdateFavouriteAsync
+  href: technical/WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.html#WeatherIO_Common_Data_Interfaces_IFovouriteProviderService_SetOrUpdateFavouriteAsync_
+  commentId: Overload:WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.SetOrUpdateFavouriteAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Interfaces.IFovouriteProviderService.SetOrUpdateFavouriteAsync
+  nameWithType: IFovouriteProviderService.SetOrUpdateFavouriteAsync
+- uid: WeatherIO.Common.Data.Interfaces.IGeocodeProviderService
+  name: IGeocodeProviderService
+  href: technical/WeatherIO.Common.Data.Interfaces.IGeocodeProviderService.html
+  commentId: T:WeatherIO.Common.Data.Interfaces.IGeocodeProviderService
+  fullName: WeatherIO.Common.Data.Interfaces.IGeocodeProviderService
+  nameWithType: IGeocodeProviderService
+- uid: WeatherIO.Common.Data.Interfaces.IGeocodeProviderService.GetGeocodeAsync(System.String)
+  name: GetGeocodeAsync(string)
+  href: technical/WeatherIO.Common.Data.Interfaces.IGeocodeProviderService.html#WeatherIO_Common_Data_Interfaces_IGeocodeProviderService_GetGeocodeAsync_System_String_
+  commentId: M:WeatherIO.Common.Data.Interfaces.IGeocodeProviderService.GetGeocodeAsync(System.String)
+  name.vb: GetGeocodeAsync(String)
+  fullName: WeatherIO.Common.Data.Interfaces.IGeocodeProviderService.GetGeocodeAsync(string)
+  fullName.vb: WeatherIO.Common.Data.Interfaces.IGeocodeProviderService.GetGeocodeAsync(String)
+  nameWithType: IGeocodeProviderService.GetGeocodeAsync(string)
+  nameWithType.vb: IGeocodeProviderService.GetGeocodeAsync(String)
+- uid: WeatherIO.Common.Data.Interfaces.IGeocodeProviderService.GetGeocodeAsync*
+  name: GetGeocodeAsync
+  href: technical/WeatherIO.Common.Data.Interfaces.IGeocodeProviderService.html#WeatherIO_Common_Data_Interfaces_IGeocodeProviderService_GetGeocodeAsync_
+  commentId: Overload:WeatherIO.Common.Data.Interfaces.IGeocodeProviderService.GetGeocodeAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Interfaces.IGeocodeProviderService.GetGeocodeAsync
+  nameWithType: IGeocodeProviderService.GetGeocodeAsync
 - uid: WeatherIO.Common.Data.Interfaces.IHttpClientProviderService
   name: IHttpClientProviderService
   href: technical/WeatherIO.Common.Data.Interfaces.IHttpClientProviderService.html
@@ -633,6 +777,44 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Common.Data.Interfaces.IHttpClientProviderService.HttpClient
   nameWithType: IHttpClientProviderService.HttpClient
+- uid: WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService
+  name: IWeatherForecastProviderService
+  href: technical/WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.html
+  commentId: T:WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService
+  fullName: WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService
+  nameWithType: IWeatherForecastProviderService
+- uid: WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.GetForecasAsync(System.Double,System.Double,System.String)
+  name: GetForecasAsync(double, double, string)
+  href: technical/WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.html#WeatherIO_Common_Data_Interfaces_IWeatherForecastProviderService_GetForecasAsync_System_Double_System_Double_System_String_
+  commentId: M:WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.GetForecasAsync(System.Double,System.Double,System.String)
+  name.vb: GetForecasAsync(Double, Double, String)
+  fullName: WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.GetForecasAsync(double, double, string)
+  fullName.vb: WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.GetForecasAsync(Double, Double, String)
+  nameWithType: IWeatherForecastProviderService.GetForecasAsync(double, double, string)
+  nameWithType.vb: IWeatherForecastProviderService.GetForecasAsync(Double, Double, String)
+- uid: WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.GetForecasAsync*
+  name: GetForecasAsync
+  href: technical/WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.html#WeatherIO_Common_Data_Interfaces_IWeatherForecastProviderService_GetForecasAsync_
+  commentId: Overload:WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.GetForecasAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.GetForecasAsync
+  nameWithType: IWeatherForecastProviderService.GetForecasAsync
+- uid: WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.GetForecastByCityAsync(System.String,System.String)
+  name: GetForecastByCityAsync(string, string)
+  href: technical/WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.html#WeatherIO_Common_Data_Interfaces_IWeatherForecastProviderService_GetForecastByCityAsync_System_String_System_String_
+  commentId: M:WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.GetForecastByCityAsync(System.String,System.String)
+  name.vb: GetForecastByCityAsync(String, String)
+  fullName: WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.GetForecastByCityAsync(string, string)
+  fullName.vb: WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.GetForecastByCityAsync(String, String)
+  nameWithType: IWeatherForecastProviderService.GetForecastByCityAsync(string, string)
+  nameWithType.vb: IWeatherForecastProviderService.GetForecastByCityAsync(String, String)
+- uid: WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.GetForecastByCityAsync*
+  name: GetForecastByCityAsync
+  href: technical/WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.html#WeatherIO_Common_Data_Interfaces_IWeatherForecastProviderService_GetForecastByCityAsync_
+  commentId: Overload:WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.GetForecastByCityAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Interfaces.IWeatherForecastProviderService.GetForecastByCityAsync
+  nameWithType: IWeatherForecastProviderService.GetForecastByCityAsync
 - uid: WeatherIO.Common.Data.Models
   name: WeatherIO.Common.Data.Models
   href: technical/WeatherIO.Common.Data.Models.html
@@ -1043,6 +1225,19 @@ references:
   commentId: T:WeatherIO.Common.Data.Models.Configuration
   fullName: WeatherIO.Common.Data.Models.Configuration
   nameWithType: Configuration
+- uid: WeatherIO.Common.Data.Models.Configuration.ForecastModel
+  name: ForecastModel
+  href: technical/WeatherIO.Common.Data.Models.Configuration.html#WeatherIO_Common_Data_Models_Configuration_ForecastModel
+  commentId: P:WeatherIO.Common.Data.Models.Configuration.ForecastModel
+  fullName: WeatherIO.Common.Data.Models.Configuration.ForecastModel
+  nameWithType: Configuration.ForecastModel
+- uid: WeatherIO.Common.Data.Models.Configuration.ForecastModel*
+  name: ForecastModel
+  href: technical/WeatherIO.Common.Data.Models.Configuration.html#WeatherIO_Common_Data_Models_Configuration_ForecastModel_
+  commentId: Overload:WeatherIO.Common.Data.Models.Configuration.ForecastModel
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Models.Configuration.ForecastModel
+  nameWithType: Configuration.ForecastModel
 - uid: WeatherIO.Common.Data.Models.Configuration.JwtToken
   name: JwtToken
   href: technical/WeatherIO.Common.Data.Models.Configuration.html#WeatherIO_Common_Data_Models_Configuration_JwtToken
@@ -1210,6 +1405,59 @@ references:
   commentId: N:WeatherIO.Common.Data.Services
   fullName: WeatherIO.Common.Data.Services
   nameWithType: WeatherIO.Common.Data.Services
+- uid: WeatherIO.Common.Data.Services.AirQualityProviderService
+  name: AirQualityProviderService
+  href: technical/WeatherIO.Common.Data.Services.AirQualityProviderService.html
+  commentId: T:WeatherIO.Common.Data.Services.AirQualityProviderService
+  fullName: WeatherIO.Common.Data.Services.AirQualityProviderService
+  nameWithType: AirQualityProviderService
+- uid: WeatherIO.Common.Data.Services.AirQualityProviderService.#ctor(WeatherIO.Common.Data.Interfaces.IConfigurationProviderService,WeatherIO.Common.Data.Interfaces.IHttpClientProviderService)
+  name: AirQualityProviderService(IConfigurationProviderService, IHttpClientProviderService)
+  href: technical/WeatherIO.Common.Data.Services.AirQualityProviderService.html#WeatherIO_Common_Data_Services_AirQualityProviderService__ctor_WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_WeatherIO_Common_Data_Interfaces_IHttpClientProviderService_
+  commentId: M:WeatherIO.Common.Data.Services.AirQualityProviderService.#ctor(WeatherIO.Common.Data.Interfaces.IConfigurationProviderService,WeatherIO.Common.Data.Interfaces.IHttpClientProviderService)
+  name.vb: New(IConfigurationProviderService, IHttpClientProviderService)
+  fullName: WeatherIO.Common.Data.Services.AirQualityProviderService.AirQualityProviderService(WeatherIO.Common.Data.Interfaces.IConfigurationProviderService, WeatherIO.Common.Data.Interfaces.IHttpClientProviderService)
+  fullName.vb: WeatherIO.Common.Data.Services.AirQualityProviderService.New(WeatherIO.Common.Data.Interfaces.IConfigurationProviderService, WeatherIO.Common.Data.Interfaces.IHttpClientProviderService)
+  nameWithType: AirQualityProviderService.AirQualityProviderService(IConfigurationProviderService, IHttpClientProviderService)
+  nameWithType.vb: AirQualityProviderService.New(IConfigurationProviderService, IHttpClientProviderService)
+- uid: WeatherIO.Common.Data.Services.AirQualityProviderService.#ctor*
+  name: AirQualityProviderService
+  href: technical/WeatherIO.Common.Data.Services.AirQualityProviderService.html#WeatherIO_Common_Data_Services_AirQualityProviderService__ctor_
+  commentId: Overload:WeatherIO.Common.Data.Services.AirQualityProviderService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: WeatherIO.Common.Data.Services.AirQualityProviderService.AirQualityProviderService
+  fullName.vb: WeatherIO.Common.Data.Services.AirQualityProviderService.New
+  nameWithType: AirQualityProviderService.AirQualityProviderService
+  nameWithType.vb: AirQualityProviderService.New
+- uid: WeatherIO.Common.Data.Services.AirQualityProviderService.GetAirQualityAsync(System.Double,System.Double,System.String)
+  name: GetAirQualityAsync(double, double, string)
+  href: technical/WeatherIO.Common.Data.Services.AirQualityProviderService.html#WeatherIO_Common_Data_Services_AirQualityProviderService_GetAirQualityAsync_System_Double_System_Double_System_String_
+  commentId: M:WeatherIO.Common.Data.Services.AirQualityProviderService.GetAirQualityAsync(System.Double,System.Double,System.String)
+  name.vb: GetAirQualityAsync(Double, Double, String)
+  fullName: WeatherIO.Common.Data.Services.AirQualityProviderService.GetAirQualityAsync(double, double, string)
+  fullName.vb: WeatherIO.Common.Data.Services.AirQualityProviderService.GetAirQualityAsync(Double, Double, String)
+  nameWithType: AirQualityProviderService.GetAirQualityAsync(double, double, string)
+  nameWithType.vb: AirQualityProviderService.GetAirQualityAsync(Double, Double, String)
+- uid: WeatherIO.Common.Data.Services.AirQualityProviderService.GetAirQualityAsync*
+  name: GetAirQualityAsync
+  href: technical/WeatherIO.Common.Data.Services.AirQualityProviderService.html#WeatherIO_Common_Data_Services_AirQualityProviderService_GetAirQualityAsync_
+  commentId: Overload:WeatherIO.Common.Data.Services.AirQualityProviderService.GetAirQualityAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Services.AirQualityProviderService.GetAirQualityAsync
+  nameWithType: AirQualityProviderService.GetAirQualityAsync
+- uid: WeatherIO.Common.Data.Services.AirQualityProviderService._configurationProviderService
+  name: _configurationProviderService
+  href: technical/WeatherIO.Common.Data.Services.AirQualityProviderService.html#WeatherIO_Common_Data_Services_AirQualityProviderService__configurationProviderService
+  commentId: F:WeatherIO.Common.Data.Services.AirQualityProviderService._configurationProviderService
+  fullName: WeatherIO.Common.Data.Services.AirQualityProviderService._configurationProviderService
+  nameWithType: AirQualityProviderService._configurationProviderService
+- uid: WeatherIO.Common.Data.Services.AirQualityProviderService._httpClientProviderService
+  name: _httpClientProviderService
+  href: technical/WeatherIO.Common.Data.Services.AirQualityProviderService.html#WeatherIO_Common_Data_Services_AirQualityProviderService__httpClientProviderService
+  commentId: F:WeatherIO.Common.Data.Services.AirQualityProviderService._httpClientProviderService
+  fullName: WeatherIO.Common.Data.Services.AirQualityProviderService._httpClientProviderService
+  nameWithType: AirQualityProviderService._httpClientProviderService
 - uid: WeatherIO.Common.Data.Services.AuthenticationService
   name: AuthenticationService
   href: technical/WeatherIO.Common.Data.Services.AuthenticationService.html
@@ -1235,6 +1483,32 @@ references:
   fullName.vb: WeatherIO.Common.Data.Services.AuthenticationService.New
   nameWithType: AuthenticationService.AuthenticationService
   nameWithType.vb: AuthenticationService.New
+- uid: WeatherIO.Common.Data.Services.AuthenticationService.ChangePassword(WeatherIO.Common.Data.Models.ChangePasswordModel)
+  name: ChangePassword(ChangePasswordModel)
+  href: technical/WeatherIO.Common.Data.Services.AuthenticationService.html#WeatherIO_Common_Data_Services_AuthenticationService_ChangePassword_WeatherIO_Common_Data_Models_ChangePasswordModel_
+  commentId: M:WeatherIO.Common.Data.Services.AuthenticationService.ChangePassword(WeatherIO.Common.Data.Models.ChangePasswordModel)
+  fullName: WeatherIO.Common.Data.Services.AuthenticationService.ChangePassword(WeatherIO.Common.Data.Models.ChangePasswordModel)
+  nameWithType: AuthenticationService.ChangePassword(ChangePasswordModel)
+- uid: WeatherIO.Common.Data.Services.AuthenticationService.ChangePassword*
+  name: ChangePassword
+  href: technical/WeatherIO.Common.Data.Services.AuthenticationService.html#WeatherIO_Common_Data_Services_AuthenticationService_ChangePassword_
+  commentId: Overload:WeatherIO.Common.Data.Services.AuthenticationService.ChangePassword
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Services.AuthenticationService.ChangePassword
+  nameWithType: AuthenticationService.ChangePassword
+- uid: WeatherIO.Common.Data.Services.AuthenticationService.DeleteAccount
+  name: DeleteAccount()
+  href: technical/WeatherIO.Common.Data.Services.AuthenticationService.html#WeatherIO_Common_Data_Services_AuthenticationService_DeleteAccount
+  commentId: M:WeatherIO.Common.Data.Services.AuthenticationService.DeleteAccount
+  fullName: WeatherIO.Common.Data.Services.AuthenticationService.DeleteAccount()
+  nameWithType: AuthenticationService.DeleteAccount()
+- uid: WeatherIO.Common.Data.Services.AuthenticationService.DeleteAccount*
+  name: DeleteAccount
+  href: technical/WeatherIO.Common.Data.Services.AuthenticationService.html#WeatherIO_Common_Data_Services_AuthenticationService_DeleteAccount_
+  commentId: Overload:WeatherIO.Common.Data.Services.AuthenticationService.DeleteAccount
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Services.AuthenticationService.DeleteAccount
+  nameWithType: AuthenticationService.DeleteAccount
 - uid: WeatherIO.Common.Data.Services.AuthenticationService.GetUsername
   name: GetUsername()
   href: technical/WeatherIO.Common.Data.Services.AuthenticationService.html#WeatherIO_Common_Data_Services_AuthenticationService_GetUsername
@@ -1375,6 +1649,19 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Common.Data.Services.ConfigurationProviderService.GetCurrentThemeAsync
   nameWithType: ConfigurationProviderService.GetCurrentThemeAsync
+- uid: WeatherIO.Common.Data.Services.ConfigurationProviderService.GetForecastModelAsync
+  name: GetForecastModelAsync()
+  href: technical/WeatherIO.Common.Data.Services.ConfigurationProviderService.html#WeatherIO_Common_Data_Services_ConfigurationProviderService_GetForecastModelAsync
+  commentId: M:WeatherIO.Common.Data.Services.ConfigurationProviderService.GetForecastModelAsync
+  fullName: WeatherIO.Common.Data.Services.ConfigurationProviderService.GetForecastModelAsync()
+  nameWithType: ConfigurationProviderService.GetForecastModelAsync()
+- uid: WeatherIO.Common.Data.Services.ConfigurationProviderService.GetForecastModelAsync*
+  name: GetForecastModelAsync
+  href: technical/WeatherIO.Common.Data.Services.ConfigurationProviderService.html#WeatherIO_Common_Data_Services_ConfigurationProviderService_GetForecastModelAsync_
+  commentId: Overload:WeatherIO.Common.Data.Services.ConfigurationProviderService.GetForecastModelAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Services.ConfigurationProviderService.GetForecastModelAsync
+  nameWithType: ConfigurationProviderService.GetForecastModelAsync
 - uid: WeatherIO.Common.Data.Services.ConfigurationProviderService.GetJwtToken
   name: GetJwtToken()
   href: technical/WeatherIO.Common.Data.Services.ConfigurationProviderService.html#WeatherIO_Common_Data_Services_ConfigurationProviderService_GetJwtToken
@@ -1456,6 +1743,22 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Common.Data.Services.ConfigurationProviderService.SaveTheme
   nameWithType: ConfigurationProviderService.SaveTheme
+- uid: WeatherIO.Common.Data.Services.ConfigurationProviderService.SetForecastModel(System.String)
+  name: SetForecastModel(string)
+  href: technical/WeatherIO.Common.Data.Services.ConfigurationProviderService.html#WeatherIO_Common_Data_Services_ConfigurationProviderService_SetForecastModel_System_String_
+  commentId: M:WeatherIO.Common.Data.Services.ConfigurationProviderService.SetForecastModel(System.String)
+  name.vb: SetForecastModel(String)
+  fullName: WeatherIO.Common.Data.Services.ConfigurationProviderService.SetForecastModel(string)
+  fullName.vb: WeatherIO.Common.Data.Services.ConfigurationProviderService.SetForecastModel(String)
+  nameWithType: ConfigurationProviderService.SetForecastModel(string)
+  nameWithType.vb: ConfigurationProviderService.SetForecastModel(String)
+- uid: WeatherIO.Common.Data.Services.ConfigurationProviderService.SetForecastModel*
+  name: SetForecastModel
+  href: technical/WeatherIO.Common.Data.Services.ConfigurationProviderService.html#WeatherIO_Common_Data_Services_ConfigurationProviderService_SetForecastModel_
+  commentId: Overload:WeatherIO.Common.Data.Services.ConfigurationProviderService.SetForecastModel
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Services.ConfigurationProviderService.SetForecastModel
+  nameWithType: ConfigurationProviderService.SetForecastModel
 - uid: WeatherIO.Common.Data.Services.ConfigurationProviderService.SetJwtToken(System.String)
   name: SetJwtToken(string)
   href: technical/WeatherIO.Common.Data.Services.ConfigurationProviderService.html#WeatherIO_Common_Data_Services_ConfigurationProviderService_SetJwtToken_System_String_
@@ -1510,6 +1813,135 @@ references:
   commentId: F:WeatherIO.Common.Data.Services.ConfigurationProviderService._dataProviderService
   fullName: WeatherIO.Common.Data.Services.ConfigurationProviderService._dataProviderService
   nameWithType: ConfigurationProviderService._dataProviderService
+- uid: WeatherIO.Common.Data.Services.FovouriteProviderService
+  name: FovouriteProviderService
+  href: technical/WeatherIO.Common.Data.Services.FovouriteProviderService.html
+  commentId: T:WeatherIO.Common.Data.Services.FovouriteProviderService
+  fullName: WeatherIO.Common.Data.Services.FovouriteProviderService
+  nameWithType: FovouriteProviderService
+- uid: WeatherIO.Common.Data.Services.FovouriteProviderService.#ctor(WeatherIO.Common.Data.Interfaces.IConfigurationProviderService,WeatherIO.Common.Data.Interfaces.IHttpClientProviderService)
+  name: FovouriteProviderService(IConfigurationProviderService, IHttpClientProviderService)
+  href: technical/WeatherIO.Common.Data.Services.FovouriteProviderService.html#WeatherIO_Common_Data_Services_FovouriteProviderService__ctor_WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_WeatherIO_Common_Data_Interfaces_IHttpClientProviderService_
+  commentId: M:WeatherIO.Common.Data.Services.FovouriteProviderService.#ctor(WeatherIO.Common.Data.Interfaces.IConfigurationProviderService,WeatherIO.Common.Data.Interfaces.IHttpClientProviderService)
+  name.vb: New(IConfigurationProviderService, IHttpClientProviderService)
+  fullName: WeatherIO.Common.Data.Services.FovouriteProviderService.FovouriteProviderService(WeatherIO.Common.Data.Interfaces.IConfigurationProviderService, WeatherIO.Common.Data.Interfaces.IHttpClientProviderService)
+  fullName.vb: WeatherIO.Common.Data.Services.FovouriteProviderService.New(WeatherIO.Common.Data.Interfaces.IConfigurationProviderService, WeatherIO.Common.Data.Interfaces.IHttpClientProviderService)
+  nameWithType: FovouriteProviderService.FovouriteProviderService(IConfigurationProviderService, IHttpClientProviderService)
+  nameWithType.vb: FovouriteProviderService.New(IConfigurationProviderService, IHttpClientProviderService)
+- uid: WeatherIO.Common.Data.Services.FovouriteProviderService.#ctor*
+  name: FovouriteProviderService
+  href: technical/WeatherIO.Common.Data.Services.FovouriteProviderService.html#WeatherIO_Common_Data_Services_FovouriteProviderService__ctor_
+  commentId: Overload:WeatherIO.Common.Data.Services.FovouriteProviderService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: WeatherIO.Common.Data.Services.FovouriteProviderService.FovouriteProviderService
+  fullName.vb: WeatherIO.Common.Data.Services.FovouriteProviderService.New
+  nameWithType: FovouriteProviderService.FovouriteProviderService
+  nameWithType.vb: FovouriteProviderService.New
+- uid: WeatherIO.Common.Data.Services.FovouriteProviderService.DeleteFavouriteAsync(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  name: DeleteFavouriteAsync(FavouriteLocationModel)
+  href: technical/WeatherIO.Common.Data.Services.FovouriteProviderService.html#WeatherIO_Common_Data_Services_FovouriteProviderService_DeleteFavouriteAsync_WeatherIO_Common_Data_Models_FavouriteLocationModel_
+  commentId: M:WeatherIO.Common.Data.Services.FovouriteProviderService.DeleteFavouriteAsync(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  fullName: WeatherIO.Common.Data.Services.FovouriteProviderService.DeleteFavouriteAsync(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  nameWithType: FovouriteProviderService.DeleteFavouriteAsync(FavouriteLocationModel)
+- uid: WeatherIO.Common.Data.Services.FovouriteProviderService.DeleteFavouriteAsync*
+  name: DeleteFavouriteAsync
+  href: technical/WeatherIO.Common.Data.Services.FovouriteProviderService.html#WeatherIO_Common_Data_Services_FovouriteProviderService_DeleteFavouriteAsync_
+  commentId: Overload:WeatherIO.Common.Data.Services.FovouriteProviderService.DeleteFavouriteAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Services.FovouriteProviderService.DeleteFavouriteAsync
+  nameWithType: FovouriteProviderService.DeleteFavouriteAsync
+- uid: WeatherIO.Common.Data.Services.FovouriteProviderService.GetFavouritesAsync
+  name: GetFavouritesAsync()
+  href: technical/WeatherIO.Common.Data.Services.FovouriteProviderService.html#WeatherIO_Common_Data_Services_FovouriteProviderService_GetFavouritesAsync
+  commentId: M:WeatherIO.Common.Data.Services.FovouriteProviderService.GetFavouritesAsync
+  fullName: WeatherIO.Common.Data.Services.FovouriteProviderService.GetFavouritesAsync()
+  nameWithType: FovouriteProviderService.GetFavouritesAsync()
+- uid: WeatherIO.Common.Data.Services.FovouriteProviderService.GetFavouritesAsync*
+  name: GetFavouritesAsync
+  href: technical/WeatherIO.Common.Data.Services.FovouriteProviderService.html#WeatherIO_Common_Data_Services_FovouriteProviderService_GetFavouritesAsync_
+  commentId: Overload:WeatherIO.Common.Data.Services.FovouriteProviderService.GetFavouritesAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Services.FovouriteProviderService.GetFavouritesAsync
+  nameWithType: FovouriteProviderService.GetFavouritesAsync
+- uid: WeatherIO.Common.Data.Services.FovouriteProviderService.SetOrUpdateFavouriteAsync(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  name: SetOrUpdateFavouriteAsync(FavouriteLocationModel)
+  href: technical/WeatherIO.Common.Data.Services.FovouriteProviderService.html#WeatherIO_Common_Data_Services_FovouriteProviderService_SetOrUpdateFavouriteAsync_WeatherIO_Common_Data_Models_FavouriteLocationModel_
+  commentId: M:WeatherIO.Common.Data.Services.FovouriteProviderService.SetOrUpdateFavouriteAsync(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  fullName: WeatherIO.Common.Data.Services.FovouriteProviderService.SetOrUpdateFavouriteAsync(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  nameWithType: FovouriteProviderService.SetOrUpdateFavouriteAsync(FavouriteLocationModel)
+- uid: WeatherIO.Common.Data.Services.FovouriteProviderService.SetOrUpdateFavouriteAsync*
+  name: SetOrUpdateFavouriteAsync
+  href: technical/WeatherIO.Common.Data.Services.FovouriteProviderService.html#WeatherIO_Common_Data_Services_FovouriteProviderService_SetOrUpdateFavouriteAsync_
+  commentId: Overload:WeatherIO.Common.Data.Services.FovouriteProviderService.SetOrUpdateFavouriteAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Services.FovouriteProviderService.SetOrUpdateFavouriteAsync
+  nameWithType: FovouriteProviderService.SetOrUpdateFavouriteAsync
+- uid: WeatherIO.Common.Data.Services.FovouriteProviderService._configurationProviderService
+  name: _configurationProviderService
+  href: technical/WeatherIO.Common.Data.Services.FovouriteProviderService.html#WeatherIO_Common_Data_Services_FovouriteProviderService__configurationProviderService
+  commentId: F:WeatherIO.Common.Data.Services.FovouriteProviderService._configurationProviderService
+  fullName: WeatherIO.Common.Data.Services.FovouriteProviderService._configurationProviderService
+  nameWithType: FovouriteProviderService._configurationProviderService
+- uid: WeatherIO.Common.Data.Services.FovouriteProviderService._httpClientProviderService
+  name: _httpClientProviderService
+  href: technical/WeatherIO.Common.Data.Services.FovouriteProviderService.html#WeatherIO_Common_Data_Services_FovouriteProviderService__httpClientProviderService
+  commentId: F:WeatherIO.Common.Data.Services.FovouriteProviderService._httpClientProviderService
+  fullName: WeatherIO.Common.Data.Services.FovouriteProviderService._httpClientProviderService
+  nameWithType: FovouriteProviderService._httpClientProviderService
+- uid: WeatherIO.Common.Data.Services.GeocodeProviderService
+  name: GeocodeProviderService
+  href: technical/WeatherIO.Common.Data.Services.GeocodeProviderService.html
+  commentId: T:WeatherIO.Common.Data.Services.GeocodeProviderService
+  fullName: WeatherIO.Common.Data.Services.GeocodeProviderService
+  nameWithType: GeocodeProviderService
+- uid: WeatherIO.Common.Data.Services.GeocodeProviderService.#ctor(WeatherIO.Common.Data.Interfaces.IHttpClientProviderService,WeatherIO.Common.Data.Interfaces.IConfigurationProviderService)
+  name: GeocodeProviderService(IHttpClientProviderService, IConfigurationProviderService)
+  href: technical/WeatherIO.Common.Data.Services.GeocodeProviderService.html#WeatherIO_Common_Data_Services_GeocodeProviderService__ctor_WeatherIO_Common_Data_Interfaces_IHttpClientProviderService_WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_
+  commentId: M:WeatherIO.Common.Data.Services.GeocodeProviderService.#ctor(WeatherIO.Common.Data.Interfaces.IHttpClientProviderService,WeatherIO.Common.Data.Interfaces.IConfigurationProviderService)
+  name.vb: New(IHttpClientProviderService, IConfigurationProviderService)
+  fullName: WeatherIO.Common.Data.Services.GeocodeProviderService.GeocodeProviderService(WeatherIO.Common.Data.Interfaces.IHttpClientProviderService, WeatherIO.Common.Data.Interfaces.IConfigurationProviderService)
+  fullName.vb: WeatherIO.Common.Data.Services.GeocodeProviderService.New(WeatherIO.Common.Data.Interfaces.IHttpClientProviderService, WeatherIO.Common.Data.Interfaces.IConfigurationProviderService)
+  nameWithType: GeocodeProviderService.GeocodeProviderService(IHttpClientProviderService, IConfigurationProviderService)
+  nameWithType.vb: GeocodeProviderService.New(IHttpClientProviderService, IConfigurationProviderService)
+- uid: WeatherIO.Common.Data.Services.GeocodeProviderService.#ctor*
+  name: GeocodeProviderService
+  href: technical/WeatherIO.Common.Data.Services.GeocodeProviderService.html#WeatherIO_Common_Data_Services_GeocodeProviderService__ctor_
+  commentId: Overload:WeatherIO.Common.Data.Services.GeocodeProviderService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: WeatherIO.Common.Data.Services.GeocodeProviderService.GeocodeProviderService
+  fullName.vb: WeatherIO.Common.Data.Services.GeocodeProviderService.New
+  nameWithType: GeocodeProviderService.GeocodeProviderService
+  nameWithType.vb: GeocodeProviderService.New
+- uid: WeatherIO.Common.Data.Services.GeocodeProviderService.GetGeocodeAsync(System.String)
+  name: GetGeocodeAsync(string)
+  href: technical/WeatherIO.Common.Data.Services.GeocodeProviderService.html#WeatherIO_Common_Data_Services_GeocodeProviderService_GetGeocodeAsync_System_String_
+  commentId: M:WeatherIO.Common.Data.Services.GeocodeProviderService.GetGeocodeAsync(System.String)
+  name.vb: GetGeocodeAsync(String)
+  fullName: WeatherIO.Common.Data.Services.GeocodeProviderService.GetGeocodeAsync(string)
+  fullName.vb: WeatherIO.Common.Data.Services.GeocodeProviderService.GetGeocodeAsync(String)
+  nameWithType: GeocodeProviderService.GetGeocodeAsync(string)
+  nameWithType.vb: GeocodeProviderService.GetGeocodeAsync(String)
+- uid: WeatherIO.Common.Data.Services.GeocodeProviderService.GetGeocodeAsync*
+  name: GetGeocodeAsync
+  href: technical/WeatherIO.Common.Data.Services.GeocodeProviderService.html#WeatherIO_Common_Data_Services_GeocodeProviderService_GetGeocodeAsync_
+  commentId: Overload:WeatherIO.Common.Data.Services.GeocodeProviderService.GetGeocodeAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Services.GeocodeProviderService.GetGeocodeAsync
+  nameWithType: GeocodeProviderService.GetGeocodeAsync
+- uid: WeatherIO.Common.Data.Services.GeocodeProviderService._configurationProviderService
+  name: _configurationProviderService
+  href: technical/WeatherIO.Common.Data.Services.GeocodeProviderService.html#WeatherIO_Common_Data_Services_GeocodeProviderService__configurationProviderService
+  commentId: F:WeatherIO.Common.Data.Services.GeocodeProviderService._configurationProviderService
+  fullName: WeatherIO.Common.Data.Services.GeocodeProviderService._configurationProviderService
+  nameWithType: GeocodeProviderService._configurationProviderService
+- uid: WeatherIO.Common.Data.Services.GeocodeProviderService._httpClientProviderService
+  name: _httpClientProviderService
+  href: technical/WeatherIO.Common.Data.Services.GeocodeProviderService.html#WeatherIO_Common_Data_Services_GeocodeProviderService__httpClientProviderService
+  commentId: F:WeatherIO.Common.Data.Services.GeocodeProviderService._httpClientProviderService
+  fullName: WeatherIO.Common.Data.Services.GeocodeProviderService._httpClientProviderService
+  nameWithType: GeocodeProviderService._httpClientProviderService
 - uid: WeatherIO.Common.Data.Services.WeatherAuthenticationStateProvider
   name: WeatherAuthenticationStateProvider
   href: technical/WeatherIO.Common.Data.Services.WeatherAuthenticationStateProvider.html
@@ -1592,6 +2024,75 @@ references:
   commentId: F:WeatherIO.Common.Data.Services.WeatherAuthenticationStateProvider._httpClientProvider
   fullName: WeatherIO.Common.Data.Services.WeatherAuthenticationStateProvider._httpClientProvider
   nameWithType: WeatherAuthenticationStateProvider._httpClientProvider
+- uid: WeatherIO.Common.Data.Services.WeatherForecastProviderService
+  name: WeatherForecastProviderService
+  href: technical/WeatherIO.Common.Data.Services.WeatherForecastProviderService.html
+  commentId: T:WeatherIO.Common.Data.Services.WeatherForecastProviderService
+  fullName: WeatherIO.Common.Data.Services.WeatherForecastProviderService
+  nameWithType: WeatherForecastProviderService
+- uid: WeatherIO.Common.Data.Services.WeatherForecastProviderService.#ctor(WeatherIO.Common.Data.Interfaces.IConfigurationProviderService,WeatherIO.Common.Data.Interfaces.IHttpClientProviderService)
+  name: WeatherForecastProviderService(IConfigurationProviderService, IHttpClientProviderService)
+  href: technical/WeatherIO.Common.Data.Services.WeatherForecastProviderService.html#WeatherIO_Common_Data_Services_WeatherForecastProviderService__ctor_WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_WeatherIO_Common_Data_Interfaces_IHttpClientProviderService_
+  commentId: M:WeatherIO.Common.Data.Services.WeatherForecastProviderService.#ctor(WeatherIO.Common.Data.Interfaces.IConfigurationProviderService,WeatherIO.Common.Data.Interfaces.IHttpClientProviderService)
+  name.vb: New(IConfigurationProviderService, IHttpClientProviderService)
+  fullName: WeatherIO.Common.Data.Services.WeatherForecastProviderService.WeatherForecastProviderService(WeatherIO.Common.Data.Interfaces.IConfigurationProviderService, WeatherIO.Common.Data.Interfaces.IHttpClientProviderService)
+  fullName.vb: WeatherIO.Common.Data.Services.WeatherForecastProviderService.New(WeatherIO.Common.Data.Interfaces.IConfigurationProviderService, WeatherIO.Common.Data.Interfaces.IHttpClientProviderService)
+  nameWithType: WeatherForecastProviderService.WeatherForecastProviderService(IConfigurationProviderService, IHttpClientProviderService)
+  nameWithType.vb: WeatherForecastProviderService.New(IConfigurationProviderService, IHttpClientProviderService)
+- uid: WeatherIO.Common.Data.Services.WeatherForecastProviderService.#ctor*
+  name: WeatherForecastProviderService
+  href: technical/WeatherIO.Common.Data.Services.WeatherForecastProviderService.html#WeatherIO_Common_Data_Services_WeatherForecastProviderService__ctor_
+  commentId: Overload:WeatherIO.Common.Data.Services.WeatherForecastProviderService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: WeatherIO.Common.Data.Services.WeatherForecastProviderService.WeatherForecastProviderService
+  fullName.vb: WeatherIO.Common.Data.Services.WeatherForecastProviderService.New
+  nameWithType: WeatherForecastProviderService.WeatherForecastProviderService
+  nameWithType.vb: WeatherForecastProviderService.New
+- uid: WeatherIO.Common.Data.Services.WeatherForecastProviderService.GetForecasAsync(System.Double,System.Double,System.String)
+  name: GetForecasAsync(double, double, string)
+  href: technical/WeatherIO.Common.Data.Services.WeatherForecastProviderService.html#WeatherIO_Common_Data_Services_WeatherForecastProviderService_GetForecasAsync_System_Double_System_Double_System_String_
+  commentId: M:WeatherIO.Common.Data.Services.WeatherForecastProviderService.GetForecasAsync(System.Double,System.Double,System.String)
+  name.vb: GetForecasAsync(Double, Double, String)
+  fullName: WeatherIO.Common.Data.Services.WeatherForecastProviderService.GetForecasAsync(double, double, string)
+  fullName.vb: WeatherIO.Common.Data.Services.WeatherForecastProviderService.GetForecasAsync(Double, Double, String)
+  nameWithType: WeatherForecastProviderService.GetForecasAsync(double, double, string)
+  nameWithType.vb: WeatherForecastProviderService.GetForecasAsync(Double, Double, String)
+- uid: WeatherIO.Common.Data.Services.WeatherForecastProviderService.GetForecasAsync*
+  name: GetForecasAsync
+  href: technical/WeatherIO.Common.Data.Services.WeatherForecastProviderService.html#WeatherIO_Common_Data_Services_WeatherForecastProviderService_GetForecasAsync_
+  commentId: Overload:WeatherIO.Common.Data.Services.WeatherForecastProviderService.GetForecasAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Services.WeatherForecastProviderService.GetForecasAsync
+  nameWithType: WeatherForecastProviderService.GetForecasAsync
+- uid: WeatherIO.Common.Data.Services.WeatherForecastProviderService.GetForecastByCityAsync(System.String,System.String)
+  name: GetForecastByCityAsync(string, string)
+  href: technical/WeatherIO.Common.Data.Services.WeatherForecastProviderService.html#WeatherIO_Common_Data_Services_WeatherForecastProviderService_GetForecastByCityAsync_System_String_System_String_
+  commentId: M:WeatherIO.Common.Data.Services.WeatherForecastProviderService.GetForecastByCityAsync(System.String,System.String)
+  name.vb: GetForecastByCityAsync(String, String)
+  fullName: WeatherIO.Common.Data.Services.WeatherForecastProviderService.GetForecastByCityAsync(string, string)
+  fullName.vb: WeatherIO.Common.Data.Services.WeatherForecastProviderService.GetForecastByCityAsync(String, String)
+  nameWithType: WeatherForecastProviderService.GetForecastByCityAsync(string, string)
+  nameWithType.vb: WeatherForecastProviderService.GetForecastByCityAsync(String, String)
+- uid: WeatherIO.Common.Data.Services.WeatherForecastProviderService.GetForecastByCityAsync*
+  name: GetForecastByCityAsync
+  href: technical/WeatherIO.Common.Data.Services.WeatherForecastProviderService.html#WeatherIO_Common_Data_Services_WeatherForecastProviderService_GetForecastByCityAsync_
+  commentId: Overload:WeatherIO.Common.Data.Services.WeatherForecastProviderService.GetForecastByCityAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.Data.Services.WeatherForecastProviderService.GetForecastByCityAsync
+  nameWithType: WeatherForecastProviderService.GetForecastByCityAsync
+- uid: WeatherIO.Common.Data.Services.WeatherForecastProviderService._configurationProviderService
+  name: _configurationProviderService
+  href: technical/WeatherIO.Common.Data.Services.WeatherForecastProviderService.html#WeatherIO_Common_Data_Services_WeatherForecastProviderService__configurationProviderService
+  commentId: F:WeatherIO.Common.Data.Services.WeatherForecastProviderService._configurationProviderService
+  fullName: WeatherIO.Common.Data.Services.WeatherForecastProviderService._configurationProviderService
+  nameWithType: WeatherForecastProviderService._configurationProviderService
+- uid: WeatherIO.Common.Data.Services.WeatherForecastProviderService._httpClientProviderService
+  name: _httpClientProviderService
+  href: technical/WeatherIO.Common.Data.Services.WeatherForecastProviderService.html#WeatherIO_Common_Data_Services_WeatherForecastProviderService__httpClientProviderService
+  commentId: F:WeatherIO.Common.Data.Services.WeatherForecastProviderService._httpClientProviderService
+  fullName: WeatherIO.Common.Data.Services.WeatherForecastProviderService._httpClientProviderService
+  nameWithType: WeatherForecastProviderService._httpClientProviderService
 - uid: WeatherIO.Common.WebComponents.Components
   name: WeatherIO.Common.WebComponents.Components
   href: technical/WeatherIO.Common.WebComponents.Components.html
@@ -1617,19 +2118,6 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Common.WebComponents.Components.HomeComponent.BuildRenderTree
   nameWithType: HomeComponent.BuildRenderTree
-- uid: WeatherIO.Common.WebComponents.Components.HomeComponent.OnInitializedAsync
-  name: OnInitializedAsync()
-  href: technical/WeatherIO.Common.WebComponents.Components.HomeComponent.html#WeatherIO_Common_WebComponents_Components_HomeComponent_OnInitializedAsync
-  commentId: M:WeatherIO.Common.WebComponents.Components.HomeComponent.OnInitializedAsync
-  fullName: WeatherIO.Common.WebComponents.Components.HomeComponent.OnInitializedAsync()
-  nameWithType: HomeComponent.OnInitializedAsync()
-- uid: WeatherIO.Common.WebComponents.Components.HomeComponent.OnInitializedAsync*
-  name: OnInitializedAsync
-  href: technical/WeatherIO.Common.WebComponents.Components.HomeComponent.html#WeatherIO_Common_WebComponents_Components_HomeComponent_OnInitializedAsync_
-  commentId: Overload:WeatherIO.Common.WebComponents.Components.HomeComponent.OnInitializedAsync
-  isSpec: "True"
-  fullName: WeatherIO.Common.WebComponents.Components.HomeComponent.OnInitializedAsync
-  nameWithType: HomeComponent.OnInitializedAsync
 - uid: WeatherIO.Common.WebComponents.Components.HomeComponent._authService
   name: _authService
   href: technical/WeatherIO.Common.WebComponents.Components.HomeComponent.html#WeatherIO_Common_WebComponents_Components_HomeComponent__authService
@@ -1643,12 +2131,25 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Common.WebComponents.Components.HomeComponent._authService
   nameWithType: HomeComponent._authService
-- uid: WeatherIO.Common.WebComponents.Components.HomeComponent.username
-  name: username
-  href: technical/WeatherIO.Common.WebComponents.Components.HomeComponent.html#WeatherIO_Common_WebComponents_Components_HomeComponent_username
-  commentId: F:WeatherIO.Common.WebComponents.Components.HomeComponent.username
-  fullName: WeatherIO.Common.WebComponents.Components.HomeComponent.username
-  nameWithType: HomeComponent.username
+- uid: WeatherIO.Common.WebComponents.Components.NotAuthorizedComponent
+  name: NotAuthorizedComponent
+  href: technical/WeatherIO.Common.WebComponents.Components.NotAuthorizedComponent.html
+  commentId: T:WeatherIO.Common.WebComponents.Components.NotAuthorizedComponent
+  fullName: WeatherIO.Common.WebComponents.Components.NotAuthorizedComponent
+  nameWithType: NotAuthorizedComponent
+- uid: WeatherIO.Common.WebComponents.Components.NotAuthorizedComponent.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  name: BuildRenderTree(RenderTreeBuilder)
+  href: technical/WeatherIO.Common.WebComponents.Components.NotAuthorizedComponent.html#WeatherIO_Common_WebComponents_Components_NotAuthorizedComponent_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  commentId: M:WeatherIO.Common.WebComponents.Components.NotAuthorizedComponent.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  fullName: WeatherIO.Common.WebComponents.Components.NotAuthorizedComponent.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  nameWithType: NotAuthorizedComponent.BuildRenderTree(RenderTreeBuilder)
+- uid: WeatherIO.Common.WebComponents.Components.NotAuthorizedComponent.BuildRenderTree*
+  name: BuildRenderTree
+  href: technical/WeatherIO.Common.WebComponents.Components.NotAuthorizedComponent.html#WeatherIO_Common_WebComponents_Components_NotAuthorizedComponent_BuildRenderTree_
+  commentId: Overload:WeatherIO.Common.WebComponents.Components.NotAuthorizedComponent.BuildRenderTree
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Components.NotAuthorizedComponent.BuildRenderTree
+  nameWithType: NotAuthorizedComponent.BuildRenderTree
 - uid: WeatherIO.Common.WebComponents.Components.NotFoundComponent
   name: NotFoundComponent
   href: technical/WeatherIO.Common.WebComponents.Components.NotFoundComponent.html
@@ -1674,6 +2175,140 @@ references:
   commentId: N:WeatherIO.Common.WebComponents.Pages
   fullName: WeatherIO.Common.WebComponents.Pages
   nameWithType: WeatherIO.Common.WebComponents.Pages
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd
+  name: ChangePasswd
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html
+  commentId: T:WeatherIO.Common.WebComponents.Pages.ChangePasswd
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd
+  nameWithType: ChangePasswd
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  name: BuildRenderTree(RenderTreeBuilder)
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.ChangePasswd.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  nameWithType: ChangePasswd.BuildRenderTree(RenderTreeBuilder)
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.BuildRenderTree*
+  name: BuildRenderTree
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd_BuildRenderTree_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.ChangePasswd.BuildRenderTree
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.BuildRenderTree
+  nameWithType: ChangePasswd.BuildRenderTree
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordAsync
+  name: ChangePasswordAsync()
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd_ChangePasswordAsync
+  commentId: M:WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordAsync
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordAsync()
+  nameWithType: ChangePasswd.ChangePasswordAsync()
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordAsync*
+  name: ChangePasswordAsync
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd_ChangePasswordAsync_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordAsync
+  nameWithType: ChangePasswd.ChangePasswordAsync
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm
+  name: ChangePasswd.ChangePasswordForm
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.html
+  commentId: T:WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm
+  nameWithType: ChangePasswd.ChangePasswordForm
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.NewPassword
+  name: NewPassword
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd_ChangePasswordForm_NewPassword
+  commentId: P:WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.NewPassword
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.NewPassword
+  nameWithType: ChangePasswd.ChangePasswordForm.NewPassword
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.NewPassword*
+  name: NewPassword
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd_ChangePasswordForm_NewPassword_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.NewPassword
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.NewPassword
+  nameWithType: ChangePasswd.ChangePasswordForm.NewPassword
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.OldPassword
+  name: OldPassword
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd_ChangePasswordForm_OldPassword
+  commentId: P:WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.OldPassword
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.OldPassword
+  nameWithType: ChangePasswd.ChangePasswordForm.OldPassword
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.OldPassword*
+  name: OldPassword
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd_ChangePasswordForm_OldPassword_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.OldPassword
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.OldPassword
+  nameWithType: ChangePasswd.ChangePasswordForm.OldPassword
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.RepeatPassword
+  name: RepeatPassword
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd_ChangePasswordForm_RepeatPassword
+  commentId: P:WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.RepeatPassword
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.RepeatPassword
+  nameWithType: ChangePasswd.ChangePasswordForm.RepeatPassword
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.RepeatPassword*
+  name: RepeatPassword
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd_ChangePasswordForm_RepeatPassword_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.RepeatPassword
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.RepeatPassword
+  nameWithType: ChangePasswd.ChangePasswordForm.RepeatPassword
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.OnValidSubmit(Microsoft.AspNetCore.Components.Forms.EditContext)
+  name: OnValidSubmit(EditContext)
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd_OnValidSubmit_Microsoft_AspNetCore_Components_Forms_EditContext_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.ChangePasswd.OnValidSubmit(Microsoft.AspNetCore.Components.Forms.EditContext)
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.OnValidSubmit(Microsoft.AspNetCore.Components.Forms.EditContext)
+  nameWithType: ChangePasswd.OnValidSubmit(EditContext)
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.OnValidSubmit*
+  name: OnValidSubmit
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd_OnValidSubmit_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.ChangePasswd.OnValidSubmit
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.OnValidSubmit
+  nameWithType: ChangePasswd.OnValidSubmit
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd._authService
+  name: _authService
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd__authService
+  commentId: P:WeatherIO.Common.WebComponents.Pages.ChangePasswd._authService
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd._authService
+  nameWithType: ChangePasswd._authService
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd._authService*
+  name: _authService
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd__authService_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.ChangePasswd._authService
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd._authService
+  nameWithType: ChangePasswd._authService
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd._navManager
+  name: _navManager
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd__navManager
+  commentId: P:WeatherIO.Common.WebComponents.Pages.ChangePasswd._navManager
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd._navManager
+  nameWithType: ChangePasswd._navManager
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd._navManager*
+  name: _navManager
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd__navManager_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.ChangePasswd._navManager
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd._navManager
+  nameWithType: ChangePasswd._navManager
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.errorMessage
+  name: errorMessage
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd_errorMessage
+  commentId: F:WeatherIO.Common.WebComponents.Pages.ChangePasswd.errorMessage
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.errorMessage
+  nameWithType: ChangePasswd.errorMessage
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.model
+  name: model
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd_model
+  commentId: F:WeatherIO.Common.WebComponents.Pages.ChangePasswd.model
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.model
+  nameWithType: ChangePasswd.model
+- uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd.success
+  name: success
+  href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html#WeatherIO_Common_WebComponents_Pages_ChangePasswd_success
+  commentId: F:WeatherIO.Common.WebComponents.Pages.ChangePasswd.success
+  fullName: WeatherIO.Common.WebComponents.Pages.ChangePasswd.success
+  nameWithType: ChangePasswd.success
 - uid: WeatherIO.Common.WebComponents.Pages.Home
   name: Home
   href: technical/WeatherIO.Common.WebComponents.Pages.Home.html
@@ -1712,6 +2347,102 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Common.WebComponents.Pages.Index.BuildRenderTree
   nameWithType: Index.BuildRenderTree
+- uid: WeatherIO.Common.WebComponents.Pages.Liked
+  name: Liked
+  href: technical/WeatherIO.Common.WebComponents.Pages.Liked.html
+  commentId: T:WeatherIO.Common.WebComponents.Pages.Liked
+  fullName: WeatherIO.Common.WebComponents.Pages.Liked
+  nameWithType: Liked
+- uid: WeatherIO.Common.WebComponents.Pages.Liked.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  name: BuildRenderTree(RenderTreeBuilder)
+  href: technical/WeatherIO.Common.WebComponents.Pages.Liked.html#WeatherIO_Common_WebComponents_Pages_Liked_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Liked.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  fullName: WeatherIO.Common.WebComponents.Pages.Liked.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  nameWithType: Liked.BuildRenderTree(RenderTreeBuilder)
+- uid: WeatherIO.Common.WebComponents.Pages.Liked.BuildRenderTree*
+  name: BuildRenderTree
+  href: technical/WeatherIO.Common.WebComponents.Pages.Liked.html#WeatherIO_Common_WebComponents_Pages_Liked_BuildRenderTree_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Liked.BuildRenderTree
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Liked.BuildRenderTree
+  nameWithType: Liked.BuildRenderTree
+- uid: WeatherIO.Common.WebComponents.Pages.Liked.Delete(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  name: Delete(FavouriteLocationModel)
+  href: technical/WeatherIO.Common.WebComponents.Pages.Liked.html#WeatherIO_Common_WebComponents_Pages_Liked_Delete_WeatherIO_Common_Data_Models_FavouriteLocationModel_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Liked.Delete(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  fullName: WeatherIO.Common.WebComponents.Pages.Liked.Delete(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  nameWithType: Liked.Delete(FavouriteLocationModel)
+- uid: WeatherIO.Common.WebComponents.Pages.Liked.Delete*
+  name: Delete
+  href: technical/WeatherIO.Common.WebComponents.Pages.Liked.html#WeatherIO_Common_WebComponents_Pages_Liked_Delete_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Liked.Delete
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Liked.Delete
+  nameWithType: Liked.Delete
+- uid: WeatherIO.Common.WebComponents.Pages.Liked.OnAfterRender(System.Boolean)
+  name: OnAfterRender(bool)
+  href: technical/WeatherIO.Common.WebComponents.Pages.Liked.html#WeatherIO_Common_WebComponents_Pages_Liked_OnAfterRender_System_Boolean_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Liked.OnAfterRender(System.Boolean)
+  name.vb: OnAfterRender(Boolean)
+  fullName: WeatherIO.Common.WebComponents.Pages.Liked.OnAfterRender(bool)
+  fullName.vb: WeatherIO.Common.WebComponents.Pages.Liked.OnAfterRender(Boolean)
+  nameWithType: Liked.OnAfterRender(bool)
+  nameWithType.vb: Liked.OnAfterRender(Boolean)
+- uid: WeatherIO.Common.WebComponents.Pages.Liked.OnAfterRender*
+  name: OnAfterRender
+  href: technical/WeatherIO.Common.WebComponents.Pages.Liked.html#WeatherIO_Common_WebComponents_Pages_Liked_OnAfterRender_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Liked.OnAfterRender
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Liked.OnAfterRender
+  nameWithType: Liked.OnAfterRender
+- uid: WeatherIO.Common.WebComponents.Pages.Liked.Show(System.Int32)
+  name: Show(int)
+  href: technical/WeatherIO.Common.WebComponents.Pages.Liked.html#WeatherIO_Common_WebComponents_Pages_Liked_Show_System_Int32_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Liked.Show(System.Int32)
+  name.vb: Show(Integer)
+  fullName: WeatherIO.Common.WebComponents.Pages.Liked.Show(int)
+  fullName.vb: WeatherIO.Common.WebComponents.Pages.Liked.Show(Integer)
+  nameWithType: Liked.Show(int)
+  nameWithType.vb: Liked.Show(Integer)
+- uid: WeatherIO.Common.WebComponents.Pages.Liked.Show*
+  name: Show
+  href: technical/WeatherIO.Common.WebComponents.Pages.Liked.html#WeatherIO_Common_WebComponents_Pages_Liked_Show_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Liked.Show
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Liked.Show
+  nameWithType: Liked.Show
+- uid: WeatherIO.Common.WebComponents.Pages.Liked._favouriteProviderService
+  name: _favouriteProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.Liked.html#WeatherIO_Common_WebComponents_Pages_Liked__favouriteProviderService
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Liked._favouriteProviderService
+  fullName: WeatherIO.Common.WebComponents.Pages.Liked._favouriteProviderService
+  nameWithType: Liked._favouriteProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.Liked._favouriteProviderService*
+  name: _favouriteProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.Liked.html#WeatherIO_Common_WebComponents_Pages_Liked__favouriteProviderService_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Liked._favouriteProviderService
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Liked._favouriteProviderService
+  nameWithType: Liked._favouriteProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.Liked._navigationManager
+  name: _navigationManager
+  href: technical/WeatherIO.Common.WebComponents.Pages.Liked.html#WeatherIO_Common_WebComponents_Pages_Liked__navigationManager
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Liked._navigationManager
+  fullName: WeatherIO.Common.WebComponents.Pages.Liked._navigationManager
+  nameWithType: Liked._navigationManager
+- uid: WeatherIO.Common.WebComponents.Pages.Liked._navigationManager*
+  name: _navigationManager
+  href: technical/WeatherIO.Common.WebComponents.Pages.Liked.html#WeatherIO_Common_WebComponents_Pages_Liked__navigationManager_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Liked._navigationManager
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Liked._navigationManager
+  nameWithType: Liked._navigationManager
+- uid: WeatherIO.Common.WebComponents.Pages.Liked.favouriteLocations
+  name: favouriteLocations
+  href: technical/WeatherIO.Common.WebComponents.Pages.Liked.html#WeatherIO_Common_WebComponents_Pages_Liked_favouriteLocations
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Liked.favouriteLocations
+  fullName: WeatherIO.Common.WebComponents.Pages.Liked.favouriteLocations
+  nameWithType: Liked.favouriteLocations
 - uid: WeatherIO.Common.WebComponents.Pages.Login
   name: Login
   href: technical/WeatherIO.Common.WebComponents.Pages.Login.html
@@ -1801,6 +2532,112 @@ references:
   commentId: F:WeatherIO.Common.WebComponents.Pages.Login.success
   fullName: WeatherIO.Common.WebComponents.Pages.Login.success
   nameWithType: Login.success
+- uid: WeatherIO.Common.WebComponents.Pages.Profile
+  name: Profile
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html
+  commentId: T:WeatherIO.Common.WebComponents.Pages.Profile
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile
+  nameWithType: Profile
+- uid: WeatherIO.Common.WebComponents.Pages.Profile.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  name: BuildRenderTree(RenderTreeBuilder)
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html#WeatherIO_Common_WebComponents_Pages_Profile_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Profile.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  nameWithType: Profile.BuildRenderTree(RenderTreeBuilder)
+- uid: WeatherIO.Common.WebComponents.Pages.Profile.BuildRenderTree*
+  name: BuildRenderTree
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html#WeatherIO_Common_WebComponents_Pages_Profile_BuildRenderTree_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Profile.BuildRenderTree
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile.BuildRenderTree
+  nameWithType: Profile.BuildRenderTree
+- uid: WeatherIO.Common.WebComponents.Pages.Profile.ChangePasswd
+  name: ChangePasswd()
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html#WeatherIO_Common_WebComponents_Pages_Profile_ChangePasswd
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Profile.ChangePasswd
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile.ChangePasswd()
+  nameWithType: Profile.ChangePasswd()
+- uid: WeatherIO.Common.WebComponents.Pages.Profile.ChangePasswd*
+  name: ChangePasswd
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html#WeatherIO_Common_WebComponents_Pages_Profile_ChangePasswd_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Profile.ChangePasswd
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile.ChangePasswd
+  nameWithType: Profile.ChangePasswd
+- uid: WeatherIO.Common.WebComponents.Pages.Profile.DeleteAccount
+  name: DeleteAccount()
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html#WeatherIO_Common_WebComponents_Pages_Profile_DeleteAccount
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Profile.DeleteAccount
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile.DeleteAccount()
+  nameWithType: Profile.DeleteAccount()
+- uid: WeatherIO.Common.WebComponents.Pages.Profile.DeleteAccount*
+  name: DeleteAccount
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html#WeatherIO_Common_WebComponents_Pages_Profile_DeleteAccount_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Profile.DeleteAccount
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile.DeleteAccount
+  nameWithType: Profile.DeleteAccount
+- uid: WeatherIO.Common.WebComponents.Pages.Profile.OnAfterRenderAsync(System.Boolean)
+  name: OnAfterRenderAsync(bool)
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html#WeatherIO_Common_WebComponents_Pages_Profile_OnAfterRenderAsync_System_Boolean_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Profile.OnAfterRenderAsync(System.Boolean)
+  name.vb: OnAfterRenderAsync(Boolean)
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile.OnAfterRenderAsync(bool)
+  fullName.vb: WeatherIO.Common.WebComponents.Pages.Profile.OnAfterRenderAsync(Boolean)
+  nameWithType: Profile.OnAfterRenderAsync(bool)
+  nameWithType.vb: Profile.OnAfterRenderAsync(Boolean)
+- uid: WeatherIO.Common.WebComponents.Pages.Profile.OnAfterRenderAsync*
+  name: OnAfterRenderAsync
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html#WeatherIO_Common_WebComponents_Pages_Profile_OnAfterRenderAsync_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Profile.OnAfterRenderAsync
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile.OnAfterRenderAsync
+  nameWithType: Profile.OnAfterRenderAsync
+- uid: WeatherIO.Common.WebComponents.Pages.Profile._authService
+  name: _authService
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html#WeatherIO_Common_WebComponents_Pages_Profile__authService
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Profile._authService
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile._authService
+  nameWithType: Profile._authService
+- uid: WeatherIO.Common.WebComponents.Pages.Profile._authService*
+  name: _authService
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html#WeatherIO_Common_WebComponents_Pages_Profile__authService_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Profile._authService
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile._authService
+  nameWithType: Profile._authService
+- uid: WeatherIO.Common.WebComponents.Pages.Profile._httpClientProviderService
+  name: _httpClientProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html#WeatherIO_Common_WebComponents_Pages_Profile__httpClientProviderService
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Profile._httpClientProviderService
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile._httpClientProviderService
+  nameWithType: Profile._httpClientProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.Profile._httpClientProviderService*
+  name: _httpClientProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html#WeatherIO_Common_WebComponents_Pages_Profile__httpClientProviderService_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Profile._httpClientProviderService
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile._httpClientProviderService
+  nameWithType: Profile._httpClientProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.Profile._navigationManager
+  name: _navigationManager
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html#WeatherIO_Common_WebComponents_Pages_Profile__navigationManager
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Profile._navigationManager
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile._navigationManager
+  nameWithType: Profile._navigationManager
+- uid: WeatherIO.Common.WebComponents.Pages.Profile._navigationManager*
+  name: _navigationManager
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html#WeatherIO_Common_WebComponents_Pages_Profile__navigationManager_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Profile._navigationManager
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile._navigationManager
+  nameWithType: Profile._navigationManager
+- uid: WeatherIO.Common.WebComponents.Pages.Profile.username
+  name: username
+  href: technical/WeatherIO.Common.WebComponents.Pages.Profile.html#WeatherIO_Common_WebComponents_Pages_Profile_username
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Profile.username
+  fullName: WeatherIO.Common.WebComponents.Pages.Profile.username
+  nameWithType: Profile.username
 - uid: WeatherIO.Common.WebComponents.Pages.Register
   name: Register
   href: technical/WeatherIO.Common.WebComponents.Pages.Register.html
@@ -1993,17 +2830,16 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Common.WebComponents.Pages.Settings.Save
   nameWithType: Settings.Save
+- uid: WeatherIO.Common.WebComponents.Pages.Settings.forecastModel
+  name: forecastModel
+  href: technical/WeatherIO.Common.WebComponents.Pages.Settings.html#WeatherIO_Common_WebComponents_Pages_Settings_forecastModel
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Settings.forecastModel
+  fullName: WeatherIO.Common.WebComponents.Pages.Settings.forecastModel
+  nameWithType: Settings.forecastModel
 - uid: WeatherIO.Common.WebComponents.Pages.Settings.serverAddress
   name: serverAddress
   href: technical/WeatherIO.Common.WebComponents.Pages.Settings.html#WeatherIO_Common_WebComponents_Pages_Settings_serverAddress
-  commentId: P:WeatherIO.Common.WebComponents.Pages.Settings.serverAddress
-  fullName: WeatherIO.Common.WebComponents.Pages.Settings.serverAddress
-  nameWithType: Settings.serverAddress
-- uid: WeatherIO.Common.WebComponents.Pages.Settings.serverAddress*
-  name: serverAddress
-  href: technical/WeatherIO.Common.WebComponents.Pages.Settings.html#WeatherIO_Common_WebComponents_Pages_Settings_serverAddress_
-  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Settings.serverAddress
-  isSpec: "True"
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Settings.serverAddress
   fullName: WeatherIO.Common.WebComponents.Pages.Settings.serverAddress
   nameWithType: Settings.serverAddress
 - uid: WeatherIO.Common.WebComponents.Pages.Settings.theme
@@ -2018,6 +2854,325 @@ references:
   commentId: F:WeatherIO.Common.WebComponents.Pages.Settings.themeLabels
   fullName: WeatherIO.Common.WebComponents.Pages.Settings.themeLabels
   nameWithType: Settings.themeLabels
+- uid: WeatherIO.Common.WebComponents.Pages.Weather
+  name: Weather
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html
+  commentId: T:WeatherIO.Common.WebComponents.Pages.Weather
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather
+  nameWithType: Weather
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.AddToFavourites
+  name: AddToFavourites()
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_AddToFavourites
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Weather.AddToFavourites
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.AddToFavourites()
+  nameWithType: Weather.AddToFavourites()
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.AddToFavourites*
+  name: AddToFavourites
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_AddToFavourites_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.AddToFavourites
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.AddToFavourites
+  nameWithType: Weather.AddToFavourites
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  name: BuildRenderTree(RenderTreeBuilder)
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Weather.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  nameWithType: Weather.BuildRenderTree(RenderTreeBuilder)
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.BuildRenderTree*
+  name: BuildRenderTree
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_BuildRenderTree_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.BuildRenderTree
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.BuildRenderTree
+  nameWithType: Weather.BuildRenderTree
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.GetData
+  name: GetData()
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_GetData
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Weather.GetData
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.GetData()
+  nameWithType: Weather.GetData()
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.GetData*
+  name: GetData
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_GetData_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.GetData
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.GetData
+  nameWithType: Weather.GetData
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxPreassureForDay(System.Int32)
+  name: GetMaxPreassureForDay(int)
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_GetMaxPreassureForDay_System_Int32_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Weather.GetMaxPreassureForDay(System.Int32)
+  name.vb: GetMaxPreassureForDay(Integer)
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxPreassureForDay(int)
+  fullName.vb: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxPreassureForDay(Integer)
+  nameWithType: Weather.GetMaxPreassureForDay(int)
+  nameWithType.vb: Weather.GetMaxPreassureForDay(Integer)
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxPreassureForDay*
+  name: GetMaxPreassureForDay
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_GetMaxPreassureForDay_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.GetMaxPreassureForDay
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxPreassureForDay
+  nameWithType: Weather.GetMaxPreassureForDay
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxTemperatureForDay(System.Int32)
+  name: GetMaxTemperatureForDay(int)
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_GetMaxTemperatureForDay_System_Int32_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Weather.GetMaxTemperatureForDay(System.Int32)
+  name.vb: GetMaxTemperatureForDay(Integer)
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxTemperatureForDay(int)
+  fullName.vb: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxTemperatureForDay(Integer)
+  nameWithType: Weather.GetMaxTemperatureForDay(int)
+  nameWithType.vb: Weather.GetMaxTemperatureForDay(Integer)
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxTemperatureForDay*
+  name: GetMaxTemperatureForDay
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_GetMaxTemperatureForDay_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.GetMaxTemperatureForDay
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxTemperatureForDay
+  nameWithType: Weather.GetMaxTemperatureForDay
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxWindSpeedForDay(System.Int32)
+  name: GetMaxWindSpeedForDay(int)
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_GetMaxWindSpeedForDay_System_Int32_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Weather.GetMaxWindSpeedForDay(System.Int32)
+  name.vb: GetMaxWindSpeedForDay(Integer)
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxWindSpeedForDay(int)
+  fullName.vb: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxWindSpeedForDay(Integer)
+  nameWithType: Weather.GetMaxWindSpeedForDay(int)
+  nameWithType.vb: Weather.GetMaxWindSpeedForDay(Integer)
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxWindSpeedForDay*
+  name: GetMaxWindSpeedForDay
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_GetMaxWindSpeedForDay_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.GetMaxWindSpeedForDay
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxWindSpeedForDay
+  nameWithType: Weather.GetMaxWindSpeedForDay
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.GetMinTemperatureForDay(System.Int32)
+  name: GetMinTemperatureForDay(int)
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_GetMinTemperatureForDay_System_Int32_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Weather.GetMinTemperatureForDay(System.Int32)
+  name.vb: GetMinTemperatureForDay(Integer)
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.GetMinTemperatureForDay(int)
+  fullName.vb: WeatherIO.Common.WebComponents.Pages.Weather.GetMinTemperatureForDay(Integer)
+  nameWithType: Weather.GetMinTemperatureForDay(int)
+  nameWithType.vb: Weather.GetMinTemperatureForDay(Integer)
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.GetMinTemperatureForDay*
+  name: GetMinTemperatureForDay
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_GetMinTemperatureForDay_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.GetMinTemperatureForDay
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.GetMinTemperatureForDay
+  nameWithType: Weather.GetMinTemperatureForDay
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.Index
+  name: Index
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_Index
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Weather.Index
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.Index
+  nameWithType: Weather.Index
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.OnAfterRender(System.Boolean)
+  name: OnAfterRender(bool)
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_OnAfterRender_System_Boolean_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Weather.OnAfterRender(System.Boolean)
+  name.vb: OnAfterRender(Boolean)
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.OnAfterRender(bool)
+  fullName.vb: WeatherIO.Common.WebComponents.Pages.Weather.OnAfterRender(Boolean)
+  nameWithType: Weather.OnAfterRender(bool)
+  nameWithType.vb: Weather.OnAfterRender(Boolean)
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.OnAfterRender*
+  name: OnAfterRender
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_OnAfterRender_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.OnAfterRender
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.OnAfterRender
+  nameWithType: Weather.OnAfterRender
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.OnValidSubmit
+  name: OnValidSubmit()
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_OnValidSubmit
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Weather.OnValidSubmit
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.OnValidSubmit()
+  nameWithType: Weather.OnValidSubmit()
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.OnValidSubmit*
+  name: OnValidSubmit
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_OnValidSubmit_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.OnValidSubmit
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.OnValidSubmit
+  nameWithType: Weather.OnValidSubmit
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.Search
+  name: Weather.Search
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.Search.html
+  commentId: T:WeatherIO.Common.WebComponents.Pages.Weather.Search
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.Search
+  nameWithType: Weather.Search
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.Search.City
+  name: City
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.Search.html#WeatherIO_Common_WebComponents_Pages_Weather_Search_City
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Weather.Search.City
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.Search.City
+  nameWithType: Weather.Search.City
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.Search.City*
+  name: City
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.Search.html#WeatherIO_Common_WebComponents_Pages_Weather_Search_City_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.Search.City
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.Search.City
+  nameWithType: Weather.Search.City
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.ShowAlert(System.Boolean)
+  name: ShowAlert(bool)
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_ShowAlert_System_Boolean_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Weather.ShowAlert(System.Boolean)
+  name.vb: ShowAlert(Boolean)
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.ShowAlert(bool)
+  fullName.vb: WeatherIO.Common.WebComponents.Pages.Weather.ShowAlert(Boolean)
+  nameWithType: Weather.ShowAlert(bool)
+  nameWithType.vb: Weather.ShowAlert(Boolean)
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.ShowAlert*
+  name: ShowAlert
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_ShowAlert_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.ShowAlert
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.ShowAlert
+  nameWithType: Weather.ShowAlert
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.ShowData(System.Int32)
+  name: ShowData(int)
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_ShowData_System_Int32_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Weather.ShowData(System.Int32)
+  name.vb: ShowData(Integer)
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.ShowData(int)
+  fullName.vb: WeatherIO.Common.WebComponents.Pages.Weather.ShowData(Integer)
+  nameWithType: Weather.ShowData(int)
+  nameWithType.vb: Weather.ShowData(Integer)
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.ShowData*
+  name: ShowData
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_ShowData_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.ShowData
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.ShowData
+  nameWithType: Weather.ShowData
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.Value
+  name: Value
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_Value
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Weather.Value
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.Value
+  nameWithType: Weather.Value
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.Value*
+  name: Value
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_Value_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.Value
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.Value
+  nameWithType: Weather.Value
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeatherForecastProviderService
+  name: WeatherForecastProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_WeatherForecastProviderService
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Weather.WeatherForecastProviderService
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeatherForecastProviderService
+  nameWithType: Weather.WeatherForecastProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeatherForecastProviderService*
+  name: WeatherForecastProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_WeatherForecastProviderService_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.WeatherForecastProviderService
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeatherForecastProviderService
+  nameWithType: Weather.WeatherForecastProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.Weather._favouriteProviderService
+  name: _favouriteProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather__favouriteProviderService
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Weather._favouriteProviderService
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather._favouriteProviderService
+  nameWithType: Weather._favouriteProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.Weather._favouriteProviderService*
+  name: _favouriteProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather__favouriteProviderService_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather._favouriteProviderService
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather._favouriteProviderService
+  nameWithType: Weather._favouriteProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.Weather._geocodeProviderService
+  name: _geocodeProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather__geocodeProviderService
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Weather._geocodeProviderService
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather._geocodeProviderService
+  nameWithType: Weather._geocodeProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.Weather._geocodeProviderService*
+  name: _geocodeProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather__geocodeProviderService_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather._geocodeProviderService
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather._geocodeProviderService
+  nameWithType: Weather._geocodeProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.forecastResponse
+  name: forecastResponse
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_forecastResponse
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Weather.forecastResponse
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.forecastResponse
+  nameWithType: Weather.forecastResponse
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.humidityOptions
+  name: humidityOptions
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_humidityOptions
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Weather.humidityOptions
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.humidityOptions
+  nameWithType: Weather.humidityOptions
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.humiditySeries
+  name: humiditySeries
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_humiditySeries
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Weather.humiditySeries
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.humiditySeries
+  nameWithType: Weather.humiditySeries
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.model
+  name: model
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_model
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Weather.model
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.model
+  nameWithType: Weather.model
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.preassureOptions
+  name: preassureOptions
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_preassureOptions
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Weather.preassureOptions
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.preassureOptions
+  nameWithType: Weather.preassureOptions
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.preassureSeries
+  name: preassureSeries
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_preassureSeries
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Weather.preassureSeries
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.preassureSeries
+  nameWithType: Weather.preassureSeries
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.showAlert
+  name: showAlert
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_showAlert
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Weather.showAlert
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.showAlert
+  nameWithType: Weather.showAlert
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.temperatureOptions
+  name: temperatureOptions
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_temperatureOptions
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Weather.temperatureOptions
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.temperatureOptions
+  nameWithType: Weather.temperatureOptions
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.temperatureSeries
+  name: temperatureSeries
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_temperatureSeries
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Weather.temperatureSeries
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.temperatureSeries
+  nameWithType: Weather.temperatureSeries
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.windSpeedOptions
+  name: windSpeedOptions
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_windSpeedOptions
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Weather.windSpeedOptions
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.windSpeedOptions
+  nameWithType: Weather.windSpeedOptions
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.windSpeedSeries
+  name: windSpeedSeries
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_windSpeedSeries
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Weather.windSpeedSeries
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.windSpeedSeries
+  nameWithType: Weather.windSpeedSeries
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.xAxisLabels
+  name: xAxisLabels
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_xAxisLabels
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Weather.xAxisLabels
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.xAxisLabels
+  nameWithType: Weather.xAxisLabels
 - uid: WeatherIO.Common.WebComponents.Shared
   name: WeatherIO.Common.WebComponents.Shared
   href: technical/WeatherIO.Common.WebComponents.Shared.html
@@ -2124,6 +3279,19 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Common.WebComponents.Shared.MainLayout.OnAfterRenderAsync
   nameWithType: MainLayout.OnAfterRenderAsync
+- uid: WeatherIO.Common.WebComponents.Shared.MainLayout.Profile
+  name: Profile()
+  href: technical/WeatherIO.Common.WebComponents.Shared.MainLayout.html#WeatherIO_Common_WebComponents_Shared_MainLayout_Profile
+  commentId: M:WeatherIO.Common.WebComponents.Shared.MainLayout.Profile
+  fullName: WeatherIO.Common.WebComponents.Shared.MainLayout.Profile()
+  nameWithType: MainLayout.Profile()
+- uid: WeatherIO.Common.WebComponents.Shared.MainLayout.Profile*
+  name: Profile
+  href: technical/WeatherIO.Common.WebComponents.Shared.MainLayout.html#WeatherIO_Common_WebComponents_Shared_MainLayout_Profile_
+  commentId: Overload:WeatherIO.Common.WebComponents.Shared.MainLayout.Profile
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Shared.MainLayout.Profile
+  nameWithType: MainLayout.Profile
 - uid: WeatherIO.Common.WebComponents.Shared.MainLayout.Register
   name: Register()
   href: technical/WeatherIO.Common.WebComponents.Shared.MainLayout.html#WeatherIO_Common_WebComponents_Shared_MainLayout_Register
@@ -2589,15 +3757,15 @@ references:
   fullName.vb: WeatherIO.Server.Data.Controllers.WeatherForecastController.New
   nameWithType: WeatherForecastController.WeatherForecastController
   nameWithType.vb: WeatherForecastController.New
-- uid: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecast(System.Double,System.Double,System.String)
-  name: GetForecast(double, double, string?)
-  href: technical/WeatherIO.Server.Data.Controllers.WeatherForecastController.html#WeatherIO_Server_Data_Controllers_WeatherForecastController_GetForecast_System_Double_System_Double_System_String_
-  commentId: M:WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecast(System.Double,System.Double,System.String)
-  name.vb: GetForecast(Double, Double, String)
-  fullName: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecast(double, double, string?)
-  fullName.vb: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecast(Double, Double, String)
-  nameWithType: WeatherForecastController.GetForecast(double, double, string?)
-  nameWithType.vb: WeatherForecastController.GetForecast(Double, Double, String)
+- uid: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecast(System.Double,System.Double,System.String,System.String)
+  name: GetForecast(double, double, string?, string?)
+  href: technical/WeatherIO.Server.Data.Controllers.WeatherForecastController.html#WeatherIO_Server_Data_Controllers_WeatherForecastController_GetForecast_System_Double_System_Double_System_String_System_String_
+  commentId: M:WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecast(System.Double,System.Double,System.String,System.String)
+  name.vb: GetForecast(Double, Double, String, String)
+  fullName: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecast(double, double, string?, string?)
+  fullName.vb: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecast(Double, Double, String, String)
+  nameWithType: WeatherForecastController.GetForecast(double, double, string?, string?)
+  nameWithType.vb: WeatherForecastController.GetForecast(Double, Double, String, String)
 - uid: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecast*
   name: GetForecast
   href: technical/WeatherIO.Server.Data.Controllers.WeatherForecastController.html#WeatherIO_Server_Data_Controllers_WeatherForecastController_GetForecast_
@@ -2605,15 +3773,15 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecast
   nameWithType: WeatherForecastController.GetForecast
-- uid: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecastByCity(System.String,System.String)
-  name: GetForecastByCity(string, string?)
-  href: technical/WeatherIO.Server.Data.Controllers.WeatherForecastController.html#WeatherIO_Server_Data_Controllers_WeatherForecastController_GetForecastByCity_System_String_System_String_
-  commentId: M:WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecastByCity(System.String,System.String)
-  name.vb: GetForecastByCity(String, String)
-  fullName: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecastByCity(string, string?)
-  fullName.vb: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecastByCity(String, String)
-  nameWithType: WeatherForecastController.GetForecastByCity(string, string?)
-  nameWithType.vb: WeatherForecastController.GetForecastByCity(String, String)
+- uid: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecastByCity(System.String,System.String,System.String)
+  name: GetForecastByCity(string, string?, string?)
+  href: technical/WeatherIO.Server.Data.Controllers.WeatherForecastController.html#WeatherIO_Server_Data_Controllers_WeatherForecastController_GetForecastByCity_System_String_System_String_System_String_
+  commentId: M:WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecastByCity(System.String,System.String,System.String)
+  name.vb: GetForecastByCity(String, String, String)
+  fullName: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecastByCity(string, string?, string?)
+  fullName.vb: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecastByCity(String, String, String)
+  nameWithType: WeatherForecastController.GetForecastByCity(string, string?, string?)
+  nameWithType.vb: WeatherForecastController.GetForecastByCity(String, String, String)
 - uid: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecastByCity*
   name: GetForecastByCity
   href: technical/WeatherIO.Server.Data.Controllers.WeatherForecastController.html#WeatherIO_Server_Data_Controllers_WeatherForecastController_GetForecastByCity_
@@ -2621,6 +3789,22 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Server.Data.Controllers.WeatherForecastController.GetForecastByCity
   nameWithType: WeatherForecastController.GetForecastByCity
+- uid: WeatherIO.Server.Data.Controllers.WeatherForecastController.StringToForecastModel(System.String)
+  name: StringToForecastModel(string?)
+  href: technical/WeatherIO.Server.Data.Controllers.WeatherForecastController.html#WeatherIO_Server_Data_Controllers_WeatherForecastController_StringToForecastModel_System_String_
+  commentId: M:WeatherIO.Server.Data.Controllers.WeatherForecastController.StringToForecastModel(System.String)
+  name.vb: StringToForecastModel(String)
+  fullName: WeatherIO.Server.Data.Controllers.WeatherForecastController.StringToForecastModel(string?)
+  fullName.vb: WeatherIO.Server.Data.Controllers.WeatherForecastController.StringToForecastModel(String)
+  nameWithType: WeatherForecastController.StringToForecastModel(string?)
+  nameWithType.vb: WeatherForecastController.StringToForecastModel(String)
+- uid: WeatherIO.Server.Data.Controllers.WeatherForecastController.StringToForecastModel*
+  name: StringToForecastModel
+  href: technical/WeatherIO.Server.Data.Controllers.WeatherForecastController.html#WeatherIO_Server_Data_Controllers_WeatherForecastController_StringToForecastModel_
+  commentId: Overload:WeatherIO.Server.Data.Controllers.WeatherForecastController.StringToForecastModel
+  isSpec: "True"
+  fullName: WeatherIO.Server.Data.Controllers.WeatherForecastController.StringToForecastModel
+  nameWithType: WeatherForecastController.StringToForecastModel
 - uid: WeatherIO.Server.Data.Controllers.WeatherForecastController._forecastService
   name: _forecastService
   href: technical/WeatherIO.Server.Data.Controllers.WeatherForecastController.html#WeatherIO_Server_Data_Controllers_WeatherForecastController__forecastService
@@ -2773,19 +3957,6 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Server.Data.Models.OpenMeteo.AirQualityModel.CurrentData.european_aqi
   nameWithType: AirQualityModel.CurrentData.european_aqi
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.AirQualityModel.CurrentData.interval
-  name: interval
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.AirQualityModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_AirQualityModel_CurrentData_interval
-  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.AirQualityModel.CurrentData.interval
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.AirQualityModel.CurrentData.interval
-  nameWithType: AirQualityModel.CurrentData.interval
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.AirQualityModel.CurrentData.interval*
-  name: interval
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.AirQualityModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_AirQualityModel_CurrentData_interval_
-  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.AirQualityModel.CurrentData.interval
-  isSpec: "True"
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.AirQualityModel.CurrentData.interval
-  nameWithType: AirQualityModel.CurrentData.interval
 - uid: WeatherIO.Server.Data.Models.OpenMeteo.AirQualityModel.CurrentData.nitrogen_dioxide
   name: nitrogen_dioxide
   href: technical/WeatherIO.Server.Data.Models.OpenMeteo.AirQualityModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_AirQualityModel_CurrentData_nitrogen_dioxide
@@ -2980,19 +4151,19 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.rain
   nameWithType: ForecastModel.CurrentData.rain
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.relativehumidity_2m
-  name: relativehumidity_2m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_relativehumidity_2m
-  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.relativehumidity_2m
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.relativehumidity_2m
-  nameWithType: ForecastModel.CurrentData.relativehumidity_2m
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.relativehumidity_2m*
-  name: relativehumidity_2m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_relativehumidity_2m_
-  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.relativehumidity_2m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.relative_humidity_2m
+  name: relative_humidity_2m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_relative_humidity_2m
+  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.relative_humidity_2m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.relative_humidity_2m
+  nameWithType: ForecastModel.CurrentData.relative_humidity_2m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.relative_humidity_2m*
+  name: relative_humidity_2m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_relative_humidity_2m_
+  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.relative_humidity_2m
   isSpec: "True"
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.relativehumidity_2m
-  nameWithType: ForecastModel.CurrentData.relativehumidity_2m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.relative_humidity_2m
+  nameWithType: ForecastModel.CurrentData.relative_humidity_2m
 - uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.showers
   name: showers
   href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_showers
@@ -3071,45 +4242,45 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.weathercode
   nameWithType: ForecastModel.CurrentData.weathercode
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.winddirection_10m
-  name: winddirection_10m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_winddirection_10m
-  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.winddirection_10m
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.winddirection_10m
-  nameWithType: ForecastModel.CurrentData.winddirection_10m
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.winddirection_10m*
-  name: winddirection_10m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_winddirection_10m_
-  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.winddirection_10m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_direction_10m
+  name: wind_direction_10m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_wind_direction_10m
+  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_direction_10m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_direction_10m
+  nameWithType: ForecastModel.CurrentData.wind_direction_10m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_direction_10m*
+  name: wind_direction_10m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_wind_direction_10m_
+  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_direction_10m
   isSpec: "True"
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.winddirection_10m
-  nameWithType: ForecastModel.CurrentData.winddirection_10m
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.windgusts_10m
-  name: windgusts_10m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_windgusts_10m
-  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.windgusts_10m
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.windgusts_10m
-  nameWithType: ForecastModel.CurrentData.windgusts_10m
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.windgusts_10m*
-  name: windgusts_10m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_windgusts_10m_
-  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.windgusts_10m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_direction_10m
+  nameWithType: ForecastModel.CurrentData.wind_direction_10m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_gusts_10m
+  name: wind_gusts_10m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_wind_gusts_10m
+  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_gusts_10m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_gusts_10m
+  nameWithType: ForecastModel.CurrentData.wind_gusts_10m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_gusts_10m*
+  name: wind_gusts_10m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_wind_gusts_10m_
+  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_gusts_10m
   isSpec: "True"
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.windgusts_10m
-  nameWithType: ForecastModel.CurrentData.windgusts_10m
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.windspeed_10m
-  name: windspeed_10m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_windspeed_10m
-  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.windspeed_10m
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.windspeed_10m
-  nameWithType: ForecastModel.CurrentData.windspeed_10m
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.windspeed_10m*
-  name: windspeed_10m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_windspeed_10m_
-  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.windspeed_10m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_gusts_10m
+  nameWithType: ForecastModel.CurrentData.wind_gusts_10m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_speed_10m
+  name: wind_speed_10m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_wind_speed_10m
+  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_speed_10m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_speed_10m
+  nameWithType: ForecastModel.CurrentData.wind_speed_10m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_speed_10m*
+  name: wind_speed_10m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_CurrentData_wind_speed_10m_
+  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_speed_10m
   isSpec: "True"
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.windspeed_10m
-  nameWithType: ForecastModel.CurrentData.windspeed_10m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.CurrentData.wind_speed_10m
+  nameWithType: ForecastModel.CurrentData.wind_speed_10m
 - uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData
   name: ForecastModel.ForecastData
   href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html
@@ -3168,19 +4339,19 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.rain
   nameWithType: ForecastModel.ForecastData.rain
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.relativehumidity_2m
-  name: relativehumidity_2m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_relativehumidity_2m
-  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.relativehumidity_2m
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.relativehumidity_2m
-  nameWithType: ForecastModel.ForecastData.relativehumidity_2m
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.relativehumidity_2m*
-  name: relativehumidity_2m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_relativehumidity_2m_
-  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.relativehumidity_2m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.relative_humidity_2m
+  name: relative_humidity_2m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_relative_humidity_2m
+  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.relative_humidity_2m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.relative_humidity_2m
+  nameWithType: ForecastModel.ForecastData.relative_humidity_2m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.relative_humidity_2m*
+  name: relative_humidity_2m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_relative_humidity_2m_
+  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.relative_humidity_2m
   isSpec: "True"
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.relativehumidity_2m
-  nameWithType: ForecastModel.ForecastData.relativehumidity_2m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.relative_humidity_2m
+  nameWithType: ForecastModel.ForecastData.relative_humidity_2m
 - uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.showers
   name: showers
   href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_showers
@@ -3259,45 +4430,45 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.weathercode
   nameWithType: ForecastModel.ForecastData.weathercode
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.winddirection_10m
-  name: winddirection_10m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_winddirection_10m
-  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.winddirection_10m
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.winddirection_10m
-  nameWithType: ForecastModel.ForecastData.winddirection_10m
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.winddirection_10m*
-  name: winddirection_10m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_winddirection_10m_
-  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.winddirection_10m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_direction_10m
+  name: wind_direction_10m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_wind_direction_10m
+  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_direction_10m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_direction_10m
+  nameWithType: ForecastModel.ForecastData.wind_direction_10m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_direction_10m*
+  name: wind_direction_10m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_wind_direction_10m_
+  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_direction_10m
   isSpec: "True"
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.winddirection_10m
-  nameWithType: ForecastModel.ForecastData.winddirection_10m
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.windgusts_10m
-  name: windgusts_10m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_windgusts_10m
-  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.windgusts_10m
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.windgusts_10m
-  nameWithType: ForecastModel.ForecastData.windgusts_10m
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.windgusts_10m*
-  name: windgusts_10m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_windgusts_10m_
-  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.windgusts_10m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_direction_10m
+  nameWithType: ForecastModel.ForecastData.wind_direction_10m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_gusts_10m
+  name: wind_gusts_10m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_wind_gusts_10m
+  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_gusts_10m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_gusts_10m
+  nameWithType: ForecastModel.ForecastData.wind_gusts_10m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_gusts_10m*
+  name: wind_gusts_10m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_wind_gusts_10m_
+  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_gusts_10m
   isSpec: "True"
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.windgusts_10m
-  nameWithType: ForecastModel.ForecastData.windgusts_10m
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.windspeed_10m
-  name: windspeed_10m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_windspeed_10m
-  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.windspeed_10m
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.windspeed_10m
-  nameWithType: ForecastModel.ForecastData.windspeed_10m
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.windspeed_10m*
-  name: windspeed_10m
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_windspeed_10m_
-  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.windspeed_10m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_gusts_10m
+  nameWithType: ForecastModel.ForecastData.wind_gusts_10m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_speed_10m
+  name: wind_speed_10m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_wind_speed_10m
+  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_speed_10m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_speed_10m
+  nameWithType: ForecastModel.ForecastData.wind_speed_10m
+- uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_speed_10m*
+  name: wind_speed_10m
+  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_ForecastData_wind_speed_10m_
+  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_speed_10m
   isSpec: "True"
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.windspeed_10m
-  nameWithType: ForecastModel.ForecastData.windspeed_10m
+  fullName: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.ForecastData.wind_speed_10m
+  nameWithType: ForecastModel.ForecastData.wind_speed_10m
 - uid: WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.GetForecastTimePoints
   name: GetForecastTimePoints()
   href: technical/WeatherIO.Server.Data.Models.OpenMeteo.ForecastModel.html#WeatherIO_Server_Data_Models_OpenMeteo_ForecastModel_GetForecastTimePoints
@@ -3588,19 +4759,6 @@ references:
   commentId: T:WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult
   fullName: WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult
   nameWithType: GeocodingModel.GeocodingResult
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.CountryCode
-  name: CountryCode
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.html#WeatherIO_Server_Data_Models_OpenMeteo_GeocodingModel_GeocodingResult_CountryCode
-  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.CountryCode
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.CountryCode
-  nameWithType: GeocodingModel.GeocodingResult.CountryCode
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.CountryCode*
-  name: CountryCode
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.html#WeatherIO_Server_Data_Models_OpenMeteo_GeocodingModel_GeocodingResult_CountryCode_
-  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.CountryCode
-  isSpec: "True"
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.CountryCode
-  nameWithType: GeocodingModel.GeocodingResult.CountryCode
 - uid: WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.Elevation
   name: Elevation
   href: technical/WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.html#WeatherIO_Server_Data_Models_OpenMeteo_GeocodingModel_GeocodingResult_Elevation
@@ -3614,19 +4772,6 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.Elevation
   nameWithType: GeocodingModel.GeocodingResult.Elevation
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.FeatureCode
-  name: FeatureCode
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.html#WeatherIO_Server_Data_Models_OpenMeteo_GeocodingModel_GeocodingResult_FeatureCode
-  commentId: P:WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.FeatureCode
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.FeatureCode
-  nameWithType: GeocodingModel.GeocodingResult.FeatureCode
-- uid: WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.FeatureCode*
-  name: FeatureCode
-  href: technical/WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.html#WeatherIO_Server_Data_Models_OpenMeteo_GeocodingModel_GeocodingResult_FeatureCode_
-  commentId: Overload:WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.FeatureCode
-  isSpec: "True"
-  fullName: WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.FeatureCode
-  nameWithType: GeocodingModel.GeocodingResult.FeatureCode
 - uid: WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.Id
   name: Id
   href: technical/WeatherIO.Server.Data.Models.OpenMeteo.GeocodingModel.GeocodingResult.html#WeatherIO_Server_Data_Models_OpenMeteo_GeocodingModel_GeocodingResult_Id
@@ -3796,15 +4941,15 @@ references:
   fullName.vb: WeatherIO.Server.Data.Services.ForecastService.New
   nameWithType: ForecastService.ForecastService
   nameWithType.vb: ForecastService.New
-- uid: WeatherIO.Server.Data.Services.ForecastService.GetForecastAsync(System.Double,System.Double,System.String)
-  name: GetForecastAsync(double, double, string)
-  href: technical/WeatherIO.Server.Data.Services.ForecastService.html#WeatherIO_Server_Data_Services_ForecastService_GetForecastAsync_System_Double_System_Double_System_String_
-  commentId: M:WeatherIO.Server.Data.Services.ForecastService.GetForecastAsync(System.Double,System.Double,System.String)
-  name.vb: GetForecastAsync(Double, Double, String)
-  fullName: WeatherIO.Server.Data.Services.ForecastService.GetForecastAsync(double, double, string)
-  fullName.vb: WeatherIO.Server.Data.Services.ForecastService.GetForecastAsync(Double, Double, String)
-  nameWithType: ForecastService.GetForecastAsync(double, double, string)
-  nameWithType.vb: ForecastService.GetForecastAsync(Double, Double, String)
+- uid: WeatherIO.Server.Data.Services.ForecastService.GetForecastAsync(System.Double,System.Double,System.String,WeatherIO.Server.Data.Services.ForecastService.Model)
+  name: GetForecastAsync(double, double, string, Model)
+  href: technical/WeatherIO.Server.Data.Services.ForecastService.html#WeatherIO_Server_Data_Services_ForecastService_GetForecastAsync_System_Double_System_Double_System_String_WeatherIO_Server_Data_Services_ForecastService_Model_
+  commentId: M:WeatherIO.Server.Data.Services.ForecastService.GetForecastAsync(System.Double,System.Double,System.String,WeatherIO.Server.Data.Services.ForecastService.Model)
+  name.vb: GetForecastAsync(Double, Double, String, Model)
+  fullName: WeatherIO.Server.Data.Services.ForecastService.GetForecastAsync(double, double, string, WeatherIO.Server.Data.Services.ForecastService.Model)
+  fullName.vb: WeatherIO.Server.Data.Services.ForecastService.GetForecastAsync(Double, Double, String, WeatherIO.Server.Data.Services.ForecastService.Model)
+  nameWithType: ForecastService.GetForecastAsync(double, double, string, ForecastService.Model)
+  nameWithType.vb: ForecastService.GetForecastAsync(Double, Double, String, ForecastService.Model)
 - uid: WeatherIO.Server.Data.Services.ForecastService.GetForecastAsync*
   name: GetForecastAsync
   href: technical/WeatherIO.Server.Data.Services.ForecastService.html#WeatherIO_Server_Data_Services_ForecastService_GetForecastAsync_
@@ -3812,6 +4957,24 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Server.Data.Services.ForecastService.GetForecastAsync
   nameWithType: ForecastService.GetForecastAsync
+- uid: WeatherIO.Server.Data.Services.ForecastService.Model
+  name: ForecastService.Model
+  href: technical/WeatherIO.Server.Data.Services.ForecastService.Model.html
+  commentId: T:WeatherIO.Server.Data.Services.ForecastService.Model
+  fullName: WeatherIO.Server.Data.Services.ForecastService.Model
+  nameWithType: ForecastService.Model
+- uid: WeatherIO.Server.Data.Services.ForecastService.Model.DWDIcon
+  name: DWDIcon
+  href: technical/WeatherIO.Server.Data.Services.ForecastService.Model.html#WeatherIO_Server_Data_Services_ForecastService_Model_DWDIcon
+  commentId: F:WeatherIO.Server.Data.Services.ForecastService.Model.DWDIcon
+  fullName: WeatherIO.Server.Data.Services.ForecastService.Model.DWDIcon
+  nameWithType: ForecastService.Model.DWDIcon
+- uid: WeatherIO.Server.Data.Services.ForecastService.Model.ECMWF
+  name: ECMWF
+  href: technical/WeatherIO.Server.Data.Services.ForecastService.Model.html#WeatherIO_Server_Data_Services_ForecastService_Model_ECMWF
+  commentId: F:WeatherIO.Server.Data.Services.ForecastService.Model.ECMWF
+  fullName: WeatherIO.Server.Data.Services.ForecastService.Model.ECMWF
+  nameWithType: ForecastService.Model.ECMWF
 - uid: WeatherIO.Server.Data.Services.ForecastService._httpClientFactory
   name: _httpClientFactory
   href: technical/WeatherIO.Server.Data.Services.ForecastService.html#WeatherIO_Server_Data_Services_ForecastService__httpClientFactory
@@ -4210,6 +5373,174 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Web._Imports.BuildRenderTree
   nameWithType: _Imports.BuildRenderTree
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd
+  name: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.html
+  commentId: N:__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd
+  nameWithType: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference
+  name: TypeInference
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.html
+  commentId: T:__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference
+  nameWithType: TypeInference
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_0*
+  name: CreateMudTextField_0
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_ChangePasswd_TypeInference_CreateMudTextField_0_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_0
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_0
+  nameWithType: TypeInference.CreateMudTextField_0
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_0``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Linq.Expressions.Expression{System.Func{``0}},System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
+  name: CreateMudTextField_0<T>(RenderTreeBuilder, int, int, string, int, string, int, Expression<Func<T>>, int, T, int, EventCallback<T>)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_ChangePasswd_TypeInference_CreateMudTextField_0__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32_System_String_System_Int32_System_String_System_Int32_System_Linq_Expressions_Expression_System_Func___0___System_Int32___0_System_Int32_Microsoft_AspNetCore_Components_EventCallback___0__
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_0``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Linq.Expressions.Expression{System.Func{``0}},System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
+  name.vb: CreateMudTextField_0(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, Expression(Of Func(Of T)), Integer, T, Integer, EventCallback(Of T))
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_0<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, string, int, string, int, System.Linq.Expressions.Expression<System.Func<T>>, int, T, int, Microsoft.AspNetCore.Components.EventCallback<T>)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_0(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, System.Linq.Expressions.Expression(Of System.Func(Of T)), Integer, T, Integer, Microsoft.AspNetCore.Components.EventCallback(Of T))
+  nameWithType: TypeInference.CreateMudTextField_0<T>(RenderTreeBuilder, int, int, string, int, string, int, Expression<Func<T>>, int, T, int, EventCallback<T>)
+  nameWithType.vb: TypeInference.CreateMudTextField_0(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, Expression(Of Func(Of T)), Integer, T, Integer, EventCallback(Of T))
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1*
+  name: CreateMudTextField_1
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_ChangePasswd_TypeInference_CreateMudTextField_1_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1
+  nameWithType: TypeInference.CreateMudTextField_1
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Linq.Expressions.Expression{System.Func{``0}},System.Int32,MudBlazor.InputType,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
+  name: CreateMudTextField_1<T>(RenderTreeBuilder, int, int, string, int, string, int, string, int, Expression<Func<T>>, int, InputType, int, T, int, EventCallback<T>)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_ChangePasswd_TypeInference_CreateMudTextField_1__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32_System_String_System_Int32_System_String_System_Int32_System_String_System_Int32_System_Linq_Expressions_Expression_System_Func___0___System_Int32_MudBlazor_InputType_System_Int32___0_System_Int32_Microsoft_AspNetCore_Components_EventCallback___0__
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Linq.Expressions.Expression{System.Func{``0}},System.Int32,MudBlazor.InputType,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
+  name.vb: CreateMudTextField_1(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, String, Integer, Expression(Of Func(Of T)), Integer, InputType, Integer, T, Integer, EventCallback(Of T))
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, string, int, string, int, string, int, System.Linq.Expressions.Expression<System.Func<T>>, int, MudBlazor.InputType, int, T, int, Microsoft.AspNetCore.Components.EventCallback<T>)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, String, Integer, System.Linq.Expressions.Expression(Of System.Func(Of T)), Integer, MudBlazor.InputType, Integer, T, Integer, Microsoft.AspNetCore.Components.EventCallback(Of T))
+  nameWithType: TypeInference.CreateMudTextField_1<T>(RenderTreeBuilder, int, int, string, int, string, int, string, int, Expression<Func<T>>, int, InputType, int, T, int, EventCallback<T>)
+  nameWithType.vb: TypeInference.CreateMudTextField_1(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, String, Integer, Expression(Of Func(Of T)), Integer, InputType, Integer, T, Integer, EventCallback(Of T))
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_2*
+  name: CreateMudTextField_2
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_ChangePasswd_TypeInference_CreateMudTextField_2_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_2
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_2
+  nameWithType: TypeInference.CreateMudTextField_2
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_2``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Linq.Expressions.Expression{System.Func{``0}},System.Int32,MudBlazor.InputType,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
+  name: CreateMudTextField_2<T>(RenderTreeBuilder, int, int, string, int, string, int, string, int, Expression<Func<T>>, int, InputType, int, T, int, EventCallback<T>)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_ChangePasswd_TypeInference_CreateMudTextField_2__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32_System_String_System_Int32_System_String_System_Int32_System_String_System_Int32_System_Linq_Expressions_Expression_System_Func___0___System_Int32_MudBlazor_InputType_System_Int32___0_System_Int32_Microsoft_AspNetCore_Components_EventCallback___0__
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_2``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Linq.Expressions.Expression{System.Func{``0}},System.Int32,MudBlazor.InputType,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
+  name.vb: CreateMudTextField_2(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, String, Integer, Expression(Of Func(Of T)), Integer, InputType, Integer, T, Integer, EventCallback(Of T))
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_2<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, string, int, string, int, string, int, System.Linq.Expressions.Expression<System.Func<T>>, int, MudBlazor.InputType, int, T, int, Microsoft.AspNetCore.Components.EventCallback<T>)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_2(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, String, Integer, System.Linq.Expressions.Expression(Of System.Func(Of T)), Integer, MudBlazor.InputType, Integer, T, Integer, Microsoft.AspNetCore.Components.EventCallback(Of T))
+  nameWithType: TypeInference.CreateMudTextField_2<T>(RenderTreeBuilder, int, int, string, int, string, int, string, int, Expression<Func<T>>, int, InputType, int, T, int, EventCallback<T>)
+  nameWithType.vb: TypeInference.CreateMudTextField_2(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, String, Integer, Expression(Of Func(Of T)), Integer, InputType, Integer, T, Integer, EventCallback(Of T))
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked
+  name: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.html
+  commentId: N:__Blazor.WeatherIO.Common.WebComponents.Pages.Liked
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked
+  nameWithType: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference
+  name: TypeInference
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.html
+  commentId: T:__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference
+  nameWithType: TypeInference
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateMudDataGrid_0*
+  name: CreateMudDataGrid_0
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Liked_TypeInference_CreateMudDataGrid_0_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateMudDataGrid_0
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateMudDataGrid_0
+  nameWithType: TypeInference.CreateMudDataGrid_0
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateMudDataGrid_0_CaptureParameters*
+  name: CreateMudDataGrid_0_CaptureParameters
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Liked_TypeInference_CreateMudDataGrid_0_CaptureParameters_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateMudDataGrid_0_CaptureParameters
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateMudDataGrid_0_CaptureParameters
+  nameWithType: TypeInference.CreateMudDataGrid_0_CaptureParameters
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateMudDataGrid_0_CaptureParameters``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0}@,System.Boolean,System.Boolean@,MudBlazor.SortMode,MudBlazor.SortMode@,System.Boolean,System.Boolean@)
+  name: CreateMudDataGrid_0_CaptureParameters<T>(IEnumerable<T>, out IEnumerable<T>, bool, out bool, SortMode, out SortMode, bool, out bool)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Liked_TypeInference_CreateMudDataGrid_0_CaptureParameters__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0___System_Boolean_System_Boolean__MudBlazor_SortMode_MudBlazor_SortMode__System_Boolean_System_Boolean__
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateMudDataGrid_0_CaptureParameters``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0}@,System.Boolean,System.Boolean@,MudBlazor.SortMode,MudBlazor.SortMode@,System.Boolean,System.Boolean@)
+  name.vb: CreateMudDataGrid_0_CaptureParameters(Of T)(IEnumerable(Of T), IEnumerable(Of T), Boolean, Boolean, SortMode, SortMode, Boolean, Boolean)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateMudDataGrid_0_CaptureParameters<T>(System.Collections.Generic.IEnumerable<T>, out System.Collections.Generic.IEnumerable<T>, bool, out bool, MudBlazor.SortMode, out MudBlazor.SortMode, bool, out bool)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateMudDataGrid_0_CaptureParameters(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), Boolean, Boolean, MudBlazor.SortMode, MudBlazor.SortMode, Boolean, Boolean)
+  nameWithType: TypeInference.CreateMudDataGrid_0_CaptureParameters<T>(IEnumerable<T>, out IEnumerable<T>, bool, out bool, SortMode, out SortMode, bool, out bool)
+  nameWithType.vb: TypeInference.CreateMudDataGrid_0_CaptureParameters(Of T)(IEnumerable(Of T), IEnumerable(Of T), Boolean, Boolean, SortMode, SortMode, Boolean, Boolean)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateMudDataGrid_0``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Boolean,System.Int32,MudBlazor.SortMode,System.Int32,System.Boolean,System.Int32,Microsoft.AspNetCore.Components.RenderFragment)
+  name: CreateMudDataGrid_0<T>(RenderTreeBuilder, int, int, IEnumerable<T>, int, bool, int, SortMode, int, bool, int, RenderFragment)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Liked_TypeInference_CreateMudDataGrid_0__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Boolean_System_Int32_MudBlazor_SortMode_System_Int32_System_Boolean_System_Int32_Microsoft_AspNetCore_Components_RenderFragment_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateMudDataGrid_0``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Boolean,System.Int32,MudBlazor.SortMode,System.Int32,System.Boolean,System.Int32,Microsoft.AspNetCore.Components.RenderFragment)
+  name.vb: CreateMudDataGrid_0(Of T)(RenderTreeBuilder, Integer, Integer, IEnumerable(Of T), Integer, Boolean, Integer, SortMode, Integer, Boolean, Integer, RenderFragment)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateMudDataGrid_0<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, System.Collections.Generic.IEnumerable<T>, int, bool, int, MudBlazor.SortMode, int, bool, int, Microsoft.AspNetCore.Components.RenderFragment)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateMudDataGrid_0(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, Boolean, Integer, MudBlazor.SortMode, Integer, Boolean, Integer, Microsoft.AspNetCore.Components.RenderFragment)
+  nameWithType: TypeInference.CreateMudDataGrid_0<T>(RenderTreeBuilder, int, int, IEnumerable<T>, int, bool, int, SortMode, int, bool, int, RenderFragment)
+  nameWithType.vb: TypeInference.CreateMudDataGrid_0(Of T)(RenderTreeBuilder, Integer, Integer, IEnumerable(Of T), Integer, Boolean, Integer, SortMode, Integer, Boolean, Integer, RenderFragment)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_1*
+  name: CreatePropertyColumn_1
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Liked_TypeInference_CreatePropertyColumn_1_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_1
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_1
+  nameWithType: TypeInference.CreatePropertyColumn_1
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_1``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name: CreatePropertyColumn_1<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Liked_TypeInference_CreatePropertyColumn_1__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_1``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name.vb: CreatePropertyColumn_1(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_1<T, TProperty>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, System.Linq.Expressions.Expression<System.Func<T, TProperty>>, int, string)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_1(Of T, TProperty)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), Integer, String)
+  nameWithType: TypeInference.CreatePropertyColumn_1<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  nameWithType.vb: TypeInference.CreatePropertyColumn_1(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_2*
+  name: CreatePropertyColumn_2
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Liked_TypeInference_CreatePropertyColumn_2_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_2
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_2
+  nameWithType: TypeInference.CreatePropertyColumn_2
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_2``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name: CreatePropertyColumn_2<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Liked_TypeInference_CreatePropertyColumn_2__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_2``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name.vb: CreatePropertyColumn_2(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_2<T, TProperty>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, System.Linq.Expressions.Expression<System.Func<T, TProperty>>, int, string)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_2(Of T, TProperty)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), Integer, String)
+  nameWithType: TypeInference.CreatePropertyColumn_2<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  nameWithType.vb: TypeInference.CreatePropertyColumn_2(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_3*
+  name: CreatePropertyColumn_3
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Liked_TypeInference_CreatePropertyColumn_3_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_3
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_3
+  nameWithType: TypeInference.CreatePropertyColumn_3
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_3``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name: CreatePropertyColumn_3<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Liked_TypeInference_CreatePropertyColumn_3__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_3``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name.vb: CreatePropertyColumn_3(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_3<T, TProperty>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, System.Linq.Expressions.Expression<System.Func<T, TProperty>>, int, string)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreatePropertyColumn_3(Of T, TProperty)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), Integer, String)
+  nameWithType: TypeInference.CreatePropertyColumn_3<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  nameWithType.vb: TypeInference.CreatePropertyColumn_3(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateTemplateColumn_4*
+  name: CreateTemplateColumn_4
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Liked_TypeInference_CreateTemplateColumn_4_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateTemplateColumn_4
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateTemplateColumn_4
+  nameWithType: TypeInference.CreateTemplateColumn_4
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateTemplateColumn_4``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.String,System.Int32,Microsoft.AspNetCore.Components.RenderFragment{MudBlazor.CellContext{``0}})
+  name: CreateTemplateColumn_4<T>(RenderTreeBuilder, int, IEnumerable<T>, int, string, int, RenderFragment<CellContext<T>>)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Liked_TypeInference_CreateTemplateColumn_4__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_String_System_Int32_Microsoft_AspNetCore_Components_RenderFragment_MudBlazor_CellContext___0___
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateTemplateColumn_4``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.String,System.Int32,Microsoft.AspNetCore.Components.RenderFragment{MudBlazor.CellContext{``0}})
+  name.vb: CreateTemplateColumn_4(Of T)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, String, Integer, RenderFragment(Of CellContext(Of T)))
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateTemplateColumn_4<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, string, int, Microsoft.AspNetCore.Components.RenderFragment<MudBlazor.CellContext<T>>)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Liked.TypeInference.CreateTemplateColumn_4(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, String, Integer, Microsoft.AspNetCore.Components.RenderFragment(Of MudBlazor.CellContext(Of T)))
+  nameWithType: TypeInference.CreateTemplateColumn_4<T>(RenderTreeBuilder, int, IEnumerable<T>, int, string, int, RenderFragment<CellContext<T>>)
+  nameWithType.vb: TypeInference.CreateTemplateColumn_4(Of T)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, String, Integer, RenderFragment(Of CellContext(Of T)))
 - uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Login
   name: __Blazor.WeatherIO.Common.WebComponents.Pages.Login
   href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Login.html
@@ -4326,6 +5657,54 @@ references:
   commentId: T:__Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference
   fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference
   nameWithType: TypeInference
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelectItem_3*
+  name: CreateMudSelectItem_3
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Settings_TypeInference_CreateMudSelectItem_3_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelectItem_3
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelectItem_3
+  nameWithType: TypeInference.CreateMudSelectItem_3
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelectItem_3``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.RenderFragment)
+  name: CreateMudSelectItem_3<T>(RenderTreeBuilder, int, int, T, int, RenderFragment)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Settings_TypeInference_CreateMudSelectItem_3__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32___0_System_Int32_Microsoft_AspNetCore_Components_RenderFragment_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelectItem_3``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.RenderFragment)
+  name.vb: CreateMudSelectItem_3(Of T)(RenderTreeBuilder, Integer, Integer, T, Integer, RenderFragment)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelectItem_3<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, T, int, Microsoft.AspNetCore.Components.RenderFragment)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelectItem_3(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, T, Integer, Microsoft.AspNetCore.Components.RenderFragment)
+  nameWithType: TypeInference.CreateMudSelectItem_3<T>(RenderTreeBuilder, int, int, T, int, RenderFragment)
+  nameWithType.vb: TypeInference.CreateMudSelectItem_3(Of T)(RenderTreeBuilder, Integer, Integer, T, Integer, RenderFragment)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelectItem_4*
+  name: CreateMudSelectItem_4
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Settings_TypeInference_CreateMudSelectItem_4_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelectItem_4
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelectItem_4
+  nameWithType: TypeInference.CreateMudSelectItem_4
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelectItem_4``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.RenderFragment)
+  name: CreateMudSelectItem_4<T>(RenderTreeBuilder, int, int, T, int, RenderFragment)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Settings_TypeInference_CreateMudSelectItem_4__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32___0_System_Int32_Microsoft_AspNetCore_Components_RenderFragment_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelectItem_4``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.RenderFragment)
+  name.vb: CreateMudSelectItem_4(Of T)(RenderTreeBuilder, Integer, Integer, T, Integer, RenderFragment)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelectItem_4<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, T, int, Microsoft.AspNetCore.Components.RenderFragment)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelectItem_4(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, T, Integer, Microsoft.AspNetCore.Components.RenderFragment)
+  nameWithType: TypeInference.CreateMudSelectItem_4<T>(RenderTreeBuilder, int, int, T, int, RenderFragment)
+  nameWithType.vb: TypeInference.CreateMudSelectItem_4(Of T)(RenderTreeBuilder, Integer, Integer, T, Integer, RenderFragment)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelect_2*
+  name: CreateMudSelect_2
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Settings_TypeInference_CreateMudSelect_2_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelect_2
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelect_2
+  nameWithType: TypeInference.CreateMudSelect_2
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelect_2``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,MudBlazor.Variant,System.Int32,MudBlazor.Origin,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0},System.Int32,Microsoft.AspNetCore.Components.RenderFragment)
+  name: CreateMudSelect_2<T>(RenderTreeBuilder, int, int, string, int, Variant, int, Origin, int, T, int, EventCallback<T>, int, RenderFragment)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Settings_TypeInference_CreateMudSelect_2__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32_System_String_System_Int32_MudBlazor_Variant_System_Int32_MudBlazor_Origin_System_Int32___0_System_Int32_Microsoft_AspNetCore_Components_EventCallback___0__System_Int32_Microsoft_AspNetCore_Components_RenderFragment_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelect_2``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,MudBlazor.Variant,System.Int32,MudBlazor.Origin,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0},System.Int32,Microsoft.AspNetCore.Components.RenderFragment)
+  name.vb: CreateMudSelect_2(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, Variant, Integer, Origin, Integer, T, Integer, EventCallback(Of T), Integer, RenderFragment)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelect_2<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, string, int, MudBlazor.Variant, int, MudBlazor.Origin, int, T, int, Microsoft.AspNetCore.Components.EventCallback<T>, int, Microsoft.AspNetCore.Components.RenderFragment)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSelect_2(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, String, Integer, MudBlazor.Variant, Integer, MudBlazor.Origin, Integer, T, Integer, Microsoft.AspNetCore.Components.EventCallback(Of T), Integer, Microsoft.AspNetCore.Components.RenderFragment)
+  nameWithType: TypeInference.CreateMudSelect_2<T>(RenderTreeBuilder, int, int, string, int, Variant, int, Origin, int, T, int, EventCallback<T>, int, RenderFragment)
+  nameWithType.vb: TypeInference.CreateMudSelect_2(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, Variant, Integer, Origin, Integer, T, Integer, EventCallback(Of T), Integer, RenderFragment)
 - uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudSlider_1*
   name: CreateMudSlider_1
   href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Settings_TypeInference_CreateMudSlider_1_
@@ -4356,5 +5735,33 @@ references:
   name.vb: CreateMudTextField_0(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, Variant, Integer, T, Integer, EventCallback(Of T))
   fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudTextField_0<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, string, int, MudBlazor.Variant, int, T, int, Microsoft.AspNetCore.Components.EventCallback<T>)
   fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings.TypeInference.CreateMudTextField_0(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, String, Integer, MudBlazor.Variant, Integer, T, Integer, Microsoft.AspNetCore.Components.EventCallback(Of T))
+  nameWithType: TypeInference.CreateMudTextField_0<T>(RenderTreeBuilder, int, int, string, int, Variant, int, T, int, EventCallback<T>)
+  nameWithType.vb: TypeInference.CreateMudTextField_0(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, Variant, Integer, T, Integer, EventCallback(Of T))
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather
+  name: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.html
+  commentId: N:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather
+  nameWithType: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference
+  name: TypeInference
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html
+  commentId: T:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference
+  nameWithType: TypeInference
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudTextField_0*
+  name: CreateMudTextField_0
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreateMudTextField_0_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudTextField_0
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudTextField_0
+  nameWithType: TypeInference.CreateMudTextField_0
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudTextField_0``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,MudBlazor.Variant,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
+  name: CreateMudTextField_0<T>(RenderTreeBuilder, int, int, string, int, Variant, int, T, int, EventCallback<T>)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreateMudTextField_0__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32_System_String_System_Int32_MudBlazor_Variant_System_Int32___0_System_Int32_Microsoft_AspNetCore_Components_EventCallback___0__
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudTextField_0``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,MudBlazor.Variant,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
+  name.vb: CreateMudTextField_0(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, Variant, Integer, T, Integer, EventCallback(Of T))
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudTextField_0<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, string, int, MudBlazor.Variant, int, T, int, Microsoft.AspNetCore.Components.EventCallback<T>)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudTextField_0(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, String, Integer, MudBlazor.Variant, Integer, T, Integer, Microsoft.AspNetCore.Components.EventCallback(Of T))
   nameWithType: TypeInference.CreateMudTextField_0<T>(RenderTreeBuilder, int, int, string, int, Variant, int, T, int, EventCallback<T>)
   nameWithType.vb: TypeInference.CreateMudTextField_0(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, Variant, Integer, T, Integer, EventCallback(Of T))

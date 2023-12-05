@@ -9,8 +9,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.json">
-      <meta name="docfx:tocrel" content="toc.json">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
       
       
       
@@ -82,12 +82,15 @@
         <article data-uid="">
 <h1 id="get-forecast">Get Forecast</h1>
 
-<p><strong>URL</strong> : <code>/api/get-forecast?latitude=[double]&amp;longitude=[double]&amp;timezone=[timezone string?]</code></p>
+<p>Gets forecast for given location.
+Default value for timezone is &quot;Europe/Warsaw&quot;
+Default value for model is &quot;dwdicon&quot;</p>
+<p><strong>URL</strong> : <code>/api/get-forecast?latitude=[double]&amp;longitude=[double]&amp;timezone=[timezone string?]&amp;model=[dwdicon|ecmwf ?]</code></p>
 <p><strong>Mathod</strong> : <code>GET</code></p>
 <p><strong>Authorize</strong> : No</p>
 <p><strong>Input Data</strong> : No</p>
 <h2 id="success">Success</h2>
-<p><strong>URL</strong> : <code>/api/get-forecast?latitude=19.5&amp;longitude=50.1</code></p>
+<p><strong>URL</strong> : <code>/api/get-forecast?latitude=19.5&amp;longitude=50.1&amp;model=dwdicon</code></p>
 <p><strong>Code</strong> : <code>200 OK</code></p>
 <p><strong>Example</strong> :</p>
 <pre><code class="lang-json">{

@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.json">
-      <meta name="docfx:tocrel" content="toc.json">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
       
       
       
@@ -87,7 +87,7 @@
 
   <h1 id="WeatherIO_Server_Data_Controllers_AuthenticateController" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController" class="text-break">
     Class AuthenticateController
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -95,7 +95,9 @@
   <dl><dt>Assembly</dt><dd>WeatherIO.Server.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This class is responsible for handling authentication endpoints such as
+<code>login</code>, <code>register</code>, <code>delete-account</code>, <code>change-password</code> and <code>get-user-info</code>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -676,10 +678,11 @@ public class AuthenticateController : ControllerBase</code></pre>
 
   <h3 id="WeatherIO_Server_Data_Controllers_AuthenticateController__ctor_Microsoft_AspNetCore_Identity_UserManager_WeatherIO_Server_Data_Models_ApplicationUser__Microsoft_AspNetCore_Identity_RoleManager_Microsoft_AspNetCore_Identity_IdentityRole__Microsoft_Extensions_Configuration_IConfiguration_" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController.#ctor(Microsoft.AspNetCore.Identity.UserManager{WeatherIO.Server.Data.Models.ApplicationUser},Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole},Microsoft.Extensions.Configuration.IConfiguration)">
   AuthenticateController(UserManager&lt;ApplicationUser&gt;, RoleManager&lt;IdentityRole&gt;, IConfiguration)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructor with dependency injected service</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -714,10 +717,11 @@ public class AuthenticateController : ControllerBase</code></pre>
 
   <h3 id="WeatherIO_Server_Data_Controllers_AuthenticateController__configuration" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController._configuration">
   _configuration
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Dependency injected IConfiguration service</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -744,10 +748,11 @@ public class AuthenticateController : ControllerBase</code></pre>
 
   <h3 id="WeatherIO_Server_Data_Controllers_AuthenticateController_roleManager" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController.roleManager">
   roleManager
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Dependency injected RoleManager service</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -774,10 +779,11 @@ public class AuthenticateController : ControllerBase</code></pre>
 
   <h3 id="WeatherIO_Server_Data_Controllers_AuthenticateController_userManager" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController.userManager">
   userManager
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Dependency injected UserManager service</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -809,7 +815,7 @@ public class AuthenticateController : ControllerBase</code></pre>
 
   <h3 id="WeatherIO_Server_Data_Controllers_AuthenticateController_ChangePassword_WeatherIO_Common_Data_Models_ChangePasswordModel_" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController.ChangePassword(WeatherIO.Common.Data.Models.ChangePasswordModel)">
   ChangePassword(ChangePasswordModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This function handles <code>change-password</code> endpoint.</p>
@@ -851,10 +857,11 @@ public Task&lt;IActionResult&gt; ChangePassword(ChangePasswordModel model)</code
 
   <h3 id="WeatherIO_Server_Data_Controllers_AuthenticateController_DeleteAccount" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController.DeleteAccount">
   DeleteAccount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This method handles <code>delete-account</code> endpoint</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -868,7 +875,8 @@ public Task&lt;IActionResult&gt; DeleteAccount()</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Status 200 Ok if succedeed, otherwise 401 Unauthorized</p>
+</dd>
   </dl>
 
 
@@ -885,10 +893,11 @@ public Task&lt;IActionResult&gt; DeleteAccount()</code></pre>
 
   <h3 id="WeatherIO_Server_Data_Controllers_AuthenticateController_GetUserInfo" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController.GetUserInfo">
   GetUserInfo()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This function handles <code>get-user-info</code> endpoint.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -902,7 +911,8 @@ public IActionResult GetUserInfo()</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a></dt>
-    <dd></dd>
+    <dd><p>Status 200 Ok with UserInfoResponse as body</p>
+</dd>
   </dl>
 
 
@@ -919,10 +929,11 @@ public IActionResult GetUserInfo()</code></pre>
 
   <h3 id="WeatherIO_Server_Data_Controllers_AuthenticateController_Login_WeatherIO_Common_Data_Models_LoginModel_" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController.Login(WeatherIO.Common.Data.Models.LoginModel)">
   Login(LoginModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This method handles <code>login</code> endpoint.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -934,13 +945,16 @@ public Task&lt;IActionResult&gt; Login(LoginModel model)</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>model</code> <a class="xref" href="WeatherIO.Common.Data.Models.LoginModel.html">LoginModel</a></dt>
-    <dd></dd>
+    <dd><p>Input POST data</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Status 200 Ok with LoginResponse as response body if succedeed.
+Otherwise 401 Unauthorized</p>
+</dd>
   </dl>
 
 
@@ -957,10 +971,11 @@ public Task&lt;IActionResult&gt; Login(LoginModel model)</code></pre>
 
   <h3 id="WeatherIO_Server_Data_Controllers_AuthenticateController_Register_WeatherIO_Common_Data_Models_RegisterModel_" data-uid="WeatherIO.Server.Data.Controllers.AuthenticateController.Register(WeatherIO.Common.Data.Models.RegisterModel)">
   Register(RegisterModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This method handles <code>register</code> endpoint.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -972,13 +987,16 @@ public Task&lt;IActionResult&gt; Register(RegisterModel model)</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>model</code> <a class="xref" href="WeatherIO.Common.Data.Models.RegisterModel.html">RegisterModel</a></dt>
-    <dd></dd>
+    <dd><p>Input POST data</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Status 200 Ok with RegistrationResponse as response body if succedeed.
+Otherwise 500 InternalServerError</p>
+</dd>
   </dl>
 
 
@@ -995,7 +1013,7 @@ public Task&lt;IActionResult&gt; Register(RegisterModel model)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Server/Data/Controllers/AuthenticateController.cs/#L18" class="edit-link">Edit this page</a>
         </div>
 
 

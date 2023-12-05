@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.json">
-      <meta name="docfx:tocrel" content="toc.json">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
       
       
       
@@ -252,6 +252,39 @@
 
 
 
+  <a id="WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_GetForecastModelAsync_" data-uid="WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetForecastModelAsync*"></a>
+
+  <h3 id="WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_GetForecastModelAsync" data-uid="WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetForecastModelAsync">
+  GetForecastModelAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IConfigurationProviderService.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method sets the forecast model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string&gt; GetForecastModelAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>The forecast model</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_GetJwtToken_" data-uid="WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetJwtToken*"></a>
 
   <h3 id="WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_GetJwtToken" data-uid="WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.GetJwtToken">
@@ -370,6 +403,45 @@
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
     <dd><p>Task</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_SetForecastModel_" data-uid="WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.SetForecastModel*"></a>
+
+  <h3 id="WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_SetForecastModel_System_String_" data-uid="WeatherIO.Common.Data.Interfaces.IConfigurationProviderService.SetForecastModel(System.String)">
+  SetForecastModel(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Interfaces/IConfigurationProviderService.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method gets the forecast model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SetForecastModel(string forecastModel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>forecastModel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The forecast model</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous operation</p>
 </dd>
   </dl>
 

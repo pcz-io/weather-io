@@ -11,8 +11,8 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.json">
-      <meta name="docfx:tocrel" content="toc.json">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
       
       
       
@@ -87,7 +87,7 @@
 
   <h1 id="WeatherIO_Common_Data_Services_WeatherAuthenticationStateProvider" data-uid="WeatherIO.Common.Data.Services.WeatherAuthenticationStateProvider" class="text-break">
     Class WeatherAuthenticationStateProvider
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -95,7 +95,9 @@
   <dl><dt>Assembly</dt><dd>WeatherIO.Common.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This class is a extension of AuthenticationStateProvider which is used to
+integrate server API authentication method with the client.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -161,10 +163,11 @@
 
   <h3 id="WeatherIO_Common_Data_Services_WeatherAuthenticationStateProvider__ctor_WeatherIO_Common_Data_Interfaces_IConfigurationProviderService_WeatherIO_Common_Data_Interfaces_IHttpClientProviderService_" data-uid="WeatherIO.Common.Data.Services.WeatherAuthenticationStateProvider.#ctor(WeatherIO.Common.Data.Interfaces.IConfigurationProviderService,WeatherIO.Common.Data.Interfaces.IHttpClientProviderService)">
   WeatherAuthenticationStateProvider(IConfigurationProviderService, IHttpClientProviderService)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructor with dependency injected services</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -197,10 +200,11 @@
 
   <h3 id="WeatherIO_Common_Data_Services_WeatherAuthenticationStateProvider__configurationProvider" data-uid="WeatherIO.Common.Data.Services.WeatherAuthenticationStateProvider._configurationProvider">
   _configurationProvider
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Dependency injected IConfigurationProviderService service</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -227,10 +231,11 @@
 
   <h3 id="WeatherIO_Common_Data_Services_WeatherAuthenticationStateProvider__httpClientProvider" data-uid="WeatherIO.Common.Data.Services.WeatherAuthenticationStateProvider._httpClientProvider">
   _httpClientProvider
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Dependency injected IHttpClientProviderService service</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -262,7 +267,7 @@
 
   <h3 id="WeatherIO_Common_Data_Services_WeatherAuthenticationStateProvider_GetAuthenticationStateAsync" data-uid="WeatherIO.Common.Data.Services.WeatherAuthenticationStateProvider.GetAuthenticationStateAsync">
   GetAuthenticationStateAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Custom authentication state provider.
@@ -295,7 +300,7 @@ Used to create claims from Jwt token</p>
 
   <h3 id="WeatherIO_Common_Data_Services_WeatherAuthenticationStateProvider_ParseBase64WithoutPadding_System_String_" data-uid="WeatherIO.Common.Data.Services.WeatherAuthenticationStateProvider.ParseBase64WithoutPadding(System.String)">
   ParseBase64WithoutPadding(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Helper method for parsing base64 encoding.</p>
@@ -332,7 +337,7 @@ Used to create claims from Jwt token</p>
 
   <h3 id="WeatherIO_Common_Data_Services_WeatherAuthenticationStateProvider_ParseClaimsFromJwt_System_String_" data-uid="WeatherIO.Common.Data.Services.WeatherAuthenticationStateProvider.ParseClaimsFromJwt(System.String)">
   ParseClaimsFromJwt(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Parses Jwt token into claims.</p>
@@ -369,7 +374,7 @@ Used to create claims from Jwt token</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/pcz-io/weather-io/blob/dev/WeatherIO/WeatherIO.Common/Data/Services/WeatherAuthenticationStateProvider.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 
