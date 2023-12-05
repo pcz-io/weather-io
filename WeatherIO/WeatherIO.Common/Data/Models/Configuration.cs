@@ -17,5 +17,9 @@
         /// The session token for authentication.
         /// </summary>
         public string? JwtToken { get; set; } = null;
+        /// <summary>
+        /// The forecast model to use.
+        /// </summary>
+        public string ForecastModel { get; set; } = string.Empty;
     }
 }
