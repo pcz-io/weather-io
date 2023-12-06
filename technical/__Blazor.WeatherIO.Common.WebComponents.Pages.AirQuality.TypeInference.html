@@ -1,0 +1,588 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TypeInference
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TypeInference
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference">
+
+
+
+  <h1 id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference" class="text-break">
+    Class TypeInference
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="__Blazor.html">__Blazor</a>.<a class="xref" href="__Blazor.WeatherIO.html">WeatherIO</a>.<a class="xref" href="__Blazor.WeatherIO.Common.html">Common</a>.<a class="xref" href="__Blazor.WeatherIO.Common.WebComponents.html">WebComponents</a>.<a class="xref" href="__Blazor.WeatherIO.Common.WebComponents.Pages.html">Pages</a>.<a class="xref" href="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.html">AirQuality</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>WeatherIO.Common.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">internal static class TypeInference</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TypeInference</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreateMudDataGrid_1_CaptureParameters_" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1_CaptureParameters*"></a>
+
+  <h3 id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreateMudDataGrid_1_CaptureParameters__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0___System_Boolean_System_Boolean__MudBlazor_SortMode_MudBlazor_SortMode__System_Boolean_System_Boolean__" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1_CaptureParameters``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0}@,System.Boolean,System.Boolean@,MudBlazor.SortMode,MudBlazor.SortMode@,System.Boolean,System.Boolean@)">
+  CreateMudDataGrid_1_CaptureParameters&lt;T&gt;(IEnumerable&lt;T&gt;, out IEnumerable&lt;T&gt;, bool, out bool, SortMode, out SortMode, bool, out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateMudDataGrid_1_CaptureParameters&lt;T&gt;(IEnumerable&lt;T&gt; __arg0, out IEnumerable&lt;T&gt; __arg0_out, bool __arg1, out bool __arg1_out, SortMode __arg2, out SortMode __arg2_out, bool __arg3, out bool __arg3_out)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>__arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>__arg0_out</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>__arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>__arg1_out</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>__arg2</code> <span class="xref">SortMode</span></dt>
+    <dd></dd>
+    <dt><code>__arg2_out</code> <span class="xref">SortMode</span></dt>
+    <dd></dd>
+    <dt><code>__arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>__arg3_out</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreateMudDataGrid_1_" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1*"></a>
+
+  <h3 id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreateMudDataGrid_1__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Boolean_System_Int32_MudBlazor_SortMode_System_Int32_System_Boolean_System_Int32_Microsoft_AspNetCore_Components_RenderFragment_" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Boolean,System.Int32,MudBlazor.SortMode,System.Int32,System.Boolean,System.Int32,Microsoft.AspNetCore.Components.RenderFragment)">
+  CreateMudDataGrid_1&lt;T&gt;(RenderTreeBuilder, int, int, IEnumerable&lt;T&gt;, int, bool, int, SortMode, int, bool, int, RenderFragment)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateMudDataGrid_1&lt;T&gt;(RenderTreeBuilder __builder, int seq, int __seq0, IEnumerable&lt;T&gt; __arg0, int __seq1, bool __arg1, int __seq2, SortMode __arg2, int __seq3, bool __arg3, int __seq4, RenderFragment __arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>__builder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder">RenderTreeBuilder</a></dt>
+    <dd></dd>
+    <dt><code>seq</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__seq0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>__seq1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>__seq2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg2</code> <span class="xref">SortMode</span></dt>
+    <dd></dd>
+    <dt><code>__seq3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>__seq4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment">RenderFragment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreateMudTextField_0_" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudTextField_0*"></a>
+
+  <h3 id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreateMudTextField_0__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32_System_String_System_Int32_MudBlazor_Variant_System_Int32___0_System_Int32_Microsoft_AspNetCore_Components_EventCallback___0__" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudTextField_0``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,MudBlazor.Variant,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})">
+  CreateMudTextField_0&lt;T&gt;(RenderTreeBuilder, int, int, string, int, Variant, int, T, int, EventCallback&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateMudTextField_0&lt;T&gt;(RenderTreeBuilder __builder, int seq, int __seq0, string __arg0, int __seq1, Variant __arg1, int __seq2, T __arg2, int __seq3, EventCallback&lt;T&gt; __arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>__builder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder">RenderTreeBuilder</a></dt>
+    <dd></dd>
+    <dt><code>seq</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__seq0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>__seq1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg1</code> <span class="xref">Variant</span></dt>
+    <dd></dd>
+    <dt><code>__seq2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg2</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>__seq3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1">EventCallback</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_2_" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_2*"></a>
+
+  <h3 id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_2__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_2``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)">
+  CreatePropertyColumn_2&lt;T, TProperty&gt;(RenderTreeBuilder, int, IEnumerable&lt;T&gt;, int, Expression&lt;Func&lt;T, TProperty&gt;&gt;, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreatePropertyColumn_2&lt;T, TProperty&gt;(RenderTreeBuilder __builder, int seq, IEnumerable&lt;T&gt; __syntheticArg0, int __seq0, Expression&lt;Func&lt;T, TProperty&gt;&gt; __arg0, int __seq1, string __arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>__builder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder">RenderTreeBuilder</a></dt>
+    <dd></dd>
+    <dt><code>seq</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__syntheticArg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>__seq0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, TProperty&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>__seq1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>TProperty</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_3_" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_3*"></a>
+
+  <h3 id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_3__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_3``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)">
+  CreatePropertyColumn_3&lt;T, TProperty&gt;(RenderTreeBuilder, int, IEnumerable&lt;T&gt;, int, Expression&lt;Func&lt;T, TProperty&gt;&gt;, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreatePropertyColumn_3&lt;T, TProperty&gt;(RenderTreeBuilder __builder, int seq, IEnumerable&lt;T&gt; __syntheticArg0, int __seq0, Expression&lt;Func&lt;T, TProperty&gt;&gt; __arg0, int __seq1, string __arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>__builder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder">RenderTreeBuilder</a></dt>
+    <dd></dd>
+    <dt><code>seq</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__syntheticArg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>__seq0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, TProperty&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>__seq1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>TProperty</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_4_" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_4*"></a>
+
+  <h3 id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_4__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_4``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)">
+  CreatePropertyColumn_4&lt;T, TProperty&gt;(RenderTreeBuilder, int, IEnumerable&lt;T&gt;, int, Expression&lt;Func&lt;T, TProperty&gt;&gt;, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreatePropertyColumn_4&lt;T, TProperty&gt;(RenderTreeBuilder __builder, int seq, IEnumerable&lt;T&gt; __syntheticArg0, int __seq0, Expression&lt;Func&lt;T, TProperty&gt;&gt; __arg0, int __seq1, string __arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>__builder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder">RenderTreeBuilder</a></dt>
+    <dd></dd>
+    <dt><code>seq</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__syntheticArg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>__seq0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, TProperty&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>__seq1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>TProperty</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_5_" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_5*"></a>
+
+  <h3 id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_5__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_5``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)">
+  CreatePropertyColumn_5&lt;T, TProperty&gt;(RenderTreeBuilder, int, IEnumerable&lt;T&gt;, int, Expression&lt;Func&lt;T, TProperty&gt;&gt;, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreatePropertyColumn_5&lt;T, TProperty&gt;(RenderTreeBuilder __builder, int seq, IEnumerable&lt;T&gt; __syntheticArg0, int __seq0, Expression&lt;Func&lt;T, TProperty&gt;&gt; __arg0, int __seq1, string __arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>__builder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder">RenderTreeBuilder</a></dt>
+    <dd></dd>
+    <dt><code>seq</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__syntheticArg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>__seq0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, TProperty&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>__seq1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>TProperty</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_6_" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_6*"></a>
+
+  <h3 id="__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_6__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_" data-uid="__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_6``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)">
+  CreatePropertyColumn_6&lt;T, TProperty&gt;(RenderTreeBuilder, int, IEnumerable&lt;T&gt;, int, Expression&lt;Func&lt;T, TProperty&gt;&gt;, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreatePropertyColumn_6&lt;T, TProperty&gt;(RenderTreeBuilder __builder, int seq, IEnumerable&lt;T&gt; __syntheticArg0, int __seq0, Expression&lt;Func&lt;T, TProperty&gt;&gt; __arg0, int __seq1, string __arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>__builder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder">RenderTreeBuilder</a></dt>
+    <dd></dd>
+    <dt><code>seq</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__syntheticArg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>__seq0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, TProperty&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>__seq1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>__arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>TProperty</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

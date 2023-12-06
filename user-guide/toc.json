@@ -1,2 +1,2 @@
 
-{"items":[{"name":"Login and Logout","href":"login-and-logout.html","topicHref":"login-and-logout.html"},{"name":"Register","href":"register.html","topicHref":"register.html"}],"pdf":true}
+{"items":[{"name":"User Authorization","href":"user-authorization.html","topicHref":"user-authorization.html"},{"name":"Settings","href":"settings.html","topicHref":"settings.html"},{"name":"Weather","href":"weather.html","topicHref":"weather.html"},{"name":"Air Quality","href":"air-quality.html","topicHref":"air-quality.html"},{"name":"Liked","href":"liked.html","topicHref":"liked.html"}],"pdf":true}

@@ -195,7 +195,7 @@ public string Email { get; set; }</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Required]
-[RegularExpression(&quot;^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$&quot;, ErrorMessage = &quot;Password must meet requirements (at least 8 characters, 1 uppercase, 1 lowercase, 1 number).&quot;)]
+[RegularExpression(&quot;^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$&quot;, ErrorMessage = &quot;Hasło musi zawierać conajmniej 8 znak&#243;w, 1 wielką literę, 1 małą literę, 1 liczbę oraz jeden znak specjalny.&quot;)]
 public string Password { get; set; }</code></pre>
   </div>
 
@@ -228,7 +228,7 @@ public string Password { get; set; }</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Required]
-[Compare(&quot;Password&quot;)]
+[Compare(&quot;Password&quot;, ErrorMessage = &quot;Hasła muszą być takie same&quot;)]
 public string RepeatPassword { get; set; }</code></pre>
   </div>
 

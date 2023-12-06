@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
       
       
       
@@ -94,9 +94,10 @@
 <p>The easiest way to start server is to run <code>run-compose.sh</code> script located in <code>WeatherIO/</code> folder.
 So to do that change working directory to <code>WeatherIO</code> and run script by typing commands:</p>
 <pre><code class="lang-bash">cd WeatherIO
-./run-compose.sh --detach
+sudo ./run-compose.sh --detach
 </code></pre>
-<p>It is necessary to add <code>--detach</code> argument to run docker compose in detached mode, otherwise it would not run in background.</p>
+<p>It is necessary to add <code>--detach</code> argument to run docker compose in detached mode, otherwise it would not run in background.
+If your user is not in <code>docker</code> group you need to run script in privilaged mode e.g. by running with <code>sudo</code>.</p>
 <h2 id="help-message">Help message</h2>
 <p>To show a script help message you can run:</p>
 <pre><code class="lang-bash">./run-compose.sh --help
@@ -104,7 +105,7 @@ So to do that change working directory to <code>WeatherIO</code> and run script 
 <h2 id="updating-application">Updating application</h2>
 <p>To update te application you need to pull new version from the remote repository and run <code>run-compose.sh</code> with additional <code>--update</code> argument.</p>
 <pre><code class="lang-bash">git pull
-./run-compose.sh --update --detach
+sudo ./run-compose.sh --update --detach
 </code></pre>
 <p>By adding <code>--update</code>, script will stop application containers, delete them (database will be preserved), remove old images, build new version and start all necessary containers.</p>
 

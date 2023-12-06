@@ -130,22 +130,6 @@ references:
   fullName.vb: WeatherIO.App.Data.Services.HttpClientProviderServiceMaui.New
   nameWithType: HttpClientProviderServiceMaui.HttpClientProviderServiceMaui
   nameWithType.vb: HttpClientProviderServiceMaui.New
-- uid: WeatherIO.App.Data.Services.HttpClientProviderServiceMaui.GetAsync(System.String)
-  name: GetAsync(string)
-  href: technical/WeatherIO.App.Data.Services.HttpClientProviderServiceMaui.html#WeatherIO_App_Data_Services_HttpClientProviderServiceMaui_GetAsync_System_String_
-  commentId: M:WeatherIO.App.Data.Services.HttpClientProviderServiceMaui.GetAsync(System.String)
-  name.vb: GetAsync(String)
-  fullName: WeatherIO.App.Data.Services.HttpClientProviderServiceMaui.GetAsync(string)
-  fullName.vb: WeatherIO.App.Data.Services.HttpClientProviderServiceMaui.GetAsync(String)
-  nameWithType: HttpClientProviderServiceMaui.GetAsync(string)
-  nameWithType.vb: HttpClientProviderServiceMaui.GetAsync(String)
-- uid: WeatherIO.App.Data.Services.HttpClientProviderServiceMaui.GetAsync*
-  name: GetAsync
-  href: technical/WeatherIO.App.Data.Services.HttpClientProviderServiceMaui.html#WeatherIO_App_Data_Services_HttpClientProviderServiceMaui_GetAsync_
-  commentId: Overload:WeatherIO.App.Data.Services.HttpClientProviderServiceMaui.GetAsync
-  isSpec: "True"
-  fullName: WeatherIO.App.Data.Services.HttpClientProviderServiceMaui.GetAsync
-  nameWithType: HttpClientProviderServiceMaui.GetAsync
 - uid: WeatherIO.App.Data.Services.HttpClientProviderServiceMaui.HttpClient
   name: HttpClient
   href: technical/WeatherIO.App.Data.Services.HttpClientProviderServiceMaui.html#WeatherIO_App_Data_Services_HttpClientProviderServiceMaui_HttpClient
@@ -748,22 +732,6 @@ references:
   commentId: T:WeatherIO.Common.Data.Interfaces.IHttpClientProviderService
   fullName: WeatherIO.Common.Data.Interfaces.IHttpClientProviderService
   nameWithType: IHttpClientProviderService
-- uid: WeatherIO.Common.Data.Interfaces.IHttpClientProviderService.GetAsync(System.String)
-  name: GetAsync(string)
-  href: technical/WeatherIO.Common.Data.Interfaces.IHttpClientProviderService.html#WeatherIO_Common_Data_Interfaces_IHttpClientProviderService_GetAsync_System_String_
-  commentId: M:WeatherIO.Common.Data.Interfaces.IHttpClientProviderService.GetAsync(System.String)
-  name.vb: GetAsync(String)
-  fullName: WeatherIO.Common.Data.Interfaces.IHttpClientProviderService.GetAsync(string)
-  fullName.vb: WeatherIO.Common.Data.Interfaces.IHttpClientProviderService.GetAsync(String)
-  nameWithType: IHttpClientProviderService.GetAsync(string)
-  nameWithType.vb: IHttpClientProviderService.GetAsync(String)
-- uid: WeatherIO.Common.Data.Interfaces.IHttpClientProviderService.GetAsync*
-  name: GetAsync
-  href: technical/WeatherIO.Common.Data.Interfaces.IHttpClientProviderService.html#WeatherIO_Common_Data_Interfaces_IHttpClientProviderService_GetAsync_
-  commentId: Overload:WeatherIO.Common.Data.Interfaces.IHttpClientProviderService.GetAsync
-  isSpec: "True"
-  fullName: WeatherIO.Common.Data.Interfaces.IHttpClientProviderService.GetAsync
-  nameWithType: IHttpClientProviderService.GetAsync
 - uid: WeatherIO.Common.Data.Interfaces.IHttpClientProviderService.HttpClient
   name: HttpClient
   href: technical/WeatherIO.Common.Data.Interfaces.IHttpClientProviderService.html#WeatherIO_Common_Data_Interfaces_IHttpClientProviderService_HttpClient
@@ -2175,6 +2143,268 @@ references:
   commentId: N:WeatherIO.Common.WebComponents.Pages
   fullName: WeatherIO.Common.WebComponents.Pages
   nameWithType: WeatherIO.Common.WebComponents.Pages
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality
+  name: AirQuality
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html
+  commentId: T:WeatherIO.Common.WebComponents.Pages.AirQuality
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality
+  nameWithType: AirQuality
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel
+  name: AirQuality.AirQualityModel
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.html
+  commentId: T:WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel
+  nameWithType: AirQuality.AirQualityModel
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.AirQualityIndex
+  name: AirQualityIndex
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.html#WeatherIO_Common_WebComponents_Pages_AirQuality_AirQualityModel_AirQualityIndex
+  commentId: P:WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.AirQualityIndex
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.AirQualityIndex
+  nameWithType: AirQuality.AirQualityModel.AirQualityIndex
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.AirQualityIndex*
+  name: AirQualityIndex
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.html#WeatherIO_Common_WebComponents_Pages_AirQuality_AirQualityModel_AirQualityIndex_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.AirQualityIndex
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.AirQualityIndex
+  nameWithType: AirQuality.AirQualityModel.AirQualityIndex
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.AirQualityString
+  name: AirQualityString
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.html#WeatherIO_Common_WebComponents_Pages_AirQuality_AirQualityModel_AirQualityString
+  commentId: P:WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.AirQualityString
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.AirQualityString
+  nameWithType: AirQuality.AirQualityModel.AirQualityString
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.AirQualityString*
+  name: AirQualityString
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.html#WeatherIO_Common_WebComponents_Pages_AirQuality_AirQualityModel_AirQualityString_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.AirQualityString
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.AirQualityString
+  nameWithType: AirQuality.AirQualityModel.AirQualityString
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Latitude
+  name: Latitude
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.html#WeatherIO_Common_WebComponents_Pages_AirQuality_AirQualityModel_Latitude
+  commentId: P:WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Latitude
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Latitude
+  nameWithType: AirQuality.AirQualityModel.Latitude
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Latitude*
+  name: Latitude
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.html#WeatherIO_Common_WebComponents_Pages_AirQuality_AirQualityModel_Latitude_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Latitude
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Latitude
+  nameWithType: AirQuality.AirQualityModel.Latitude
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Longitude
+  name: Longitude
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.html#WeatherIO_Common_WebComponents_Pages_AirQuality_AirQualityModel_Longitude
+  commentId: P:WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Longitude
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Longitude
+  nameWithType: AirQuality.AirQualityModel.Longitude
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Longitude*
+  name: Longitude
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.html#WeatherIO_Common_WebComponents_Pages_AirQuality_AirQualityModel_Longitude_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Longitude
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Longitude
+  nameWithType: AirQuality.AirQualityModel.Longitude
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Name
+  name: Name
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.html#WeatherIO_Common_WebComponents_Pages_AirQuality_AirQualityModel_Name
+  commentId: P:WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Name
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Name
+  nameWithType: AirQuality.AirQualityModel.Name
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Name*
+  name: Name
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.html#WeatherIO_Common_WebComponents_Pages_AirQuality_AirQualityModel_Name_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Name
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.Name
+  nameWithType: AirQuality.AirQualityModel.Name
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  name: BuildRenderTree(RenderTreeBuilder)
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.AirQuality.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  nameWithType: AirQuality.BuildRenderTree(RenderTreeBuilder)
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.BuildRenderTree*
+  name: BuildRenderTree
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality_BuildRenderTree_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality.BuildRenderTree
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.BuildRenderTree
+  nameWithType: AirQuality.BuildRenderTree
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.Delete(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  name: Delete(FavouriteLocationModel)
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality_Delete_WeatherIO_Common_Data_Models_FavouriteLocationModel_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.AirQuality.Delete(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.Delete(WeatherIO.Common.Data.Models.FavouriteLocationModel)
+  nameWithType: AirQuality.Delete(FavouriteLocationModel)
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.Delete*
+  name: Delete
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality_Delete_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality.Delete
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.Delete
+  nameWithType: AirQuality.Delete
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.OnAfterRender(System.Boolean)
+  name: OnAfterRender(bool)
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality_OnAfterRender_System_Boolean_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.AirQuality.OnAfterRender(System.Boolean)
+  name.vb: OnAfterRender(Boolean)
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.OnAfterRender(bool)
+  fullName.vb: WeatherIO.Common.WebComponents.Pages.AirQuality.OnAfterRender(Boolean)
+  nameWithType: AirQuality.OnAfterRender(bool)
+  nameWithType.vb: AirQuality.OnAfterRender(Boolean)
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.OnAfterRender*
+  name: OnAfterRender
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality_OnAfterRender_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality.OnAfterRender
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.OnAfterRender
+  nameWithType: AirQuality.OnAfterRender
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.OnValidSubmit
+  name: OnValidSubmit()
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality_OnValidSubmit
+  commentId: M:WeatherIO.Common.WebComponents.Pages.AirQuality.OnValidSubmit
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.OnValidSubmit()
+  nameWithType: AirQuality.OnValidSubmit()
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.OnValidSubmit*
+  name: OnValidSubmit
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality_OnValidSubmit_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality.OnValidSubmit
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.OnValidSubmit
+  nameWithType: AirQuality.OnValidSubmit
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.Search
+  name: AirQuality.Search
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.Search.html
+  commentId: T:WeatherIO.Common.WebComponents.Pages.AirQuality.Search
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.Search
+  nameWithType: AirQuality.Search
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.Search.City
+  name: City
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.Search.html#WeatherIO_Common_WebComponents_Pages_AirQuality_Search_City
+  commentId: P:WeatherIO.Common.WebComponents.Pages.AirQuality.Search.City
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.Search.City
+  nameWithType: AirQuality.Search.City
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.Search.City*
+  name: City
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.Search.html#WeatherIO_Common_WebComponents_Pages_AirQuality_Search_City_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality.Search.City
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.Search.City
+  nameWithType: AirQuality.Search.City
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.Show(System.Int32)
+  name: Show(int)
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality_Show_System_Int32_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.AirQuality.Show(System.Int32)
+  name.vb: Show(Integer)
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.Show(int)
+  fullName.vb: WeatherIO.Common.WebComponents.Pages.AirQuality.Show(Integer)
+  nameWithType: AirQuality.Show(int)
+  nameWithType.vb: AirQuality.Show(Integer)
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.Show*
+  name: Show
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality_Show_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality.Show
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.Show
+  nameWithType: AirQuality.Show
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality._airQualityProviderService
+  name: _airQualityProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality__airQualityProviderService
+  commentId: P:WeatherIO.Common.WebComponents.Pages.AirQuality._airQualityProviderService
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality._airQualityProviderService
+  nameWithType: AirQuality._airQualityProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality._airQualityProviderService*
+  name: _airQualityProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality__airQualityProviderService_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality._airQualityProviderService
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality._airQualityProviderService
+  nameWithType: AirQuality._airQualityProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality._configurationProviderService
+  name: _configurationProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality__configurationProviderService
+  commentId: P:WeatherIO.Common.WebComponents.Pages.AirQuality._configurationProviderService
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality._configurationProviderService
+  nameWithType: AirQuality._configurationProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality._configurationProviderService*
+  name: _configurationProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality__configurationProviderService_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality._configurationProviderService
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality._configurationProviderService
+  nameWithType: AirQuality._configurationProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality._favouriteProviderService
+  name: _favouriteProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality__favouriteProviderService
+  commentId: P:WeatherIO.Common.WebComponents.Pages.AirQuality._favouriteProviderService
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality._favouriteProviderService
+  nameWithType: AirQuality._favouriteProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality._favouriteProviderService*
+  name: _favouriteProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality__favouriteProviderService_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality._favouriteProviderService
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality._favouriteProviderService
+  nameWithType: AirQuality._favouriteProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality._geocodeProviderService
+  name: _geocodeProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality__geocodeProviderService
+  commentId: P:WeatherIO.Common.WebComponents.Pages.AirQuality._geocodeProviderService
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality._geocodeProviderService
+  nameWithType: AirQuality._geocodeProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality._geocodeProviderService*
+  name: _geocodeProviderService
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality__geocodeProviderService_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality._geocodeProviderService
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality._geocodeProviderService
+  nameWithType: AirQuality._geocodeProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality._navigationManager
+  name: _navigationManager
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality__navigationManager
+  commentId: P:WeatherIO.Common.WebComponents.Pages.AirQuality._navigationManager
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality._navigationManager
+  nameWithType: AirQuality._navigationManager
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality._navigationManager*
+  name: _navigationManager
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality__navigationManager_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.AirQuality._navigationManager
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality._navigationManager
+  nameWithType: AirQuality._navigationManager
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.airQualityModel
+  name: airQualityModel
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality_airQualityModel
+  commentId: F:WeatherIO.Common.WebComponents.Pages.AirQuality.airQualityModel
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.airQualityModel
+  nameWithType: AirQuality.airQualityModel
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.airQualityModels
+  name: airQualityModels
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality_airQualityModels
+  commentId: F:WeatherIO.Common.WebComponents.Pages.AirQuality.airQualityModels
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.airQualityModels
+  nameWithType: AirQuality.airQualityModels
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.airQualityResponse
+  name: airQualityResponse
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality_airQualityResponse
+  commentId: F:WeatherIO.Common.WebComponents.Pages.AirQuality.airQualityResponse
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.airQualityResponse
+  nameWithType: AirQuality.airQualityResponse
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.favouriteLocations
+  name: favouriteLocations
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality_favouriteLocations
+  commentId: F:WeatherIO.Common.WebComponents.Pages.AirQuality.favouriteLocations
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.favouriteLocations
+  nameWithType: AirQuality.favouriteLocations
+- uid: WeatherIO.Common.WebComponents.Pages.AirQuality.model
+  name: model
+  href: technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html#WeatherIO_Common_WebComponents_Pages_AirQuality_model
+  commentId: F:WeatherIO.Common.WebComponents.Pages.AirQuality.model
+  fullName: WeatherIO.Common.WebComponents.Pages.AirQuality.model
+  nameWithType: AirQuality.model
 - uid: WeatherIO.Common.WebComponents.Pages.ChangePasswd
   name: ChangePasswd
   href: technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.html
@@ -2899,6 +3129,22 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Common.WebComponents.Pages.Weather.GetData
   nameWithType: Weather.GetData
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxHumidityForDay(System.Int32)
+  name: GetMaxHumidityForDay(int)
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_GetMaxHumidityForDay_System_Int32_
+  commentId: M:WeatherIO.Common.WebComponents.Pages.Weather.GetMaxHumidityForDay(System.Int32)
+  name.vb: GetMaxHumidityForDay(Integer)
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxHumidityForDay(int)
+  fullName.vb: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxHumidityForDay(Integer)
+  nameWithType: Weather.GetMaxHumidityForDay(int)
+  nameWithType.vb: Weather.GetMaxHumidityForDay(Integer)
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxHumidityForDay*
+  name: GetMaxHumidityForDay
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_GetMaxHumidityForDay_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.GetMaxHumidityForDay
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxHumidityForDay
+  nameWithType: Weather.GetMaxHumidityForDay
 - uid: WeatherIO.Common.WebComponents.Pages.Weather.GetMaxPreassureForDay(System.Int32)
   name: GetMaxPreassureForDay(int)
   href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_GetMaxPreassureForDay_System_Int32_
@@ -3075,6 +3321,103 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeatherForecastProviderService
   nameWithType: Weather.WeatherForecastProviderService
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay
+  name: Weather.WeekDay
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html
+  commentId: T:WeatherIO.Common.WebComponents.Pages.Weather.WeekDay
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay
+  nameWithType: Weather.WeekDay
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Day
+  name: Day
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html#WeatherIO_Common_WebComponents_Pages_Weather_WeekDay_Day
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Day
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Day
+  nameWithType: Weather.WeekDay.Day
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Day*
+  name: Day
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html#WeatherIO_Common_WebComponents_Pages_Weather_WeekDay_Day_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Day
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Day
+  nameWithType: Weather.WeekDay.Day
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Humidity
+  name: Humidity
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html#WeatherIO_Common_WebComponents_Pages_Weather_WeekDay_Humidity
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Humidity
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Humidity
+  nameWithType: Weather.WeekDay.Humidity
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Humidity*
+  name: Humidity
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html#WeatherIO_Common_WebComponents_Pages_Weather_WeekDay_Humidity_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Humidity
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Humidity
+  nameWithType: Weather.WeekDay.Humidity
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Id
+  name: Id
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html#WeatherIO_Common_WebComponents_Pages_Weather_WeekDay_Id
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Id
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Id
+  nameWithType: Weather.WeekDay.Id
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Id*
+  name: Id
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html#WeatherIO_Common_WebComponents_Pages_Weather_WeekDay_Id_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Id
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.Id
+  nameWithType: Weather.WeekDay.Id
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.PreassureMax
+  name: PreassureMax
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html#WeatherIO_Common_WebComponents_Pages_Weather_WeekDay_PreassureMax
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.PreassureMax
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.PreassureMax
+  nameWithType: Weather.WeekDay.PreassureMax
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.PreassureMax*
+  name: PreassureMax
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html#WeatherIO_Common_WebComponents_Pages_Weather_WeekDay_PreassureMax_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.PreassureMax
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.PreassureMax
+  nameWithType: Weather.WeekDay.PreassureMax
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.TempMax
+  name: TempMax
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html#WeatherIO_Common_WebComponents_Pages_Weather_WeekDay_TempMax
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.TempMax
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.TempMax
+  nameWithType: Weather.WeekDay.TempMax
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.TempMax*
+  name: TempMax
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html#WeatherIO_Common_WebComponents_Pages_Weather_WeekDay_TempMax_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.TempMax
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.TempMax
+  nameWithType: Weather.WeekDay.TempMax
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.TempMin
+  name: TempMin
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html#WeatherIO_Common_WebComponents_Pages_Weather_WeekDay_TempMin
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.TempMin
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.TempMin
+  nameWithType: Weather.WeekDay.TempMin
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.TempMin*
+  name: TempMin
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html#WeatherIO_Common_WebComponents_Pages_Weather_WeekDay_TempMin_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.TempMin
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.TempMin
+  nameWithType: Weather.WeekDay.TempMin
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.WindSpeedMax
+  name: WindSpeedMax
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html#WeatherIO_Common_WebComponents_Pages_Weather_WeekDay_WindSpeedMax
+  commentId: P:WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.WindSpeedMax
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.WindSpeedMax
+  nameWithType: Weather.WeekDay.WindSpeedMax
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.WindSpeedMax*
+  name: WindSpeedMax
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html#WeatherIO_Common_WebComponents_Pages_Weather_WeekDay_WindSpeedMax_
+  commentId: Overload:WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.WindSpeedMax
+  isSpec: "True"
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.WindSpeedMax
+  nameWithType: Weather.WeekDay.WindSpeedMax
 - uid: WeatherIO.Common.WebComponents.Pages.Weather._favouriteProviderService
   name: _favouriteProviderService
   href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather__favouriteProviderService
@@ -3155,6 +3498,12 @@ references:
   commentId: F:WeatherIO.Common.WebComponents.Pages.Weather.temperatureSeries
   fullName: WeatherIO.Common.WebComponents.Pages.Weather.temperatureSeries
   nameWithType: Weather.temperatureSeries
+- uid: WeatherIO.Common.WebComponents.Pages.Weather.weekDays
+  name: weekDays
+  href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_weekDays
+  commentId: F:WeatherIO.Common.WebComponents.Pages.Weather.weekDays
+  fullName: WeatherIO.Common.WebComponents.Pages.Weather.weekDays
+  nameWithType: Weather.weekDays
 - uid: WeatherIO.Common.WebComponents.Pages.Weather.windSpeedOptions
   name: windSpeedOptions
   href: technical/WeatherIO.Common.WebComponents.Pages.Weather.html#WeatherIO_Common_WebComponents_Pages_Weather_windSpeedOptions
@@ -5297,22 +5646,6 @@ references:
   fullName.vb: WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.New
   nameWithType: HttpClientProviderServiceWeb.HttpClientProviderServiceWeb
   nameWithType.vb: HttpClientProviderServiceWeb.New
-- uid: WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.GetAsync(System.String)
-  name: GetAsync(string)
-  href: technical/WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.html#WeatherIO_Web_Data_Services_HttpClientProviderServiceWeb_GetAsync_System_String_
-  commentId: M:WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.GetAsync(System.String)
-  name.vb: GetAsync(String)
-  fullName: WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.GetAsync(string)
-  fullName.vb: WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.GetAsync(String)
-  nameWithType: HttpClientProviderServiceWeb.GetAsync(string)
-  nameWithType.vb: HttpClientProviderServiceWeb.GetAsync(String)
-- uid: WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.GetAsync*
-  name: GetAsync
-  href: technical/WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.html#WeatherIO_Web_Data_Services_HttpClientProviderServiceWeb_GetAsync_
-  commentId: Overload:WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.GetAsync
-  isSpec: "True"
-  fullName: WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.GetAsync
-  nameWithType: HttpClientProviderServiceWeb.GetAsync
 - uid: WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.HttpClient
   name: HttpClient
   href: technical/WeatherIO.Web.Data.Services.HttpClientProviderServiceWeb.html#WeatherIO_Web_Data_Services_HttpClientProviderServiceWeb_HttpClient
@@ -5373,6 +5706,146 @@ references:
   isSpec: "True"
   fullName: WeatherIO.Web._Imports.BuildRenderTree
   nameWithType: _Imports.BuildRenderTree
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality
+  name: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.html
+  commentId: N:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality
+  nameWithType: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference
+  name: TypeInference
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html
+  commentId: T:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference
+  nameWithType: TypeInference
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1*
+  name: CreateMudDataGrid_1
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreateMudDataGrid_1_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1
+  nameWithType: TypeInference.CreateMudDataGrid_1
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1_CaptureParameters*
+  name: CreateMudDataGrid_1_CaptureParameters
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreateMudDataGrid_1_CaptureParameters_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1_CaptureParameters
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1_CaptureParameters
+  nameWithType: TypeInference.CreateMudDataGrid_1_CaptureParameters
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1_CaptureParameters``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0}@,System.Boolean,System.Boolean@,MudBlazor.SortMode,MudBlazor.SortMode@,System.Boolean,System.Boolean@)
+  name: CreateMudDataGrid_1_CaptureParameters<T>(IEnumerable<T>, out IEnumerable<T>, bool, out bool, SortMode, out SortMode, bool, out bool)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreateMudDataGrid_1_CaptureParameters__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0___System_Boolean_System_Boolean__MudBlazor_SortMode_MudBlazor_SortMode__System_Boolean_System_Boolean__
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1_CaptureParameters``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0}@,System.Boolean,System.Boolean@,MudBlazor.SortMode,MudBlazor.SortMode@,System.Boolean,System.Boolean@)
+  name.vb: CreateMudDataGrid_1_CaptureParameters(Of T)(IEnumerable(Of T), IEnumerable(Of T), Boolean, Boolean, SortMode, SortMode, Boolean, Boolean)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1_CaptureParameters<T>(System.Collections.Generic.IEnumerable<T>, out System.Collections.Generic.IEnumerable<T>, bool, out bool, MudBlazor.SortMode, out MudBlazor.SortMode, bool, out bool)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1_CaptureParameters(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), Boolean, Boolean, MudBlazor.SortMode, MudBlazor.SortMode, Boolean, Boolean)
+  nameWithType: TypeInference.CreateMudDataGrid_1_CaptureParameters<T>(IEnumerable<T>, out IEnumerable<T>, bool, out bool, SortMode, out SortMode, bool, out bool)
+  nameWithType.vb: TypeInference.CreateMudDataGrid_1_CaptureParameters(Of T)(IEnumerable(Of T), IEnumerable(Of T), Boolean, Boolean, SortMode, SortMode, Boolean, Boolean)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Boolean,System.Int32,MudBlazor.SortMode,System.Int32,System.Boolean,System.Int32,Microsoft.AspNetCore.Components.RenderFragment)
+  name: CreateMudDataGrid_1<T>(RenderTreeBuilder, int, int, IEnumerable<T>, int, bool, int, SortMode, int, bool, int, RenderFragment)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreateMudDataGrid_1__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Boolean_System_Int32_MudBlazor_SortMode_System_Int32_System_Boolean_System_Int32_Microsoft_AspNetCore_Components_RenderFragment_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Boolean,System.Int32,MudBlazor.SortMode,System.Int32,System.Boolean,System.Int32,Microsoft.AspNetCore.Components.RenderFragment)
+  name.vb: CreateMudDataGrid_1(Of T)(RenderTreeBuilder, Integer, Integer, IEnumerable(Of T), Integer, Boolean, Integer, SortMode, Integer, Boolean, Integer, RenderFragment)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, System.Collections.Generic.IEnumerable<T>, int, bool, int, MudBlazor.SortMode, int, bool, int, Microsoft.AspNetCore.Components.RenderFragment)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudDataGrid_1(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, Boolean, Integer, MudBlazor.SortMode, Integer, Boolean, Integer, Microsoft.AspNetCore.Components.RenderFragment)
+  nameWithType: TypeInference.CreateMudDataGrid_1<T>(RenderTreeBuilder, int, int, IEnumerable<T>, int, bool, int, SortMode, int, bool, int, RenderFragment)
+  nameWithType.vb: TypeInference.CreateMudDataGrid_1(Of T)(RenderTreeBuilder, Integer, Integer, IEnumerable(Of T), Integer, Boolean, Integer, SortMode, Integer, Boolean, Integer, RenderFragment)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudTextField_0*
+  name: CreateMudTextField_0
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreateMudTextField_0_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudTextField_0
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudTextField_0
+  nameWithType: TypeInference.CreateMudTextField_0
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudTextField_0``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,MudBlazor.Variant,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
+  name: CreateMudTextField_0<T>(RenderTreeBuilder, int, int, string, int, Variant, int, T, int, EventCallback<T>)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreateMudTextField_0__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32_System_String_System_Int32_MudBlazor_Variant_System_Int32___0_System_Int32_Microsoft_AspNetCore_Components_EventCallback___0__
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudTextField_0``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,MudBlazor.Variant,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
+  name.vb: CreateMudTextField_0(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, Variant, Integer, T, Integer, EventCallback(Of T))
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudTextField_0<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, string, int, MudBlazor.Variant, int, T, int, Microsoft.AspNetCore.Components.EventCallback<T>)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreateMudTextField_0(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, String, Integer, MudBlazor.Variant, Integer, T, Integer, Microsoft.AspNetCore.Components.EventCallback(Of T))
+  nameWithType: TypeInference.CreateMudTextField_0<T>(RenderTreeBuilder, int, int, string, int, Variant, int, T, int, EventCallback<T>)
+  nameWithType.vb: TypeInference.CreateMudTextField_0(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, Variant, Integer, T, Integer, EventCallback(Of T))
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_2*
+  name: CreatePropertyColumn_2
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_2_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_2
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_2
+  nameWithType: TypeInference.CreatePropertyColumn_2
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_2``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name: CreatePropertyColumn_2<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_2__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_2``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name.vb: CreatePropertyColumn_2(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_2<T, TProperty>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, System.Linq.Expressions.Expression<System.Func<T, TProperty>>, int, string)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_2(Of T, TProperty)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), Integer, String)
+  nameWithType: TypeInference.CreatePropertyColumn_2<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  nameWithType.vb: TypeInference.CreatePropertyColumn_2(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_3*
+  name: CreatePropertyColumn_3
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_3_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_3
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_3
+  nameWithType: TypeInference.CreatePropertyColumn_3
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_3``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name: CreatePropertyColumn_3<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_3__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_3``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name.vb: CreatePropertyColumn_3(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_3<T, TProperty>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, System.Linq.Expressions.Expression<System.Func<T, TProperty>>, int, string)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_3(Of T, TProperty)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), Integer, String)
+  nameWithType: TypeInference.CreatePropertyColumn_3<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  nameWithType.vb: TypeInference.CreatePropertyColumn_3(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_4*
+  name: CreatePropertyColumn_4
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_4_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_4
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_4
+  nameWithType: TypeInference.CreatePropertyColumn_4
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_4``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name: CreatePropertyColumn_4<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_4__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_4``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name.vb: CreatePropertyColumn_4(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_4<T, TProperty>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, System.Linq.Expressions.Expression<System.Func<T, TProperty>>, int, string)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_4(Of T, TProperty)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), Integer, String)
+  nameWithType: TypeInference.CreatePropertyColumn_4<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  nameWithType.vb: TypeInference.CreatePropertyColumn_4(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_5*
+  name: CreatePropertyColumn_5
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_5_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_5
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_5
+  nameWithType: TypeInference.CreatePropertyColumn_5
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_5``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name: CreatePropertyColumn_5<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_5__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_5``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name.vb: CreatePropertyColumn_5(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_5<T, TProperty>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, System.Linq.Expressions.Expression<System.Func<T, TProperty>>, int, string)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_5(Of T, TProperty)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), Integer, String)
+  nameWithType: TypeInference.CreatePropertyColumn_5<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  nameWithType.vb: TypeInference.CreatePropertyColumn_5(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_6*
+  name: CreatePropertyColumn_6
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_6_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_6
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_6
+  nameWithType: TypeInference.CreatePropertyColumn_6
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_6``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name: CreatePropertyColumn_6<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_AirQuality_TypeInference_CreatePropertyColumn_6__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_6``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name.vb: CreatePropertyColumn_6(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_6<T, TProperty>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, System.Linq.Expressions.Expression<System.Func<T, TProperty>>, int, string)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.CreatePropertyColumn_6(Of T, TProperty)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), Integer, String)
+  nameWithType: TypeInference.CreatePropertyColumn_6<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  nameWithType.vb: TypeInference.CreatePropertyColumn_6(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
 - uid: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd
   name: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd
   href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.html
@@ -5408,15 +5881,15 @@ references:
   isSpec: "True"
   fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1
   nameWithType: TypeInference.CreateMudTextField_1
-- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Linq.Expressions.Expression{System.Func{``0}},System.Int32,MudBlazor.InputType,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
-  name: CreateMudTextField_1<T>(RenderTreeBuilder, int, int, string, int, string, int, string, int, Expression<Func<T>>, int, InputType, int, T, int, EventCallback<T>)
-  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_ChangePasswd_TypeInference_CreateMudTextField_1__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32_System_String_System_Int32_System_String_System_Int32_System_String_System_Int32_System_Linq_Expressions_Expression_System_Func___0___System_Int32_MudBlazor_InputType_System_Int32___0_System_Int32_Microsoft_AspNetCore_Components_EventCallback___0__
-  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Linq.Expressions.Expression{System.Func{``0}},System.Int32,MudBlazor.InputType,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
-  name.vb: CreateMudTextField_1(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, String, Integer, Expression(Of Func(Of T)), Integer, InputType, Integer, T, Integer, EventCallback(Of T))
-  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, string, int, string, int, string, int, System.Linq.Expressions.Expression<System.Func<T>>, int, MudBlazor.InputType, int, T, int, Microsoft.AspNetCore.Components.EventCallback<T>)
-  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, String, Integer, System.Linq.Expressions.Expression(Of System.Func(Of T)), Integer, MudBlazor.InputType, Integer, T, Integer, Microsoft.AspNetCore.Components.EventCallback(Of T))
-  nameWithType: TypeInference.CreateMudTextField_1<T>(RenderTreeBuilder, int, int, string, int, string, int, string, int, Expression<Func<T>>, int, InputType, int, T, int, EventCallback<T>)
-  nameWithType.vb: TypeInference.CreateMudTextField_1(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, String, Integer, Expression(Of Func(Of T)), Integer, InputType, Integer, T, Integer, EventCallback(Of T))
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Linq.Expressions.Expression{System.Func{``0}},System.Int32,MudBlazor.InputType,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
+  name: CreateMudTextField_1<T>(RenderTreeBuilder, int, int, string, int, string, int, Expression<Func<T>>, int, InputType, int, T, int, EventCallback<T>)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_ChangePasswd_TypeInference_CreateMudTextField_1__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32_System_String_System_Int32_System_String_System_Int32_System_Linq_Expressions_Expression_System_Func___0___System_Int32_MudBlazor_InputType_System_Int32___0_System_Int32_Microsoft_AspNetCore_Components_EventCallback___0__
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Linq.Expressions.Expression{System.Func{``0}},System.Int32,MudBlazor.InputType,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
+  name.vb: CreateMudTextField_1(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, Expression(Of Func(Of T)), Integer, InputType, Integer, T, Integer, EventCallback(Of T))
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, string, int, string, int, System.Linq.Expressions.Expression<System.Func<T>>, int, MudBlazor.InputType, int, T, int, Microsoft.AspNetCore.Components.EventCallback<T>)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_1(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, System.Linq.Expressions.Expression(Of System.Func(Of T)), Integer, MudBlazor.InputType, Integer, T, Integer, Microsoft.AspNetCore.Components.EventCallback(Of T))
+  nameWithType: TypeInference.CreateMudTextField_1<T>(RenderTreeBuilder, int, int, string, int, string, int, Expression<Func<T>>, int, InputType, int, T, int, EventCallback<T>)
+  nameWithType.vb: TypeInference.CreateMudTextField_1(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, Expression(Of Func(Of T)), Integer, InputType, Integer, T, Integer, EventCallback(Of T))
 - uid: __Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.CreateMudTextField_2*
   name: CreateMudTextField_2
   href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_ChangePasswd_TypeInference_CreateMudTextField_2_
@@ -5636,15 +6109,15 @@ references:
   isSpec: "True"
   fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Register.TypeInference.CreateMudTextField_2
   nameWithType: TypeInference.CreateMudTextField_2
-- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Register.TypeInference.CreateMudTextField_2``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Linq.Expressions.Expression{System.Func{``0}},System.Int32,MudBlazor.InputType,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
-  name: CreateMudTextField_2<T>(RenderTreeBuilder, int, int, string, int, string, int, string, int, Expression<Func<T>>, int, InputType, int, T, int, EventCallback<T>)
-  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Register.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Register_TypeInference_CreateMudTextField_2__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32_System_String_System_Int32_System_String_System_Int32_System_String_System_Int32_System_Linq_Expressions_Expression_System_Func___0___System_Int32_MudBlazor_InputType_System_Int32___0_System_Int32_Microsoft_AspNetCore_Components_EventCallback___0__
-  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Register.TypeInference.CreateMudTextField_2``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Linq.Expressions.Expression{System.Func{``0}},System.Int32,MudBlazor.InputType,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
-  name.vb: CreateMudTextField_2(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, String, Integer, Expression(Of Func(Of T)), Integer, InputType, Integer, T, Integer, EventCallback(Of T))
-  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Register.TypeInference.CreateMudTextField_2<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, string, int, string, int, string, int, System.Linq.Expressions.Expression<System.Func<T>>, int, MudBlazor.InputType, int, T, int, Microsoft.AspNetCore.Components.EventCallback<T>)
-  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Register.TypeInference.CreateMudTextField_2(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, String, Integer, System.Linq.Expressions.Expression(Of System.Func(Of T)), Integer, MudBlazor.InputType, Integer, T, Integer, Microsoft.AspNetCore.Components.EventCallback(Of T))
-  nameWithType: TypeInference.CreateMudTextField_2<T>(RenderTreeBuilder, int, int, string, int, string, int, string, int, Expression<Func<T>>, int, InputType, int, T, int, EventCallback<T>)
-  nameWithType.vb: TypeInference.CreateMudTextField_2(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, String, Integer, Expression(Of Func(Of T)), Integer, InputType, Integer, T, Integer, EventCallback(Of T))
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Register.TypeInference.CreateMudTextField_2``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Linq.Expressions.Expression{System.Func{``0}},System.Int32,MudBlazor.InputType,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
+  name: CreateMudTextField_2<T>(RenderTreeBuilder, int, int, string, int, string, int, Expression<Func<T>>, int, InputType, int, T, int, EventCallback<T>)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Register.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Register_TypeInference_CreateMudTextField_2__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32_System_String_System_Int32_System_String_System_Int32_System_Linq_Expressions_Expression_System_Func___0___System_Int32_MudBlazor_InputType_System_Int32___0_System_Int32_Microsoft_AspNetCore_Components_EventCallback___0__
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Register.TypeInference.CreateMudTextField_2``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Linq.Expressions.Expression{System.Func{``0}},System.Int32,MudBlazor.InputType,System.Int32,``0,System.Int32,Microsoft.AspNetCore.Components.EventCallback{``0})
+  name.vb: CreateMudTextField_2(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, Expression(Of Func(Of T)), Integer, InputType, Integer, T, Integer, EventCallback(Of T))
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Register.TypeInference.CreateMudTextField_2<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, string, int, string, int, System.Linq.Expressions.Expression<System.Func<T>>, int, MudBlazor.InputType, int, T, int, Microsoft.AspNetCore.Components.EventCallback<T>)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Register.TypeInference.CreateMudTextField_2(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, System.Linq.Expressions.Expression(Of System.Func(Of T)), Integer, MudBlazor.InputType, Integer, T, Integer, Microsoft.AspNetCore.Components.EventCallback(Of T))
+  nameWithType: TypeInference.CreateMudTextField_2<T>(RenderTreeBuilder, int, int, string, int, string, int, Expression<Func<T>>, int, InputType, int, T, int, EventCallback<T>)
+  nameWithType.vb: TypeInference.CreateMudTextField_2(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, String, Integer, Expression(Of Func(Of T)), Integer, InputType, Integer, T, Integer, EventCallback(Of T))
 - uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings
   name: __Blazor.WeatherIO.Common.WebComponents.Pages.Settings
   href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Settings.html
@@ -5749,6 +6222,38 @@ references:
   commentId: T:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference
   fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference
   nameWithType: TypeInference
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudDataGrid_1*
+  name: CreateMudDataGrid_1
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreateMudDataGrid_1_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudDataGrid_1
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudDataGrid_1
+  nameWithType: TypeInference.CreateMudDataGrid_1
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudDataGrid_1_CaptureParameters*
+  name: CreateMudDataGrid_1_CaptureParameters
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreateMudDataGrid_1_CaptureParameters_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudDataGrid_1_CaptureParameters
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudDataGrid_1_CaptureParameters
+  nameWithType: TypeInference.CreateMudDataGrid_1_CaptureParameters
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudDataGrid_1_CaptureParameters``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0}@,System.Boolean,System.Boolean@,MudBlazor.SortMode,MudBlazor.SortMode@,System.Boolean,System.Boolean@)
+  name: CreateMudDataGrid_1_CaptureParameters<T>(IEnumerable<T>, out IEnumerable<T>, bool, out bool, SortMode, out SortMode, bool, out bool)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreateMudDataGrid_1_CaptureParameters__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0___System_Boolean_System_Boolean__MudBlazor_SortMode_MudBlazor_SortMode__System_Boolean_System_Boolean__
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudDataGrid_1_CaptureParameters``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0}@,System.Boolean,System.Boolean@,MudBlazor.SortMode,MudBlazor.SortMode@,System.Boolean,System.Boolean@)
+  name.vb: CreateMudDataGrid_1_CaptureParameters(Of T)(IEnumerable(Of T), IEnumerable(Of T), Boolean, Boolean, SortMode, SortMode, Boolean, Boolean)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudDataGrid_1_CaptureParameters<T>(System.Collections.Generic.IEnumerable<T>, out System.Collections.Generic.IEnumerable<T>, bool, out bool, MudBlazor.SortMode, out MudBlazor.SortMode, bool, out bool)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudDataGrid_1_CaptureParameters(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), Boolean, Boolean, MudBlazor.SortMode, MudBlazor.SortMode, Boolean, Boolean)
+  nameWithType: TypeInference.CreateMudDataGrid_1_CaptureParameters<T>(IEnumerable<T>, out IEnumerable<T>, bool, out bool, SortMode, out SortMode, bool, out bool)
+  nameWithType.vb: TypeInference.CreateMudDataGrid_1_CaptureParameters(Of T)(IEnumerable(Of T), IEnumerable(Of T), Boolean, Boolean, SortMode, SortMode, Boolean, Boolean)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudDataGrid_1``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Boolean,System.Int32,MudBlazor.SortMode,System.Int32,System.Boolean,System.Int32,Microsoft.AspNetCore.Components.RenderFragment)
+  name: CreateMudDataGrid_1<T>(RenderTreeBuilder, int, int, IEnumerable<T>, int, bool, int, SortMode, int, bool, int, RenderFragment)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreateMudDataGrid_1__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Boolean_System_Int32_MudBlazor_SortMode_System_Int32_System_Boolean_System_Int32_Microsoft_AspNetCore_Components_RenderFragment_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudDataGrid_1``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Boolean,System.Int32,MudBlazor.SortMode,System.Int32,System.Boolean,System.Int32,Microsoft.AspNetCore.Components.RenderFragment)
+  name.vb: CreateMudDataGrid_1(Of T)(RenderTreeBuilder, Integer, Integer, IEnumerable(Of T), Integer, Boolean, Integer, SortMode, Integer, Boolean, Integer, RenderFragment)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudDataGrid_1<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, int, System.Collections.Generic.IEnumerable<T>, int, bool, int, MudBlazor.SortMode, int, bool, int, Microsoft.AspNetCore.Components.RenderFragment)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudDataGrid_1(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, Boolean, Integer, MudBlazor.SortMode, Integer, Boolean, Integer, Microsoft.AspNetCore.Components.RenderFragment)
+  nameWithType: TypeInference.CreateMudDataGrid_1<T>(RenderTreeBuilder, int, int, IEnumerable<T>, int, bool, int, SortMode, int, bool, int, RenderFragment)
+  nameWithType.vb: TypeInference.CreateMudDataGrid_1(Of T)(RenderTreeBuilder, Integer, Integer, IEnumerable(Of T), Integer, Boolean, Integer, SortMode, Integer, Boolean, Integer, RenderFragment)
 - uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudTextField_0*
   name: CreateMudTextField_0
   href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreateMudTextField_0_
@@ -5765,3 +6270,115 @@ references:
   fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateMudTextField_0(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, Integer, String, Integer, MudBlazor.Variant, Integer, T, Integer, Microsoft.AspNetCore.Components.EventCallback(Of T))
   nameWithType: TypeInference.CreateMudTextField_0<T>(RenderTreeBuilder, int, int, string, int, Variant, int, T, int, EventCallback<T>)
   nameWithType.vb: TypeInference.CreateMudTextField_0(Of T)(RenderTreeBuilder, Integer, Integer, String, Integer, Variant, Integer, T, Integer, EventCallback(Of T))
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_2*
+  name: CreatePropertyColumn_2
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreatePropertyColumn_2_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_2
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_2
+  nameWithType: TypeInference.CreatePropertyColumn_2
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_2``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name: CreatePropertyColumn_2<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreatePropertyColumn_2__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_2``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name.vb: CreatePropertyColumn_2(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_2<T, TProperty>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, System.Linq.Expressions.Expression<System.Func<T, TProperty>>, int, string)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_2(Of T, TProperty)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), Integer, String)
+  nameWithType: TypeInference.CreatePropertyColumn_2<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  nameWithType.vb: TypeInference.CreatePropertyColumn_2(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_3*
+  name: CreatePropertyColumn_3
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreatePropertyColumn_3_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_3
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_3
+  nameWithType: TypeInference.CreatePropertyColumn_3
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_3``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name: CreatePropertyColumn_3<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreatePropertyColumn_3__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_3``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name.vb: CreatePropertyColumn_3(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_3<T, TProperty>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, System.Linq.Expressions.Expression<System.Func<T, TProperty>>, int, string)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_3(Of T, TProperty)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), Integer, String)
+  nameWithType: TypeInference.CreatePropertyColumn_3<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  nameWithType.vb: TypeInference.CreatePropertyColumn_3(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_4*
+  name: CreatePropertyColumn_4
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreatePropertyColumn_4_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_4
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_4
+  nameWithType: TypeInference.CreatePropertyColumn_4
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_4``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name: CreatePropertyColumn_4<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreatePropertyColumn_4__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_4``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name.vb: CreatePropertyColumn_4(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_4<T, TProperty>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, System.Linq.Expressions.Expression<System.Func<T, TProperty>>, int, string)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_4(Of T, TProperty)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), Integer, String)
+  nameWithType: TypeInference.CreatePropertyColumn_4<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  nameWithType.vb: TypeInference.CreatePropertyColumn_4(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_5*
+  name: CreatePropertyColumn_5
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreatePropertyColumn_5_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_5
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_5
+  nameWithType: TypeInference.CreatePropertyColumn_5
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_5``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name: CreatePropertyColumn_5<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreatePropertyColumn_5__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_5``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name.vb: CreatePropertyColumn_5(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_5<T, TProperty>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, System.Linq.Expressions.Expression<System.Func<T, TProperty>>, int, string)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_5(Of T, TProperty)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), Integer, String)
+  nameWithType: TypeInference.CreatePropertyColumn_5<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  nameWithType.vb: TypeInference.CreatePropertyColumn_5(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_6*
+  name: CreatePropertyColumn_6
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreatePropertyColumn_6_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_6
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_6
+  nameWithType: TypeInference.CreatePropertyColumn_6
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_6``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name: CreatePropertyColumn_6<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreatePropertyColumn_6__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_6``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name.vb: CreatePropertyColumn_6(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_6<T, TProperty>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, System.Linq.Expressions.Expression<System.Func<T, TProperty>>, int, string)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_6(Of T, TProperty)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), Integer, String)
+  nameWithType: TypeInference.CreatePropertyColumn_6<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  nameWithType.vb: TypeInference.CreatePropertyColumn_6(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_7*
+  name: CreatePropertyColumn_7
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreatePropertyColumn_7_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_7
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_7
+  nameWithType: TypeInference.CreatePropertyColumn_7
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_7``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name: CreatePropertyColumn_7<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreatePropertyColumn_7__2_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_Linq_Expressions_Expression_System_Func___0___1___System_Int32_System_String_
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_7``2(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.String)
+  name.vb: CreatePropertyColumn_7(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_7<T, TProperty>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, System.Linq.Expressions.Expression<System.Func<T, TProperty>>, int, string)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreatePropertyColumn_7(Of T, TProperty)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), Integer, String)
+  nameWithType: TypeInference.CreatePropertyColumn_7<T, TProperty>(RenderTreeBuilder, int, IEnumerable<T>, int, Expression<Func<T, TProperty>>, int, string)
+  nameWithType.vb: TypeInference.CreatePropertyColumn_7(Of T, TProperty)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, Expression(Of Func(Of T, TProperty)), Integer, String)
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateTemplateColumn_8*
+  name: CreateTemplateColumn_8
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreateTemplateColumn_8_
+  commentId: Overload:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateTemplateColumn_8
+  isSpec: "True"
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateTemplateColumn_8
+  nameWithType: TypeInference.CreateTemplateColumn_8
+- uid: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateTemplateColumn_8``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.String,System.Int32,Microsoft.AspNetCore.Components.RenderFragment{MudBlazor.CellContext{``0}})
+  name: CreateTemplateColumn_8<T>(RenderTreeBuilder, int, IEnumerable<T>, int, string, int, RenderFragment<CellContext<T>>)
+  href: technical/__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.html#__Blazor_WeatherIO_Common_WebComponents_Pages_Weather_TypeInference_CreateTemplateColumn_8__1_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_System_Int32_System_Collections_Generic_IEnumerable___0__System_Int32_System_String_System_Int32_Microsoft_AspNetCore_Components_RenderFragment_MudBlazor_CellContext___0___
+  commentId: M:__Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateTemplateColumn_8``1(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,System.Int32,System.Collections.Generic.IEnumerable{``0},System.Int32,System.String,System.Int32,Microsoft.AspNetCore.Components.RenderFragment{MudBlazor.CellContext{``0}})
+  name.vb: CreateTemplateColumn_8(Of T)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, String, Integer, RenderFragment(Of CellContext(Of T)))
+  fullName: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateTemplateColumn_8<T>(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, int, System.Collections.Generic.IEnumerable<T>, int, string, int, Microsoft.AspNetCore.Components.RenderFragment<MudBlazor.CellContext<T>>)
+  fullName.vb: __Blazor.WeatherIO.Common.WebComponents.Pages.Weather.TypeInference.CreateTemplateColumn_8(Of T)(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder, Integer, System.Collections.Generic.IEnumerable(Of T), Integer, String, Integer, Microsoft.AspNetCore.Components.RenderFragment(Of MudBlazor.CellContext(Of T)))
+  nameWithType: TypeInference.CreateTemplateColumn_8<T>(RenderTreeBuilder, int, IEnumerable<T>, int, string, int, RenderFragment<CellContext<T>>)
+  nameWithType.vb: TypeInference.CreateTemplateColumn_8(Of T)(RenderTreeBuilder, Integer, IEnumerable(Of T), Integer, String, Integer, RenderFragment(Of CellContext(Of T)))

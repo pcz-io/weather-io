@@ -179,11 +179,14 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "images/favicon.svg",
+      "type": "Toc",
+      "source_relative_path": "deployment/toc.yml",
       "output": {
-        "resource": {
-          "relative_path": "images/favicon.svg"
+        ".html": {
+          "relative_path": "deployment/toc.html"
+        },
+        ".json": {
+          "relative_path": "deployment/toc.json"
         }
       },
       "version": ""
@@ -680,6 +683,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.WebComponents.Pages.AirQuality.AirQualityModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.WebComponents.Pages.AirQuality.Search.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.WebComponents.Pages.AirQuality.Search.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.WebComponents.Pages.AirQuality.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.WebComponents.Pages.AirQuality.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "technical/WeatherIO.Common.WebComponents.Pages.ChangePasswd.ChangePasswordForm.yml",
       "output": {
         ".html": {
@@ -784,6 +817,16 @@
       "output": {
         ".html": {
           "relative_path": "technical/WeatherIO.Common.WebComponents.Pages.Weather.Search.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/WeatherIO.Common.WebComponents.Pages.Weather.WeekDay.html"
         }
       },
       "version": ""
@@ -1220,6 +1263,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.TypeInference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.yml",
+      "output": {
+        ".html": {
+          "relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.AirQuality.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "technical/__Blazor.WeatherIO.Common.WebComponents.Pages.ChangePasswd.TypeInference.yml",
       "output": {
         ".html": {
@@ -1376,6 +1439,146 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "user-guide/air-quality.md",
+      "output": {
+        ".html": {
+          "relative_path": "user-guide/air-quality.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "user-guide/images/account-button-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "user-guide/images/account-button-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "user-guide/images/account-button-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "user-guide/images/account-button-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "user-guide/images/account-page.png",
+      "output": {
+        "resource": {
+          "relative_path": "user-guide/images/account-page.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "user-guide/images/air-quality.png",
+      "output": {
+        "resource": {
+          "relative_path": "user-guide/images/air-quality.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "user-guide/images/change-passwd.png",
+      "output": {
+        "resource": {
+          "relative_path": "user-guide/images/change-passwd.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "user-guide/images/liked.png",
+      "output": {
+        "resource": {
+          "relative_path": "user-guide/images/liked.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "user-guide/images/logged-in.png",
+      "output": {
+        "resource": {
+          "relative_path": "user-guide/images/logged-in.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "user-guide/images/login.png",
+      "output": {
+        "resource": {
+          "relative_path": "user-guide/images/login.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "user-guide/images/main-page.png",
+      "output": {
+        "resource": {
+          "relative_path": "user-guide/images/main-page.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "user-guide/images/register.png",
+      "output": {
+        "resource": {
+          "relative_path": "user-guide/images/register.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "user-guide/images/settings.png",
+      "output": {
+        "resource": {
+          "relative_path": "user-guide/images/settings.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "user-guide/images/weather-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "user-guide/images/weather-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "user-guide/images/weather-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "user-guide/images/weather-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "user-guide/index.md",
       "output": {
         ".html": {
@@ -1386,20 +1589,20 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "user-guide/login-and-logout.md",
+      "source_relative_path": "user-guide/liked.md",
       "output": {
         ".html": {
-          "relative_path": "user-guide/login-and-logout.html"
+          "relative_path": "user-guide/liked.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "user-guide/register.md",
+      "source_relative_path": "user-guide/settings.md",
       "output": {
         ".html": {
-          "relative_path": "user-guide/register.html"
+          "relative_path": "user-guide/settings.html"
         }
       },
       "version": ""
@@ -1413,6 +1616,26 @@
         },
         ".json": {
           "relative_path": "user-guide/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "user-guide/user-authorization.md",
+      "output": {
+        ".html": {
+          "relative_path": "user-guide/user-authorization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "user-guide/weather.md",
+      "output": {
+        ".html": {
+          "relative_path": "user-guide/weather.html"
         }
       },
       "version": ""
