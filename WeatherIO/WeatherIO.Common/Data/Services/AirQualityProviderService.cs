@@ -49,7 +49,7 @@ namespace WeatherIO.Common.Data.Services
 
             var url = $"{_configurationProviderService.Configuration.ServerAddress}/api/air-quality?latitude={latitudeEncoded}&longitude={longitudeEncoded}&timezone={timezoneEncoded}";
 
-            var response = await _httpClientProviderService.GetAsync(url);
+            var response = await _httpClientProviderService.HttpClient.GetAsync(url);
 
             if (response.StatusCode != HttpStatusCode.OK)
                 return null;
