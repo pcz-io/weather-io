@@ -11,6 +11,9 @@ using WeatherIO.Common.Data.Models;
 
 namespace WeatherIO.Common.Data.Services
 {
+    /// <summary>
+    /// Favourite provider service
+    /// </summary>
     public class FovouriteProviderService : IFovouriteProviderService
     {
         /// <summary>
@@ -33,11 +36,15 @@ namespace WeatherIO.Common.Data.Services
             _httpClientProviderService = httpClientProviderService;
         }
 
+        /// <summary>
+        /// Gets favourite locations from the server
+        /// </summary>
+        /// <returns> List of favourite locations </returns>
         public async Task<List<FavouriteLocationModel>?> GetFavouritesAsync()
         {
             var url = $"{_configurationProviderService.Configuration.ServerAddress}/api/get-favourite-locations";
 
-            var response = await _httpClientProviderService.GetAsync(url);
+            var response = await _httpClientProviderService.HttpClient.GetAsync(url);
 
             if (response.StatusCode != HttpStatusCode.OK)
                 return null;
@@ -51,6 +58,11 @@ namespace WeatherIO.Common.Data.Services
             return favourites;
         }
 
+        /// <summary>
+        /// Sets or updates favourite location
+        /// </summary>
+        /// <param name="model"> Favourite location model </param>
+        /// <returns> True if success </returns>
         public async Task<bool> SetOrUpdateFavouriteAsync(FavouriteLocationModel model)
         {
             var url = $"{_configurationProviderService.Configuration.ServerAddress}/api/add-update-favourite-location";
@@ -60,6 +72,11 @@ namespace WeatherIO.Common.Data.Services
             return result.IsSuccessStatusCode;
         }
 
+        /// <summary>
+        /// Deletes favourite location
+        /// </summary>
+        /// <param name="model"> Favourite location model </param>
+        /// <returns> True if success </returns>
         public async Task<bool> DeleteFavouriteAsync(FavouriteLocationModel model)
         {
             var url = $"{_configurationProviderService.Configuration.ServerAddress}/api/delete-favourite-location";

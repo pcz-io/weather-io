@@ -48,7 +48,7 @@ namespace WeatherIO.Common.Data.Services
 
 			var url = $"{_configurationProviderService.Configuration.ServerAddress}/api/get-forecast?latitude={latitudeEncoded}&longitude={longitudeEncoded}&timezone={timezoneEncoded}&model={_configurationProviderService.Configuration.ForecastModel}";
 
-			var response = await _httpClientProviderService.GetAsync(url);
+			var response = await _httpClientProviderService.HttpClient.GetAsync(url);
 
 			if (response.StatusCode != HttpStatusCode.OK)
 				return null;
@@ -75,7 +75,7 @@ namespace WeatherIO.Common.Data.Services
 
 			var url = $"{_configurationProviderService.Configuration.ServerAddress}/api/get-forecast-by-city?name={name}&timezone={timezoneEncoded}&model={_configurationProviderService.Configuration.ForecastModel}";
 
-			var response = await _httpClientProviderService.GetAsync(url);
+			var response = await _httpClientProviderService.HttpClient.GetAsync(url);
 
 			if (response.StatusCode != HttpStatusCode.OK)
 				return null;

@@ -37,6 +37,7 @@
     private async Task Delete(FavouriteLocationModel model)
     {
         await _favouriteProviderService.DeleteFavouriteAsync(model);
+        favouriteLocations = await _favouriteProviderService.GetFavouritesAsync();
         StateHasChanged();
     }
 

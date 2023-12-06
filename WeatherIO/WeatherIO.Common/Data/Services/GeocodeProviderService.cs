@@ -42,7 +42,7 @@ namespace WeatherIO.Common.Data.Services
 
 			var url = $"{_configurationProviderService.Configuration.ServerAddress}/api/geocode?name={name}";
 
-			var response = await _httpClientProviderService.GetAsync(url);
+			var response = await _httpClientProviderService.HttpClient.GetAsync(url);
 
 			if (response.StatusCode != HttpStatusCode.OK)
 				return null;

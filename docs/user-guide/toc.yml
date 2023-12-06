@@ -1,4 +1,10 @@
-- name: Login and Logout
-  href: login-and-logout.md
-- name: Register
-  href: register.md
+- name: User Authorization
+  href: user-authorization.md
+- name: Settings
+  href: settings.md
+- name: Weather
+  href: weather.md
+- name: Air Quality
+  href: air-quality.md
+- name: Liked
+  href: liked.md
