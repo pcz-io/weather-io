@@ -19,10 +19,11 @@ So to do that change working directory to `WeatherIO` and run script by typing c
 
 ```bash
 cd WeatherIO
-./run-compose.sh --detach
+sudo ./run-compose.sh --detach
 ```
 
 It is necessary to add `--detach` argument to run docker compose in detached mode, otherwise it would not run in background.
+If your user is not in `docker` group you need to run script in privilaged mode e.g. by running with `sudo`.
 
 ## Help message
 
@@ -38,7 +39,7 @@ To update te application you need to pull new version from the remote repository
 
 ```bash
 git pull
-./run-compose.sh --update --detach
+sudo ./run-compose.sh --update --detach
 ```
 
 By adding `--update`, script will stop application containers, delete them (database will be preserved), remove old images, build new version and start all necessary containers.
