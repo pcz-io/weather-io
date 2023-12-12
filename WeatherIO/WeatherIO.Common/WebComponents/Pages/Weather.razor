@@ -1,0 +1,255 @@
+﻿@page "/weather/{value}"
+@using System.Globalization
+@using WeatherIO.Common.Data.Models.APIResponses
+
+@inject IWeatherForecastProviderService WeatherForecastProviderService
+@inject IGeocodeProviderService _geocodeProviderService
+@inject IFovouriteProviderService _favouriteProviderService
+
+<PageTitle>Weather</PageTitle>
+
+<div style="width: 100%; margin: auto">
+
+    <MudCard>
+        <div style="width: 100%;">
+            <EditForm Model="@model" OnValidSubmit="OnValidSubmit" >
+                <MudCardContent>
+                    <div style="display: flex; align-items: center">
+                        <MudTextField @bind-Value="model.City" Label="Miasto" Variant="Variant.Filled"></MudTextField>
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" DisableElevation="true" ButtonType="ButtonType.Submit">Wyszukaj</MudButton>
+                        <AuthorizeView Context="auth_context">
+                            <Authorized>
+                                <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="Color.Secondary" OnClick="AddToFavourites"></MudIconButton>
+							</Authorized>
+                        </AuthorizeView>
+                    </div>
+                </MudCardContent>
+            </EditForm>
+        </div>
+        <div style="width: 100%">
+            @if (showAlert)
+            {
+                <MudAlert Severity="Severity.Error" ContentAlignment="HorizontalAlignment.Center" ShowCloseIcon="true" CloseIconClicked="(() => ShowAlert(false))">Podano złą nazwę miasta</MudAlert>
+            }
+        </div>
+        @if (forecastResponse != null)
+        {
+            <MudCardContent>
+                <div class="chart-container">
+                    <div class="chart">
+                        <MudChart ChartType="ChartType.Line" ChartSeries="@temperatureSeries" XAxisLabels="@xAxisLabels" ChartOptions="@temperatureOptions" Width="100%"></MudChart>
+                    </div>
+                    <div class="chart">
+                        <MudChart ChartType="ChartType.Line" ChartSeries="@preassureSeries" XAxisLabels="@xAxisLabels" ChartOptions="@preassureOptions" Width="100%"></MudChart>
+                    </div>
+                    <div class="chart">
+                        <MudChart ChartType="ChartType.Line" ChartSeries="@humiditySeries" XAxisLabels="@xAxisLabels" ChartOptions="@humidityOptions" Width="100%"></MudChart>
+                    </div>
+                    <div class="chart">
+                        <MudChart ChartType="ChartType.Line" ChartSeries="@windSpeedSeries" XAxisLabels="@xAxisLabels" ChartOptions="@windSpeedOptions" Width="100%"></MudChart>
+                    </div>
+                </div>
+                <div>
+                    <MudDataGrid Items="@weekDays" Filterable="false" SortMode="@SortMode.None" Groupable="false">
+                        <Columns>
+                            <PropertyColumn Property="x => x.Day" Title="Dzień" />
+                            <PropertyColumn Property="x => x.TempMax" Title="Temperatura Max" />
+                            <PropertyColumn Property="x => x.TempMin" Title="Temperatura Min" />
+                            <PropertyColumn Property="x => x.PreassureMax" Title="Ciśnienie Max" />
+                            <PropertyColumn Property="x => x.WindSpeedMax" Title="Prędkość Wiatru" />
+                            <PropertyColumn Property="x => x.Humidity" Title="Wilgotnośc" />
+                            <TemplateColumn CellClass="d-flex justify-end">
+                                <CellTemplate>
+                                    <MudStack Row>
+                                        <MudButton Variant="Variant.Filled" Color="Color.Tertiary" Class="ml-auto" OnClick="@(e => ShowData(context.Item.Id))">Pokaż</MudButton>
+                                    </MudStack>
+                                </CellTemplate>
+                            </TemplateColumn>
+                        </Columns>
+                    </MudDataGrid>
+                </div>
+            </MudCardContent>
+        }
+    </MudCard>
+</div>
+
+@code {
+
+    [Parameter]
+    public string Value { get; set; }= string.Empty;
+
+    class Search
+    {
+        public string City { get; set; } = string.Empty;
+    }
+
+    class WeekDay
+    {
+        public int Id { get; set; }
+        public string Day { get; set; } = string.Empty;
+        public double TempMax { get; set; }
+        public double TempMin { get; set; }
+        public double PreassureMax { get; set; }
+        public double WindSpeedMax { get; set; }
+        public double Humidity { get; set; }
+    }
+
+    private IEnumerable<WeekDay>? weekDays;
+
+    private bool showAlert = false;
+
+    private Search model = new Search();
+    private ForecastResponse? forecastResponse;
+
+    private int Index = -1; //default value cannot be 0 -> first selectedindex is 0.
+
+    private List<ChartSeries>? temperatureSeries = new();
+    private ChartOptions? temperatureOptions = new();
+    private string[]? xAxisLabels;
+
+    private List<ChartSeries>? preassureSeries = new();
+    private ChartOptions? preassureOptions = new();
+
+    private List<ChartSeries>? humiditySeries = new();
+    private ChartOptions? humidityOptions = new();
+
+    private List<ChartSeries>? windSpeedSeries = new();
+    private ChartOptions? windSpeedOptions = new();
+
+    private async void GetData()
+    {
+        forecastResponse = await WeatherForecastProviderService.GetForecastByCityAsync(model.City);
+
+        if (forecastResponse == null)
+        {
+            ShowAlert(true);
+            return;
+        }
+
+        ShowData(0);
+        temperatureOptions!.InterpolationOption = InterpolationOption.NaturalSpline;
+        temperatureOptions!.YAxisTicks = 1;
+        preassureOptions!.InterpolationOption = InterpolationOption.NaturalSpline;
+        preassureOptions!.YAxisTicks = 10;
+        humidityOptions!.InterpolationOption = InterpolationOption.NaturalSpline;
+        humidityOptions!.YAxisTicks = 10;
+        windSpeedOptions!.InterpolationOption = InterpolationOption.NaturalSpline;
+        windSpeedOptions!.YAxisTicks = 5;
+
+        var weekDays = new List<WeekDay>();
+
+        var culture = new CultureInfo("pl-PL");
+
+        for (int i = 0; i < 7; i++)
+		{
+			weekDays.Add(new WeekDay()
+			{
+				Id = i,
+				Day = culture.DateTimeFormat.GetDayName(DateTime.Now.AddDays(i).DayOfWeek),
+				TempMax = GetMaxTemperatureForDay(i),
+				TempMin = GetMinTemperatureForDay(i),
+				PreassureMax = GetMaxPreassureForDay(i),
+				WindSpeedMax = GetMaxWindSpeedForDay(i),
+				Humidity = GetMaxHumidityForDay(i)
+			});
+		}
+        this.weekDays = weekDays;
+
+        StateHasChanged();
+    }
+
+    private void ShowData(int day)
+    {
+        xAxisLabels = forecastResponse!.Forecast.Select(x => x.Time.ToString("HH")).ToList().Take(24).ToArray();
+        temperatureSeries = new List<ChartSeries>()
+        {
+            new ChartSeries() { Name = "Temperatura", Data = forecastResponse!.Forecast.Select(x => x.Temperature ?? 0.0).ToList().Skip(day * 24).Take(24).ToArray() },
+            new ChartSeries() { Name = "Temperatura odczuwalna", Data = forecastResponse!.Forecast.Select(x => x.ApparentTemperature ?? 0.0).ToList().Skip(day * 24).Take(24).ToArray() }
+        };
+        preassureSeries = new List<ChartSeries>()
+		{
+			new ChartSeries() { Name = "Ciśnienie", Data = forecastResponse!.Forecast.Select(x => x.Pressure ?? 0.0).ToList().Skip(day * 24).Take(24).ToArray() }
+		};
+        humiditySeries = new List<ChartSeries>()
+        {
+            new ChartSeries() { Name = "Wilgotność", Data = forecastResponse!.Forecast.Select(x => x.Humidity ?? 0.0).ToList().Skip(day * 24).Take(24).ToArray() }
+        };
+        windSpeedSeries = new List<ChartSeries>()
+		{
+            new ChartSeries() { Name = "Prędkość wiatru", Data = forecastResponse!.Forecast.Select(x => x.WindSpeed ?? 0.0).ToList().Skip(day * 24).Take(24).ToArray() }
+		};
+        if (forecastResponse!.Forecast.Max(x => x.WindGusts) != null)
+        {
+            windSpeedSeries.Add(
+                new ChartSeries() { Name = "Porywy wiatru", Data = forecastResponse!.Forecast.Select(x => x.WindGusts ?? 0.0).ToList().Skip(day * 24).Take(24).ToArray() }
+            );
+        }
+        StateHasChanged();
+    }
+
+    private double GetMaxTemperatureForDay(int day)
+    {
+        return forecastResponse!.Forecast.Select(x => x.Temperature ?? 0.0).ToList().Skip(day * 24).Take(24).Max();
+    }
+
+    private double GetMinTemperatureForDay(int day)
+    {
+        return forecastResponse!.Forecast.Select(x => x.Temperature ?? 0.0).ToList().Skip(day * 24).Take(24).Min();
+    }
+
+    private double GetMaxPreassureForDay(int day)
+    {
+        return forecastResponse!.Forecast.Select(x => x.Pressure ?? 0.0).ToList().Skip(day * 24).Take(24).Max();
+    }
+
+    private double GetMaxWindSpeedForDay(int day)
+    {
+        return forecastResponse!.Forecast.Select(x => x.WindSpeed ?? 0.0).ToList().Skip(day * 24).Take(24).Max();
+    }
+
+    private double GetMaxHumidityForDay(int day)
+    {
+        return forecastResponse!.Forecast.Select(x => x.Humidity ?? 0.0).ToList().Skip(day * 24).Take(24).Max();
+    }
+
+    private void OnValidSubmit()
+    {
+        GetData();
+    }
+
+    private void ShowAlert(bool value)
+    {
+        showAlert = value;
+        StateHasChanged();
+    }
+
+    private async void AddToFavourites()
+    {
+        if (model.City == string.Empty || forecastResponse == null)
+        {
+            return;
+        }
+        GeocodeResponse? geolocation = await _geocodeProviderService.GetGeocodeAsync(model.City);
+        await _favouriteProviderService.SetOrUpdateFavouriteAsync(new ()
+		{
+			Name = model.City,
+			Latitude = geolocation!.Latitude,
+			Longitude = geolocation!.Longitude
+		});
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            if (Value != string.Empty)
+            {
+                if (Value != "0")
+                {
+                    model.City = Value;
+                    GetData();
+                }
+            }
+        }
+    }
+}

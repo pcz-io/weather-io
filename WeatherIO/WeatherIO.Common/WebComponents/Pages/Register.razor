@@ -1,0 +1,76 @@
+﻿@page "/register"
+
+@using System.ComponentModel.DataAnnotations
+@inject IAuthenticationService _authService
+@inject NavigationManager _navManager
+
+<div>
+    <div style="width: 100%; max-width: 500px; margin: auto;">
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <MudAlert Severity="Severity.Error" Variant="Variant.Filled">@errorMessage</MudAlert>
+        }
+        <EditForm Model="@model" OnValidSubmit="OnValidSubmit">
+            <DataAnnotationsValidator />
+            <MudCard>
+                <MudCardContent>
+                    <MudTextField Label="Adres Email" Class="mt-3"
+                    @bind-Value="model.Email" For="@(() => model.Email)" />
+                    <MudTextField Label="Hasło" HelperText="Wybierz mocne hasło" Class="mt-3"
+                    @bind-Value="model.Password" For="@(() => model.Password)" InputType="InputType.Password" />
+                    <MudTextField Label="Powtórz Hasło" Class="mt-3"
+                    @bind-Value="model.RepeatPassword" For="@(() => model.RepeatPassword)" InputType="InputType.Password" />
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Zarejestruj</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    RegisterAccountForm model = new RegisterAccountForm();
+    bool success;
+    string errorMessage = string.Empty;
+
+    //Change this class to RegisterModel from Common but modify it to check password strenght and repeat password
+    public class RegisterAccountForm
+    {
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
+
+        [Required]
+        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$",
+         ErrorMessage = "Hasło musi zawierać conajmniej 8 znaków, 1 wielką literę, 1 małą literę, 1 liczbę oraz jeden znak specjalny.")]
+        public string Password { get; set; }
+
+        [Required]
+        [Compare(nameof(Password), ErrorMessage = "Hasła muszą być takie same")]
+        public string RepeatPassword { get; set; }
+    }
+
+    private async Task RegisterAsync()
+    {
+        if(await _authService.Register(new()
+            {
+                Email = model.Email,
+                Password = model.Password
+            }))
+        {
+            _navManager.NavigateTo("/Login");
+        }
+        else
+        {
+            errorMessage = "Nie udało się utworzyć użytkownika";
+        }
+    }
+
+    private async Task OnValidSubmit(EditContext context)
+    {
+        await RegisterAsync();
+        success = true;
+        StateHasChanged();
+    }
+}

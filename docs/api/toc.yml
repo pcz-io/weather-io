@@ -1,0 +1,24 @@
+- name: Air Quality
+  href: air-quality.md
+- name: Delete Account
+  href: delete-account.md
+- name: Geocode
+  href: geocode.md
+- name: Geocode by Id
+  href: geocode-by-id.md
+- name: Get Forecast
+  href: get-forecast.md
+- name: Get Forecast by City
+  href: get-forecast-by-city.md
+- name: Login
+  href: login.md
+- name: Register
+  href: register.md
+- name: Change Password
+  href: change-password.md
+- name: Get Favourite Locations
+  href: get-favourite-locations.md
+- name: Add or Update Favourite Location
+  href: add-update-favourite-location.md
+- name: Delete Favourite Location
+  href: delete-favourite-location.md

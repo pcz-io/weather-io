@@ -1,0 +1,55 @@
+﻿@page "/login"
+
+@using System.ComponentModel.DataAnnotations
+@using WeatherIO.Common.Data.Models;
+
+@inject IAuthenticationService _authService
+@inject NavigationManager _navManager
+
+<div>
+    <div style="width: 100%; max-width: 500px; margin: auto;">
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <MudAlert Severity="Severity.Error" Variant="Variant.Filled">@errorMessage</MudAlert>
+        }
+        <EditForm Model="@model" OnValidSubmit="OnValidSubmit">
+            <DataAnnotationsValidator />
+            <MudCard>
+                <MudCardContent>
+                    <MudTextField Label="Adres Email" Class="mt-3"
+                    @bind-Value="model.Email" For="@(() => model.Email)" />
+                    <MudTextField Label="Hasło" Class="mt-3"
+                    @bind-Value="model.Password" For="@(() => model.Password)" InputType="InputType.Password" />
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Secondary" Class="ml-auto">Zaloguj</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    LoginModel model = new LoginModel();
+    bool success;
+    string errorMessage = string.Empty;
+
+    private async Task LoginAsync()
+    {
+        if (await _authService.Login(model))
+        {
+            _navManager.NavigateTo("/Home");
+        }
+        else
+        {
+            errorMessage = "Niepoprawne dane logowania";
+        }
+    }
+
+    private async Task OnValidSubmit(EditContext context)
+    {
+        await LoginAsync();
+        success = true;
+        StateHasChanged();
+    }
+}

@@ -1,0 +1,57 @@
+﻿@page "/settings"
+
+@inject IConfigurationProviderService ConfigurationProviderService
+
+<PageTitle>Settings</PageTitle>
+
+<div>
+    <div style="width: 100%; max-width: 500px; margin: auto;">
+        <MudCard>
+            <MudForm>
+                <MudCardContent>
+                    <MudPaper Class="pa-4 mt-4">
+                        <MudTextField @bind-Value="serverAddress" Label="Adres Serwera" Variant="Variant.Filled"></MudTextField>
+                    </MudPaper>
+                </MudCardContent>
+                <MudCardContent>
+                    <MudPaper Class="pa-4 mt-4">
+                        <MudSlider TickMarks="true" TickMarkLabels="@themeLabels" @bind-Value="theme" Min="0" Max="2" Step="1" Label="Motyw" Variant="Variant.Filled">Theme</MudSlider>
+                    </MudPaper>
+                </MudCardContent>
+                <MudCardContent>
+                    <MudSelect @bind-Value="forecastModel"  Label="Model Pogodowy" Variant="Variant.Filled" AnchorOrigin="Origin.BottomCenter">
+                        <MudSelectItem Value="@("dwdicon")">dwdicon</MudSelectItem>
+                        <MudSelectItem Value="@("ecmwf")">ecmwf</MudSelectItem>
+                    </MudSelect>
+                </MudCardContent>
+                <MudCardContent>
+                    <MudPaper Class="pa-4 mt-4">
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" DisableElevation="true" OnClick="Save">Zapisz</MudButton>
+                    </MudPaper>
+                </MudCardContent>
+            </MudForm>
+        </MudCard>
+    </div>
+</div>
+
+@code {
+    private string serverAddress = string.Empty;
+    private int theme = 0;
+    private string[] themeLabels = new string[] { "Light", "Dark", "System" };
+    private string forecastModel = string.Empty;
+
+    private async void Save()
+    {
+        await ConfigurationProviderService.SetSerwerAddressAsync(serverAddress);
+        await ConfigurationProviderService.SetTheme(theme.ToString());
+        await ConfigurationProviderService.SetForecastModel(forecastModel);
+    }
+
+    protected async override void OnInitialized()
+    {
+        serverAddress = await ConfigurationProviderService.GetSerwerAddressAsync();
+        theme = await ConfigurationProviderService.GetThemeAsync();
+forecastModel = await ConfigurationProviderService.GetForecastModelAsync();
+        StateHasChanged();
+    }
+}

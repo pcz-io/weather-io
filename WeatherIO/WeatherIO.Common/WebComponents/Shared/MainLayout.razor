@@ -1,0 +1,82 @@
+﻿@inherits LayoutComponentBase
+
+@inject IConfigurationProviderService ConfigurationProviderService
+@inject NavigationManager NavigationManager
+
+@inject IAuthenticationService _authService
+
+<MudThemeProvider @ref="@ConfigurationProviderService.MudThemeProvider" @bind-IsDarkMode="@_isDarkMode" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudAppBar Elevation="1">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        <MudText Typo="Typo.h5" Class="ml-3">Weather.io</MudText>
+        <MudSpacer />
+        <MudMenu Icon="@Icons.Material.Filled.AccountCircle" Color="Color.Tertiary">
+            <AuthorizeView>
+				<NotAuthorized>
+					<MudMenuItem OnClick="Login">Zaloguj</MudMenuItem>
+					<MudMenuItem OnClick="Register">Zarejestruj</MudMenuItem>
+				</NotAuthorized>
+				<Authorized>
+                    <MudMenuItem OnClick="Profile">Profil</MudMenuItem>
+					<MudMenuItem OnClick="Logout">Wyloguj</MudMenuItem>
+				</Authorized>
+			</AuthorizeView>
+        </MudMenu>
+        <MudIconButton Icon="@Icons.Material.Filled.Settings" Color="Color.Tertiary" OnClick="Settings" aria-label="settings"></MudIconButton>
+    </MudAppBar>
+    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+        <NavMenu />
+    </MudDrawer>
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+</MudLayout>
+
+@code {
+    bool _drawerOpen = true;
+    private bool _isDarkMode;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+    private void Profile()
+	{
+		NavigationManager.NavigateTo("/profile");
+	}
+
+    private void Logout()
+    {
+        _authService.Logout();
+        NavigationManager.NavigateTo("/login");
+    }
+
+    private void Login()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
+
+    private void Register()
+    {
+        NavigationManager.NavigateTo("/register");
+    }
+
+    private void Settings()
+    {
+        NavigationManager.NavigateTo("/settings");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await ConfigurationProviderService.LoadConfigurationAsync();
+            StateHasChanged();
+        }
+    }
+}

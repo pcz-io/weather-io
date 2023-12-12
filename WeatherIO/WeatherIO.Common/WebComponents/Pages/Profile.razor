@@ -1,0 +1,44 @@
+﻿@page "/profile"
+@attribute [Authorize]
+
+@inject NavigationManager _navigationManager
+@inject IAuthenticationService _authService
+@inject IHttpClientProviderService _httpClientProviderService
+
+<PageTitle>Profile</PageTitle>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1 class="text-center">Witaj, @username</h1>
+			<div style="text-align: center">
+				<MudButton Variant="Variant.Filled" Color="Color.Tertiary" Class="ml-auto" OnClick="ChangePasswd">Zmień Hasło</MudButton>
+				<MudButton Variant="Variant.Filled" Color="Color.Tertiary" Class="ml-auto" OnClick="DeleteAccount">Usuń Konto</MudButton>
+			</div>
+		</div>
+	</div>
+</div>
+
+@code {
+	string username = string.Empty;
+
+	private void ChangePasswd()
+	{
+		_navigationManager.NavigateTo("/changepasswd");
+	}
+
+	private void DeleteAccount()
+	{
+		_authService.DeleteAccount();
+		_navigationManager.NavigateTo("/home");
+	}
+
+	protected override async Task OnAfterRenderAsync(bool firstRender)
+	{
+		if (firstRender)
+		{
+			username = await _authService.GetUsername() ?? "UNKNOWN";
+			StateHasChanged();
+		}
+	}
+}
